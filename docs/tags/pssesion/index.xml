@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>pssesion - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/pssesion/</link>
+        <description>pssesion - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/pssesion/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</link>
+    <pubDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
+    <description><![CDATA[In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>dns - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/dns/</link>
+        <description>dns - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Apr 2018 21:40:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/dns/" rel="self" type="application/rss+xml" /><item>
+    <title>Resolve IP and DNS with Powershell tool</title>
+    <link>http://kprocyszyn.github.io/powershell-tool-resolve-ip-and-dns/</link>
+    <pubDate>Sun, 29 Apr 2018 21:40:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-tool-resolve-ip-and-dns/</guid>
+    <description><![CDATA[I’ve been asked to prepare a simple tool which would:
+ Resolve IP address or DNS Return all results to table Import addresses from a file  The reason behind was to check how IP/DNS records change over the period of time, therefore there was a need for something like that:
+ A file with all addresses in question Tool which could import all these addresses and resolve them Save the results into a new file  Once having at least a couple of files, the results could be compared.]]></description>
+</item></channel>
+</rss>

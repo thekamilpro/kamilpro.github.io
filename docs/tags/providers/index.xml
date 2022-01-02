@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>providers - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/providers/</link>
+        <description>providers - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 04 Aug 2020 10:55:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/providers/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#5] – Providers</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-5-providers/</link>
+    <pubDate>Tue, 04 Aug 2020 10:55:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-5-providers/</guid>
+    <description><![CDATA[Exercises  Create a folder in root of C: with the name of PowerShell Create a file inside the folder with the name of your choice and no content Retrieve all items from Env: drive Check the version of Notepad.exe in Windows directory Discover current Windows build version by registry property: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion  Notes from the lesson # Provider allows to access some data storage (e.g. File system, registry, remote system, Active Directory) # This concept might sound a bit abstract at first, but becomes very straight forward once you&#39;ve used it for a while # Provider once connected to the data storage, kind of &#34;mounts&#34; it like a network drive, allowing to browse and manage it # Once the storage is mounted PowerShell creates so called PSDrive # Let&#39;s review available providers Get-Psprovider # Let&#39;s review some PSDrives Get-PSDrive # A quick refresher how file system is organised: Drives, Folders, Files # Since PowerShell connects to many different file data storages, it uses the generic term Item and specifies with type.]]></description>
+</item></channel>
+</rss>

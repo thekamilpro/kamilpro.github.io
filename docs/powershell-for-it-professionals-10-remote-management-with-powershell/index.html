@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#10] – Remote management with PowerShell" />
+<meta property="og:description" content="In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-08-24T10:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-24T10:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#10] – Remote management with PowerShell"/>
+<meta name="twitter:description" content="In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?"/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-9-setting-up-active-directory/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#10] – Remote management with PowerShell",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-10-remote-management-with-powershell\/"
+        },"genre": "post","keywords": "command, course, enter, invoke, IT, linux, powershell, psexec, pssesion, rdp, remote, remoting, ssh, sysadmin, telnet, ws-man","wordcount":  176 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-10-remote-management-with-powershell\/","datePublished": "2020-08-24T10:00:00+00:00","dateModified": "2020-08-24T10:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#10] – Remote management with PowerShell</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/TB2-Y3zFUb0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.</p>
+<h2 id="exercises">Exercises</h2>
+<!-- raw HTML omitted -->
+<h2 id="notes">Notes</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">Enable-Psremoting</span>
+
+<span class="nb">Enter-PSSesion</span> <span class="nb">ps-svr1</span>
+
+<span class="n">Hostname</span>
+<span class="nb">Get-Service</span>
+<span class="n">GIP</span>
+
+<span class="c"># I can even run commands that are not available on my source machine</span>
+
+<span class="nb">Get-ADDomainController</span>
+<span class="nb">Get-ADUser</span>
+
+<span class="n">Exit</span> <span class="n">or</span> <span class="nb">Exit-PSSession</span>
+
+<span class="c"># Caution about double hoping</span>
+
+<span class="nb">Invoke-Command</span>
+
+<span class="nb">Invoke-Command</span> <span class="n">-computerName</span> <span class="nb">ps-svr1</span> <span class="n">-command</span>  <span class="p">{</span> <span class="nb">get-service</span><span class="p">}</span>
+
+<span class="c"># Invoke command executes commands on the remote comptuers and brings back the results</span>
+
+<span class="c"># Can you tell a difference?</span>
+
+<span class="nb">Invoke-Command</span> <span class="n">-computerName</span> <span class="nb">ps-svr1</span> <span class="n">-command</span>  <span class="p">{</span> <span class="nb">get-service</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">status</span> <span class="o">-eq</span> <span class="s1">&#39;stopped&#39;</span> <span class="p">}</span> <span class="p">}</span>
+
+<span class="nb">Invoke-Command</span> <span class="n">-computerName</span> <span class="nb">ps-svr1</span> <span class="n">-command</span>  <span class="p">{</span> <span class="nb">get-service</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">status</span> <span class="o">-eq</span> <span class="s1">&#39;stopped&#39;</span> <span class="p">}</span>
+
+<span class="c"># -ComputerName in the commandlet</span>
+
+<span class="nb">Get-Service</span> <span class="n">-ComputerName</span> <span class="nb">ps-svr1</span>
+
+<span class="nb">Invoke-Command</span> <span class="n">-computerName</span> <span class="nb">ps-svr1</span> <span class="n">-command</span>  <span class="p">{</span> <span class="nb">get-service</span>  <span class="p">}</span>
+
+<span class="c"># they look the same, but are they?</span>
+
+<span class="nb">Get-Service</span> <span class="n">-ComputerName</span> <span class="nb">ps-svr1</span> <span class="p">|</span> <span class="nb">GM
+</span><span class="nb"></span>
+<span class="nb">Invoke-Command</span> <span class="n">-computerName</span> <span class="nb">ps-svr1</span> <span class="n">-command</span>  <span class="p">{</span> <span class="nb">get-service</span>  <span class="p">}</span> <span class="p">|</span> <span class="nb">GM
+</span></code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

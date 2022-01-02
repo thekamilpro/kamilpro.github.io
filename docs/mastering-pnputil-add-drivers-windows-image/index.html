@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Mastering PNPUTIL – how to add drivers to the Windows image - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="Mastering PNPUTIL – how to add drivers to the Windows image" />
+<meta property="og:description" content="Drivers – that’s what makes a harmony between hardware and software. Appropriate drivers can make a huge difference between computer’s performance, stability and even temperature. Therefore it’s super important to make sure you’ve got up-to-date files included with your image or Windows installation.
+We are going to review PNPUTIL tool – the versatile tool for handling drivers within the Windows.
+Why do you need PNPUTIL? Yes, why bother with some command line tool (PNPUTIL is command line only) when there are dedicated installers and device manager?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-05-01T20:32:06+00:00" />
+<meta property="article:modified_time" content="2017-05-01T20:32:06+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mastering PNPUTIL – how to add drivers to the Windows image"/>
+<meta name="twitter:description" content="Drivers – that’s what makes a harmony between hardware and software. Appropriate drivers can make a huge difference between computer’s performance, stability and even temperature. Therefore it’s super important to make sure you’ve got up-to-date files included with your image or Windows installation.
+We are going to review PNPUTIL tool – the versatile tool for handling drivers within the Windows.
+Why do you need PNPUTIL? Yes, why bother with some command line tool (PNPUTIL is command line only) when there are dedicated installers and device manager?"/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/" /><link rel="prev" href="http://kprocyszyn.github.io/why-saturday-is-best-to-start-new-hobby/" /><link rel="next" href="http://kprocyszyn.github.io/start-batching-your-tasks/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mastering PNPUTIL – how to add drivers to the Windows image",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/mastering-pnputil-add-drivers-windows-image\/"
+        },"genre": "post","keywords": "deployment, driver, feat, image, Windows","wordcount":  870 ,
+        "url": "http:\/\/kprocyszyn.github.io\/mastering-pnputil-add-drivers-windows-image\/","datePublished": "2017-05-01T20:32:06+00:00","dateModified": "2017-05-01T20:32:06+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Mastering PNPUTIL – how to add drivers to the Windows image</h1><div class="content" id="content"><p>Drivers – that’s what makes a harmony between hardware and software. Appropriate drivers can make a huge difference between computer’s performance, stability and even temperature. Therefore it’s super important to make sure you’ve got up-to-date files included with your image or Windows installation.</p>
+<p>We are going to review PNPUTIL tool – the versatile tool for handling drivers within the Windows.</p>
+<h1 id="why-do-you-need-pnputil">Why do you need PNPUTIL?</h1>
+<p>Yes, why bother with some command line tool (PNPUTIL is command line only) when there are dedicated installers and device manager? Not to mention that Windows update can download pretty much every single driver missing from the Internet.</p>
+<p>Well, it’s not that wonderful when there is a need to prepare a couple of dozens of computers.</p>
+<p>While all sort of installers need hardware to be present during the installation, PNPUTIL doesn’t. In fact, as long as you can provide driver files – *.inf to be more specific – you can add them to the image, and Windows will use them when it has detected the hardware.</p>
+<p>That allows you to supply drivers before installing Windows on the target computer, which saves time after deployment. Drivers will be therefore installed automatically during Windows installation – fully automatically.</p>
+<h1 id="what-is-the-driver-store">What is the Driver Store</h1>
+<p>Windows needs to store all the drivers in one location. Whenever you add, install, update or remove drivers, the OS will use the Driver Store as well as Windows Update to make your devices work properly.</p>
+<p>Take any driver, and you’ll find (among other files) at least one *.inf file. Windows will use the file to install the driver, using reference in the file to make sure that everything has been installed properly.</p>
+<p>Another important task of adding new drivers to the driver store is security check of the file, making sure that the driver hasn’t been changed since developer released it.</p>
+<p>You can find driver store in: C:\Windows\System32\DriverStore.</p>
+<h1 id="adding-vs-installing">Adding vs Installing</h1>
+<p>While these words are usually used interchangeably, they have a different meaning in Microsoft terminology.</p>
+<p>Adding means copying the driver and associated with it files to the Driver Store. During that process, all files will be checked for integrity and security. Adding the driver will not make your device working straight away, Windows will need to install it.</p>
+<p>Installing means using the <em>added</em> driver for the actual hardware. Whenever computer detects a new hardware connected, it will go through the Driver Store/Windows Update and set up the device, provided there is a matching driver available.</p>
+<p>You can think about it like having spices in your kitchen. When you go to shops you buy pepper, salt, sage, paprika and rosemary. This can be compared to downloading the drivers. Then you unpack these spices and put them in your cupboard. This is adding drivers to the store. Finally, you cook chicken and realise the salt, pepper and paprika will be necessary for it, so you take these spices out of the cupboard and season your chicken. This is installing the drivers.</p>
+<p>I’m getting hungry now, so let’s better move on to the next step.</p>
+<h1 id="pnputil-syntax">PNPUTIL syntax</h1>
+<p>There are only 4 main syntaxes in PNPUTIL, which allow you to add, remove, export and list all the drivers currently in the driver store.</p>
+<p>When you’ll open the command prompt, type PNPUTIL and see:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="add">Add</h2>
+<p><strong>/add-driver</strong> option allows you to add a driver to the store. If you provide specific INF file, only one driver will be copied, however using a wildcard *.inf will install all drivers within the current directory. You can also use <strong>/subdirs</strong> to do bulk load to all files in the child folders.  Last option <strong>/install</strong> will install or update the drivers, however, Windows should perform it automatically once the devices have been detected.</p>
+<h2 id="delete">Delete</h2>
+<p>Sometimes you’d like to remove a certain device from the device manager, but it keeps coming back with maniac’s resistance. The reason is the device is being only installed, but the actual files are present in the driver store.</p>
+<p>That’s when you’d like to use **/delete-driver **with  /**force **option. It will uninstall and purge the files from the driver store, even if the device is currently used.</p>
+<h2 id="export">Export</h2>
+<p><strong>/export-driver</strong> is especially useful when you need to copy drivers from one computer to another, while not having the original driver source available. PNPUTIL will create an exact copy of the driver being used in the current system, which you’ll be able to add to another computer later on.</p>
+<h2 id="enumerate">Enumerate</h2>
+<p><strong>/enum-drivers</strong> will show you the list of all drivers in currently being kept in the driver store. You’ll be able to find the type, vendor, version and name of the driver.</p>
+<p>All drivers will have the OemXX.inf naming convention, while XX is the unique number of the each driver. You can use that tool to identify drivers which you’d like to remove or export.</p>
+<h1 id="hintsmore-stuff-to-read">Hints/More stuff to read</h1>
+<ul>
+<li>You can use command <strong>PNPUTIL /enum-drivers &gt; C:\temp\drivers.txt</strong> to create a file with the list of all current drivers.</li>
+<li>You can find names of drivers in Device Manager. Simply click the device you’d need the drivers for, pick details tab and choose “inf name” from the drop down menu.</li>
+<li>I did write more about creating the Windows 10 image here – <!-- raw HTML omitted --><a href="https://kamilpro.com/prepare-windows-10-1607-image/" target="_blank" rel="noopener noreffer">https://kamilpro.com/prepare-windows-10-1607-image/</a><!-- raw HTML omitted -->.</li>
+</ul>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

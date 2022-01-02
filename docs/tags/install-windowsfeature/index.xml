@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>install-windowsfeature - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/install-windowsfeature/</link>
+        <description>install-windowsfeature - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 19 Aug 2020 12:49:09 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/install-windowsfeature/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#9] – Setting up Active Directory</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-9-setting-up-active-directory/</link>
+    <pubDate>Wed, 19 Aug 2020 12:49:09 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-9-setting-up-active-directory/</guid>
+    <description><![CDATA[Exercises  On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell  Commands ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature  Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.]]></description>
+</item></channel>
+</rss>

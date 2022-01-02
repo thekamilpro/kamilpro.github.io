@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>format-table - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/format-table/</link>
+        <description>format-table - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 11 Aug 2020 12:35:44 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/format-table/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#7] – Formatting output</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-7-formatting-output/</link>
+    <pubDate>Tue, 11 Aug 2020 12:35:44 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-7-formatting-output/</guid>
+    <description><![CDATA[Exercises Send output of any commandlet, e.g. get service to Printer
+Lesson notes # So far, we&#39;ve been using default PowerShell behaviour for formatting output # Although in the last lesson we did filtering data with Where-Object and Select-Object # We didn&#39;t really focus on how data is presented on the screen. Let&#39;s see what can be done here. # Let&#39;s have a look at local  Get-LocalGroup Get-LocalGroup | Format-List #Alias is FL #Like with Select-Object, we can specify properties we&#39;re after Get-LocalGroup | fl -Property name,sid #Another example when List might be easier to read then table Get-CimInstance win32_ComputerSystem ## Format Table #ipconfig.]]></description>
+</item></channel>
+</rss>

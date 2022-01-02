@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>error - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/error/</link>
+        <description>error - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Jul 2020 19:08:38 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/error/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#3] – Running Commands</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-2-running-commands/</link>
+    <pubDate>Mon, 27 Jul 2020 19:08:38 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-2-running-commands/</guid>
+    <description><![CDATA[Exercises  Display a list of all services that start with the letter W Display all processes (you might need to use Help to discover the right command. Remember the noun might be singular). Open Notepad (you can simply punch in notepad in the shell)  Display only processes that have a name “Notepad” Once you can there’s only one instance of Notepad running, close it with PowerShell!]]></description>
+</item></channel>
+</rss>

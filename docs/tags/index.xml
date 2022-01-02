@@ -1,7 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tags - Tag - My New Hugo Site</title>
+        <title>Tags - Tag - Kamil Procyszyn</title>
         <link>http://kprocyszyn.github.io/tags/</link>
-        <description>Tags - Tag - My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://kprocyszyn.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+        <description>Tags - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>book</title>
+    <link>http://kprocyszyn.github.io/tags/book/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/book/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>books</title>
+    <link>http://kprocyszyn.github.io/tags/books/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/books/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>course</title>
+    <link>http://kprocyszyn.github.io/tags/course/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/course/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>discord</title>
+    <link>http://kprocyszyn.github.io/tags/discord/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/discord/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>dsc</title>
+    <link>http://kprocyszyn.github.io/tags/dsc/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/dsc/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>function</title>
+    <link>http://kprocyszyn.github.io/tags/function/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/function/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>module</title>
+    <link>http://kprocyszyn.github.io/tags/module/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/module/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>next</title>
+    <link>http://kprocyszyn.github.io/tags/next/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/next/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>powershell</title>
+    <link>http://kprocyszyn.github.io/tags/powershell/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/powershell/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>training</title>
+    <link>http://kprocyszyn.github.io/tags/training/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/tags/training/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

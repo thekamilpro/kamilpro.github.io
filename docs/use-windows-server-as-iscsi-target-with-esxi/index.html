@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Use Windows Server as iSCSI target with ESXi - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="Use Windows Server as iSCSI target with ESXi" />
+<meta property="og:description" content="The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.
+The problem: VM cannot be started due to maxed out resources. There’s no NAS or any other means of storage where the files could be transferred to. From previous experience, I knew that transfer over SSH or USB would be well too slow, as the task was time critical." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-08-15T17:54:47+00:00" />
+<meta property="article:modified_time" content="2018-08-15T17:54:47+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Use Windows Server as iSCSI target with ESXi"/>
+<meta name="twitter:description" content="The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.
+The problem: VM cannot be started due to maxed out resources. There’s no NAS or any other means of storage where the files could be transferred to. From previous experience, I knew that transfer over SSH or USB would be well too slow, as the task was time critical."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-tool-resolve-ip-and-dns/" /><link rel="next" href="http://kprocyszyn.github.io/backup-exec-cataloging-multiple-tapes-with-a-single-tape-drive/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Use Windows Server as iSCSI target with ESXi",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/use-windows-server-as-iscsi-target-with-esxi\/"
+        },"genre": "post","keywords": "2012r2, esxi, iscsi, lun, powershell, server","wordcount":  1312 ,
+        "url": "http:\/\/kprocyszyn.github.io\/use-windows-server-as-iscsi-target-with-esxi\/","datePublished": "2018-08-15T17:54:47+00:00","dateModified": "2018-08-15T17:54:47+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Use Windows Server as iSCSI target with ESXi</h1><div class="content" id="content"><p>The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.</p>
+<p>The problem: VM cannot be started due to maxed out resources. There’s no NAS or any other means of storage where the files could be transferred to. From previous experience, I knew that transfer over SSH or USB would be well too slow, as the task was time critical. There wasn’t also a big enough single hard disk which could be used to copy the files onto it.</p>
+<p>My proposed solution: Use any spare desktop/server and load it with hard drives, so that all of them can create spanned virtual disk big enough to accommodate files from ESXi, install at least server 2012r2 on it and configure as an ISCSI target.</p>
+<p>As you can see above, it was quite an unusual task with quite unusual conditions.</p>
+<p>Requirements:</p>
+<ul>
+<li>Windows box:
+<ul>
+<li>Spare computer</li>
+<li>1HDD for OS</li>
+<li>Number of HDDs, which summarised capacity would be enough to accommodate files from ESXi. HDDs might be a different size</li>
+<li>One network adapter</li>
+</ul>
+</li>
+<li>Source and destination ESXi:
+<ul>
+<li>at least one spare network port which can be configured as uplink</li>
+<li>Possibility to enable iSCSI (I was working on ESXi 6.5)</li>
+</ul>
+</li>
+</ul>
+<p>Let’s start preparation!</p>
+<h2 id="prepare-windows-server">Prepare Windows server</h2>
+<p>I take it you’ve prepared a fresh installation of Windows server, if not go ahead and do it. I’ve used 2012 R2 for the purpose of the task. Don’t forget to activate it.</p>
+<p>Another important step is to configure network card you’re going to use with static IP – as we will tell ESXi to connect to the server over that IP. All you need is <!-- raw HTML omitted -->an <!-- raw HTML omitted -->IP address and subnet mask.</p>
+<p>Unless you’re willing to connect over the network then obviously gateway would be needed. However, it is strongly recommended to use iSCSI on <!-- raw HTML omitted -->the <!-- raw HTML omitted -->isolated network – due to security, performance and stability reasons.</p>
+<h3 id="create-spanned-volume">Create spanned volume</h3>
+<p>Once you’ve got your server ready for a spin – the first step is to create a spanned volume – we will simply use all spare hard drives and create one massive disk out of them. I’ve used 1TB, 3TB and 4TB disks, which <!-- raw HTML omitted -->gave<!-- raw HTML omitted --> me some 8TB of space altogether.</p>
+<p>You’d like to press CTRL + X and bring disk manager. Then right-click on each of the disks and initialize it, then bring them online. In my example, the disks are numbered 1,2 and 3.</p>
+<p>Next step is the actual creation of the Spanned Volume, you click on any of the spare disks, and choose “New Spanned Volume”, click next and on “Select Disks” page Add all disks, so that total volume size shows summed storage space from all of them. You assign any letter drive you want, give any name (I called mine BIG) and make sure to tick Perform <!-- raw HTML omitted -->a <!-- raw HTML omitted -->quick format.</p>
+<!-- raw HTML omitted -->
+<p><a href="https://i2.wp.com/kamilpro.com/wp-content/uploads/2018/08/SpannedVolume.gif?fit=1844%2C962&amp;ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->Spanned volume creation<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>That’s it, once you click finish you will see the colour of disks changing to purple-ish, and all three disks will have the same partition name with <!-- raw HTML omitted -->the <!-- raw HTML omitted -->same letter assigned – in my case “BIG (F:). You can go to my computer and check yourself that this “disk” in fact exists.</p>
+<h3 id="install-iscsi-target-server-role">Install iSCSI Target Server role</h3>
+<p>Now it’s time to add iSCSI role so that we can create the iSCSI disk and attach it to ESXi.  iSCSI is a technology which allows you to <!-- raw HTML omitted -->attach<!-- raw HTML omitted --> a network drive to the PC and use it as it was a local disk.</p>
+<p>Bring up Add roles and features wizard, and on “Server roles” tab check: File and Storage Service &gt; File and iSCSI Services &gt; iSCSI Target Server, accept the default and go ahead with the installation.<!-- raw HTML omitted --></p>
+<p><a href="https://i2.wp.com/kamilpro.com/wp-content/uploads/2018/08/iSCSI-role-installation.gif?fit=1844%2C962&amp;ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->iSCSI target role installation<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>You can achieve the same result using Windows Powershell by using the command:</p>
+<!-- raw HTML omitted -->
+<h3 id="create-iscsi-disk-and-target">Create iSCSI disk and target</h3>
+<p>Final step of our configuration is the actual creation of iSCSI virtual disk.</p>
+<p>Head on to the server manager, go to the Files and storage pane &gt; choose iSCSI tab. Click on TASKS and choose “New iSCSI Virtual Disk”</p>
+<p>On the new windows that shows up, choose the location on your newly created spanned disk (F: in my case), provide any meaningful name. On the disk size, choose max available space (7.81TB in my case) and choose the <!-- raw HTML omitted -->disk<!-- raw HTML omitted --> <!-- raw HTML omitted -->to <!-- raw HTML omitted -->grow dynamically.</p>
+<p>Since <!-- raw HTML omitted -->there are<!-- raw HTML omitted --> no iSCSI targets configured yet, choose to create a new one, give it any name and choose to identify by the IP address (in my case 10.4.1.5<!-- raw HTML omitted -->) .<!-- raw HTML omitted --></p>
+<p>There’s no need for authentication here, so just move on next and finish the wizard, which will end up in creating the iSCSI disk with <!-- raw HTML omitted -->the <!-- raw HTML omitted -->associated target.<!-- raw HTML omitted --></p>
+<p><a href="https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/iSCSI-virtual-disk.gif?fit=1844%2C962&amp;ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->iSCSI virtual disk creation<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>Powershell way:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>At this point<!-- raw HTML omitted -->,<!-- raw HTML omitted --> you’re ready to plug your Windows Server directly to the spare ESXi network port. We’re going to do some configuration on ESXi now.</p>
+<h2 id="configure-esxi">Configure ESXi</h2>
+<h2 id="create-vmkernel-nic">Create VMKernel NIC</h2>
+<p>To start with I wanted to thanks Andy who helped me with VMkernel NIC configuration – it would take me much longer to figure out this myself! Drop me the line if you’re reading <!-- raw HTML omitted -->thi<!-- raw HTML omitted -->!</p>
+<p>In order to connect <!-- raw HTML omitted -->the <!-- raw HTML omitted -->iSCSI disk to ESXi we need network port configured, so if you haven’t yet plugged in your just prepared Windows server to the hypervisor – go and do it now.</p>
+<p>We need to configure Virtual switch, port group and finally VMKernal NIC</p>
+<p>Click on Networking pane and choose <strong>Virtual Switches</strong> tab. Down there choose an option to add a new switch. In the new Window that pops out give it a <!-- raw HTML omitted -->meaningful<!-- raw HTML omitted --> name and choose the right uplink (port on NIC)</p>
+<p>Next click on <strong>Port groups</strong> tab and choose ato add port group, give it meaningful name, choosing the switch you’ve just created.</p>
+<p>The final step is to click on <strong>VMkernel NICs</strong> tab and add the new VMkernel NIC. Choose port group you’ve created in the previous step, then choose that IP should be static and give it IP address in the same subnet as your Windows machine.</p>
+<p>I configured my Windows machine to be 10.4.1.5/24 and VMkernel NIC to be 10.4.1.4/24<!-- raw HTML omitted --></p>
+<p><a href="https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/ESXi-VMKernel-NIC.gif?fit=1844%2C962&amp;ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->Create VMKernel NIC<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="add-iscsi-disk-and-configure-it-as-datastore">Add iSCSI disk and configure it as datastore</h2>
+<p>We’re coming to the very end of the configuration – everything has been configured and the last step is to create a datastore on the iSCSI disk.</p>
+<p>Click on storage pane and choose <strong>Adapters</strong> and click on <strong>Configure iSCSI,</strong> on the new windows choose to enable iSCSI, and type in the dynamic address field type in the IP of Windows machine, confirm.</p>
+<p>After that head on to <strong>Datastores</strong> tab and choose <strong>Add Datastore</strong> to create new VMFS datastore, point it to the Windows datastore and <!-- raw HTML omitted -->create your<!-- raw HTML omitted --> datastore.</p>
+<p>That’s it, you can use newly created datastore as it was the <!-- raw HTML omitted -->locally<!-- raw HTML omitted --> attached disk.</p>
+<!-- raw HTML omitted -->
+<p><a href="https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/ESXi-add-iSCSI-and-create-datastore.gif?fit=1844%2C962&amp;ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->ESXi adding iSCSI disk and creating datastore<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="you-can-obviously-use-this-configuration-in-any-different-scenarios">You can obviously use this configuration in any different scenarios</h2>
+<p>Since having <!-- raw HTML omitted -->the <!-- raw HTML omitted -->possibility of using Windows as <!-- raw HTML omitted -->iSCSI<!-- raw HTML omitted --> target is not that very popular, I think using ESXi with attached iSCSI datastores can be an easy and cheap way of making more space for your VMs.</p>
+<p>Yet this non-typical topic allowed me to complete this very strange situation within <!-- raw HTML omitted -->a <!-- raw HTML omitted -->relatively short and easy way.</p>
+<p>Have you found yourself? Do you know any other means of achieving <!-- raw HTML omitted -->the <!-- raw HTML omitted -->same goals? Please let me know!</p>
+<h2 id="how8217s-my-story-ended">How’s my story ended?</h2>
+<p>After connecting Windows Server to vSphere with <!-- raw HTML omitted -->the <!-- raw HTML omitted -->iSCSI disk, I was able to create the datastore. I then copied the massive VM to it and replugged Win server to the other ESXi server. Once connected and mounted the iSCSI disk – I was able to register the VM.</p>
+<p>Hit the start button, choose the VM was copied and boom – I had a working VM directly from the external disks. From that point on I was able to install <!-- raw HTML omitted -->the <!-- raw HTML omitted -->backup agent on it and back it up directly to the tape.</p>
+<p>Problem solved! Yay!</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

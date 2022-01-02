@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>fullname - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/fullname/</link>
+        <description>fullname - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 21 Oct 2017 14:03:58 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/fullname/" rel="self" type="application/rss+xml" /><item>
+    <title>Powershell – resolve full names to usernames from CSV file</title>
+    <link>http://kprocyszyn.github.io/powershell-resolve-full-names-usernames-csv-file/</link>
+    <pubDate>Sat, 21 Oct 2017 14:03:58 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-resolve-full-names-usernames-csv-file/</guid>
+    <description><![CDATA[It’s unbelievable how long it took me to figure out this simple Powershell script, but yet it does the trick :).
+Often you receive a request to do a certain action with a bunch of accounts, and (obviously) the list provided contains the full names rather usernames. Pain to do it manually, but yet we can utilise Powershell here.
+What you need: CSV file, with only one column, and the header of the column must be called “Name”, if you prefer to use something different, simply amend Name in line 6 to reflect your header.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>trust - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/trust/</link>
+        <description>trust - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Jul 2016 19:49:01 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/trust/" rel="self" type="application/rss+xml" /><item>
+    <title>Rely</title>
+    <link>http://kprocyszyn.github.io/rely/</link>
+    <pubDate>Thu, 28 Jul 2016 19:49:01 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/rely/</guid>
+    <description><![CDATA[Trust, hope, relationship. Words which make us feel good, because we can rely on others.
+I remember when sometime ago, I needed to push a new software to about 50 computers. As always, with that kind of operation, there was a very limited time to do this.
+In normal situation, there is deployment solution in place – a server which distributes the software in an automated way. Obviously, as an administrator I need to prepare the whole process – finding installers, commands and switches for these software and even writing scripts.]]></description>
+</item></channel>
+</rss>

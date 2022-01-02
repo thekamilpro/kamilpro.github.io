@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#5] – Providers - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#5] – Providers" />
+<meta property="og:description" content="Exercises  Create a folder in root of C: with the name of PowerShell Create a file inside the folder with the name of your choice and no content Retrieve all items from Env: drive Check the version of Notepad.exe in Windows directory Discover current Windows build version by registry property: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion  Notes from the lesson # Provider allows to access some data storage (e.g. File system, registry, remote system, Active Directory) # This concept might sound a bit abstract at first, but becomes very straight forward once you&#39;ve used it for a while # Provider once connected to the data storage, kind of &#34;mounts&#34; it like a network drive, allowing to browse and manage it # Once the storage is mounted PowerShell creates so called PSDrive # Let&#39;s review available providers Get-Psprovider # Let&#39;s review some PSDrives Get-PSDrive # A quick refresher how file system is organised: Drives, Folders, Files # Since PowerShell connects to many different file data storages, it uses the generic term Item and specifies with type." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-5-providers/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-08-04T10:55:00+00:00" />
+<meta property="article:modified_time" content="2020-08-04T10:55:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#5] – Providers"/>
+<meta name="twitter:description" content="Exercises  Create a folder in root of C: with the name of PowerShell Create a file inside the folder with the name of your choice and no content Retrieve all items from Env: drive Check the version of Notepad.exe in Windows directory Discover current Windows build version by registry property: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion  Notes from the lesson # Provider allows to access some data storage (e.g. File system, registry, remote system, Active Directory) # This concept might sound a bit abstract at first, but becomes very straight forward once you&#39;ve used it for a while # Provider once connected to the data storage, kind of &#34;mounts&#34; it like a network drive, allowing to browse and manage it # Once the storage is mounted PowerShell creates so called PSDrive # Let&#39;s review available providers Get-Psprovider # Let&#39;s review some PSDrives Get-PSDrive # A quick refresher how file system is organised: Drives, Folders, Files # Since PowerShell connects to many different file data storages, it uses the generic term Item and specifies with type."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-5-providers/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-4-pipeline/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#5] – Providers",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-5-providers\/"
+        },"genre": "post","keywords": "course, powershell, providers, ps drive, registry","wordcount":  418 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-5-providers\/","datePublished": "2020-08-04T10:55:00+00:00","dateModified": "2020-08-04T10:55:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#5] – Providers</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/MQ0hbnD8ERE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>Create a folder in root of C: with the name of PowerShell</li>
+<li>Create a file inside the folder with the name of your choice and no content</li>
+<li>Retrieve all items from Env: drive</li>
+<li>Check the version of Notepad.exe in Windows directory</li>
+<li>Discover current Windows build version by registry property: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion</li>
+</ul>
+<h2 id="notes-from-the-lesson">Notes from the lesson</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c"># Provider allows to access some data storage (e.g. File system, registry, remote system, Active Directory)</span>
+
+<span class="c"># This concept might sound a bit abstract at first, but becomes very straight forward once you&#39;ve used it for a while</span>
+
+<span class="c"># Provider once connected to the data storage, kind of &#34;mounts&#34; it like a network drive, allowing to browse and manage it</span>
+
+<span class="c"># Once the storage is mounted PowerShell creates so called PSDrive</span>
+
+<span class="c"># Let&#39;s review available providers</span>
+<span class="nb">Get-Psprovider</span>
+
+<span class="c"># Let&#39;s review some PSDrives</span>
+<span class="nb">Get-PSDrive</span>
+
+<span class="c"># A quick refresher how file system is organised: Drives, Folders, Files</span>
+
+<span class="c"># Since PowerShell connects to many different file data storages, it uses the generic term Item and specifies with type. Thus a folder is an Item of Type Directory, same as Registry key, it&#39;s best described in the help:</span>
+<span class="n">Help</span> <span class="nb">New-Item</span> <span class="n">-full</span>
+
+<span class="c">#We have three main nouns we&#39;re working with:</span>
+	<span class="p">-</span> <span class="n">Item</span> <span class="n">-managing</span> <span class="n">files</span><span class="p">,</span> <span class="n">folders</span><span class="p">,</span> <span class="n">registry</span> <span class="n">keys</span><span class="p">,</span> <span class="n">certificates</span> <span class="n">etc</span><span class="p">.</span>
+	<span class="p">-</span> <span class="n">ItemProperty</span> <span class="p">-</span> <span class="nb">Get-ItemProperty</span> <span class="n">c:</span><span class="p">\</span><span class="n">windows</span><span class="p">\</span><span class="n">explorer</span><span class="p">.</span><span class="n">exe</span> <span class="p">|</span> <span class="nb">Format-List</span> <span class="p">*</span>
+	<span class="p">-</span> <span class="n">ChildItem</span> <span class="p">-</span> <span class="n">lists</span> <span class="n">content</span> <span class="n">of</span> <span class="n">the</span> <span class="n">directory</span> <span class="p">-</span> <span class="nb">Get-ChildItem</span> <span class="n">c:</span><span class="p">\</span><span class="n">Windows</span>
+
+<span class="c"># If you&#39;ve used other shells in the past</span>
+<span class="c"># You change directories by using Set-Location, however CD is an alias to the command</span>
+<span class="c"># And since it&#39;s PowerShell, you&#39;re not only limited to file system</span>
+
+<span class="c"># You can create a new directory with New-Item -Name Folder -Type Directory, however you can use MKDIR</span>
+
+<span class="c"># You can list a content of current directory with Get-ChildItem, however DIR, and LS are also available</span>
+
+<span class="c"># You can list a content of a file with Get-Content, or you can use CAT</span>
+
+<span class="c"># Let&#39;s put some of what we&#39;ve seen into practice</span>
+
+<span class="c"># File operations</span>
+<span class="nb">New-Item</span> <span class="n">-Name</span> <span class="n">Temp</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Path</span> <span class="n">c:</span><span class="p">\</span>
+
+<span class="nb">Set-Location</span> <span class="n">C:</span><span class="p">\</span><span class="n">Temp</span>
+
+<span class="nb">new-item</span> <span class="n">-Type</span> <span class="n">File</span> <span class="n">-Name</span> <span class="n">file1</span> <span class="n">-Value</span> <span class="s2">&#34;Kamil&#34;</span>
+
+ <span class="nb">new-item</span> <span class="n">-Type</span> <span class="n">File</span> <span class="n">-Name</span> <span class="n">file2</span> <span class="n">-Value</span> <span class="s2">&#34;Kamil&#34;</span>
+
+<span class="nb">Get-ChildItem</span>
+
+<span class="nb">Get-Content</span> <span class="n">file2</span>
+
+<span class="c">#Certificate</span>
+<span class="nb">Get-ChildItem</span> <span class="n">Cert</span><span class="err">:</span><span class="p">\</span><span class="n">CurrentUser</span><span class="p">\</span><span class="n">My</span><span class="p">\</span>
+
+<span class="c"># Exercises</span>
+	<span class="n">1</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">folder</span> <span class="k">in</span> <span class="n">root</span> <span class="n">of</span> <span class="n">C:</span> <span class="n">with</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">PowerShell</span>
+	<span class="n">2</span><span class="p">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">file</span> <span class="n">inside</span> <span class="n">the</span> <span class="n">folder</span> <span class="n">with</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">your</span> <span class="n">choice</span> <span class="n">and</span> <span class="n">no</span> <span class="n">content</span>
+	<span class="n">3</span><span class="p">.</span> <span class="n">Retrieve</span> <span class="n">all</span> <span class="n">items</span> <span class="n">from</span> <span class="n">Env</span><span class="err">:</span> <span class="n">drive</span>
+	<span class="n">4</span><span class="p">.</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">version</span> <span class="n">of</span> <span class="n">Notepad</span><span class="p">.</span><span class="n">exe</span> <span class="k">in</span> <span class="n">Windows</span> <span class="n">directory</span>
+	<span class="n">5</span><span class="p">.</span> <span class="n">Discover</span> <span class="n">current</span> <span class="n">Windows</span> <span class="n">build</span> <span class="n">version</span> <span class="n">by</span> <span class="n">registry</span> <span class="n">property</span><span class="err">:</span> <span class="n">HKEY_LOCAL_MACHINE</span><span class="p">\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Windows</span> <span class="n">NT</span><span class="p">\</span><span class="n">CurrentVersion</span>
+	<span class="p">```</span></code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

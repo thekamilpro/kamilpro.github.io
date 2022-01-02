@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation" />
+<meta property="og:description" content="In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
+We will then use WMI Explorergraphical tool to ease discovering all possible classes and instances that WMI provides.
+Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-05T16:27:10+00:00" />
+<meta property="article:modified_time" content="2020-09-05T16:27:10+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation"/>
+<meta name="twitter:description" content="In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
+We will then use WMI Explorergraphical tool to ease discovering all possible classes and instances that WMI provides.
+Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-12-wmi-windows-management-instrumentation\/"
+        },"genre": "post","keywords": "course, filter, get-ciminstance, get-wmiobject, gpo, powershell, training, windows management instrumentation, wmi","wordcount":  310 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-12-wmi-windows-management-instrumentation\/","datePublished": "2020-09-05T16:27:10+00:00","dateModified": "2020-09-05T16:27:10+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/_NadlLhLldY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.</p>
+<p>We will then use <!-- raw HTML omitted -->WMI Explorer<!-- raw HTML omitted --> graphical tool to ease discovering all possible classes and instances that WMI provides.</p>
+<p>Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it.</p>
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>There’s a WMI class that lists all the installed software – find it and list all currently installed software with PowerShell. Feel free to use WMI explorer to help you discover the right class.</li>
+<li>We often need to find where the software is installed. Use the class from previous step, to display these pieces of information: Name, version and installation directory</li>
+<li>Open a Notepad application and leave it running. Discover methods of  Win32_Process class. Find a method that allows you to kill process, and use it to close Notepad application.</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c"># Slides</span>
+<span class="c"># Allows to retrieve and manage information of Windows</span>
+<span class="c"># Is Microsoft&#39;s implementation of Web-Based Enterprise Management (WBEM) and Common Information Model (CIM)</span>
+<span class="c"># Since Windows 2000</span>
+<span class="c"># Organised in namespaces e.g. Root\CIMv2 contians all information about Windows and hardware and than classes </span>
+<span class="c"># It&#39;s bit obscure</span>
+
+<span class="c"># Let&#39;s look at an example</span>
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_BIOS</span>
+
+<span class="c"># WMI Explorer to rescue - https://github.com/vinaypamnani/wmie2/releases</span>
+
+<span class="c"># Let&#39;s browse a bit here</span>
+
+<span class="nb">Get-CimClass</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span><span class="p">|</span> <span class="nb">FL </span><span class="p">*</span>
+
+<span class="c">#Let&#39;s call a method</span>
+<span class="nb">Get-CimClass</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span>
+
+<span class="nb">Invoke-CimMethod</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span> <span class="n">-MethodName</span> <span class="n">reboot</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">CIMV2</span> <span class="n">-ClassName</span> <span class="n">Win32_Service</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">SecurityCenter2</span> <span class="n">-ClassName</span> <span class="n">AntiVirusProduct</span>
+
+<span class="c"># Filters and GPO</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Filter</span> <span class="s1">&#39;Version like &#34;10.%&#34; and ProductType=&#34;2&#34;&#39;</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span>
+
+<span class="nb">select </span><span class="p">*</span> <span class="n">from</span> <span class="n">Win32_OperatingSystem</span> <span class="nb">where </span><span class="n">Version</span> <span class="n">like</span> <span class="s2">&#34;10.%&#34;</span> <span class="n">and</span> <span class="n">ProductType</span><span class="p">=</span><span class="s2">&#34;3&#34;</span>
+
+<span class="c"># CIM VS WMI</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">SecurityCenter2</span> <span class="n">-ClassName</span> <span class="n">AntiVirusProduct</span>
+<span class="nb">Get-WmiObject</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">/</span><span class="n">SecurityCenter2</span> <span class="n">-Class</span> <span class="n">AntiVirusProduct</span>
+</code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>zabbix - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/zabbix/</link>
+        <description>zabbix - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 Jul 2019 06:45:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/zabbix/" rel="self" type="application/rss+xml" /><item>
+    <title>Monitoring – why you need it</title>
+    <link>http://kprocyszyn.github.io/monitoring-why-you-need-it/</link>
+    <pubDate>Tue, 09 Jul 2019 06:45:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/monitoring-why-you-need-it/</guid>
+    <description><![CDATA[It’s Friday. 5.20PM. So close to the long weekend. Monday is bank holiday – thus three days off. Very happy Friday.
+You’re going to the server room to check some minor details. Upon opening the main door, you can feel that cold breeze and characteristic noise of hundreds of spinning fans. You quickly skim through all flashy lights, as it’s a good habit.
+And then you notice there’s something wrong. An orange light – why is there an orange light?]]></description>
+</item></channel>
+</rss>

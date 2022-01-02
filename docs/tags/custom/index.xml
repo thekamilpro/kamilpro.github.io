@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>custom - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/custom/</link>
+        <description>custom - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/custom/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#15] – Scripting part 2 – IF and psobject</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</link>
+    <pubDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
+    <description><![CDATA[In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
+Then we will retrieve OS information with the help of WMI and display it on the screen with Write-Host.
+Although using Write-Host is easy to use, it doesn’t really allow us to do very much e.g. we cannot export information to the CSV, therefore we change it and start using custom PSObject – that way our script will start returning information like a regular PowerShell command.]]></description>
+</item><item>
+    <title>Add any drivers to Windows – on example of GPU drivers</title>
+    <link>http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</link>
+    <pubDate>Mon, 29 May 2017 18:53:05 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</guid>
+    <description><![CDATA[Today we are going to inject drivers into the Windows image with the help of built-in tools in Windows.
+What do you need? Just a few things:
+ Any hardware to which you’d like drivers to be added to Reference computer with the hardware attached to it Drivers Windows image which is going to be deployed  I think there’s not much to explain, so let’s analyse the actual process.]]></description>
+</item></channel>
+</rss>

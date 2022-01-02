@@ -1,7 +1,77 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - My New Hugo Site</title>
+        <title>Categories - Category - Kamil Procyszyn</title>
         <link>http://kprocyszyn.github.io/categories/</link>
-        <description>Categories - Category - My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://kprocyszyn.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <description>Categories - Category - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>IT</title>
+    <link>http://kprocyszyn.github.io/categories/it/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/it/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>PowerShell for IT Professionals</title>
+    <link>http://kprocyszyn.github.io/categories/powershell-for-it-professionals/</link>
+    <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/powershell-for-it-professionals/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Deployment</title>
+    <link>http://kprocyszyn.github.io/categories/deployment/</link>
+    <pubDate>Sun, 15 Mar 2020 14:25:59 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/deployment/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Windows</title>
+    <link>http://kprocyszyn.github.io/categories/windows/</link>
+    <pubDate>Sun, 15 Mar 2020 14:25:59 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/windows/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Server</title>
+    <link>http://kprocyszyn.github.io/categories/server/</link>
+    <pubDate>Sun, 08 Mar 2020 10:52:17 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/server/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Powershell</title>
+    <link>http://kprocyszyn.github.io/categories/powershell/</link>
+    <pubDate>Sun, 01 Dec 2019 18:27:18 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/powershell/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Tech</title>
+    <link>http://kprocyszyn.github.io/categories/tech/</link>
+    <pubDate>Tue, 25 Jun 2019 07:50:11 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/tech/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Me &amp;amp; People</title>
+    <link>http://kprocyszyn.github.io/categories/me-amp-people/</link>
+    <pubDate>Tue, 01 Jan 2019 13:42:49 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/me-amp-people/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>ESXi</title>
+    <link>http://kprocyszyn.github.io/categories/esxi/</link>
+    <pubDate>Wed, 15 Aug 2018 17:54:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/esxi/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Uncategorised</title>
+    <link>http://kprocyszyn.github.io/categories/uncategorised/</link>
+    <pubDate>Wed, 15 Aug 2018 17:54:47 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/categories/uncategorised/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#18] – Working with text strings - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#18] – Working with text strings" />
+<meta property="og:description" content="Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
+In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
+PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-03T17:33:18+00:00" />
+<meta property="article:modified_time" content="2020-11-03T17:33:18+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#18] – Working with text strings"/>
+<meta name="twitter:description" content="Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
+In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
+PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-19-websites-and-apis/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#18] – Working with text strings",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-18-working-with-text-strings\/"
+        },"genre": "post","keywords": "course, creation, grep, offset, powershell, regex, select-string, string, text, time, training, username, video, vssadmin, w32tm","wordcount":  395 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-18-working-with-text-strings\/","datePublished": "2020-11-03T17:33:18+00:00","dateModified": "2020-11-03T17:33:18+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#18] – Working with text strings</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ZZcHBTUhl5w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.</p>
+<p>In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.</p>
+<p>PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.g. error.</p>
+<p>Finally, we will have a go with regular expressions / regex and see how this can be used to find out a pattern of text, rather than a specific word.</p>
+<h2 id="script">Script</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c"># String creation</span>
+<span class="nv">$FirstName</span> <span class="p">=</span> <span class="s2">&#34;Kamil&#34;</span>
+<span class="nv">$Surname</span> <span class="p">=</span> <span class="s2">&#34;Procyszyn&#34;</span>
+
+<span class="c"># String concatenation</span>
+<span class="s2">&#34;Hi, my name is &#34;</span> <span class="p">+</span> <span class="nv">$FirstName</span> <span class="p">+</span> <span class="s2">&#34; and my surname is &#34;</span> <span class="p">+</span> <span class="nv">$Surname</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()</span> <span class="p">+</span> <span class="s2">&#34;, it&#39;s nice to meet you.&#34;</span>
+
+<span class="c"># String interpolation</span>
+<span class="s2">&#34;Hi, my name is $FirstName and my surname is </span><span class="p">$(</span><span class="nv">$Surname</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">())</span><span class="s2">, it&#39;s nice to meet you.&#34;</span>
+
+<span class="c"># String with -f</span>
+<span class="s2">&#34;Hi, my name is {0} and my surname is {1}, it&#39;s nice to meet you.&#34;</span> <span class="o">-f</span> <span class="nv">$FirstName</span><span class="p">,</span> <span class="nv">$Surname</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()</span>
+
+<span class="c"># Quotation marks</span>
+<span class="s2">&#34;$FirstName $SurName&#34;</span>
+<span class="s1">&#39;$FirstName $SurName&#39;</span>
+<span class="s1">&#39;{0} {1}&#39;</span> <span class="o">-f</span> <span class="nv">$FirstName</span><span class="p">,</span> <span class="nv">$Surname</span>
+
+<span class="c"># Joining string</span>
+<span class="nv">$FullName</span> <span class="p">=</span> <span class="s2">&#34;$FirstName $Surname&#34;</span>
+<span class="nv">$FullName</span>
+
+<span class="c"># String as array</span>
+<span class="nv">$FirstName</span><span class="p">&amp;</span><span class="c">#91;0]</span>
+<span class="nv">$FirstName</span><span class="p">&amp;</span><span class="c">#91;-1]</span>
+<span class="nv">$FirstName</span><span class="p">&amp;</span><span class="c">#91;0..2]</span>
+
+<span class="c"># String methods</span>
+<span class="nv">$FirstName</span> <span class="p">|</span> <span class="nb">Get-Member</span>
+<span class="nv">$FirstName</span><span class="p">.</span><span class="n">ToLower</span><span class="p">()</span>
+
+<span class="nv">$FullName</span>
+<span class="nv">$FullName</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nv">$index</span> <span class="p">=</span> <span class="nv">$FullName</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nv">$FullName</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="nv">$index</span> <span class="p">+</span> <span class="n">1</span><span class="p">)</span>
+
+<span class="c">#Creating a username with three first letters of firstname, followed by underscore, followed by surname from full name</span>
+<span class="nv">$FullName</span>
+<span class="nv">$FullName</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nv">$index</span> <span class="p">=</span> <span class="nv">$FullName</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="nv">$Fir</span> <span class="p">=</span> <span class="nv">$FullName</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="n">3</span><span class="p">)</span>
+<span class="nv">$Sur</span> <span class="p">=</span> <span class="nv">$FullName</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="nv">$index</span> <span class="p">+</span> <span class="n">1</span><span class="p">)</span>
+<span class="nv">$Username</span> <span class="p">=</span> <span class="s2">&#34;{0}_{1}&#34;</span> <span class="o">-f</span> <span class="nv">$Fir</span><span class="p">,</span> <span class="nv">$Sur</span>
+<span class="nv">$Username</span>
+
+<span class="c">### Select-String - Grep of PowerShell</span>
+<span class="c">### Don&#39;t confuse with Select/Select-Object</span>
+
+<span class="c"># Finding specific prase</span>
+<span class="n">vssadmin</span> <span class="n">list</span> <span class="n">shadows</span>
+<span class="n">vssadmin</span> <span class="n">list</span> <span class="n">shadows</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="s1">&#39;creation time:&#39;</span>
+<span class="n">vssadmin</span> <span class="n">list</span> <span class="n">shadows</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="s1">&#39;creation time:&#39;</span> <span class="n">-Context</span> <span class="n">1</span>
+<span class="n">vssadmin</span> <span class="n">list</span> <span class="n">shadows</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="s1">&#39;creation time:&#39;</span> <span class="n">-Context</span> <span class="n">0</span><span class="p">,</span><span class="n">4</span>
+<span class="n">vssadmin</span> <span class="n">list</span> <span class="n">shadows</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="s1">&#39;creation time:&#39;</span> <span class="n">-Context</span> <span class="n">1</span><span class="p">,</span><span class="n">4</span>
+
+<span class="c"># Same with text files</span>
+<span class="nb">Get-Content</span> <span class="n">C:</span><span class="p">\</span><span class="n">Windows10Upgrade</span><span class="p">\</span><span class="n">upgrader_default</span><span class="p">.</span><span class="n">log</span>
+<span class="nb">Get-Content</span> <span class="n">C:</span><span class="p">\</span><span class="n">Windows10Upgrade</span><span class="p">\</span><span class="n">upgrader_default</span><span class="p">.</span><span class="n">log</span> <span class="p">|</span> <span class="nb">Measure-Object</span>
+<span class="nb">Get-Content</span> <span class="n">C:</span><span class="p">\</span><span class="n">Windows10Upgrade</span><span class="p">\</span><span class="n">upgrader_default</span><span class="p">.</span><span class="n">log</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="s2">&#34;Error&#34;</span>
+
+<span class="c"># Practical example - stripping time offset from w32tm</span>
+<span class="nv">$time</span> <span class="p">=</span> <span class="n">w32tm</span> <span class="p">/</span><span class="n">stripchart</span> <span class="p">/</span><span class="n">computer</span><span class="err">:</span><span class="n">time</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">com</span> <span class="p">/</span><span class="n">dataonly</span> <span class="p">/</span><span class="n">samples</span><span class="err">:</span><span class="n">1</span>
+<span class="nv">$time</span>
+<span class="nv">$time</span><span class="p">&amp;</span><span class="c">#91;-1]</span>
+<span class="nv">$time</span><span class="p">&amp;</span><span class="c">#91;-1].Split(&#39;,&#39;)</span>
+<span class="nv">$time</span><span class="p">&amp;</span><span class="c">#91;-1].Split(&#39;,&#39;)&amp;#91;-1]</span>
+<span class="nv">$offset</span> <span class="p">=</span> <span class="nv">$time</span><span class="p">&amp;</span><span class="c">#91;-1].Split(&#39;,&#39;)&amp;#91;-1]</span>
+<span class="nv">$offset</span>
+<span class="nv">$offset</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="nv">$offset</span> <span class="p">=</span> <span class="nv">$offset</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="n">0</span><span class="p">,</span> <span class="nv">$offset</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))</span>
+<span class="nv">$offset</span><span class="p">.</span><span class="n">Trim</span><span class="p">()</span>
+
+<span class="c"># Regex - Regular expressions</span>
+<span class="nv">$time</span> <span class="p">|</span> <span class="nb">Select-String</span> <span class="n">-Pattern</span> <span class="s1">&#39;(\d+\.\d+s)$&#39;</span>
+<span class="c"># We can check this website: https://regexr.com/</span>
+</code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

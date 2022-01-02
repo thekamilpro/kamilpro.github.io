@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>select-object - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/select-object/</link>
+        <description>select-object - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Aug 2020 12:00:32 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/select-object/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#6] – Filtering output</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/</link>
+    <pubDate>Fri, 07 Aug 2020 12:00:32 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/</guid>
+    <description><![CDATA[Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.]]></description>
+</item></channel>
+</rss>

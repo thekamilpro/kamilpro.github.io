@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>update - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/update/</link>
+        <description>update - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 21 Aug 2016 19:47:22 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/update/" rel="self" type="application/rss+xml" /><item>
+    <title>I’m really missing time before the Internet.</title>
+    <link>http://kprocyszyn.github.io/im-really-missing-time-internet/</link>
+    <pubDate>Sun, 21 Aug 2016 19:47:22 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/im-really-missing-time-internet/</guid>
+    <description><![CDATA[Because software was working without the need of downloading tons of patches. Why do we actually need to update software in the first place?
+In the past, the only way to obtain a software was by delivering the physical media to the recipient. There was a cost of media itself and shipment (and probably much more of which I’m not aware of), it couldn’t be cheap. While comparing to the current times, it is just a matter of uploading an update to the server and push to users.]]></description>
+</item></channel>
+</rss>

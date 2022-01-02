@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>string - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/string/</link>
+        <description>string - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Nov 2020 17:33:18 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/string/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#18] – Working with text strings</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</link>
+    <pubDate>Tue, 03 Nov 2020 17:33:18 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</guid>
+    <description><![CDATA[Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
+In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
+PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.]]></description>
+</item></channel>
+</rss>

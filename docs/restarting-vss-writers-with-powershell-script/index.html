@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Restarting VSS Writers with PowerShell script - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="Restarting VSS Writers with PowerShell script" />
+<meta property="og:description" content="VSS Writers are responsible for backups – if they stop working, then backups might fail. The solution to that is restarting VSS Writers, but the problem here is that there are many, and at least out of the box, there’s no mechanism to make this automatic… but there’s PowerShell.
+I’m not interested in your code, I just want to restart these VSS Writers In that case, head on to: mygithub, use the code and run:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/restarting-vss-writers-with-powershell-script/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-12-01T18:27:18+00:00" />
+<meta property="article:modified_time" content="2019-12-01T18:27:18+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Restarting VSS Writers with PowerShell script"/>
+<meta name="twitter:description" content="VSS Writers are responsible for backups – if they stop working, then backups might fail. The solution to that is restarting VSS Writers, but the problem here is that there are many, and at least out of the box, there’s no mechanism to make this automatic… but there’s PowerShell.
+I’m not interested in your code, I just want to restart these VSS Writers In that case, head on to: mygithub, use the code and run:"/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/restarting-vss-writers-with-powershell-script/" /><link rel="prev" href="http://kprocyszyn.github.io/monitoring-why-you-need-it/" /><link rel="next" href="http://kprocyszyn.github.io/prepare-hyper-v-template-of-windows-server-2016-2019/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Restarting VSS Writers with PowerShell script",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/restarting-vss-writers-with-powershell-script\/"
+        },"genre": "post","keywords": "backup, feat, powershell, regex, select-string, vss writer, vssadmin, vsswriter","wordcount":  735 ,
+        "url": "http:\/\/kprocyszyn.github.io\/restarting-vss-writers-with-powershell-script\/","datePublished": "2019-12-01T18:27:18+00:00","dateModified": "2019-12-01T18:27:18+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Restarting VSS Writers with PowerShell script</h1><div class="content" id="content"><p>VSS Writers are responsible for backups – if they stop working, then backups might fail. The solution to that is restarting VSS Writers, but the problem here is that there are many, and at least out of the box, there’s no mechanism to make this automatic… but there’s PowerShell.</p>
+<h2 id="i8217m-not-interested-in-your-code-i-just-want-to-restart-these-vss-writers">I’m not interested in your code, I just want to restart these VSS Writers</h2>
+<p>In that case, head on to: <a href="https://github.com/kprocyszyn/tools/tree/master/KPVSSWriter" target="_blank" rel="noopener noreffer">mygithub</a>, use the code and run:</p>
+<!-- raw HTML omitted -->
+<p>That function will go ahead, retrieve all failed VSS Writers, and restart associated services with them. If that won’t help, then you probably need to reboot the server.<!-- raw HTML omitted --></p>
+<p><a href="https://i0.wp.com/kamilpro.com/wp-content/uploads/2020/07/KPVssWriter.gif?ssl=1" target="_blank" rel="noopener noreffer"><!-- raw HTML omitted --></a><!-- raw HTML omitted -->Get-KPVssWriter<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2 id="let8217s-talk-powershell">Let’s talk PowerShell</h2>
+<p>The source code is available on <a href="https://github.com/kprocyszyn/tools/tree/master/KPVSSWriter" target="_blank" rel="noopener noreffer">GitHub</a>.</p>
+<p>As far as VSS Writers go, there were a few issues needed to be addressed for the function:</p>
+<ul>
+<li>the VssAdmin.exe tool is CMD only, and returns only strings.</li>
+<li>There’s no filter in VssAdmin, thus it always returns all writers</li>
+<li>The writers are associated with many Windows Services, and it’s not always obvious which service is responsible for given VSS Writer</li>
+</ul>
+<p>Therefore I’ve written a couple of functions:</p>
+<ul>
+<li>Get-KPVssWriter – that function will convert the output string from VssAdmin into a PowerShell objects + it can filter results by state (at the moment Stable or Failed).</li>
+<li>Restart-KPVssWriter – this function takes the name of the VSS writer and restarts required service with it. It has hard-coded names of VSS writers with associated services.</li>
+</ul>
+<p>How do you make a use of these?</p>
+<p>You pipe results from Get function, to Restart function thus:</p>
+<!-- raw HTML omitted -->
+<p>will retrieve all failed writers and restart them. Let’s look into actual code.</p>
+<h3 id="get-kpvsswriter">Get-KPVssWriter</h3>
+<p>First is to run VSSAdmin and start converting the output into PowerShell object:</p>
+<h4 id="select-string">Select-String</h4>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>These two lines will convert the output from vssadmin into PowerShell object. The Select-String really shines here as:</p>
+<ul>
+<li>-Pattern parameter allows it to search for a specific phrase. In that case I’m looking for ‘Writer name:’ as each listed writer starts with that line.</li>
+<li>-Context 0,4 tells PowerShell that for each pattern (line) you found, match 0 line prior to it, and 4 past it.</li>
+</ul>
+<p>Thus if we look for this sample:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>You can see that there’s pattern: Each Writer Name is followed by four line of text, and then the next one appears.</p>
+<p>Select-String will then create an object for each pattern found, with properties of Line, Context.PostContext and Context.PreContext.</p>
+<p>And since we know that:</p>
+<p>Line = pattern found,</p>
+<p>Context.PostContext = an array of each line found past pattern</p>
+<p>Context.PreContext. = an array of each line found prior the pattern</p>
+<p>It’s very easy to create the object, but first we need to remove the leftovers of the string.</p>
+<h4 id="replace">Replace</h4>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>For every object generated by Select-String, I will assign a specific variable, and run -replace to remove unnecessary characters. Replace can also take regex , making it super effective while working with text.</p>
+<h4 id="pscustomobject">PsCustomObject</h4>
+<p>The final step is to assembly all variables created in previous step into a PowerShell object:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Since the main purpose of using this function is to restart failed, I thought it would be worth to add a parameter for filtering out VSS Writers based on status, thus this simple if statement which amends what will be outputed by the function:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>There we go, the analogue application has been converted into a digital form (LOL), we can go ahead now and work on the actual restarts.</p>
+<h3 id="restart-kpvsswriter">Restart-KPVssWriter</h3>
+<p>This function will take the name of the VSS writer that requires restart, match Windows service to it, and restart the service.</p>
+<h4 id="switch">Switch</h4>
+<p>PowerShell has a beatifull command – Switch – that eliminates the need of writing complex if statements. Let’s have a look:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Hell yeah, that would be quite a if statement. Instead of that, switch will match the name on the left, and execute the code to the right.</p>
+<p>The last line is interesting, default – if switch won’t match the name, it will execute that one instead. I’m casting that into $null.</p>
+<h4 id="if">If</h4>
+<p>The final step is to restart service:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Simple restart of service if it was matches earlier on, or just write warning if it wasn’t found.</p>
+<h2 id="happy-ever-after">Happy ever after</h2>
+<p>I hope you found this useful. What can be done here is e.g. put the script into a scheduled task to run hourly, and hopefully you will have one problem less to worry about – as nobody likes to see failed backups on Monday morning.</p>
+<p>Photo by <a href="https://unsplash.com/@jason_yu?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreffer">Jason Yu</a> on <a href="https://unsplash.com/s/photos/writer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreffer">Unsplash</a></p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

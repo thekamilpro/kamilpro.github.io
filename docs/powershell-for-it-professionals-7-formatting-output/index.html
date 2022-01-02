@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#7] – Formatting output - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#7] – Formatting output" />
+<meta property="og:description" content="Exercises Send output of any commandlet, e.g. get service to Printer
+Lesson notes # So far, we&#39;ve been using default PowerShell behaviour for formatting output # Although in the last lesson we did filtering data with Where-Object and Select-Object # We didn&#39;t really focus on how data is presented on the screen. Let&#39;s see what can be done here. # Let&#39;s have a look at local  Get-LocalGroup Get-LocalGroup | Format-List #Alias is FL #Like with Select-Object, we can specify properties we&#39;re after Get-LocalGroup | fl -Property name,sid #Another example when List might be easier to read then table Get-CimInstance win32_ComputerSystem ## Format Table #ipconfig." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-7-formatting-output/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-08-11T12:35:44+00:00" />
+<meta property="article:modified_time" content="2020-08-11T12:35:44+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#7] – Formatting output"/>
+<meta name="twitter:description" content="Exercises Send output of any commandlet, e.g. get service to Printer
+Lesson notes # So far, we&#39;ve been using default PowerShell behaviour for formatting output # Although in the last lesson we did filtering data with Where-Object and Select-Object # We didn&#39;t really focus on how data is presented on the screen. Let&#39;s see what can be done here. # Let&#39;s have a look at local  Get-LocalGroup Get-LocalGroup | Format-List #Alias is FL #Like with Select-Object, we can specify properties we&#39;re after Get-LocalGroup | fl -Property name,sid #Another example when List might be easier to read then table Get-CimInstance win32_ComputerSystem ## Format Table #ipconfig."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-7-formatting-output/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#7] – Formatting output",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-7-formatting-output\/"
+        },"genre": "post","keywords": "course, fl, format, format-list, format-table, ft, out-gridview, output, powershell","wordcount":  224 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-7-formatting-output\/","datePublished": "2020-08-11T12:35:44+00:00","dateModified": "2020-08-11T12:35:44+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#7] – Formatting output</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xx4vgaB9ujw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="exercises">Exercises</h2>
+<p>Send output of any commandlet, e.g. get service to Printer</p>
+<h2 id="lesson-notes">Lesson notes</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c"># So far, we&#39;ve been using default PowerShell behaviour for formatting output</span>
+<span class="c"># Although in the last lesson we did filtering data with Where-Object and Select-Object</span>
+<span class="c"># We didn&#39;t really focus on how data is presented on the screen. Let&#39;s see what can be done here.</span>
+
+<span class="c"># Let&#39;s have a look at local </span>
+<span class="nb">Get-LocalGroup</span>
+
+<span class="nb">Get-LocalGroup</span> <span class="p">|</span> <span class="nb">Format-List</span>
+
+<span class="c">#Alias is FL</span>
+<span class="c">#Like with Select-Object, we can specify properties we&#39;re after</span>
+<span class="nb">Get-LocalGroup</span> <span class="p">|</span> <span class="nb">fl </span><span class="n">-Property</span> <span class="n">name</span><span class="p">,</span><span class="n">sid</span>
+
+<span class="c">#Another example when List might be easier to read then table</span>
+<span class="nb">Get-CimInstance</span> <span class="n">win32_ComputerSystem</span>
+
+<span class="c">## Format Table</span>
+
+<span class="c">#ipconfig...</span>
+<span class="nb">Get-NetIPConfiguration</span> <span class="n">OR</span> <span class="n">GIP</span>
+
+<span class="nb">Get-NetIPConfiguration</span> <span class="p">|</span> <span class="nb">FT
+</span><span class="nb"></span>
+<span class="n">GIP</span> <span class="p">|</span> <span class="nb">FT </span><span class="n">-Wrap</span>
+
+<span class="n">GIP</span> <span class="p">|</span> <span class="n">-Properties</span> <span class="p">*</span>
+
+<span class="n">GIP</span> <span class="p">|</span> <span class="nb">FT </span><span class="n">-Autosize</span>
+
+
+<span class="c">### Grouping</span>
+
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-GroupBy</span> <span class="n">Status</span>
+
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Status</span>
+
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Status</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-GroupBy</span> <span class="n">Status</span>
+
+<span class="c">### What if I want to show all properties, but they don&#39;t fit on screen</span>
+<span class="n">GIP</span> <span class="p">|</span> <span class="nb">FL </span><span class="p">*</span>
+
+<span class="c"># Or we can display to GUI</span>
+<span class="n">gip</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">Out-GridView</span>
+
+<span class="c">### Speaking of Out...</span>
+<span class="n">by</span> <span class="k">default</span><span class="p">,</span> <span class="n">PowerShell</span> <span class="n">adds</span> <span class="nb">Out-Host</span> <span class="n">to</span> <span class="n">every</span> <span class="n">command</span> <span class="n">you</span> <span class="n">run</span><span class="p">,</span> <span class="n">so</span> <span class="n">that</span> <span class="n">it</span> <span class="n">displays</span> <span class="n">on</span> <span class="n">the</span> <span class="n">screen</span>
+
+<span class="n">But</span> <span class="n">we</span> <span class="n">can</span> <span class="n">Out</span><span class="p">-</span> <span class="n">to</span> <span class="n">some</span> <span class="n">other</span> <span class="n">places</span>
+<span class="nb">Get-Command</span> <span class="n">Out</span><span class="p">-*</span>
+
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Status</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-GroupBy</span> <span class="n">Status</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">c:</span><span class="p">\</span><span class="n">temp</span><span class="p">\</span><span class="n">services</span>
+
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Status</span> <span class="p">|</span>  <span class="nb">ConvertTo-Html</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">c:</span><span class="p">\</span><span class="n">temp</span><span class="p">\</span><span class="n">services</span><span class="p">.</span><span class="n">html</span>
+</code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

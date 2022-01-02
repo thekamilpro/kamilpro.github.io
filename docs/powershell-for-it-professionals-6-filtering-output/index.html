@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>PowerShell for IT Professionals [#6] – Filtering output - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="PowerShell for IT Professionals [#6] – Filtering output" />
+<meta property="og:description" content="Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-08-07T12:00:32+00:00" />
+<meta property="article:modified_time" content="2020-08-07T12:00:32+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PowerShell for IT Professionals [#6] – Filtering output"/>
+<meta name="twitter:description" content="Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_."/>
+<meta name="application-name" content="Kamil Procyszyn">
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/" /><link rel="prev" href="http://kprocyszyn.github.io/powershell-for-it-professionals-5-providers/" /><link rel="next" href="http://kprocyszyn.github.io/powershell-for-it-professionals-7-formatting-output/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "PowerShell for IT Professionals [#6] – Filtering output",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-6-filtering-output\/"
+        },"genre": "post","keywords": "course, filter, powershell, select, select-object, video, where, where-object, youtube","wordcount":  292 ,
+        "url": "http:\/\/kprocyszyn.github.io\/powershell-for-it-professionals-6-filtering-output\/","datePublished": "2020-08-07T12:00:32+00:00","dateModified": "2020-08-07T12:00:32+00:00","publisher": {
+            "@type": "Organization",
+            "name": "Kamil"},"author": {
+                "@type": "Person",
+                "name": "Kamil"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">PowerShell for IT Professionals [#6] – Filtering output</h1><div class="content" id="content">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/oxSGpoL1lQg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>List all services that are stopped</li>
+<li>List all service that are stopped and they name begins with W</li>
+<li>Display only the Display Name of services that stopped and their name begins with W</li>
+</ul>
+<h2 id="lesson-notes">Lesson notes</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="c">### Filtering</span>
+<span class="c"># Some commands accept wild cards in the search or have a filter parameter</span>
+<span class="nb">Get-Service</span> <span class="n">-Name</span> <span class="n">w</span><span class="p">*,</span><span class="n">b</span><span class="p">*</span>
+
+<span class="c">#But there&#39;s more universal method, based on property names</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="n">-Filter</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s1">&#39;running&#39;</span>  <span class="p">}</span>
+
+<span class="c">#So let&#39;s break it down</span>
+<span class="c">#Where-Object allows to filter out the incoming object based on the comparation operator</span>
+<span class="c">#Most popular operators are:</span>
+
+<span class="o">-eq</span> <span class="p">-</span> <span class="n">Equals</span>
+<span class="o">-ne</span> <span class="p">-</span> <span class="n">Not</span> <span class="n">equals</span>
+<span class="o">-gt</span> <span class="p">-</span> <span class="n">Greather</span> <span class="n">than</span>
+<span class="o">-lt</span> <span class="p">-</span> <span class="n">Less</span> <span class="n">then</span>
+<span class="o">-le</span> <span class="p">-</span> <span class="n">Less</span> <span class="n">than</span> <span class="n">or</span> <span class="n">equal</span>
+<span class="o">-ge</span> <span class="p">-</span> <span class="n">Greater</span> <span class="n">than</span> <span class="n">or</span> <span class="n">equal</span>
+<span class="o">-Like</span> 
+<span class="o">-Not</span> <span class="n">like</span>
+
+<span class="c">#There are more many, you can check these help topics:</span>
+<span class="n">Help</span> <span class="n">about_Operators</span>
+<span class="n">Help</span> <span class="n">about_Comparison_Operators</span>
+
+<span class="c">#$_ is current object; it&#39;s what we&#39;re piping in our case Get-Service</span>
+<span class="c"># .Status that follows $_ indicates we&#39;re passing only specific property of the Get-Service object, in this case Status</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">GM
+</span><span class="nb"></span>
+<span class="c">#Let&#39;s talk this through this example once again</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="n">-Filter</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s1">&#39;running&#39;</span>  <span class="p">}</span>
+
+<span class="c">#We can use an alias Where instead of Where-Object</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s1">&#39;running&#39;</span>  <span class="p">}</span>
+
+<span class="c">#I can also link multiple comparissions together with -and -or</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s1">&#39;stopped&#39;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-like</span> <span class="s1">&#39;w*&#39;</span> <span class="p">}</span>
+
+<span class="c">### What if I&#39;d like to choose only specific properties</span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Property</span> <span class="n">DisplayName</span><span class="p">,</span><span class="n">Status</span>
+
+<span class="c"># I can use alias Select instead </span>
+<span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">DisplayName</span><span class="p">,</span><span class="n">Status</span>
+
+<span class="c"># Also allows to access hidden by default properties</span>
+<span class="c"># Let&#39;s find out the path of the program where it&#39;s running from, and when was it lunched</span>
+
+<span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Select </span><span class="p">*</span>
+
+<span class="nb">Get-Path</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">Name</span><span class="p">,</span> <span class="n">Path</span><span class="p">,</span> <span class="n">StartTime</span>
+
+<span class="c">### Always filter left</span>
+</code></pre></div></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

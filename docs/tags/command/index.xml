@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>command - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/command/</link>
+        <description>command - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Oct 2020 18:32:20 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/command/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#17] – Scripting part 4 – parameters, running remotely and formatting</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</link>
+    <pubDate>Mon, 19 Oct 2020 18:32:20 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</guid>
+    <description><![CDATA[In the last part of scripting series, we will make the script to be able to query remote machines, e.g. servers.
+We will also check how to add parameters to the script (and configure the default value of parameter) so that user will able to pass the parameter name like in a standard PowerShell cmdlet.
+Finally, we are going to format the script so that it looks more reliable and make some refactoring so that the logic is simpler.]]></description>
+</item><item>
+    <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</link>
+    <pubDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
+    <description><![CDATA[In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?]]></description>
+</item><item>
+    <title>PowerShell for IT Professionals [#3] – Running Commands</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-2-running-commands/</link>
+    <pubDate>Mon, 27 Jul 2020 19:08:38 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-2-running-commands/</guid>
+    <description><![CDATA[Exercises  Display a list of all services that start with the letter W Display all processes (you might need to use Help to discover the right command. Remember the noun might be singular). Open Notepad (you can simply punch in notepad in the shell)  Display only processes that have a name “Notepad” Once you can there’s only one instance of Notepad running, close it with PowerShell!]]></description>
+</item></channel>
+</rss>

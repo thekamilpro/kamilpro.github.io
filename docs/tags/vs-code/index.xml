@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>vs code - Tag - Kamil Procyszyn</title>
+        <link>http://kprocyszyn.github.io/tags/vs-code/</link>
+        <description>vs code - Tag - Kamil Procyszyn</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/vs-code/" rel="self" type="application/rss+xml" /><item>
+    <title>PowerShell for IT Professionals [#14] – Scripting – Hello World!</title>
+    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</link>
+    <pubDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
+    <description><![CDATA[In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
+We will then have a look at the basic function of VS Code and create a simple “Hello World” script.
+Exercises If you haven’t followed along, you definitely would like to install VS Code and create a *.]]></description>
+</item></channel>
+</rss>
