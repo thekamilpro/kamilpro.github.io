@@ -1,23 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>driver - Tag - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/tags/driver/</link>
+        <link>https://kprocyszyn.github.io/tags/driver/</link>
         <description>driver - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 29 May 2017 18:53:05 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/driver/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Mon, 29 May 2017 18:53:05 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/driver/" rel="self" type="application/rss+xml" /><item>
     <title>Add any drivers to Windows – on example of GPU drivers</title>
-    <link>http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</link>
+    <link>https://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</link>
     <pubDate>Mon, 29 May 2017 18:53:05 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</guid>
+    <guid>https://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/</guid>
     <description><![CDATA[Today we are going to inject drivers into the Windows image with the help of built-in tools in Windows.
 What do you need? Just a few things:
  Any hardware to which you’d like drivers to be added to Reference computer with the hardware attached to it Drivers Windows image which is going to be deployed  I think there’s not much to explain, so let’s analyse the actual process.]]></description>
 </item><item>
     <title>Mastering PNPUTIL – how to add drivers to the Windows image</title>
-    <link>http://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/</link>
+    <link>https://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/</link>
     <pubDate>Mon, 01 May 2017 20:32:06 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/</guid>
+    <guid>https://kprocyszyn.github.io/mastering-pnputil-add-drivers-windows-image/</guid>
     <description><![CDATA[Drivers – that’s what makes a harmony between hardware and software. Appropriate drivers can make a huge difference between computer’s performance, stability and even temperature. Therefore it’s super important to make sure you’ve got up-to-date files included with your image or Windows installation.
 We are going to review PNPUTIL tool – the versatile tool for handling drivers within the Windows.
 Why do you need PNPUTIL? Yes, why bother with some command line tool (PNPUTIL is command line only) when there are dedicated installers and device manager?]]></description>

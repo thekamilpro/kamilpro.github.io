@@ -5,20 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>How to prepare Windows 10 1607 image - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="How to prepare Windows 10 1607 image" />
+        <title>How to prepare Windows 10 1607 image - Kamil Procyszyn</title><meta name="Description" content="Sysadmin&#39;s point of view"><meta property="og:title" content="How to prepare Windows 10 1607 image" />
 <meta property="og:description" content="Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://kprocyszyn.github.io/prepare-windows-10-1607-image/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" /><meta property="og:image" content="https://kprocyszyn.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-04-03T22:35:09+00:00" />
-<meta property="article:modified_time" content="2017-04-03T22:35:09+00:00" />
+<meta property="article:modified_time" content="2022-01-02T14:23:30+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kprocyszyn.github.io/logo.png"/>
+
 <meta name="twitter:title" content="How to prepare Windows 10 1607 image"/>
 <meta name="twitter:description" content="Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive."/>
 <meta name="application-name" content="Kamil Procyszyn">
-<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/prepare-windows-10-1607-image/" /><link rel="prev" href="http://kprocyszyn.github.io/do-you-even-back-up/" /><link rel="next" href="http://kprocyszyn.github.io/why-saturday-is-best-to-start-new-hobby/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" /><link rel="prev" href="https://kprocyszyn.github.io/do-you-even-back-up/" /><link rel="next" href="https://kprocyszyn.github.io/why-saturday-is-best-to-start-new-hobby/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -26,25 +28,36 @@
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/"
-        },"genre": "post","keywords": "1607, answer, deployment, feat, image, sysprep, unattend, windows 10","wordcount":  4916 ,
-        "url": "http:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/","datePublished": "2017-04-03T22:35:09+00:00","dateModified": "2017-04-03T22:35:09+00:00","publisher": {
+            "@id": "https:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/"
+        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "post","keywords": "1607, answer, deployment, feat, image, sysprep, unattend, windows 10","wordcount":  4986 ,
+        "url": "https:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/","datePublished": "2017-04-03T22:35:09+00:00","dateModified": "2022-01-02T14:23:30+00:00","license": "Kamil Procyszyn","publisher": {
             "@type": "Organization",
-            "name": "Kamil"},"author": {
+            "name": "Kamil Procyszyn","logo": "https:\/\/kprocyszyn.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Kamil"
             },"description": ""
     }
     </script></head>
-    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            <a href="/" title="Kamil Procyszyn"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Kamil Procyszyn</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a>
             </div>
@@ -54,13 +67,29 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+                <a href="/" title="Kamil Procyszyn"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Kamil Procyszyn</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -120,7 +149,7 @@
 <p>Customised files – this will be any specific wallpapers, files etc. which are used to brand the image.</p>
 <h2 id="drivers">Drivers</h2>
 <p>Since Windows 10 is shipped with plenty of drivers out of box, there are still many propetiary ones which must be either downloaded via WU (Windows Update) or installed manually. If your environment does not allow/provide drivers download via Windows Update, you must add them to the image.</p>
-<p><!-- raw HTML omitted -->I did write a whole blog of how to add any drivers to the image.<!-- raw HTML omitted --></p>
+<p><a href="https://kamilpro.com/add-any-drivers-to-windows-on-example-of-gpu-drivers/" target="_blank" rel="noopener noreferrer">I did write a whole blog of how to add any drivers to the image.</a></p>
 <p>In other words, you need drivers with *.inf files, some manufacturers allow you to download the whole package of *.inf files for a computer series, some don’t. In such a case, you might need to unpack the drivers manually to get *.inf files out of it.</p>
 <h1 id="prepare-the-environment-for-windows-10-image">Prepare the environment for Windows 10 image</h1>
 <p>I hope you’re still bearing with me to this point, the most boring parts is behind us – I mean gathering all the stuff needed for the image creation.</p>
@@ -147,8 +176,11 @@
 <li>The network switch is being created.</li>
 </ol>
 <p>Once your virtual switch has been created, we can start creating the new VM and use the switch to connect VM to the Internet.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-1-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-1.png&quot;,&quot;id&quot;:&quot;892&quot;,&quot;title&quot;:&quot;Virtual Switch 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-2.png&quot;,&quot;id&quot;:&quot;893&quot;,&quot;title&quot;:&quot;Virtual Switch 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-3.png&quot;,&quot;id&quot;:&quot;894&quot;,&quot;title&quot;:&quot;Virtual Switch 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-4.png&quot;,&quot;id&quot;:&quot;895&quot;,&quot;title&quot;:&quot;Virtual Switch 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-5.png&quot;,&quot;id&quot;:&quot;896&quot;,&quot;title&quot;:&quot;Virtual Switch 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Virtual-Switch-6.png&quot;,&quot;id&quot;:&quot;897&quot;,&quot;title&quot;:&quot;Virtual Switch 6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h3 id="creating-virtual-machine">Creating Virtual Machine</h3>
 <p>Now it’s time to create our virtual computer – a place where a customised image will be created, maintained and captured! Are you excited, like me?</p>
 <ol>
@@ -162,8 +194,11 @@
 <li>On the Summary window, verify all the settings and hit finish if you’re happy with all of them.</li>
 </ol>
 <p>Hyper-V will create your VM now, you should be able to see it in the main Windows of the Hyper-V.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-2-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-1.jpg&quot;,&quot;id&quot;:&quot;911&quot;,&quot;title&quot;:&quot;VM Create 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-2.jpg&quot;,&quot;id&quot;:&quot;912&quot;,&quot;title&quot;:&quot;VM Create 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-3.jpg&quot;,&quot;id&quot;:&quot;913&quot;,&quot;title&quot;:&quot;VM Create 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-4.jpg&quot;,&quot;id&quot;:&quot;914&quot;,&quot;title&quot;:&quot;VM Create 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-5.jpg&quot;,&quot;id&quot;:&quot;915&quot;,&quot;title&quot;:&quot;VM Create 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-6.jpg&quot;,&quot;id&quot;:&quot;916&quot;,&quot;title&quot;:&quot;VM Create 6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/VM-Create-7.jpg&quot;,&quot;id&quot;:&quot;917&quot;,&quot;title&quot;:&quot;VM Create 7&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h1 id="windows-10-installation">Windows 10 installation</h1>
 <p>Yes, we are just a step before installing, but hold your horses for a second, there’s one more point worth considering.</p>
 <h2 id="audit-mode-or-oobe-mode">Audit mode or OOBE mode?</h2>
@@ -184,14 +219,20 @@
 <li>Since this is a freshly created VM, its hard drive it’s literally empty. Therefore the only thing you can do now is to choose Custom: Install Windows only.</li>
 <li>On the following screen just click next, Windows installer will partition the drive and utilise all space. Even if you’d need additional partitions, you’ll be able to order Windows to create them during the deployment process.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-3-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-1.jpg&quot;,&quot;id&quot;:&quot;925&quot;,&quot;title&quot;:&quot;Windows 10 installation 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-2.jpg&quot;,&quot;id&quot;:&quot;926&quot;,&quot;title&quot;:&quot;Windows 10 installation 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-3.jpg&quot;,&quot;id&quot;:&quot;927&quot;,&quot;title&quot;:&quot;Windows 10 installation 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-4.jpg&quot;,&quot;id&quot;:&quot;928&quot;,&quot;title&quot;:&quot;Windows 10 installation 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-5.jpg&quot;,&quot;id&quot;:&quot;929&quot;,&quot;title&quot;:&quot;Windows 10 installation 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-7.jpg&quot;,&quot;id&quot;:&quot;930&quot;,&quot;title&quot;:&quot;Windows 10 installation 7&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-8.jpg&quot;,&quot;id&quot;:&quot;931&quot;,&quot;title&quot;:&quot;Windows 10 installation 8&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>The Windows installation starts now. It will take some time and reboots before reaching the next screen, on which you’ll need to make a decision about the mode used for installation.</p>
 <p>The Audit mode trigger is hidden; you must use a keyboard shortcut to activate it.</p>
 <p>Press simultaneously ALT + SHIFT + F3, after which VM will instantly restart and boot to audit mode shortly.</p>
 <p>Windows will now automatically log in with Administrator’s account, and present you with SYSPREP (System Preparation Tool) window, which you’d like to cancel. The tool allows you to set Windows 10 back to OOBE mode generalise (which I’ll explain later on) and restart it. Just cancel it. It might be worth to take a check point at this moment.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-4-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Windows-10-installation-9.jpg&quot;,&quot;id&quot;:&quot;934&quot;,&quot;title&quot;:&quot;Windows 10 installation 9&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Audit-mode-1.jpg&quot;,&quot;id&quot;:&quot;933&quot;,&quot;title&quot;:&quot;Audit mode 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h1 id="customise-the-image">Customise the image</h1>
 <p>Now it’s time to install all the software you need, but how to provide it? We could use so-called guest services and start copying all the installation files, but that would take first time to do so, secondly the size of the VHD would start growing.</p>
 <p>Rather than that, let’s go good, old network sharing. Not only it will allow us to install folders without copying them all to the VM, but also will deliver the answer file, or will allow exporting e.g. customised menu start settings.</p>
@@ -207,20 +248,26 @@
 <li>Type the same username which you’ve used in the Sharing permissions.</li>
 <li>Grant “Allow – Modify” rights to the user. Click OK on all windows.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-5-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-1.jpg&quot;,&quot;id&quot;:&quot;938&quot;,&quot;title&quot;:&quot;Network Share 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-2.jpg&quot;,&quot;id&quot;:&quot;939&quot;,&quot;title&quot;:&quot;Network Share 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-3.jpg&quot;,&quot;id&quot;:&quot;940&quot;,&quot;title&quot;:&quot;Network Share 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-4.jpg&quot;,&quot;id&quot;:&quot;941&quot;,&quot;title&quot;:&quot;Network Share 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-5.jpg&quot;,&quot;id&quot;:&quot;942&quot;,&quot;title&quot;:&quot;Network Share 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-6.jpg&quot;,&quot;id&quot;:&quot;943&quot;,&quot;title&quot;:&quot;Network Share 6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-7.jpg&quot;,&quot;id&quot;:&quot;944&quot;,&quot;title&quot;:&quot;Network Share 7&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Network-Share-8.jpg&quot;,&quot;id&quot;:&quot;945&quot;,&quot;title&quot;:&quot;Network Share 8&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>You might ask why we’ve had grant access to the same user in 2 different places. Since this is not an article about shares and permissions I’ll keep it short – Windows differentiates 2 levels of access – local and networked. The user must have access locally to be able to access the files at all and locally, that is, while working on the actual computer. Networked access allows users to access the files over the network, and folders accessed that way are called shares.  In the case of when a user has only network rights, one still won’t be able to access the files because of the lack of the local permission.</p>
 <h2 id="map-the-network-drive">Map the network drive</h2>
 <p>Once the network share has been created, it’s time to map it. That process is called mapping the network drive because ultimately it will show up alongside other drives – hard and flash disks and optical drives.</p>
 <ol>
 <li>Head towards “This computer.”</li>
 <li>Choose “Computer” tab and click “Map network drive.”</li>
-<li>On the following screen specify the location of the network share – the format is: <strong>\<!-- raw HTML omitted -->&lt;name of the share&gt;</strong>, the name of my host is KMLPRO and the name of the share is VM_installers therefore the full path will be: \KMLPRO\VM_installers.</li>
+<li>On the following screen specify the location of the network share – the format is: <strong>\<name of the host>&lt;name of the share&gt;</strong>, the name of my host is KMLPRO and the name of the share is VM_installers therefore the full path will be: \KMLPRO\VM_installers.</li>
 <li>Tick the box “Connect using different credentials”. You might also tick the box “Reconnect at sign-it”, that way Windows will store your login details to the server and automatically map the drive the next time you log in. Feel free to change the drive, if you’d like to.</li>
 <li>You’ll be asked to provide details of the account which you’ve granted access rights earlier on.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-6-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Mapping-network-drive-1.jpg&quot;,&quot;id&quot;:&quot;947&quot;,&quot;title&quot;:&quot;Mapping network drive 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Mapping-network-drive-2.jpg&quot;,&quot;id&quot;:&quot;948&quot;,&quot;title&quot;:&quot;Mapping network drive 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Mapping-network-drive-3.jpg&quot;,&quot;id&quot;:&quot;963&quot;,&quot;title&quot;:&quot;Mapping network drive 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Mapping-network-drive-4.jpg&quot;,&quot;id&quot;:&quot;964&quot;,&quot;title&quot;:&quot;Mapping network drive 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>Once completed, you’ll find your mapped network drive alongside other drives in the computer view.</p>
 <h2 id="install-the-software-customise-the-settings">Install the software, customise the settings</h2>
 <p>Now you’ve got to the point where you can perform an installation of any software needed.</p>
@@ -241,8 +288,9 @@
 <p>Microsoft includes in the Windows a brilliant tool called PNPUTIL, which basically allows managing drivers and give you as the administrator the control over the drivers inside of the VM.</p>
 <p>Have I mentioned that we will need to go command line? Oh well, now I’m telling you. But it won’t be scary, I promise. PNPUTIL is a command line only.</p>
 <h4 id="main-pnputil-switches-which-you-should-know-about">Main PNPUTIL switches which you should know about:</h4>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<pre>/enum-drivers - enumarates (lists) all stored drivers
+/add-driver - adds driver to the driver store
+/delete-driver - removes the driver from the driver store</pre>
 <h4 id="driver-store-8211-what-is-this">Driver store – what is this?</h4>
 <p>Windows comes with plenty of drivers out of the box – however, it’s impossible to include every single driver to every single device, or even make sure that all the drivers are up to date.</p>
 <p>Therefore, here comes the idea of the Driver Store – think about it like installers for your software – you have the installer, but you install the software when it’s actually needed by the user.</p>
@@ -256,8 +304,11 @@
 <li>Type *<em>pnputil /add-driver <em>.inf /subdirs</em></em>. This will order pnputil to go through all the folders and add any driver it finds to the store. It might take a while depending on amount and size of drivers you’ve prepared.</li>
 <li>Upon the completion, you’ll see how many drivers have been added to the store.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-7-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/PNPUTIL-1.jpg&quot;,&quot;id&quot;:&quot;965&quot;,&quot;title&quot;:&quot;PNPUTIL 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/PNPUTIL-2.jpg&quot;,&quot;id&quot;:&quot;966&quot;,&quot;title&quot;:&quot;PNPUTIL 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/PNPUTIL-3.jpg&quot;,&quot;id&quot;:&quot;967&quot;,&quot;title&quot;:&quot;PNPUTIL 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/PNPUTIL-4.jpg&quot;,&quot;id&quot;:&quot;968&quot;,&quot;title&quot;:&quot;PNPUTIL 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/PNPUTIL-5.jpg&quot;,&quot;id&quot;:&quot;969&quot;,&quot;title&quot;:&quot;PNPUTIL 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>This is it, that one step closer to the hardware neutral Windows image. Enumerate the drivers now, see how many has been added to the Drivers now. Don’t forget to take the checkpoint.</p>
 <h1 id="unattended-installation">Unattended installation</h1>
 <p>Are we there yet? Yes, almost there!</p>
@@ -273,10 +324,13 @@
 <li>We need elevated (administrator) command prompt, right click on the Windows menu and choose it then. Change directory to where the ISO is.</li>
 <li>You can use DIR command to make sure you’re in the right folder and can see install.erd file.</li>
 <li>Type command: <strong>dism /Get-WimInfo /WimFile:install.esd</strong> You should see the list of available Windows 10 edition included in the ISO. I’m going to need Pro edition therefore will choose Index:1</li>
-<li>Type command: **dism /export-image /SourceImageFile:install.esd /SourceIndex:<!-- raw HTML omitted -->1<!-- raw HTML omitted --> /DestinationImageFile:<!-- raw HTML omitted -->Windows10_pro_1607<!-- raw HTML omitted -->.wim /Compress:max /CheckIntegrity **I’ve highlighted the index number and the file name in case you’d like to change it.</li>
+<li>Type command: **dism /export-image /SourceImageFile:install.esd /SourceIndex:<span style="color: #ff0000;">1</span> /DestinationImageFile:<span style="color: #ff0000;">Windows10_pro_1607</span>.wim /Compress:max /CheckIntegrity **I’ve highlighted the index number and the file name in case you’d like to change it.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-8-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/WIM-1.jpg&quot;,&quot;id&quot;:&quot;990&quot;,&quot;title&quot;:&quot;WIM 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/WIM-2.jpg&quot;,&quot;id&quot;:&quot;991&quot;,&quot;title&quot;:&quot;WIM 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/WIM-3.jpg&quot;,&quot;id&quot;:&quot;992&quot;,&quot;title&quot;:&quot;WIM 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/WIM-4.jpg&quot;,&quot;id&quot;:&quot;993&quot;,&quot;title&quot;:&quot;WIM 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>Wait until the process has finished and we can move on to the actual answer file creation. You’ll find the WIM file in the same location where ESD file is.</p>
 <h2 id="answer-file">Answer File</h2>
 <p>It’s time to tell Windows off, literally. We’re going to prepare the answer file, which will guide Windows through the installation – and achieve automatic installation there.</p>
@@ -289,12 +343,15 @@
 <li>Point to the WIM file created earlier on.</li>
 <li>Confirm creation of the catalog file.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-9-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-1.jpg&quot;,&quot;id&quot;:&quot;999&quot;,&quot;title&quot;:&quot;Answer file 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-2.jpg&quot;,&quot;id&quot;:&quot;1000&quot;,&quot;title&quot;:&quot;Answer file 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-3.jpg&quot;,&quot;id&quot;:&quot;1001&quot;,&quot;title&quot;:&quot;Answer file 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-4.jpg&quot;,&quot;id&quot;:&quot;1002&quot;,&quot;title&quot;:&quot;Answer file 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-5.jpg&quot;,&quot;id&quot;:&quot;1003&quot;,&quot;title&quot;:&quot;Answer file 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/03\/Answer-file-6.jpg&quot;,&quot;id&quot;:&quot;1004&quot;,&quot;title&quot;:&quot;Answer file 6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>It will take a few minutes for SIM to complete the image creation process. Upon finish, you’ll be presented with the new SIM windows with more options than before.</p>
 <p>Answer file reflects different Windows installation stages (passes) – there are 7 of them, however, we need only a few for our needs.</p>
 <p>The components part contains the actual jobs that Windows Installer performs during different parts of the installation. One component can be added to multiple installation stages. Components are added by right-clicking on them and choosing to which part they need to be added.</p>
-<!-- raw HTML omitted -->
+<img loading="lazy" class="aligncenter wp-image-1005 size-full" src="https://i1.wp.com/kamilpro.com/wp-content/uploads/2017/03/Answer-file-6-1.jpg?resize=900%2C726&#038;ssl=1" alt="" width="900" height="726" srcset="https://i1.wp.com/kamilpro.com/wp-content/uploads/2017/03/Answer-file-6-1.jpg?w=939&ssl=1 939w, https://i1.wp.com/kamilpro.com/wp-content/uploads/2017/03/Answer-file-6-1.jpg?resize=300%2C242&ssl=1 300w, https://i1.wp.com/kamilpro.com/wp-content/uploads/2017/03/Answer-file-6-1.jpg?resize=768%2C619&ssl=1 768w" sizes="(max-width: 900px) 100vw, 900px" data-recalc-dims="1" /> 
 <p>Necessary components for automated installation:</p>
 <p>Phase 1 WinPE:</p>
 <ul>
@@ -342,8 +399,11 @@
 <li>Make sure there are no passwords saved in the Credential manager (Control panel&gt;Credential Manager)</li>
 <li>Remove any directories used during image preparation (e.g. C:\temp)</li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-10-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Housekeeping-1.jpg&quot;,&quot;id&quot;:&quot;1014&quot;,&quot;title&quot;:&quot;Housekeeping 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Housekeeping-2.jpg&quot;,&quot;id&quot;:&quot;1015&quot;,&quot;title&quot;:&quot;Housekeeping 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Housekeeping-3.jpg&quot;,&quot;id&quot;:&quot;1016&quot;,&quot;title&quot;:&quot;Housekeeping 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Housekeeping-4.jpg&quot;,&quot;id&quot;:&quot;1017&quot;,&quot;title&quot;:&quot;Housekeeping 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Housekeeping-5.jpg&quot;,&quot;id&quot;:&quot;1018&quot;,&quot;title&quot;:&quot;Housekeeping 5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>In other words – when your users get freshly wiped PC, they’ll get an impression it’s spanking new, yet customised by their great IT department. It makes a difference, a huge difference to the end user.</p>
 <h1 id="test-the-image-within-vm">Test the image within VM</h1>
 <p>That’s a great moment, isn’t it? I’m always excited when testing the new image and see how all the work turns out. But before deploying it to the actual physical machine, it’s worth to test it within the actual VM.</p>
@@ -357,11 +417,14 @@
 <ol>
 <li>Open elevated command prompt</li>
 <li>Type: <strong>CD C:\Windows\System32\Sysprep</strong></li>
-<li>Type: **SYSPREP /GENERALIZE /OOBE /REBOOT /UNATTEND:<!-- raw HTML omitted --> **We call sysprep tool to generalise the installation, set Windows into OOBE mode, use answer file and restart the PC.</li>
+<li>Type: **SYSPREP /GENERALIZE /OOBE /REBOOT /UNATTEND:<path to your unattended file> **We call sysprep tool to generalise the installation, set Windows into OOBE mode, use answer file and restart the PC.</li>
 <li>Wait until the sysprep process is done and PC restart.</li>
 </ol>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-774-11-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Sysprep-1.jpg&quot;,&quot;id&quot;:&quot;1020&quot;,&quot;title&quot;:&quot;Sysprep 1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Sysprep-2.jpg&quot;,&quot;id&quot;:&quot;1021&quot;,&quot;title&quot;:&quot;Sysprep 2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Sysprep-3.jpg&quot;,&quot;id&quot;:&quot;1022&quot;,&quot;title&quot;:&quot;Sysprep 3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/04\/Sysprep-4.jpg&quot;,&quot;id&quot;:&quot;1023&quot;,&quot;title&quot;:&quot;Sysprep 4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>Once completed, VM should restart a few times and – if everything goes well – bring you to the login screen. You’d like then to review all your customisation settings, make sure that passwords are not saved etc. Remember that whatever you can see after the first login, will be available to any new user using the computer.</p>
 <h1 id="capturing-and-deploying-the-image">Capturing and deploying the image</h1>
 <p>Once your VM is up to the standard it’s time to send it to the actual hardware and see if everything still works + all drivers are working.</p>
@@ -372,10 +435,12 @@
 <li>If there are too many checkpoints (and not enough hard disk space), you can always remove all of them and create a new one.</li>
 <li>Creating the image is a long process – take your time!</li>
 </ul>
-<p>Main photo by: https://unsplash.com/@rawpixel</p></div></div></div>
+<p>Main photo by: https://unsplash.com/@rawpixel</p></div><div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2014 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
@@ -384,5 +449,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

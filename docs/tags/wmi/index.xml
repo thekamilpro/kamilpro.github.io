@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>wmi - Tag - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/tags/wmi/</link>
+        <link>https://kprocyszyn.github.io/tags/wmi/</link>
         <description>wmi - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/wmi/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/wmi/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</link>
     <pubDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
     <description><![CDATA[In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
-We will then use WMI Explorergraphical tool to ease discovering all possible classes and instances that WMI provides.
+We will then use WMI Explorer graphical tool to ease discovering all possible classes and instances that WMI provides.
 Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it.]]></description>
 </item></channel>
 </rss>

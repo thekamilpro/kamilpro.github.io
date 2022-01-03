@@ -1,0 +1,19 @@
+# Routine
+
+They say that habits are our second nature. Things which we do repeatedly  are like pre-programmed functions which trigger specific time or action.
+
+Morning coffee. I simply cannot start the day without a cup of a real coffee. That was the reason why I bought the actual bean to coffee machine, because of the taste and smell of real coffee. Prepared in the exact way I like it.
+
+This week I&#8217;ve ran out of the time in the morning and couldn&#8217;t make my favourite coffee, so I used the instant one. Gosh, that was a terrible experience! No smoothness in taste at all, not the same smell, not the same kick in the morning.
+
+But hey! I kept my routine, I&#8217;ve had my fix for the morning. In fact, it wasn&#8217;t that perfect routine, but at least I kept it.
+
+Well, that was the trouble I believe, my routine wasn&#8217;t perfect as normally. Actually, it was fairly below expectations. It was like a cheap replacement. And the baseline was &#8211; I like to keep my standards. If I do something seriously, I can only improve my expectations, but never go below them. Maybe that&#8217;s why I always try to improve whatever I do? The beauty and curse of perfection is that the more time you spend on something, the more time and effort you need to make an improvement.
+
+Even in IT, every serious IT department has its own routine. Check backups, review update and patching process or check status of servers. Even such a detail as naming convention is really important and must be consistent &#8211; otherwise finding certain rule or group of people might be extremely hard, as the name very can tell what exact thing is doing. And it&#8217;s really helpful when there are hundreds of rules, and you are after that specific one.
+
+Habits, such unconscious things, yet so important.
+
+&nbsp;
+
+&nbsp;

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>news - Tag - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/tags/news/</link>
+        <link>https://kprocyszyn.github.io/tags/news/</link>
         <description>news - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 18 Jul 2016 21:30:18 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/news/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Mon, 18 Jul 2016 21:30:18 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/news/" rel="self" type="application/rss+xml" /><item>
     <title>Spam</title>
-    <link>http://kprocyszyn.github.io/spam/</link>
+    <link>https://kprocyszyn.github.io/spam/</link>
     <pubDate>Mon, 18 Jul 2016 21:30:18 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/spam/</guid>
+    <guid>https://kprocyszyn.github.io/spam/</guid>
     <description><![CDATA[Spam. Spam everywhere. There isn’t a day without it. Without bombarding us with plenty of information. Way too much of information.
 While the original – email spam – is well handled by email providers, the other sources are not.
 On social media – there is plenty of shared stuff which someone (I hope so!) thought was worth of sharing. News is all over the place – starting from daily free newspapers, through radio and TV and ending up on the Internet.]]></description>

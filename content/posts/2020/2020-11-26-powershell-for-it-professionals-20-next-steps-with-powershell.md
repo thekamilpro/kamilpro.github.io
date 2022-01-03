@@ -4,11 +4,7 @@ author: Kamil
 type: post
 date: 2020-11-26T17:46:00+00:00
 url: /powershell-for-it-professionals-20-next-steps-with-powershell/
-featured_image: /wp-content/uploads/2020/11/Slide1-2.jpg
-wp_last_modified_info:
-  - 26th November 2020 @ 12:22 pm
-wplmi_shortcode:
-  - '[lmt-post-modified-info]'
+featuredImage: "/wp-content/uploads/2020/11/Slide1-2.jpg"
 categories:
   - IT
   - PowerShell for IT Professionals

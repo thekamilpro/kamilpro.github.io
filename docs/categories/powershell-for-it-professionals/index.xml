@@ -1,95 +1,97 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>PowerShell for IT Professionals - Category - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/categories/powershell-for-it-professionals/</link>
+        <link>https://kprocyszyn.github.io/categories/powershell-for-it-professionals/</link>
         <description>PowerShell for IT Professionals - Category - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/categories/powershell-for-it-professionals/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/categories/powershell-for-it-professionals/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell for IT Professionals [#20] – Next Steps with PowerShell</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
     <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
-    <description><![CDATA[Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/11/Slide1-2.jpg" referrerpolicy="no-referrer">
+            </div>Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
 I’m going to show what else you can do within PowerShell itself, as well how to keep up-to-day plus – what other doors writing code has opened for you – I’d love to hear back about this!
 I hope you’ve enjoyed the course so far and it will be helped you in some way – either solve a problem, got promotion, or simply learnt something new.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#19] – Websites and APIs</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-19-websites-and-apis/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-19-websites-and-apis/</link>
     <pubDate>Sun, 15 Nov 2020 20:57:20 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-19-websites-and-apis/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-19-websites-and-apis/</guid>
     <description><![CDATA[PowerShell is a great server automation tool, but what about Internet and any other web served services?
 As it turns out, PowerShell is great in scrapping websites and consuming APIs – and it’s been one of the main development areas of the tool in the last couple of years.
 In this lesson we are going to see how to use PowerShell to download files, scrap websites, discover links.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#18] – Working with text strings</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</link>
     <pubDate>Tue, 03 Nov 2020 17:33:18 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</guid>
     <description><![CDATA[Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
 In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
 PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#17] – Scripting part 4 – parameters, running remotely and formatting</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</link>
     <pubDate>Mon, 19 Oct 2020 18:32:20 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</guid>
     <description><![CDATA[In the last part of scripting series, we will make the script to be able to query remote machines, e.g. servers.
 We will also check how to add parameters to the script (and configure the default value of parameter) so that user will able to pass the parameter name like in a standard PowerShell cmdlet.
 Finally, we are going to format the script so that it looks more reliable and make some refactoring so that the logic is simpler.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#16] – Scripting part 3 – Add-Member and network</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</link>
     <pubDate>Tue, 13 Oct 2020 19:12:40 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</guid>
     <description><![CDATA[In this lesson we are taking our script further by adding details about IP configuration and last installed hotfixes.
 But it turns out, the networking information is not that shallow as it seems at the first glance – thus I’ll show you how to retrieve the information from the configuration.
 We will also look on how to reuse our already created object so that we don’t need to duplicate code.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#15] – Scripting part 2 – IF and psobject</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</link>
     <pubDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
     <description><![CDATA[In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
 Then we will retrieve OS information with the help of WMI and display it on the screen with Write-Host.
 Although using Write-Host is easy to use, it doesn’t really allow us to do very much e.g. we cannot export information to the CSV, therefore we change it and start using custom PSObject – that way our script will start returning information like a regular PowerShell command.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#14] – Scripting – Hello World!</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</link>
     <pubDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
     <description><![CDATA[In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
 We will then have a look at the basic function of VS Code and create a simple “Hello World” script.
 Exercises If you haven’t followed along, you definitely would like to install VS Code and create a *.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#13] – Is PowerShell secure?</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</link>
     <pubDate>Sat, 12 Sep 2020 16:09:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</guid>
     <description><![CDATA[In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
 We will then have a look how execution policy can help to control on what basis the PowerShell scripts can be executed.
 At the end, we will configure some GPOs to control the execution and transcription of scripts.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</link>
     <pubDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
     <description><![CDATA[In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
-We will then use WMI Explorergraphical tool to ease discovering all possible classes and instances that WMI provides.
+We will then use WMI Explorer graphical tool to ease discovering all possible classes and instances that WMI provides.
 Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#11] – Variables</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/</link>
     <pubDate>Sat, 29 Aug 2020 10:39:05 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/</guid>
     <description><![CDATA[In this lesson we’re going to learn how what Variables are, why it’s good to use them and how to actually create them. We will then assign various values to variables to and use them solely, and in parameters.
 We will also have a look at foreach loop so that we can e.g. ping multiple computers using single variable with multiple objects in it.
 Exercises   Use Get-Command to find all commands that allow you to manage variables.]]></description>

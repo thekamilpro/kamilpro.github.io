@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>find-module - Tag - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/tags/find-module/</link>
+        <link>https://kprocyszyn.github.io/tags/find-module/</link>
         <description>find-module - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 14 Aug 2020 16:31:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/find-module/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Fri, 14 Aug 2020 16:31:00 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/find-module/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell for IT Professionals [#8] – Manage everything with PowerShell</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/</link>
     <pubDate>Fri, 14 Aug 2020 16:31:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/</guid>
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/</guid>
     <description><![CDATA[Exercises  Can you uninstall module that was installed with Install-Module? Confirm your answer with Get-Module -ListAvaiable Can you update the installed module? Perhaps, you’d like to install version 1.0.0.0 of SNMP module, how can you force Install-Module to do so?  Install-Module error If you encounter the issue with downloading modules, run this commandlet as a temporary workaround (it must be applied every time the shell is restarted):]]></description>
 </item></channel>
 </rss>

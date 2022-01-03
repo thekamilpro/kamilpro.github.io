@@ -1,15 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>discord - Tag - Kamil Procyszyn</title>
-        <link>http://kprocyszyn.github.io/tags/discord/</link>
+        <link>https://kprocyszyn.github.io/tags/discord/</link>
         <description>discord - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="http://kprocyszyn.github.io/tags/discord/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/discord/" rel="self" type="application/rss+xml" /><item>
     <title>PowerShell for IT Professionals [#20] – Next Steps with PowerShell</title>
-    <link>http://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
+    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
     <pubDate>Thu, 26 Nov 2020 17:46:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>http://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
-    <description><![CDATA[Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
+    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/11/Slide1-2.jpg" referrerpolicy="no-referrer">
+            </div>Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
 I’m going to show what else you can do within PowerShell itself, as well how to keep up-to-day plus – what other doors writing code has opened for you – I’d love to hear back about this!
 I hope you’ve enjoyed the course so far and it will be helped you in some way – either solve a problem, got promotion, or simply learnt something new.]]></description>
 </item></channel>

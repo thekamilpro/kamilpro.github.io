@@ -5,24 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Add any drivers to Windows – on example of GPU drivers - Kamil Procyszyn</title><meta name="Description" content=""><meta property="og:title" content="Add any drivers to Windows – on example of GPU drivers" />
+        <title>Add any drivers to Windows – on example of GPU drivers - Kamil Procyszyn</title><meta name="Description" content="Sysadmin&#39;s point of view"><meta property="og:title" content="Add any drivers to Windows – on example of GPU drivers" />
 <meta property="og:description" content="Today we are going to inject drivers into the Windows image with the help of built-in tools in Windows.
 What do you need? Just a few things:
  Any hardware to which you’d like drivers to be added to Reference computer with the hardware attached to it Drivers Windows image which is going to be deployed  I think there’s not much to explain, so let’s analyse the actual process." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/" /><meta property="og:image" content="https://kprocyszyn.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2017-05-29T18:53:05+00:00" />
-<meta property="article:modified_time" content="2017-05-29T18:53:05+00:00" />
+<meta property="article:modified_time" content="2022-01-02T14:23:30+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kprocyszyn.github.io/logo.png"/>
+
 <meta name="twitter:title" content="Add any drivers to Windows – on example of GPU drivers"/>
 <meta name="twitter:description" content="Today we are going to inject drivers into the Windows image with the help of built-in tools in Windows.
 What do you need? Just a few things:
  Any hardware to which you’d like drivers to be added to Reference computer with the hardware attached to it Drivers Windows image which is going to be deployed  I think there’s not much to explain, so let’s analyse the actual process."/>
 <meta name="application-name" content="Kamil Procyszyn">
-<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="Kamil Procyszyn"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/" /><link rel="prev" href="http://kprocyszyn.github.io/start-batching-your-tasks/" /><link rel="next" href="http://kprocyszyn.github.io/need-energy-short-story-running/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kprocyszyn.github.io/add-any-drivers-to-windows-on-example-of-gpu-drivers/" /><link rel="prev" href="https://kprocyszyn.github.io/start-batching-your-tasks/" /><link rel="next" href="https://kprocyszyn.github.io/need-energy-short-story-running/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -30,25 +32,36 @@ What do you need? Just a few things:
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "http:\/\/kprocyszyn.github.io\/add-any-drivers-to-windows-on-example-of-gpu-drivers\/"
-        },"genre": "post","keywords": "custom, deployment, driver, image, Windows","wordcount":  1594 ,
-        "url": "http:\/\/kprocyszyn.github.io\/add-any-drivers-to-windows-on-example-of-gpu-drivers\/","datePublished": "2017-05-29T18:53:05+00:00","dateModified": "2017-05-29T18:53:05+00:00","publisher": {
+            "@id": "https:\/\/kprocyszyn.github.io\/add-any-drivers-to-windows-on-example-of-gpu-drivers\/"
+        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "post","keywords": "custom, deployment, driver, image, Windows","wordcount":  1618 ,
+        "url": "https:\/\/kprocyszyn.github.io\/add-any-drivers-to-windows-on-example-of-gpu-drivers\/","datePublished": "2017-05-29T18:53:05+00:00","dateModified": "2022-01-02T14:23:30+00:00","license": "Kamil Procyszyn","publisher": {
             "@type": "Organization",
-            "name": "Kamil"},"author": {
+            "name": "Kamil Procyszyn","logo": "https:\/\/kprocyszyn.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Kamil"
             },"description": ""
     }
     </script></head>
-    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+            <a href="/" title="Kamil Procyszyn"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Kamil Procyszyn</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a>
             </div>
@@ -58,13 +71,29 @@ What do you need? Just a few things:
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Kamil Procyszyn">Kamil Procyszyn</a>
+                <a href="/" title="Kamil Procyszyn"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Kamil Procyszyn</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -106,20 +135,29 @@ What do you need? Just a few things:
 <p>NVidia GeForce – <a href="http://www.nvidia.com/Download/index.aspx" target="_blank" rel="noopener noreffer">http://www.nvidia.com/Download/index.aspx</a></p>
 <p>AMD Radeon – <a href="http://support.amd.com/en-us/download" target="_blank" rel="noopener noreffer">http://support.amd.com/en-us/download</a></p>
 <p>Intel – <a href="https://downloadcenter.intel.com/product/80939/Graphics-Drivers" target="_blank" rel="noopener noreffer">https://downloadcenter.intel.com/product/80939/Graphics-Drivers</a></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-12-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Drivers-Download-1.jpg&quot;,&quot;id&quot;:&quot;1102&quot;,&quot;title&quot;:&quot;Drivers-Download-1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Drivers-Download-2.jpg&quot;,&quot;id&quot;:&quot;1103&quot;,&quot;title&quot;:&quot;Drivers-Download-2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>Make sure you pick the appropriate Windows and hardware versions.</p>
 <h2 id="extract-inf-files">Extract *.INF files</h2>
 <p>Now we need to do something the usual user never does – intercept *.inf files which will allow us to add the drivers to the image. If your hardware manufacturer was nice to sysadmins  – by that I mean they provided already the *.inf files then simply skip this step.</p>
 <p>Otherwise, there are 2 main ways of doing so.</p>
 <h3 id="get-drivers-extracted-during-the-installation">Get drivers extracted during the installation</h3>
 <p>If, like in my example, drivers came prepackaged, you run the installation file. On the first screen I can see (and choose) where the installation files are going to be extracted.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-13-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-1.jpg&quot;,&quot;id&quot;:&quot;1105&quot;,&quot;title&quot;:&quot;Driver-Instal-1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-2.jpg&quot;,&quot;id&quot;:&quot;1106&quot;,&quot;title&quot;:&quot;Driver-Instal-2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <p>I confirm where they’re going to be extracted, hit OK and once the extraction process has been completed – <strong>I don’t proceed with installation</strong>, not yet! Just let it be for time being.</p>
 <p>Instead, I go to location where drivers were extracted and copy these files somewhere else.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-14-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Extract-1.jpg&quot;,&quot;id&quot;:&quot;1107&quot;,&quot;title&quot;:&quot;Driver-Extract-1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h3 id="extract-the-files-yourself">Extract the files yourself</h3>
 <p>Sometimes you’re not offered with the extraction option and might need to do it yourself. For that purpose you’d need to use an archiver manager like 7-zip. Once installed, use 7-zip to open the installation file, and if you can find *.inf files inside, extract everything where needed.</p>
 <p>7-zip download page: <a href="http://www.7-zip.org/download.html" target="_blank" rel="noopener noreffer">http://www.7-zip.org/download.html</a></p>
@@ -137,9 +175,12 @@ What do you need? Just a few things:
 <h2 id="install-the-drivers">Install the drivers</h2>
 <p>Now we can carry on with installation. But before doing so, I’d like you to open C:\Windows\System32\DriverStore\FileRepository folder and sort folders by “Date modified”, with the most recent on top. Note the time when you start the installation.</p>
 <p>Once the installation of your drivers is commenced, you will notice as new folders are being created – these are drivers needed by your hardware. You can open these folders and see that there are plenty of files.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>You can notice that those folders have a naming convention – <!-- raw HTML omitted -->name.inf<!-- raw HTML omitted --><!-- raw HTML omitted --><em>architecture</em><!-- raw HTML omitted -->randomnumbers. You’re after the green part – name.inf That’s the name of the *.inf file you’d like to add to the image from your source folder – <strong>I’d like you to take a note of the green part of the name</strong>, as this will be essential to the next step.</p>
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-15-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-6.jpg&quot;,&quot;id&quot;:&quot;1110&quot;,&quot;title&quot;:&quot;Driver-Instal-6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-5.jpg&quot;,&quot;id&quot;:&quot;1109&quot;,&quot;title&quot;:&quot;Driver-Instal-5&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-7.jpg&quot;,&quot;id&quot;:&quot;1111&quot;,&quot;title&quot;:&quot;Driver-Instal-7&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Driver-Instal-8.jpg&quot;,&quot;id&quot;:&quot;1112&quot;,&quot;title&quot;:&quot;Driver-Instal-8&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
+<p>You can notice that those folders have a naming convention – <span style="color: #339966;">name.inf</span><span style="color: #0000ff;"><em>architecture</em></span>randomnumbers. You’re after the green part – name.inf That’s the name of the *.inf file you’d like to add to the image from your source folder – <strong>I’d like you to take a note of the green part of the name</strong>, as this will be essential to the next step.</p>
 <p>I started installation of driver just after 22:20 on 24th of May, and as you can see I’ve highlighted the folders created just after that time. The files I’m going to look for are:</p>
 <ul>
 <li>Nv_dispi.inf</li>
@@ -147,7 +188,7 @@ What do you need? Just a few things:
 <li>Nvstusb.inf</li>
 <li>Nvhda.inf</li>
 </ul>
-<p>If you’ve read my post about <!-- raw HTML omitted -->Mastering PNPUTIL<!-- raw HTML omitted -->, then you’ll know how to use this tool to add drivers to your image. Otherwise, stay with me.</p>
+<p>If you’ve read my post about <a href="https://kamilpro.com/mastering-pnputil-add-drivers-windows-image/" target="_blank" rel="noopener noreferrer">Mastering PNPUTIL</a>, then you’ll know how to use this tool to add drivers to your image. Otherwise, stay with me.</p>
 <h1 id="on-your-windows-image">On your Windows image</h1>
 <p>Let’s armour now the image in the right drivers we’ve just acquired. You will obviously need to make them available to the image, either by shared folder or copy/paste. I simply copied all installation files to C:\Temp\NVidia folder. Keep this folder open as we’re going to need it very soon. Like in 2 paragraphs soon.</p>
 <p>I’m going to show you now 2 ways of installing drivers – with GUI and command line.</p>
@@ -157,8 +198,11 @@ What do you need? Just a few things:
 <p>Once completed you should receive a message stating that operation was successful.</p>
 <p>Repeat the process for all drivers you need and that’s it – your image will come with drivers and system will install them automatically when hardware is detected.</p>
 <p>You can confirm it by either going to FileRepository folder or Issuing <strong>pnputil.exe /e</strong> command in command prompt.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-16-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-1.jpg&quot;,&quot;id&quot;:&quot;1114&quot;,&quot;title&quot;:&quot;Add-drivers-1&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-2.jpg&quot;,&quot;id&quot;:&quot;1115&quot;,&quot;title&quot;:&quot;Add-drivers-2&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-3.jpg&quot;,&quot;id&quot;:&quot;1116&quot;,&quot;title&quot;:&quot;Add-drivers-3&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-4.jpg&quot;,&quot;id&quot;:&quot;1117&quot;,&quot;title&quot;:&quot;Add-drivers-4&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h3 id="add-drivers-with-command-prompt-8211-pnputil">Add drivers with Command prompt – PNPUTIL</h3>
 <p>This way is slightly more complicated, nevertheless, let’s have a fun!</p>
 <ol>
@@ -171,8 +215,11 @@ Number successfully imported: 1</li>
 <li>Repeat step 2 for all the files needed.</li>
 </ol>
 <p>That’s pretty much it.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="jetpack-slideshow-noscript robots-nocontent">
+  This slideshow requires JavaScript.
+</p>
+<div id="gallery-1098-17-slideshow" class="slideshow-window jetpack-slideshow slideshow-black" data-trans="fade" data-autostart="1" data-gallery="[{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-7.jpg&quot;,&quot;id&quot;:&quot;1119&quot;,&quot;title&quot;:&quot;Add-drivers-7&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;},{&quot;src&quot;:&quot;https:\/\/kamilpro.com\/wp-content\/uploads\/2017\/05\/Add-drivers-6.jpg&quot;,&quot;id&quot;:&quot;1118&quot;,&quot;title&quot;:&quot;Add-drivers-6&quot;,&quot;alt&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;itemprop&quot;:&quot;image&quot;}]" itemscope itemtype="https://schema.org/ImageGallery">
+</div>
 <h1 id="your-image-has-just-got-better">Your image has just got better!</h1>
 <p>Deploying drivers had always been a mission before I’ve figured out the way I had shown you above. While there are some tools/scripts which can deliver the drivers in one way or another (and with the tools there is always a question of how reliable the tool is) having drivers injected to the image will always ensure the hardware is operational straight after deployment.</p>
 <p>The 2 drawbacks of the whole process in the matter are: having a larger image and updating the drivers on the image. While the size and deployment time shouldn’t be a big deal nowadays, keeping up-to-date images is probably your responsibility after all. Not to mention the time saved for troubleshooting as this method works always, 100%, positive.</p>
@@ -193,10 +240,12 @@ Number successfully imported: 1</li>
 <li>Someone can say, that you could use PNPUTIL to add all files *.INF to the driver store, but by the time when the actual process ends, you’ll notice that your driver store folder has swelled multiple times (in my case, that was 10GB after adding all *.INF files from GeForce folder!), containing many drivers which you actually don’t need.</li>
 </ul>
 <p>Main photo by <a href="https://unsplash.com/@ugmonk" target="_blank" rel="noopener noreffer">Jeff Sheldon</a>.</p>
-</div></div></div>
+</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2014 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 
@@ -205,5 +254,5 @@ Number successfully imported: 1</li>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw"></i>
             </a>
-        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>
