@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#14] – Scripting – Hello World!'
 author: Kamil
-type: post
+
 date: 2020-09-26T13:00:35+00:00
 url: /powershell-for-it-professionals-14-scripting-hello-world/
-featured_image: /wp-content/uploads/2020/09/Writing-first-script.jpg
+featuredImage: /wp-content/uploads/2020/09/Writing-first-script.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

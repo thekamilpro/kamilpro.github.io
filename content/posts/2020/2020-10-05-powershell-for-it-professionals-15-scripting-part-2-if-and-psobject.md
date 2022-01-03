@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#15] – Scripting part 2 – IF and psobject'
 author: Kamil
-type: post
+
 date: 2020-10-05T17:16:21+00:00
 url: /powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/
-featured_image: /wp-content/uploads/2020/10/Writing-first-script-pt2.jpg
+featuredImage: /wp-content/uploads/2020/10/Writing-first-script-pt2.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

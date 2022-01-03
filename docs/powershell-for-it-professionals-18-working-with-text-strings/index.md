@@ -90,3 +90,4 @@ $offset.Trim()
 $time | Select-String -Pattern '(\d+\.\d+s)$'
 # We can check this website: https://regexr.com/
 ```
+

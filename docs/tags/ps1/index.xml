@@ -9,7 +9,9 @@
     <pubDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
-    <description><![CDATA[In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/10/Writing-first-script-pt2.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
 Then we will retrieve OS information with the help of WMI and display it on the screen with Write-Host.
 Although using Write-Host is easy to use, it doesn’t really allow us to do very much e.g. we cannot export information to the CSV, therefore we change it and start using custom PSObject – that way our script will start returning information like a regular PowerShell command.]]></description>
 </item><item>
@@ -18,7 +20,9 @@ Although using Write-Host is easy to use, it doesn’t really allow us to do ver
     <pubDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
-    <description><![CDATA[In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Writing-first-script.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
 We will then have a look at the basic function of VS Code and create a simple “Hello World” script.
 Exercises If you haven’t followed along, you definitely would like to install VS Code and create a *.]]></description>
 </item></channel>

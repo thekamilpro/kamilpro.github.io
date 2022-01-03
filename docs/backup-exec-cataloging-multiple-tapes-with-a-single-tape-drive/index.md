@@ -29,3 +29,4 @@ To fix that is as simple as
 Yep, that&#8217;s it. For some reason without that Backup exec seems to be unaware of any following tapes, and thus is not requesting them. When you actually inventory all of them before then Backup exec will keep requesting them during single <g class="gr_ gr\_298 gr-alert sel gr\_spell gr\_replaced gr\_inline\_cards gr\_disable\_anim\_appear ContextualSpelling multiReplace" id="298" data-gr-id="298">catalogue</g> job.
 
 Bear in mind, the server will update its records only after completing the catalogue job, therefore _patience you must have, my young sysadmin._
+

@@ -1,10 +1,10 @@
 ---
 title: Backup Exec – cataloging multiple tapes with a single tape drive
 author: Kamil
-type: post
+
 date: 2018-09-30T20:33:33+00:00
 url: /backup-exec-cataloging-multiple-tapes-with-a-single-tape-drive/
-featured_image: /wp-content/uploads/2018/09/chris-yates-708472-unsplash.jpg
+featuredImage: /wp-content/uploads/2018/09/chris-yates-708472-unsplash.jpg
 categories:
   - IT
   - Server

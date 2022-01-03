@@ -29,3 +29,4 @@ I&#8217;ve read that book a few years ago and still can find useful thoughts in 
 &nbsp;
 
  [1]: http://www.danielgoleman.info/topics/emotional-intelligence/
+

@@ -1,10 +1,10 @@
 ---
 title: On time – to be or not to be
 author: Kamil
-type: post
+
 date: 2016-08-17T21:39:06+00:00
 url: /on-time-to-be-or-not-to-be/
-featured_image: /wp-content/uploads/2016/08/photo-1468169019754-e97ba70dafb6.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1468169019754-e97ba70dafb6.jpg
 categories:
   - 'Me &amp; People'
 tags:

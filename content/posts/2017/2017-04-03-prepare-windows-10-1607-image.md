@@ -1,10 +1,10 @@
 ---
 title: How to prepare Windows 10 1607 image
 author: Kamil
-type: post
+
 date: 2017-04-03T22:35:09+00:00
 url: /prepare-windows-10-1607-image/
-featured_image: /wp-content/uploads/2017/04/rawpixel-com-196509.jpg
+featuredImage: /wp-content/uploads/2017/04/rawpixel-com-196509.jpg
 categories:
   - Deployment
   - IT

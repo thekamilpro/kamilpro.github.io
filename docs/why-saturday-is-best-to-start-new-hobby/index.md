@@ -47,3 +47,4 @@ Rather than keep postponing your ideas, blaming yourself for lack of time or cou
 Things don’t matter, until executed.
 
 Main photo by: https://unsplash.com/@arstyy
+

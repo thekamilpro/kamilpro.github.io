@@ -1,11 +1,11 @@
 ---
 title: One song on repeat – productive loop
 author: Kamil
-type: post
+
 date: -001-11-30T00:00:00+00:00
 draft: true
 url: /?p=1209
-featured_image: /wp-content/uploads/2017/12/glenn-carstens-peters-210782.jpg
+featuredImage: /wp-content/uploads/2017/12/glenn-carstens-peters-210782.jpg
 categories:
   - Motivation
   - Productivity

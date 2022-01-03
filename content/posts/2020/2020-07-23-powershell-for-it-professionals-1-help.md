@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#1] [#2] – Help'
 author: Kamil
-type: post
+
 date: 2020-07-23T16:32:54+00:00
 url: /powershell-for-it-professionals-1-help/
-featured_image: /wp-content/uploads/2020/07/Using-help-with-PowerShell.jpg
+featuredImage: /wp-content/uploads/2020/07/Using-help-with-PowerShell.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

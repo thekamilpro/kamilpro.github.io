@@ -65,3 +65,4 @@ Get-Service -ComputerName ps-svr1 | GM
 
 Invoke-Command -computerName ps-svr1 -command  { get-service  } | GM
 ```
+

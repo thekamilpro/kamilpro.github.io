@@ -9,21 +9,27 @@
     <pubDate>Wed, 19 Aug 2020 12:49:09 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-9-setting-up-active-directory/</guid>
-    <description><![CDATA[Exercises  On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell  Commands 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature  Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/AD-Setup.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell  Commands 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature  Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.]]></description>
 </item><item>
     <title>PowerShell for IT Professionals [#6] – Filtering output</title>
     <link>https://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/</link>
     <pubDate>Fri, 07 Aug 2020 12:00:32 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/</guid>
-    <description><![CDATA[Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/Filtering-output.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.]]></description>
 </item><item>
     <title>The right people</title>
     <link>https://kprocyszyn.github.io/the-right-people/</link>
     <pubDate>Sun, 04 Oct 2015 18:54:31 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/the-right-people/</guid>
-    <description><![CDATA[Each of us has some ideal places, songs, people and the way how the morning coffee should be prepared. Sometimes the way how negative situations happen describe the way our day, week, life look like. The way we are.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2015/10/L3L1V89NLF.jpg" referrerpolicy="no-referrer">
+            </div>Each of us has some ideal places, songs, people and the way how the morning coffee should be prepared. Sometimes the way how negative situations happen describe the way our day, week, life look like. The way we are.
 Funnily enough, very often those things or people are just happening around us, the way we often don’t even notice it. We often can only notice the result of all those things.]]></description>
 </item></channel>
 </rss>

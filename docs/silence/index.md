@@ -9,3 +9,4 @@ But what if all we currently need is peace? The utter silence?  So called “me
 Sometimes it’s worth being completely alone, even for a short period of time. Just to think, and look into the soul. Miracles can happen afterwards.
 
  [1]: https://kamilpro.com/spam/
+

@@ -27,3 +27,4 @@ About a month ago, I asked my good friend Robert to lend me his DSLR. He has N
 I took me literally very short period of time to realise that what I need is DSLR, and my choice was Nikon d7100 with 18-140mm lens. I ordered it yesterday online, can&#8217;t wait to take it outside with me.
 
 It was a long, all round journey to find my perfect DSLR. I wonder what it will bring me.
+

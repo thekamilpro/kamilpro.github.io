@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/"
-        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "post","keywords": "1607, answer, deployment, feat, image, sysprep, unattend, windows 10","wordcount":  4986 ,
+        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "1607, answer, deployment, feat, image, sysprep, unattend, windows 10","wordcount":  4986 ,
         "url": "https:\/\/kprocyszyn.github.io\/prepare-windows-10-1607-image\/","datePublished": "2017-04-03T22:35:09+00:00","dateModified": "2022-01-02T14:23:30+00:00","license": "Kamil Procyszyn","publisher": {
             "@type": "Organization",
             "name": "Kamil Procyszyn","logo": "https:\/\/kprocyszyn.github.io\/images\/avatar.png"},"author": {
@@ -101,7 +101,90 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">How to prepare Windows 10 1607 image</h1><div class="content" id="content"><p>Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive.</p>
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">How to prepare Windows 10 1607 image</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kamil</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deployment/"><i class="far fa-folder fa-fw"></i>Deployment</a>&nbsp;<a href="/categories/it/"><i class="far fa-folder fa-fw"></i>IT</a>&nbsp;<a href="/categories/windows/"><i class="far fa-folder fa-fw"></i>Windows</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2017-04-03">2017-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;4986 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;24 minutes&nbsp;<span id="/prepare-windows-10-1607-image/" class="leancloud_visitors" data-flag-title="How to prepare Windows 10 1607 image">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/wp-content/uploads/2017/04/rawpixel-com-196509.jpg"
+        data-srcset="/wp-content/uploads/2017/04/rawpixel-com-196509.jpg, /wp-content/uploads/2017/04/rawpixel-com-196509.jpg 1.5x, /wp-content/uploads/2017/04/rawpixel-com-196509.jpg 2x"
+        data-sizes="auto"
+        alt="/wp-content/uploads/2017/04/rawpixel-com-196509.jpg"
+        title="/wp-content/uploads/2017/04/rawpixel-com-196509.jpg" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#windows-10-iso-file">Windows 10 ISO file</a></li>
+    <li><a href="#windows-adk">Windows ADK</a></li>
+    <li><a href="#hypervisor">Hypervisor</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#drivers">Drivers</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#create-vm--virtual-switch-for-vm">Create VM + Virtual Switch for VM</a>
+      <ul>
+        <li><a href="#creating-virtual-switch">Creating Virtual Switch</a></li>
+        <li><a href="#creating-virtual-machine">Creating Virtual Machine</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#audit-mode-or-oobe-mode">Audit mode or OOBE mode?</a></li>
+    <li><a href="#let8217s-install-windows-10">Let’s install Windows 10!</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#create-the-network-share-on-your-host-machine">Create the network share on your host machine</a></li>
+    <li><a href="#map-the-network-drive">Map the network drive</a></li>
+    <li><a href="#install-the-software-customise-the-settings">Install the software, customise the settings</a></li>
+    <li><a href="#drivers-1">Drivers</a>
+      <ul>
+        <li><a href="#why-not-rely-on-the-internetwindows-updates">Why not rely on the Internet/Windows updates?</a></li>
+        <li><a href="#pnputil-8211-drivers8217-best-mate">PNPUTIL – Drivers’ best mate</a>
+          <ul>
+            <li><a href="#main-pnputil-switches-which-you-should-know-about">Main PNPUTIL switches which you should know about:</a></li>
+            <li><a href="#driver-store-8211-what-is-this">Driver store – what is this?</a></li>
+            <li><a href="#let8217s-add-some-drivers">Let’s add some drivers!</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#creating-wim-file">Creating WIM file</a></li>
+    <li><a href="#answer-file">Answer File</a>
+      <ul>
+        <li><a href="#phase-1-winpe">Phase 1 WinPE</a></li>
+        <li><a href="#phase-4-specialize">Phase 4 Specialize</a></li>
+        <li><a href="#phase-7-oobe">Phase 7 OOBE</a>
+          <ul>
+            <li><a href="#defaultuser0-bug">Defaultuser0 bug</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#save-the-answer-file">Save the answer file</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#take-the-checkpoint-now">Take the checkpoint now</a></li>
+    <li><a href="#sysprep-8211-the-tool-for-generalization">Sysprep – the tool for generalization</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive.</p>
 <p>Therefore, I propose you to create your very own, customised, Windows 10 image which will save you tonnes of time.</p>
 <p>Let’s set some goals:</p>
 <ul>
@@ -435,9 +518,38 @@
 <li>If there are too many checkpoints (and not enough hard disk space), you can always remove all of them and create a new one.</li>
 <li>Creating the image is a long process – take your time!</li>
 </ul>
-<p>Main photo by: https://unsplash.com/@rawpixel</p></div><div id="comments"><div id="valine" class="comment"></div><noscript>
+<p>Main photo by: https://unsplash.com/@rawpixel</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-02&nbsp;<a class="git-hash" href="https://github.com/kprocyszyn/commit/9d14cf96907d7e60b658cc1bb133a974ee9a7f79" target="_blank" title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 9d14cf96907d7e60b658cc1bb133a974ee9a7f79: Import blog posts">
+                                    <i class="fas fa-hashtag fa-fw"></i>9d14cf9</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/prepare-windows-10-1607-image/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" data-title="How to prepare Windows 10 1607 image" data-via="@kprocyszyn" data-hashtags="1607,answer,deployment,feat,image,sysprep,unattend,windows 10"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" data-hashtag="1607"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" data-title="How to prepare Windows 10 1607 image"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" data-title="How to prepare Windows 10 1607 image"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://kprocyszyn.github.io/prepare-windows-10-1607-image/" data-title="How to prepare Windows 10 1607 image" data-image="/wp-content/uploads/2017/04/rawpixel-com-196509.jpg"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/1607/">1607</a>,&nbsp;<a href="/tags/answer/">answer</a>,&nbsp;<a href="/tags/deployment/">deployment</a>,&nbsp;<a href="/tags/feat/">feat</a>,&nbsp;<a href="/tags/image/">image</a>,&nbsp;<a href="/tags/sysprep/">sysprep</a>,&nbsp;<a href="/tags/unattend/">unattend</a>,&nbsp;<a href="/tags/windows-10/">windows 10</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/do-you-even-back-up/" class="prev" rel="prev" title="Do you even back up?"><i class="fas fa-angle-left fa-fw"></i>Do you even back up?</a>
+            <a href="/why-saturday-is-best-to-start-new-hobby/" class="next" rel="next" title="Why Saturday is best to start new hobby.">Why Saturday is best to start new hobby.<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
-            </noscript></div></div></div>
+            </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2014 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>

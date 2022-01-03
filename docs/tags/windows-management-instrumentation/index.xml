@@ -9,7 +9,9 @@
     <pubDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
-    <description><![CDATA[In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/WMI.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
 We will then use WMI Explorer graphical tool to ease discovering all possible classes and instances that WMI provides.
 Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it.]]></description>
 </item></channel>

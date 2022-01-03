@@ -1,10 +1,10 @@
 ---
 title: Apps, and their impact on the smart phone
 author: Kamil
-type: post
+
 date: 2016-08-07T09:45:31+00:00
 url: /apps-impact-smart-phone/
-featured_image: /wp-content/uploads/2016/08/photo-1457433575995-8407028a9970.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1457433575995-8407028a9970.jpg
 categories:
   - Tech
 tags:

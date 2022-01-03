@@ -9,7 +9,9 @@
     <pubDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
-    <description><![CDATA[In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Writing-first-script.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
 We will then have a look at the basic function of VS Code and create a simple “Hello World” script.
 Exercises If you haven’t followed along, you definitely would like to install VS Code and create a *.]]></description>
 </item></channel>

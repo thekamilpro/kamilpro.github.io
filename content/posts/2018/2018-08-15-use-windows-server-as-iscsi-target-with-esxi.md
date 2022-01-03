@@ -1,10 +1,10 @@
 ---
 title: Use Windows Server as iSCSI target with ESXi
 author: Kamil
-type: post
+
 date: 2018-08-15T17:54:47+00:00
 url: /use-windows-server-as-iscsi-target-with-esxi/
-featured_image: /wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg
+featuredImage: /wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg
 categories:
   - ESXi
   - IT

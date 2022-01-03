@@ -9,7 +9,9 @@
     <pubDate>Sun, 08 Mar 2020 10:52:17 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/prepare-hyper-v-template-of-windows-server-2016-2019/</guid>
-    <description><![CDATA[Deploying a new server is always fun! Well, at least the part after ISO download, installation, patching. Having said that, why not create a template so that you jump right into the fun?
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/03/dan-gold-mgaS4FlsYxQ-unsplash.jpg" referrerpolicy="no-referrer">
+            </div>Deploying a new server is always fun! Well, at least the part after ISO download, installation, patching. Having said that, why not create a template so that you jump right into the fun?
 So we are essentially going to create a preconfigured VHDX file that can be attached to the newly created VM, and it will take you straight to the login screen.
 What’s needed  Windows server or Windows 10 with Hyper-V role and management tools enabled Windows Assessment and Deployment Toolkit (ADK) – I always pick the latest version available, at the moment of writing this – Windows 10, version 1903 – is latest.]]></description>
 </item></channel>

@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#12] – WMI – Windows Management Instrumentation'
 author: Kamil
-type: post
+
 date: 2020-09-05T16:27:10+00:00
 url: /powershell-for-it-professionals-12-wmi-windows-management-instrumentation/
-featured_image: /wp-content/uploads/2020/09/WMI.jpg
+featuredImage: /wp-content/uploads/2020/09/WMI.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

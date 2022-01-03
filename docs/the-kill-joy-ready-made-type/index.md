@@ -23,3 +23,4 @@ I don&#8217;t just get one thing, one simple thing. If you admire something and 
 Oh yes, I&#8217;ve forgotten, they are like a never polished diamond &#8211; maybe there is something marvellous inside, but there&#8217;s nobody to cut. Because the only person who can cut your diamond, is yourself.
 
 &nbsp;
+

@@ -23,3 +23,4 @@ There were jousting, fights on sword and pompous speeches, lots of laughter and 
 <p style="text-align: left;">
   I could be telling you about the day and the combat between the two countries, and their brave knights, and has swung their lances on their beautiful dressed horses, but I think you’d be more interested to witness that event yourself.
 </p>
+

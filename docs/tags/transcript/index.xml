@@ -9,7 +9,9 @@
     <pubDate>Sat, 12 Sep 2020 16:09:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</guid>
-    <description><![CDATA[In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Is-PowerShell-secure.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
 We will then have a look how execution policy can help to control on what basis the PowerShell scripts can be executed.
 At the end, we will configure some GPOs to control the execution and transcription of scripts.]]></description>
 </item></channel>

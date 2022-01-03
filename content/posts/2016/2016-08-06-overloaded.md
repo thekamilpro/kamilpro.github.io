@@ -1,10 +1,10 @@
 ---
 title: Overloaded
 author: Kamil
-type: post
+
 date: 2016-08-06T09:32:21+00:00
 url: /overloaded/
-featured_image: /wp-content/uploads/2016/08/photo-1444703686981-a3abbc4d4fe3.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1444703686981-a3abbc4d4fe3.jpg
 categories:
   - Motivation
 tags:

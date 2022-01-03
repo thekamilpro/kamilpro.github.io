@@ -1,10 +1,10 @@
 ---
 title: Whatever floats your boat…
 author: Kamil
-type: post
+
 date: 2016-08-02T21:57:25+00:00
 url: /whatever-floats-your-boat/
-featured_image: /wp-content/uploads/2016/08/photo-1456618054495-a9c763090b53.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1456618054495-a9c763090b53.jpg
 categories:
   - 'Me &amp; People'
 tags:

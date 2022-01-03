@@ -53,3 +53,4 @@ I hope that you’ve achieved your goals for this year, set goals for the 2019 a
  [1]: https://amzn.to/2CIf4gh
  [2]: https://amzn.to/2AqE76d
  [3]: https://amzn.to/2QcELsY
+

@@ -1,7 +1,7 @@
 ---
 title: Experience, that’s what really matters
 author: Kamil
-type: post
+
 date: 2015-06-06T19:55:25+00:00
 url: /what-really-matters-experience/
 ample_page_layout:

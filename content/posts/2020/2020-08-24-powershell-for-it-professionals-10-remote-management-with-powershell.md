@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#10] – Remote management with PowerShell'
 author: Kamil
-type: post
+
 date: 2020-08-24T10:00:00+00:00
 url: /powershell-for-it-professionals-10-remote-management-with-powershell/
-featured_image: /wp-content/uploads/2020/08/Remoting.jpg
+featuredImage: /wp-content/uploads/2020/08/Remoting.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

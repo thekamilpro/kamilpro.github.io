@@ -1,10 +1,10 @@
 ---
 title: Blog is changing
 author: Kamil
-type: post
+
 date: 2016-08-30T07:30:13+00:00
 url: /blog-is-changing/
-featured_image: /wp-content/uploads/2016/08/photo-1464963160608-a6834f70b421.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1464963160608-a6834f70b421.jpg
 categories:
   - 'Me &amp; People'
 tags:

@@ -1,10 +1,10 @@
 ---
 title: Self-investment
 author: Kamil
-type: post
+
 date: 2016-07-30T22:13:47+00:00
 url: /self-investment/
-featured_image: /wp-content/uploads/2016/07/photo-1414509613498-f53000d3d2c1.jpg
+featuredImage: /wp-content/uploads/2016/07/photo-1414509613498-f53000d3d2c1.jpg
 categories:
   - Motivation
 tags:

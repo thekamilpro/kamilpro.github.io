@@ -73,3 +73,4 @@ Get-ChildItem Cert:\CurrentUser\My\
 	4. Check the version of Notepad.exe in Windows directory
 	5. Discover current Windows build version by registry property: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 	```
+

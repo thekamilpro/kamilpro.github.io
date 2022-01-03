@@ -1,7 +1,7 @@
 ---
 title: 27 was a great number
 author: Kamil
-type: post
+
 date: 2016-08-08T21:58:56+00:00
 url: /27-was-a-great-number/
 categories:

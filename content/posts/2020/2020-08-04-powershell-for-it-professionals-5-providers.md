@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#5] – Providers'
 author: Kamil
-type: post
+
 date: 2020-08-04T10:55:00+00:00
 url: /powershell-for-it-professionals-5-providers/
-featured_image: /wp-content/uploads/2020/08/Providers.jpg
+featuredImage: /wp-content/uploads/2020/08/Providers.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

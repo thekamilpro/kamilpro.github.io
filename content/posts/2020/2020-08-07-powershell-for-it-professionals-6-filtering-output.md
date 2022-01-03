@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#6] – Filtering output'
 author: Kamil
-type: post
+
 date: 2020-08-07T12:00:32+00:00
 url: /powershell-for-it-professionals-6-filtering-output/
-featured_image: /wp-content/uploads/2020/08/Filtering-output.jpg
+featuredImage: /wp-content/uploads/2020/08/Filtering-output.jpg
 wp_last_modified_info:
   - 1st November 2020 @ 9:49 am
 wplmi_shortcode:

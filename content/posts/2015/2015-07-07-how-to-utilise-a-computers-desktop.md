@@ -1,7 +1,7 @@
 ---
 title: How to utilise a computer’s desktop
 author: Kamil
-type: post
+
 date: 2015-07-07T11:00:46+00:00
 url: /how-to-utilise-a-computers-desktop/
 ample_page_layout:

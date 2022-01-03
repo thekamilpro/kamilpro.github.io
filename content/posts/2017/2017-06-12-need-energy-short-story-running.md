@@ -1,10 +1,10 @@
 ---
 title: Need for energy – my short story of running
 author: Kamil
-type: post
+
 date: 2017-06-12T21:23:57+00:00
 url: /need-energy-short-story-running/
-featured_image: /wp-content/uploads/2017/06/riccardo-annandale-140624.jpg
+featuredImage: /wp-content/uploads/2017/06/riccardo-annandale-140624.jpg
 categories:
   - Motivation
   - Sport

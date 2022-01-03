@@ -1,10 +1,10 @@
 ---
 title: Monitoring – why you need it
 author: Kamil
-type: post
+
 date: 2019-07-09T06:45:00+00:00
 url: /monitoring-why-you-need-it/
-featured_image: /wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg
+featuredImage: /wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg
 wp_last_modified_info:
   - 8th July 2019 @ 7:45 pm
 wplmi_shortcode:

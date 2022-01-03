@@ -1,10 +1,10 @@
 ---
 title: Add any drivers to Windows – on example of GPU drivers
 author: Kamil
-type: post
+
 date: 2017-05-29T18:53:05+00:00
 url: /add-any-drivers-to-windows-on-example-of-gpu-drivers/
-featured_image: /wp-content/uploads/2017/05/jeff-sheldon-3221.jpg
+featuredImage: /wp-content/uploads/2017/05/jeff-sheldon-3221.jpg
 categories:
   - Deployment
   - IT

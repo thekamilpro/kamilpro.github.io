@@ -9,6 +9,8 @@
     <pubDate>Mon, 27 Jul 2020 19:08:38 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-2-running-commands/</guid>
-    <description><![CDATA[Exercises  Display a list of all services that start with the letter W Display all processes (you might need to use Help to discover the right command. Remember the noun might be singular). Open Notepad (you can simply punch in notepad in the shell)  Display only processes that have a name “Notepad” Once you can there’s only one instance of Notepad running, close it with PowerShell!]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/07/Running-Commands.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  Display a list of all services that start with the letter W Display all processes (you might need to use Help to discover the right command. Remember the noun might be singular). Open Notepad (you can simply punch in notepad in the shell)  Display only processes that have a name “Notepad” Once you can there’s only one instance of Notepad running, close it with PowerShell!]]></description>
 </item></channel>
 </rss>

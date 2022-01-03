@@ -138,3 +138,4 @@ Problem solved! Yay!
  [3]: https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/iSCSI-virtual-disk.gif?fit=1844%2C962&ssl=1
  [4]: https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/ESXi-VMKernel-NIC.gif?fit=1844%2C962&ssl=1
  [5]: https://i0.wp.com/kamilpro.com/wp-content/uploads/2018/08/ESXi-add-iSCSI-and-create-datastore.gif?fit=1844%2C962&ssl=1
+

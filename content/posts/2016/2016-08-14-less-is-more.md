@@ -1,10 +1,10 @@
 ---
 title: Less is more
 author: Kamil
-type: post
+
 date: 2016-08-14T17:59:54+00:00
 url: /less-is-more/
-featured_image: /wp-content/uploads/2016/08/photo-1470343740979-20b904b850da.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1470343740979-20b904b850da.jpg
 categories:
   - 'Me &amp; People'
 tags:

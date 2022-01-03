@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#16] – Scripting part 3 – Add-Member and network'
 author: Kamil
-type: post
+
 date: 2020-10-13T19:12:40+00:00
 url: /powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/
-featured_image: /wp-content/uploads/2020/10/Writing-first-script-pt3.jpg
+featuredImage: /wp-content/uploads/2020/10/Writing-first-script-pt3.jpg
 wp_last_modified_info:
   - 1st November 2020 @ 9:56 am
 wplmi_shortcode:

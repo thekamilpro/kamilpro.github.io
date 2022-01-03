@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#8] – Manage everything with PowerShell'
 author: Kamil
-type: post
+
 date: 2020-08-14T16:31:00+00:00
 url: /powershell-for-it-professionals-8-manage-everything-with-powershell/
-featured_image: /wp-content/uploads/2020/08/Modules.jpg
+featuredImage: /wp-content/uploads/2020/08/Modules.jpg
 wp_last_modified_info:
   - 1st November 2020 @ 9:51 am
 wplmi_shortcode:

@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#11] – Variables'
 author: Kamil
-type: post
+
 date: 2020-08-29T10:39:05+00:00
 url: /powershell-for-it-professionals-11-variables/
-featured_image: /wp-content/uploads/2020/08/Variables.jpg
+featuredImage: /wp-content/uploads/2020/08/Variables.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

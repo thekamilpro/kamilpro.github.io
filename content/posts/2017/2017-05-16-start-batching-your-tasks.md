@@ -1,10 +1,10 @@
 ---
 title: Do you check email every 2 minutes? Start batching your tasks
 author: Kamil
-type: post
+
 date: 2017-05-16T12:12:47+00:00
 url: /start-batching-your-tasks/
-featured_image: /wp-content/uploads/2017/05/brooke-lark-96787.jpg
+featuredImage: /wp-content/uploads/2017/05/brooke-lark-96787.jpg
 categories:
   - Motivation
   - Productivity

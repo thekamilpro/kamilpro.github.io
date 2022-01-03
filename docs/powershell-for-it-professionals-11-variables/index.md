@@ -120,3 +120,4 @@ foreach ($c in $computers) {Test-NetConnection $c}
 
 foreach ($c in $computers) {nslookup $c}
 ```
+

@@ -43,3 +43,4 @@ So I did optimise – the BIOS, drivers and operating system itself, spent time 
 The use of computer resources decreased by 50-75%, and the workstation could handle all the tasks easily. Just like that. The company saved a few hundred pounds on the computer parts.
 
 It&#8217;s unbelievable how experience can lead to simple solutions, saving time, effort and money. I will still try to gain new knowledge, because the more I learn, the more I like to learn.
+

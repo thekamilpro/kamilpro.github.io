@@ -1,10 +1,10 @@
 ---
 title: Notification
 author: Kamil
-type: post
+
 date: 2016-07-20T19:48:05+00:00
 url: /notification/
-featured_image: /wp-content/uploads/2016/07/photo-1423784346385-c1d4dac9893a.jpg
+featuredImage: /wp-content/uploads/2016/07/photo-1423784346385-c1d4dac9893a.jpg
 categories:
   - Motivation
 tags:

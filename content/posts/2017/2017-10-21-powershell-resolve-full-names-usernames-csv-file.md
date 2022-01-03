@@ -1,7 +1,7 @@
 ---
 title: Powershell – resolve full names to usernames from CSV file
 author: Kamil
-type: post
+
 date: 2017-10-21T14:03:58+00:00
 url: /powershell-resolve-full-names-usernames-csv-file/
 categories:

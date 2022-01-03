@@ -25,3 +25,4 @@ But every story should end up well, therefore here&#8217;s my take: because of a
 Everything has a bright side, it&#8217;s just a matter of finding the right angle of looking.
 
 &nbsp;
+

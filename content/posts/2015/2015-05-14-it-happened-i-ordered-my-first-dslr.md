@@ -1,7 +1,7 @@
 ---
 title: It happened – I ordered my first DSLR.
 author: Kamil
-type: post
+
 date: 2015-05-14T20:02:59+00:00
 url: /it-happened-i-ordered-my-first-dslr/
 ample_page_layout:

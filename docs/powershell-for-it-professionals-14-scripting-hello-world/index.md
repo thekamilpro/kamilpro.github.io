@@ -21,3 +21,4 @@ If you haven&#8217;t followed along, you definitely would like to install VS Cod
 #Run AD command
 Get-ADDomain
 ```
+

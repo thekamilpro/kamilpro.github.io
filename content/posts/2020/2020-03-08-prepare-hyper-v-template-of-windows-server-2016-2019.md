@@ -1,10 +1,9 @@
 ---
 title: Prepare Hyper-V template of Windows Server 2016/2019
 author: Kamil
-type: post
 date: 2020-03-08T10:52:17+00:00
 url: /prepare-hyper-v-template-of-windows-server-2016-2019/
-featured_image: /wp-content/uploads/2020/03/dan-gold-mgaS4FlsYxQ-unsplash.jpg
+featuredimage: /wp-content/uploads/2020/03/dan-gold-mgaS4FlsYxQ-unsplash.jpg
 wp_last_modified_info:
   - 8th March 2020 @ 10:52 am
 wplmi_shortcode:

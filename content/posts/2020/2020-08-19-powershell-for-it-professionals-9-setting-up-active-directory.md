@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#9] – Setting up Active Directory'
 author: Kamil
-type: post
+
 date: 2020-08-19T12:49:09+00:00
 url: /powershell-for-it-professionals-9-setting-up-active-directory/
-featured_image: /wp-content/uploads/2020/08/AD-Setup.jpg
+featuredImage: /wp-content/uploads/2020/08/AD-Setup.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

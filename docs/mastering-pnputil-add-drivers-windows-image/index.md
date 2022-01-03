@@ -86,3 +86,4 @@ All drivers will have the OemXX.inf naming convention, while XX is the unique nu
   * You can use command **PNPUTIL /enum-drivers > C:\temp\drivers.txt** to create a file with the list of all current drivers.
   * You can find names of drivers in Device Manager. Simply click the device you&#8217;d need the drivers for, pick details tab and choose &#8220;inf name&#8221; from the drop down menu.
   * I did write more about creating the Windows 10 image here &#8211;&nbsp;<a href="https://kamilpro.com/prepare-windows-10-1607-image/" target="_blank" rel="noopener noreferrer">https://kamilpro.com/prepare-windows-10-1607-image/</a>.
+

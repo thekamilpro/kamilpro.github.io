@@ -1,7 +1,7 @@
 ---
 title: Why certification matters?
 author: Kamil
-type: post
+
 date: 2016-01-21T11:42:35+00:00
 url: /why-certification-matters/
 ample_page_layout:

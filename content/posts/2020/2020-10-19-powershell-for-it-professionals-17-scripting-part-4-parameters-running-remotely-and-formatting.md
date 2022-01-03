@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#17] – Scripting part 4 – parameters, running remotely and formatting'
 author: Kamil
-type: post
+
 date: 2020-10-19T18:32:20+00:00
 url: /powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/
-featured_image: /wp-content/uploads/2020/10/Writing-first-script-pt4.jpg
+featuredImage: /wp-content/uploads/2020/10/Writing-first-script-pt4.jpg
 wp_last_modified_info:
   - 19th October 2020 @ 7:04 pm
 wplmi_shortcode:

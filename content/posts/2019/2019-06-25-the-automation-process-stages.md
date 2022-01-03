@@ -1,11 +1,11 @@
 ---
 title: The automation process stages
 author: Kamil
-type: post
+
 date: 2019-06-25T07:50:11+00:00
 excerpt: 7 simple steps to automate any process.
 url: /the-automation-process-stages/
-featured_image: /wp-content/uploads/2019/06/us-wah-x8HupeZdK7Y-unsplash.jpg
+featuredImage: /wp-content/uploads/2019/06/us-wah-x8HupeZdK7Y-unsplash.jpg
 wp_last_modified_info:
   - 25th June 2019 @ 9:19 pm
 wplmi_shortcode:

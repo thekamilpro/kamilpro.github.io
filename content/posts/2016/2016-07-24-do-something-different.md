@@ -1,7 +1,7 @@
 ---
 title: Do something different
 author: Kamil
-type: post
+
 date: 2016-07-24T15:41:10+00:00
 url: /do-something-different/
 categories:

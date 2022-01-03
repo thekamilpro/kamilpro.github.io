@@ -1,10 +1,10 @@
 ---
 title: Do you even back up?
 author: Kamil
-type: post
+
 date: 2016-10-26T20:11:31+00:00
 url: /do-you-even-back-up/
-featured_image: /wp-content/uploads/2016/10/photo-1467730572233-b2d465ec6e89.jpg
+featuredImage: /wp-content/uploads/2016/10/photo-1467730572233-b2d465ec6e89.jpg
 categories:
   - Tech
 tags:

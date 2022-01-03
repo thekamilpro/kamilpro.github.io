@@ -27,3 +27,4 @@ If there is such a difference between the default system and the one we actually
 There could be a few users profiles: a business, teenager, and a photographer. Each profile would have a set of predefined apps running on it, and we as the customers would be able to see what is the actual phone&#8217;s performance and how long it would last on battery.
 
 I, as a practical guy, I&#8217;m rather after the real results than theoretical ones.
+

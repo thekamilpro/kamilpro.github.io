@@ -9,7 +9,9 @@
     <pubDate>Mon, 19 Oct 2020 18:32:20 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-17-scripting-part-4-parameters-running-remotely-and-formatting/</guid>
-    <description><![CDATA[In the last part of scripting series, we will make the script to be able to query remote machines, e.g. servers.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/10/Writing-first-script-pt4.jpg" referrerpolicy="no-referrer">
+            </div>In the last part of scripting series, we will make the script to be able to query remote machines, e.g. servers.
 We will also check how to add parameters to the script (and configure the default value of parameter) so that user will able to pass the parameter name like in a standard PowerShell cmdlet.
 Finally, we are going to format the script so that it looks more reliable and make some refactoring so that the logic is simpler.]]></description>
 </item><item>
@@ -18,7 +20,9 @@ Finally, we are going to format the script so that it looks more reliable and ma
     <pubDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
-    <description><![CDATA[In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/10/Writing-first-script-pt2.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
 Then we will retrieve OS information with the help of WMI and display it on the screen with Write-Host.
 Although using Write-Host is easy to use, it doesn’t really allow us to do very much e.g. we cannot export information to the CSV, therefore we change it and start using custom PSObject – that way our script will start returning information like a regular PowerShell command.]]></description>
 </item></channel>

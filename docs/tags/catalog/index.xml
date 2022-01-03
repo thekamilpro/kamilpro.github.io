@@ -9,7 +9,9 @@
     <pubDate>Sun, 30 Sep 2018 20:33:33 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/backup-exec-cataloging-multiple-tapes-with-a-single-tape-drive/</guid>
-    <description><![CDATA[Recently I’ve had a request to restore a certain backup from the old backup tapes. We’ve had a new Backup exec installation which didn’t have the catalogue/record of these tapes nor the actual tape drive to recover them – I knew it was going to be one in the world task. And the hell it was.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2018/09/chris-yates-708472-unsplash.jpg" referrerpolicy="no-referrer">
+            </div>Recently I’ve had a request to restore a certain backup from the old backup tapes. We’ve had a new Backup exec installation which didn’t have the catalogue/record of these tapes nor the actual tape drive to recover them – I knew it was going to be one in the world task. And the hell it was.
 Locating tapes in the storage unit was a pure joy – no need to go to the gym after this.]]></description>
 </item></channel>
 </rss>

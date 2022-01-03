@@ -1,7 +1,7 @@
 ---
 title: No pain, no gain.
 author: Kamil
-type: post
+
 date: 2016-07-27T21:09:27+00:00
 url: /no-pain-no-gain/
 categories:

@@ -24,3 +24,4 @@ foreach ($i in $list) {
     Get-ADUser -Filter "Name -like '$($i.Name)'"
 }
 </pre>
+

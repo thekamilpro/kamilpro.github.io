@@ -9,6 +9,8 @@
     <pubDate>Wed, 19 Aug 2020 12:49:09 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-9-setting-up-active-directory/</guid>
-    <description><![CDATA[Exercises  On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell  Commands 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature  Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/AD-Setup.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell  Commands 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29  ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature  Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.]]></description>
 </item></channel>
 </rss>

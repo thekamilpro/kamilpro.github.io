@@ -1,10 +1,10 @@
 ---
 title: Post-Smartphone era, yet?
 author: Kamil
-type: post
+
 date: 2016-06-07T17:00:23+00:00
 url: /post-smartphone-era-yet/
-featured_image: /wp-content/uploads/2016/06/download.jpeg
+featuredImage: /wp-content/uploads/2016/06/download.jpeg
 categories:
   - Tech
 tags:

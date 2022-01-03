@@ -19,3 +19,4 @@ At the very last paragraph I’ve left my life time hobby – the game changer o
 Therefore, if you have nothing better to do, go and do something different.
 
 <span class="embed-youtube" style="text-align:center; display: block;"></span>
+

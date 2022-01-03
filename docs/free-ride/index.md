@@ -63,3 +63,4 @@ So-called-friend: &#8216;Really? That&#8217;s great, but look my lunch break is 
 ##  That &#8220;later&#8221; never came. Actually, it never comes.
 
 PS. Imagine that you have provided someone with a free service, &#8217;cause you&#8217;re a good lad. Imagine that this wasn&#8217;t good enough, or got broken or something like that. Therefore your new friend calls you again, and again and again. It&#8217;s like never ending story. Therefore if you are not in any of the  above categories feel excluded from my service. End of.
+

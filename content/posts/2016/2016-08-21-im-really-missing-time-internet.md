@@ -1,10 +1,10 @@
 ---
 title: I’m really missing time before the Internet.
 author: Kamil
-type: post
+
 date: 2016-08-21T19:47:22+00:00
 url: /im-really-missing-time-internet/
-featured_image: /wp-content/uploads/2016/08/photo-1453060113865-968cea1ad53a.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1453060113865-968cea1ad53a.jpg
 categories:
   - Tech
 tags:

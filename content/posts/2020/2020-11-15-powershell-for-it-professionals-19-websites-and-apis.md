@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#19] – Websites and APIs'
 author: Kamil
-type: post
+
 date: 2020-11-15T20:57:20+00:00
 url: /powershell-for-it-professionals-19-websites-and-apis/
-featured_image: /wp-content/uploads/2020/11/Slide1-1.jpg
+featuredImage: /wp-content/uploads/2020/11/Slide1-1.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

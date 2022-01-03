@@ -1,10 +1,10 @@
 ---
 title: Why Saturday is best to start new hobby.
 author: Kamil
-type: post
+
 date: 2017-04-18T06:30:22+00:00
 url: /why-saturday-is-best-to-start-new-hobby/
-featured_image: /wp-content/uploads/2017/04/austin-neill-189141.jpg
+featuredImage: /wp-content/uploads/2017/04/austin-neill-189141.jpg
 categories:
   - Motivation
 tags:

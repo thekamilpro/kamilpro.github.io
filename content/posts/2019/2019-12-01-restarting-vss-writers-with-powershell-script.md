@@ -1,10 +1,10 @@
 ---
 title: Restarting VSS Writers with PowerShell script
 author: Kamil
-type: post
+
 date: 2019-12-01T18:27:18+00:00
 url: /restarting-vss-writers-with-powershell-script/
-featured_image: /wp-content/uploads/2019/12/jason-yu-qpZFTRM-Bec-unsplash.jpg
+featuredImage: /wp-content/uploads/2019/12/jason-yu-qpZFTRM-Bec-unsplash.jpg
 wp_last_modified_info:
   - 22nd July 2020 @ 9:34 am
 wplmi_shortcode:

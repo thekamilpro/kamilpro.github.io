@@ -9,7 +9,9 @@
     <pubDate>Sat, 12 Sep 2020 16:09:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</guid>
-    <description><![CDATA[In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Is-PowerShell-secure.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
 We will then have a look how execution policy can help to control on what basis the PowerShell scripts can be executed.
 At the end, we will configure some GPOs to control the execution and transcription of scripts.]]></description>
 </item><item>
@@ -18,7 +20,9 @@ At the end, we will configure some GPOs to control the execution and transcripti
     <pubDate>Sat, 05 Sep 2020 16:27:10 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-12-wmi-windows-management-instrumentation/</guid>
-    <description><![CDATA[In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/WMI.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we learn how to use PowerShell to access WMI (Windows Management Instrumentation), so that we can gain often hidden or obscure information.
 We will then use WMI Explorer graphical tool to ease discovering all possible classes and instances that WMI provides.
 Finally, we will use WMI queries to add another level of granularity in GPO so that we can target very specific computers in it.]]></description>
 </item><item>
@@ -27,7 +31,9 @@ Finally, we will use WMI queries to add another level of granularity in GPO so t
     <pubDate>Sun, 15 Mar 2020 14:25:59 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/deploying-software-with-gpo/</guid>
-    <description><![CDATA[Having software consistently deployed across the fleet of computers is one of the key points that can be automated.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/03/ferdinand-stohr-rzA7ZuI8M5o-unsplash.jpg" referrerpolicy="no-referrer">
+            </div>Having software consistently deployed across the fleet of computers is one of the key points that can be automated.
 If I have a choice (and it makes sense), I will always choose GPO over any other solution because it’s embedded into Active Directory thus not requiring installation, learning and maintenance of additional management tool.
 MSI – Software Installation One of the main advantages of MSI installers is that in 99% of cases you can just use the “Software Installation” option in GPO, and GPO will take care of the silent installation.]]></description>
 </item></channel>

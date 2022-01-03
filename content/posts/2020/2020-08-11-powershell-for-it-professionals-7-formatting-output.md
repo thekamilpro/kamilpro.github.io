@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#7] – Formatting output'
 author: Kamil
-type: post
+
 date: 2020-08-11T12:35:44+00:00
 url: /powershell-for-it-professionals-7-formatting-output/
-featured_image: /wp-content/uploads/2020/08/Formatting-output.jpg
+featuredImage: /wp-content/uploads/2020/08/Formatting-output.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

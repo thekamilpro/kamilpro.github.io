@@ -23,3 +23,4 @@ Once you found the command for retrieving Event Logs, can you tell if there are 
 Is PowerShell capable of creating folders and files? You might search for Item to find out
 
 How would you list all the files/folders in current folder?
+

@@ -20,7 +20,9 @@ I hope you’ve enjoyed the course so far and it will be helped you in some way 
     <pubDate>Tue, 03 Nov 2020 17:33:18 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-18-working-with-text-strings/</guid>
-    <description><![CDATA[Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/11/Slide1.jpg" referrerpolicy="no-referrer">
+            </div>Although PowerShell treats everything as object – including text strings – working with text might be particularly difficult – at least when first approached.
 In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
 PowerShell can also be great at parsing log files – we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.]]></description>
 </item><item>
@@ -29,7 +31,9 @@ PowerShell can also be great at parsing log files – we will use Select-String 
     <pubDate>Tue, 13 Oct 2020 19:12:40 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</guid>
-    <description><![CDATA[In this lesson we are taking our script further by adding details about IP configuration and last installed hotfixes.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/10/Writing-first-script-pt3.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we are taking our script further by adding details about IP configuration and last installed hotfixes.
 But it turns out, the networking information is not that shallow as it seems at the first glance – thus I’ll show you how to retrieve the information from the configuration.
 We will also look on how to reuse our already created object so that we don’t need to duplicate code.]]></description>
 </item><item>
@@ -38,7 +42,9 @@ We will also look on how to reuse our already created object so that we don’t 
     <pubDate>Mon, 05 Oct 2020 17:16:21 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-15-scripting-part-2-if-and-psobject/</guid>
-    <description><![CDATA[In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/10/Writing-first-script-pt2.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we carry on writing the scripting by gathering requirements and putting them together as comments in code.
 Then we will retrieve OS information with the help of WMI and display it on the screen with Write-Host.
 Although using Write-Host is easy to use, it doesn’t really allow us to do very much e.g. we cannot export information to the CSV, therefore we change it and start using custom PSObject – that way our script will start returning information like a regular PowerShell command.]]></description>
 </item><item>
@@ -47,7 +53,9 @@ Although using Write-Host is easy to use, it doesn’t really allow us to do ver
     <pubDate>Sat, 26 Sep 2020 13:00:35 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-14-scripting-hello-world/</guid>
-    <description><![CDATA[In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Writing-first-script.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will be preparing our workstation for writing PowerShell scripts. We will start by enabling RSAT and then install Visual Studio Code which is a recommended and free PowerShell code editor.
 We will then have a look at the basic function of VS Code and create a simple “Hello World” script.
 Exercises If you haven’t followed along, you definitely would like to install VS Code and create a *.]]></description>
 </item><item>
@@ -56,7 +64,9 @@ Exercises If you haven’t followed along, you definitely would like to install 
     <pubDate>Sat, 12 Sep 2020 16:09:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-13-is-powershell-secure/</guid>
-    <description><![CDATA[In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/09/Is-PowerShell-secure.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we will have a look on PowerShell built in security features and how it differs from e.g. BAT files.
 We will then have a look how execution policy can help to control on what basis the PowerShell scripts can be executed.
 At the end, we will configure some GPOs to control the execution and transcription of scripts.]]></description>
 </item><item>
@@ -65,6 +75,8 @@ At the end, we will configure some GPOs to control the execution and transcripti
     <pubDate>Fri, 07 Aug 2020 12:00:32 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-6-filtering-output/</guid>
-    <description><![CDATA[Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/Filtering-output.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W  Lesson notes 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51  ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.]]></description>
 </item></channel>
 </rss>

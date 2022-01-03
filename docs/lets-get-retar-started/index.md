@@ -17,3 +17,4 @@ I would use social media &#8211; but hey! &#8211; I wanna keep what&#8217;s mine
 The problem with social media is that there is no really a way to find anything once it has been posted. Searching one-by-one, browsing through very own timeline is the only way to find a certain post. This is pointless. Content on social media disappears within hours.
 
 My aims are simple: write more, express myself and master the English. Wish me good luck.
+

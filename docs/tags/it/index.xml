@@ -9,7 +9,9 @@
     <pubDate>Sat, 29 Aug 2020 10:39:05 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-11-variables/</guid>
-    <description><![CDATA[In this lesson we’re going to learn how what Variables are, why it’s good to use them and how to actually create them. We will then assign various values to variables to and use them solely, and in parameters.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/Variables.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we’re going to learn how what Variables are, why it’s good to use them and how to actually create them. We will then assign various values to variables to and use them solely, and in parameters.
 We will also have a look at foreach loop so that we can e.g. ping multiple computers using single variable with multiple objects in it.
 Exercises   Use Get-Command to find all commands that allow you to manage variables.]]></description>
 </item><item>
@@ -18,15 +20,19 @@ Exercises   Use Get-Command to find all commands that allow you to manage variab
     <pubDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
-    <description><![CDATA[In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
-Exercises  With Enter-PSSesion, Remote to remote server and&nbsp; restart &#8220;Windows update&#8221; service   With Invoke-Command find out the remote computers last boot up/startup time   List all running processes on remote server without using Enter-PsSession or Invoke-Command   If you have a Domain Controller available, use Invoke-Command to list all computers on that network (you can use * for filter), remember that you need to provide all necessary parameters with your command in the script block so command just runs and doesn&#8217;t prompt for any additional information.]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/Remoting.jpg" referrerpolicy="no-referrer">
+            </div>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises With Enter-PSSesion, Remote to remote server and&nbsp; restart &#8220;Windows update&#8221; serviceWith Invoke-Command find out the remote computers last boot up/startup timeList all running processes on remote server without using Enter-PsSession or Invoke-CommandIf you have a Domain Controller available, use Invoke-Command to list all computers on that network (you can use * for filter), remember that you need to provide all necessary parameters with your command in the script block so command just runs and doesn&#8217;t prompt for any additional information.]]></description>
 </item><item>
     <title>Self-investment</title>
     <link>https://kprocyszyn.github.io/self-investment/</link>
     <pubDate>Sat, 30 Jul 2016 22:13:47 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/self-investment/</guid>
-    <description><![CDATA[I’m crazy about few things in my life. One of them is self-investment. Something what I do entirely for myself, because I am convinced that it will be beneficial to me, eventually.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2016/07/photo-1414509613498-f53000d3d2c1.jpg" referrerpolicy="no-referrer">
+            </div>I’m crazy about few things in my life. One of them is self-investment. Something what I do entirely for myself, because I am convinced that it will be beneficial to me, eventually.
 At the beginning of my IT journey, I sacrificed a lot of time. There were whole weekends with computer as well as late nights during a week. I wasn’t aware that this could have been an actual investment, that I was working towards bettering my future.]]></description>
 </item><item>
     <title>Why certification matters?</title>

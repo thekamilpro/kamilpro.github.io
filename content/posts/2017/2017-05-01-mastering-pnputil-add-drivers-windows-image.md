@@ -1,10 +1,10 @@
 ---
 title: Mastering PNPUTIL – how to add drivers to the Windows image
 author: Kamil
-type: post
+
 date: 2017-05-01T20:32:06+00:00
 url: /mastering-pnputil-add-drivers-windows-image/
-featured_image: /wp-content/uploads/2017/05/wil-stewart-21815.jpg
+featuredImage: /wp-content/uploads/2017/05/wil-stewart-21815.jpg
 categories:
   - Deployment
   - IT

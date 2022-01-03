@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#13] – Is PowerShell secure?'
 author: Kamil
-type: post
+
 date: 2020-09-12T16:09:00+00:00
 url: /powershell-for-it-professionals-13-is-powershell-secure/
-featured_image: /wp-content/uploads/2020/09/Is-PowerShell-secure.jpg
+featuredImage: /wp-content/uploads/2020/09/Is-PowerShell-secure.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

@@ -1,10 +1,10 @@
 ---
 title: Sysadmin’s tools – what I have installed on my laptop
 author: Kamil
-type: post
+
 date: 2019-01-06T20:40:21+00:00
 url: /sysadmins-tools-what-i-have-installed-on-my-laptop/
-featured_image: /wp-content/uploads/2019/01/rob-lambert-64186-unsplash.jpg
+featuredImage: /wp-content/uploads/2019/01/rob-lambert-64186-unsplash.jpg
 categories:
   - Tech
 tags:

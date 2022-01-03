@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#18] – Working with text strings'
 author: Kamil
-type: post
+
 date: 2020-11-03T17:33:18+00:00
 url: /powershell-for-it-professionals-18-working-with-text-strings/
-featured_image: /wp-content/uploads/2020/11/Slide1.jpg
+featuredImage: /wp-content/uploads/2020/11/Slide1.jpg
 wp_last_modified_info:
   - 3rd November 2020 @ 4:20 pm
 wplmi_shortcode:

@@ -1,10 +1,10 @@
 ---
 title: The right people
 author: Kamil
-type: post
+
 date: 2015-10-04T18:54:31+00:00
 url: /the-right-people/
-featured_image: /wp-content/uploads/2015/10/L3L1V89NLF.jpg
+featuredImage: /wp-content/uploads/2015/10/L3L1V89NLF.jpg
 ample_page_layout:
   - default_layout
 dsq_thread_id:

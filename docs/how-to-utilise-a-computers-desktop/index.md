@@ -21,3 +21,4 @@ This is funny how sometimes the simplest ideas might be the best. In addition, i
 Soon, I will prepare for you step by step instructions on how to create the wallpaper for your announcing needs. Stay tuned!
 
  [1]: https://i2.wp.com/kamilpro.com/wp-content/uploads/2015/07/Wallpaper.jpg?ssl=1
+

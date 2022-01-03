@@ -1,7 +1,7 @@
 ---
 title: Ultimate Windows Update fix
 author: Kamil
-type: post
+
 date: 2017-10-29T22:12:15+00:00
 url: /ultimate-windows-update-fix/
 categories:

@@ -9,14 +9,18 @@
     <pubDate>Fri, 14 Aug 2020 16:31:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-8-manage-everything-with-powershell/</guid>
-    <description><![CDATA[Exercises  Can you uninstall module that was installed with Install-Module? Confirm your answer with Get-Module -ListAvaiable Can you update the installed module? Perhaps, you’d like to install version 1.0.0.0 of SNMP module, how can you force Install-Module to do so?  Install-Module error If you encounter the issue with downloading modules, run this commandlet as a temporary workaround (it must be applied every time the shell is restarted):]]></description>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/08/Modules.jpg" referrerpolicy="no-referrer">
+            </div>Exercises  Can you uninstall module that was installed with Install-Module? Confirm your answer with Get-Module -ListAvaiable Can you update the installed module? Perhaps, you’d like to install version 1.0.0.0 of SNMP module, how can you force Install-Module to do so?  Install-Module error If you encounter the issue with downloading modules, run this commandlet as a temporary workaround (it must be applied every time the shell is restarted):]]></description>
 </item><item>
     <title>Use Windows Server as iSCSI target with ESXi</title>
     <link>https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/</link>
     <pubDate>Wed, 15 Aug 2018 17:54:47 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/</guid>
-    <description><![CDATA[The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg" referrerpolicy="no-referrer">
+            </div>The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.
 The problem: VM cannot be started due to maxed out resources. There’s no NAS or any other means of storage where the files could be transferred to. From previous experience, I knew that transfer over SSH or USB would be well too slow, as the task was time critical.]]></description>
 </item></channel>
 </rss>

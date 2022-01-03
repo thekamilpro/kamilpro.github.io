@@ -1,7 +1,7 @@
 ---
 title: The joy of crossing
 author: Kamil
-type: post
+
 date: 2016-07-22T20:37:31+00:00
 url: /the-joy-of-crossing/
 categories:

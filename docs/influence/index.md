@@ -17,3 +17,4 @@ I must admit, K. wasn&#8217;t the first person I&#8217;ve convinced to the less
 That was a clear conscious influence from my side &#8211; I wanted to help my friend, but had to change her thinking about possible choices and available opportunities to make THE change. How often do we pick or stay with the same things, just because we are too afraid/lazy/used to the ones we currently use? Or simply sticking to one brand only because it is a well known brand. It&#8217;s like buying shoes only from one cobbler, regardless of the quality, they might be good, they might bad &#8211; we will never find out what the shoes are really like, if we can&#8217;t compare.
 
 <span class="embed-youtube" style="text-align:center; display: block;"></span>
+

@@ -1,10 +1,10 @@
 ---
 title: Resolve IP and DNS with Powershell tool
 author: Kamil
-type: post
+
 date: 2018-04-29T21:40:00+00:00
 url: /powershell-tool-resolve-ip-and-dns/
-featured_image: /wp-content/uploads/2018/04/jungwoo-hong-100345-unsplash.jpg
+featuredImage: /wp-content/uploads/2018/04/jungwoo-hong-100345-unsplash.jpg
 categories:
   - IT
   - Powershell

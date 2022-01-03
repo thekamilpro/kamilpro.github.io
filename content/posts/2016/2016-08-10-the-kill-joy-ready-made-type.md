@@ -1,10 +1,10 @@
 ---
 title: The kill joy, ready made type
 author: Kamil
-type: post
+
 date: 2016-08-10T22:02:19+00:00
 url: /the-kill-joy-ready-made-type/
-featured_image: /wp-content/uploads/2016/08/photo-1470688090067-6d429c0b2600.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1470688090067-6d429c0b2600.jpg
 categories:
   - 'Me &amp; People'
 tags:

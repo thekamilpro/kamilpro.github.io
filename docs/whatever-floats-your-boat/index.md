@@ -19,3 +19,4 @@ Stepping out of the comfort zone is just the beginning.
 Often we find ourselves not as good as expected. So what, then? What should we do when there is no road full of roses with a rainbow above it? And all these coaches answer their phones with the red button? You will trip and fall, rise and fall again
 
 Well, keep up. At the end of the day, it’s your life. And nobody will live it better, than you.
+

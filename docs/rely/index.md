@@ -15,3 +15,4 @@ It really helps when you are responsible for preparation of the whole process, I
 That was a long day and a long night. I came back home much later than expected, but the job was done. That was the most important thing to me. The server was obviously fixed later on, when there was a time for it.
 
 What I&#8217;m trying to say is: don&#8217;t be like this server. If you promise something, deliver. There&#8217;s no worse feeling than letting others down. And if you cannot help it, at least have guts and go to your mates and admit it. They might be disappointed, but at least aware of fault.
+

@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#4] – Pipeline'
 author: Kamil
-type: post
+
 date: 2020-07-30T07:45:57+00:00
 url: /powershell-for-it-professionals-4-pipeline/
-featured_image: /wp-content/uploads/2020/07/Pipeline.jpg
+featuredImage: /wp-content/uploads/2020/07/Pipeline.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

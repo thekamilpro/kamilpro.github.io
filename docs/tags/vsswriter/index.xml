@@ -9,7 +9,9 @@
     <pubDate>Sun, 01 Dec 2019 18:27:18 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/restarting-vss-writers-with-powershell-script/</guid>
-    <description><![CDATA[VSS Writers are responsible for backups – if they stop working, then backups might fail. The solution to that is restarting VSS Writers, but the problem here is that there are many, and at least out of the box, there’s no mechanism to make this automatic… but there’s PowerShell.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2019/12/jason-yu-qpZFTRM-Bec-unsplash.jpg" referrerpolicy="no-referrer">
+            </div>VSS Writers are responsible for backups – if they stop working, then backups might fail. The solution to that is restarting VSS Writers, but the problem here is that there are many, and at least out of the box, there’s no mechanism to make this automatic… but there’s PowerShell.
 I’m not interested in your code, I just want to restart these VSS Writers In that case, head on to: mygithub, use the code and run:]]></description>
 </item></channel>
 </rss>

@@ -1,7 +1,7 @@
 ---
 title: Influence
 author: Kamil
-type: post
+
 date: 2016-07-25T11:34:34+00:00
 url: /influence/
 categories:

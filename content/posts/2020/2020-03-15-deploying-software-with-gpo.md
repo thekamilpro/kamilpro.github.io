@@ -1,10 +1,10 @@
 ---
 title: Deploying software with GPO
 author: Kamil
-type: post
+
 date: 2020-03-15T14:25:59+00:00
 url: /deploying-software-with-gpo/
-featured_image: /wp-content/uploads/2020/03/ferdinand-stohr-rzA7ZuI8M5o-unsplash.jpg
+featuredImage: /wp-content/uploads/2020/03/ferdinand-stohr-rzA7ZuI8M5o-unsplash.jpg
 wp_last_modified_info:
   - 15th March 2020 @ 2:26 pm
 wplmi_shortcode:

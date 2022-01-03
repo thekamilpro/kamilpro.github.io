@@ -15,3 +15,4 @@ In other words, we pay for being a guinea pig. Developers, rather than paying fo
 Internet gave us all huge possibilities on being up-to-date with everything. I know that developers love to share their software with the rest of the world as soon as possible. On the one hand you can provide us with the newest and (hopefully!) best versions of your software, on the other hand we can always benefit from your newest inventions.
 
 Dear developers, whenever you decide to take my money for your product, please make sure it&#8217;s polished and working as good as on your marketing materials.
+

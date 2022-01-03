@@ -11,3 +11,4 @@ Finally, when there is nothing what requires extra attention from me, I like t
 The best thing about the headphones is that it allows me to stay focused within my world, have a best sound quality, while not disturbing others. And others don&#8217;t disturb me, unless they really need something.
 
 &nbsp;
+

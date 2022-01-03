@@ -33,7 +33,7 @@ And then you notice there’s something wrong. An orange light – why is there 
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kprocyszyn.github.io\/monitoring-why-you-need-it\/"
-        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "post","keywords": "monitoring, nagios, readings, zabbix","wordcount":  1376 ,
+        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "monitoring, nagios, readings, zabbix","wordcount":  1376 ,
         "url": "https:\/\/kprocyszyn.github.io\/monitoring-why-you-need-it\/","datePublished": "2019-07-09T06:45:00+00:00","dateModified": "2022-01-02T14:23:30+00:00","license": "Kamil Procyszyn","publisher": {
             "@type": "Organization",
             "name": "Kamil Procyszyn","logo": "https:\/\/kprocyszyn.github.io\/images\/avatar.png"},"author": {
@@ -105,7 +105,44 @@ And then you notice there’s something wrong. An orange light – why is there 
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Monitoring – why you need it</h1><div class="content" id="content"><p>It’s Friday. 5.20PM. So close to the long weekend. Monday is bank holiday – thus three days off. Very happy Friday.</p>
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Monitoring – why you need it</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kamil</a></span>&nbsp;<span class="post-category">included in <a href="/categories/it/"><i class="far fa-folder fa-fw"></i>IT</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-07-09">2019-07-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1376 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;<span id="/monitoring-why-you-need-it/" class="leancloud_visitors" data-flag-title="Monitoring – why you need it">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg"
+        data-srcset="/wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg, /wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg 1.5x, /wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg 2x"
+        data-sizes="auto"
+        alt="/wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg"
+        title="/wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#when-did-it-happen">When did it happen?</a></li>
+    <li><a href="#why-did-it-happen">Why did it happen?</a></li>
+    <li><a href="#if-it8217s-that-great-can-i-stop-performing-manual-checks-all-together">If it’s that great, can I stop performing manual checks all together?</a></li>
+    <li><a href="#how-is-monitoring-performed">How is monitoring performed?</a></li>
+    <li><a href="#ok-8211-this-all-sounds-great-8211-but-must-be-expensive">Ok – this all sounds great – but must be expensive</a>
+      <ul>
+        <li><a href="#nagios-core">Nagios Core</a></li>
+        <li><a href="#zabbix">Zabbix</a></li>
+      </ul>
+    </li>
+    <li><a href="#so-where-should-you-install-the-monitoring">So where should you install the monitoring?</a></li>
+    <li><a href="#ready-for-a-better-night8217s-sleep">Ready for a better night’s sleep?</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>It’s Friday. 5.20PM. So close to the long weekend. Monday is bank holiday – thus three days off. Very happy Friday.</p>
 <p>You’re going to the server room to check some minor details. Upon opening the main door, you can feel that cold breeze and characteristic noise of hundreds of spinning fans. You quickly skim through all flashy lights, as it’s a good habit.</p>
 <p>And then you notice there’s something wrong. An orange light – why is there an orange light? Hopefully it’s nothing serious. It’s just above one of the disks. Fuck, it’s the main file server – the one that was meant to be virtulised a long time ago, but for some reason it haven’t happened for over two years.</p>
 <p>All finance data is on it. And HR. Not to mention sales and marketing guys. It looks like it already picked a hot spare.</p>
@@ -158,9 +195,38 @@ And then you notice there’s something wrong. An orange light – why is there 
 <p>And hey, you’ve also got more time as manual checks are not needed any more, what are you going to do about it?</p>
 <p>*Depending on <g class="gr_ gr\_6 gr-alert gr\_gramm gr\_inline\_cards gr\_run\_anim Grammar only-ins replaceWithoutSep" id="6" data-gr-id="6">software</g> you use, you might be able to pull data once every five seconds. The point here is that there’s something in the background that does these checks <g class="gr_ gr\_8 gr-alert gr\_gramm gr\_inline\_cards gr\_run\_anim Punctuation only-del replaceWithoutSep" id="8" data-gr-id="8">constantly,</g> so that you don’t <g class="gr_ gr\_7 gr-alert gr\_gramm gr\_inline\_cards gr\_run\_anim Grammar only-ins replaceWithoutSep" id="7" data-gr-id="7">need</g> worry about it. Imagine knowing that something broke within one hour, rather than one month.</p>
 <p>Photo by <a href="https://unsplash.com/@artur_luczka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreffer">Artur Łuczka</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreffer">Unsplash</a></p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-02&nbsp;<a class="git-hash" href="https://github.com/kprocyszyn/commit/9d14cf96907d7e60b658cc1bb133a974ee9a7f79" target="_blank" title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 9d14cf96907d7e60b658cc1bb133a974ee9a7f79: Import blog posts">
+                                    <i class="fas fa-hashtag fa-fw"></i>9d14cf9</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/monitoring-why-you-need-it/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://kprocyszyn.github.io/monitoring-why-you-need-it/" data-title="Monitoring – why you need it" data-via="@kprocyszyn" data-hashtags="monitoring,nagios,readings,zabbix"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://kprocyszyn.github.io/monitoring-why-you-need-it/" data-hashtag="monitoring"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kprocyszyn.github.io/monitoring-why-you-need-it/" data-title="Monitoring – why you need it"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://kprocyszyn.github.io/monitoring-why-you-need-it/" data-title="Monitoring – why you need it"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://kprocyszyn.github.io/monitoring-why-you-need-it/" data-title="Monitoring – why you need it" data-image="/wp-content/uploads/2019/07/artur-luczka-qhG6Xde9lCQ-unsplash.jpg"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/monitoring/">monitoring</a>,&nbsp;<a href="/tags/nagios/">nagios</a>,&nbsp;<a href="/tags/readings/">readings</a>,&nbsp;<a href="/tags/zabbix/">zabbix</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/the-automation-process-stages/" class="prev" rel="prev" title="The automation process stages"><i class="fas fa-angle-left fa-fw"></i>The automation process stages</a>
+            <a href="/restarting-vss-writers-with-powershell-script/" class="next" rel="next" title="Restarting VSS Writers with PowerShell script">Restarting VSS Writers with PowerShell script<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
-            </noscript></div></div></div>
+            </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2014 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>

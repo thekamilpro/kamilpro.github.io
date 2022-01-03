@@ -1,7 +1,7 @@
 ---
 title: Let’s get retar… Started!
 author: Kamil
-type: post
+
 date: 2016-07-17T21:51:23+00:00
 url: /lets-get-retar-started/
 categories:

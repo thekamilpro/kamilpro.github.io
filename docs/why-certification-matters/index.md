@@ -85,3 +85,4 @@ You might ask what next? Well, I need to rest a little bit, I spent over 10 mont
 # I believe I have convinced you to my point.
 
 Over the last years I was continuously developing my skills and knowledge which go hand in hand with certification.
+

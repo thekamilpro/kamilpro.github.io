@@ -31,7 +31,7 @@ The problem: VM cannot be started due to maxed out resources. There’s no NAS o
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/kprocyszyn.github.io\/use-windows-server-as-iscsi-target-with-esxi\/"
-        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "post","keywords": "2012r2, esxi, iscsi, lun, powershell, server","wordcount":  1357 ,
+        },"image": ["https:\/\/kprocyszyn.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "2012r2, esxi, iscsi, lun, powershell, server","wordcount":  1357 ,
         "url": "https:\/\/kprocyszyn.github.io\/use-windows-server-as-iscsi-target-with-esxi\/","datePublished": "2018-08-15T17:54:47+00:00","dateModified": "2022-01-02T14:23:30+00:00","license": "Kamil Procyszyn","publisher": {
             "@type": "Organization",
             "name": "Kamil Procyszyn","logo": "https:\/\/kprocyszyn.github.io\/images\/avatar.png"},"author": {
@@ -103,7 +103,44 @@ The problem: VM cannot be started due to maxed out resources. There’s no NAS o
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster">Use Windows Server as iSCSI target with ESXi</h1><div class="content" id="content"><p>The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.</p>
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Use Windows Server as iSCSI target with ESXi</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kamil</a></span>&nbsp;<span class="post-category">included in <a href="/categories/esxi/"><i class="far fa-folder fa-fw"></i>ESXi</a>&nbsp;<a href="/categories/it/"><i class="far fa-folder fa-fw"></i>IT</a>&nbsp;<a href="/categories/server/"><i class="far fa-folder fa-fw"></i>Server</a>&nbsp;<a href="/categories/uncategorised/"><i class="far fa-folder fa-fw"></i>Uncategorised</a>&nbsp;<a href="/categories/windows/"><i class="far fa-folder fa-fw"></i>Windows</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-08-15">2018-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1357 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;<span id="/use-windows-server-as-iscsi-target-with-esxi/" class="leancloud_visitors" data-flag-title="Use Windows Server as iSCSI target with ESXi">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg"
+        data-srcset="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg, /wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg 1.5x, /wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg 2x"
+        data-sizes="auto"
+        alt="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg"
+        title="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prepare-windows-server">Prepare Windows server</a>
+      <ul>
+        <li><a href="#create-spanned-volume">Create spanned volume</a></li>
+        <li><a href="#install-iscsi-target-server-role">Install iSCSI Target Server role</a></li>
+        <li><a href="#create-iscsi-disk-and-target">Create iSCSI disk and target</a></li>
+      </ul>
+    </li>
+    <li><a href="#configure-esxi">Configure ESXi</a></li>
+    <li><a href="#create-vmkernel-nic">Create VMKernel NIC</a></li>
+    <li><a href="#add-iscsi-disk-and-configure-it-as-datastore">Add iSCSI disk and configure it as datastore</a></li>
+    <li><a href="#you-can-obviously-use-this-configuration-in-any-different-scenarios">You can obviously use this configuration in any different scenarios</a></li>
+    <li><a href="#how8217s-my-story-ended">How’s my story ended?</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>The task: to move a virtual machine from one ESXi to another. The ESXis are on two completely separate networks. VM size is 5.5 TB, with one file being 5TB.</p>
 <p>The problem: VM cannot be started due to maxed out resources. There’s no NAS or any other means of storage where the files could be transferred to. From previous experience, I knew that transfer over SSH or USB would be well too slow, as the task was time critical. There wasn’t also a big enough single hard disk which could be used to copy the files onto it.</p>
 <p>My proposed solution: Use any spare desktop/server and load it with hard drives, so that all of them can create spanned virtual disk big enough to accommodate files from ESXi, install at least server 2012r2 on it and configure as an ISCSI target.</p>
 <p>As you can see above, it was quite an unusual task with quite unusual conditions.</p>
@@ -184,9 +221,38 @@ Add-IscsiVirtualDiskTargetMapping -TargetName target1 -Path F:\iSCSIVirtualDisks
 <p>After connecting Windows Server to vSphere with <g class="gr_ gr\_6 gr-alert sel gr\_gramm gr\_replaced gr\_inline\_cards gr\_disable\_anim\_appear Grammar only-ins doubleReplace replaceWithoutSep" id="6" data-gr-id="6">the </g>iSCSI disk, I was able to create the datastore. I then copied the massive VM to it and replugged Win server to the other ESXi server. Once connected and mounted the iSCSI disk – I was able to register the VM.</p>
 <p>Hit the start button, choose the VM was copied and boom – I had a working VM directly from the external disks. From that point on I was able to install <g class="gr_ gr\_90 gr-alert sel gr\_gramm gr\_replaced gr\_inline\_cards gr\_disable\_anim\_appear Grammar only-ins doubleReplace replaceWithoutSep" id="90" data-gr-id="90">the </g>backup agent on it and back it up directly to the tape.</p>
 <p>Problem solved! Yay!</p>
-</div><div id="comments"><div id="valine" class="comment"></div><noscript>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-01-02&nbsp;<a class="git-hash" href="https://github.com/kprocyszyn/commit/9d14cf96907d7e60b658cc1bb133a974ee9a7f79" target="_blank" title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 9d14cf96907d7e60b658cc1bb133a974ee9a7f79: Import blog posts">
+                                    <i class="fas fa-hashtag fa-fw"></i>9d14cf9</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/use-windows-server-as-iscsi-target-with-esxi/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" data-title="Use Windows Server as iSCSI target with ESXi" data-via="@kprocyszyn" data-hashtags="2012r2,esxi,iscsi,lun,powershell,server"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" data-hashtag="2012r2"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" data-title="Use Windows Server as iSCSI target with ESXi"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" data-title="Use Windows Server as iSCSI target with ESXi"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://kprocyszyn.github.io/use-windows-server-as-iscsi-target-with-esxi/" data-title="Use Windows Server as iSCSI target with ESXi" data-image="/wp-content/uploads/2018/08/leone-venter-469710-unsplash.jpg"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/2012r2/">2012r2</a>,&nbsp;<a href="/tags/esxi/">esxi</a>,&nbsp;<a href="/tags/iscsi/">iscsi</a>,&nbsp;<a href="/tags/lun/">lun</a>,&nbsp;<a href="/tags/powershell/">powershell</a>,&nbsp;<a href="/tags/server/">server</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/powershell-tool-resolve-ip-and-dns/" class="prev" rel="prev" title="Resolve IP and DNS with Powershell tool"><i class="fas fa-angle-left fa-fw"></i>Resolve IP and DNS with Powershell tool</a>
+            <a href="/backup-exec-cataloging-multiple-tapes-with-a-single-tape-drive/" class="next" rel="next" title="Backup Exec – cataloging multiple tapes with a single tape drive">Backup Exec – cataloging multiple tapes with a single tape drive<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
-            </noscript></div></div></div>
+            </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2014 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>

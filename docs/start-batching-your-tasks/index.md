@@ -60,3 +60,4 @@ While email is great example, here are some ideas how to regain even more time:
 
   * Reading news on many websites &#8211; rather than checking all of them, you can sign up for some news aggregator e.g. <a href="https://feedly.com" target="_blank" rel="noopener noreferrer">feedly </a>which will collect all the news from the websites of your choice. Whenever convenient, you open feedly and all your news are waiting for you. Like said emails.
   * Social media, it’s a massive time eater. Certainly, you can switch off all notifications so that your phone/browser will stop bombarding you about comments and other likes. While it’s super tempting for the first few days to see if you not missing out, after a while that feeling will go away.
+

@@ -52,3 +52,4 @@ Official PowerShell Blog &#8211; [PowerShell | Automating the world one-liner at
  [7]: https://www.manning.com/books/windows-powershell-in-action-third-edition?query=powershell
  [8]: https://leanpub.com/shell-of-an-idea
  [9]: https://devblogs.microsoft.com/powershell/
+

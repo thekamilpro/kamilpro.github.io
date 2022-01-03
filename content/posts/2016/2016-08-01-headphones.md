@@ -1,10 +1,10 @@
 ---
 title: Headphones
 author: Kamil
-type: post
+
 date: 2016-08-01T21:25:29+00:00
 url: /headphones/
-featured_image: /wp-content/uploads/2016/08/photo-1457305237443-44c3d5a30b89.jpg
+featuredImage: /wp-content/uploads/2016/08/photo-1457305237443-44c3d5a30b89.jpg
 categories:
   - 'Me &amp; People'
 tags:

@@ -42,3 +42,4 @@ Hostname
 
 Add-Computer -DomainName posh.pri
 ```
+

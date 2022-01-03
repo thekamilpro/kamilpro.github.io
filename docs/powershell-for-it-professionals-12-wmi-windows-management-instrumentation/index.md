@@ -57,3 +57,4 @@ select * from Win32_OperatingSystem where Version like "10.%" and ProductType="3
 Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntiVirusProduct
 Get-WmiObject -Namespace root/SecurityCenter2 -Class AntiVirusProduct
 ```
+

@@ -9,7 +9,9 @@
     <pubDate>Thu, 23 Jul 2020 16:32:54 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-1-help/</guid>
-    <description><![CDATA[About files solve issue If after running Update-Help you don’t have About topics, you might want to manually download them and extract the archive to the root of:
+    <description><![CDATA[<div class="featured-image">
+                <img src="/wp-content/uploads/2020/07/Using-help-with-PowerShell.jpg" referrerpolicy="no-referrer">
+            </div>About files solve issue If after running Update-Help you don’t have About topics, you might want to manually download them and extract the archive to the root of:
 C:\Windows\System32\WindowsPowerShell\v1.0\en
 PowerShell help – Exercises PowerShell is great in working with CSV files. Can you find help for any CSV related commands (you will need to use a wildcard)
 Can you tell what’s a difference between ConvertTo-CSV and Export-CSV commands]]></description>

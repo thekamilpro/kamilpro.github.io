@@ -1,10 +1,10 @@
 ---
 title: 'PowerShell for IT Professionals [#3] – Running Commands'
 author: Kamil
-type: post
+
 date: 2020-07-27T19:08:38+00:00
 url: /powershell-for-it-professionals-2-running-commands/
-featured_image: /wp-content/uploads/2020/07/Running-Commands.jpg
+featuredImage: /wp-content/uploads/2020/07/Running-Commands.jpg
 categories:
   - IT
   - PowerShell for IT Professionals

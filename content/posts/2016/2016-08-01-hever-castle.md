@@ -1,7 +1,7 @@
 ---
 title: Hever Castle
 author: Kamil
-type: post
+
 date: 2016-08-01T22:42:35+00:00
 url: /hever-castle/
 categories:
