@@ -52,14 +52,14 @@ publishDir = "docs"
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
+      #[[languages.en.menu.main]]
+      #  identifier = "documentation"
+      #  pre = ""
+      #  post = ""
+      #  name = "Docs"
+      #  url = "/categories/documentation/"
+      #  title = ""
+      #  weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
@@ -69,11 +69,19 @@ publishDir = "docs"
         title = ""
         weight = 5
       [[languages.en.menu.main]]
+        identifier = "powershell-for-it-professionals"
+        pre = ""
+        post = ""
+        name = "Powershell for IT professionals"
+        url = "/powershell-for-it-professionals/"
+        title = ""
+        weight = 4
+      [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/kprocyszyn"
         title = "GitHub"
         weight = 6
     [languages.en.params]

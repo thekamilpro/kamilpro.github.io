@@ -1,7 +1,6 @@
 ---
 title: 'PowerShell for IT Professionals [#20] – Next Steps with PowerShell'
 author: Kamil
-
 date: 2020-11-26T17:46:00+00:00
 url: /powershell-for-it-professionals-20-next-steps-with-powershell/
 featuredImage: "/wp-content/uploads/2020/11/Slide1-2.jpg"
