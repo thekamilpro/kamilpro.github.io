@@ -185,9 +185,9 @@ publishDir = "docs"
       # title name
       name = "Kamil Procyszyn"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+      pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
+      post = "<i class='fas fa-terminal'></i>"
       # whether to use typeit animation for title name
       typeit = false
 
