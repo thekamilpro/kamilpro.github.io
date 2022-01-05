@@ -416,7 +416,7 @@ publishDir = "docs"
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
+    google = "NniR9DFiwo_hSUsjXQj7xw3IHmRtl0ICeu4UmstK680"
     bing = ""
     yandex = ""
     pinterest = ""
@@ -431,10 +431,10 @@ publishDir = "docs"
 
   # Analytics config
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "UA-64576368-1"
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics
