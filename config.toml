@@ -292,16 +292,16 @@ publishDir = "docs"
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = false
+      Linkedin = true
+      Whatsapp = true
       Pinterest = false
       Tumblr = false
       HackerNews = true
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
@@ -319,7 +319,7 @@ publishDir = "docs"
       Mix = false
     # Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config (https://disqus.com/)
       [params.page.comment.disqus]
         enable = false
@@ -375,11 +375,11 @@ publishDir = "docs"
         enable = false
       # Utterances comment config (https://utteranc.es/)
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "kprocyszyn/kprocyszyn.github.io"
         issueTerm = "pathname"
-        label = ""
+        label = "Comment"
         lightTheme = "github-light"
         darkTheme = "github-dark"
     # Third-party library config
