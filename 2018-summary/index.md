@@ -1,0 +1,56 @@
+# 2018 summary
+
+Here we are, again. Same symbolic time of the year.
+
+I find it perfect to review the past 12 months and have a think about it.
+
+I broke it down into three sections &#8211; professional, personal and what didn’t work out. So, let&#8217;s go!
+
+## **Professional**
+
+**Learnt PowerShell** &#8211; I think it was the biggest achievement career wise this year. It’s hard to put this in formalised matter, or any sort of figure &#8211; but the change of my mindset is the biggest one. Simply put &#8211; from somebody who never coded before, and didn’t see using code in my life at all, I’ve started automating my tasks by actually writing PowerShell code. And that has opened a whole new world of possibilities.
+
+I’m not sure where it’s going to take me, but I’m sure code will become majort part of my career.&nbsp; If I would met a new aspiring sysadmin, I would strongly encourage him or her to start learning programming/scripting language early in career.
+
+And everything thanks to Jeffrey Snover and Steven Murawski &#8211; who both came to London back in October 2017, thank you for inspiring me!
+
+**Passed 70-411 exam** &#8211; I’ve passed the second out of three exams required to achieve MCSA in Windows Server 2012. It was more difficult than the first one, and the third one… is even more difficult. But I’m getting there, consequently. 
+
+**Started mentoring junior staff** &#8211; it didn’t really come officialy, or was designed, but somehow it just happened. Pretty much both of our junior staff has been replaced by the new members of staff, and since I’m working close with, thus I’ve started teaching them “the sysadmin” way. Therefore it started from basic first line problems, throuh troubleshooting (it’s a skill!) to being simply more independent and open to more challenges. I like it.
+
+On the side note, I’ve created two PowerShell converts &#8211; we got from the “you never going to have a need of using here” to “hey can you help me to add users to the group with the shell pleas?”. This is so cool.&nbsp; 
+
+## **Personal**
+
+**Got married** &#8211; 21st July 2018 down in Coulsdon Mannor I married my beloved Joanna. The preparation took us 1.5 years and it turned out great. We’ve had a full day of attractions planned for our guests, and I believe that they mostly enjoyed our first dance, which you can watch here:<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+
+<div class="wp-block-embed__wrapper">
+  <span class="embed-youtube" style="text-align:center; display: block;"></span>
+</div></figure> 
+
+**Ran 10k** &#8211; it took me over a year to <g class="gr_ gr\_8 gr-alert gr\_gramm gr\_inline\_cards gr\_disable\_anim_appear Grammar multiReplace" id="8" data-gr-id="8">ran</g> 10KM in one go. I’ve managed it in April, and my time was. Unfortunately, something bad happened into my leg in May and I wasn’t able to run for longer distances since then. I’ll try to start over in Spring next year, see how it works.
+
+**Travelled 2 countries** &#8211; this year we’ve travelled to Majorca and Cyprus. While Majorca was scourge hot and beautiful beaches &#8211; it somehow didn’t get my love. Buy can’t say that about <g class="gr_ gr\_11 gr-alert gr\_gramm gr\_inline\_cards gr\_run\_anim Grammar only-del replaceWithoutSep" id="11" data-gr-id="11">the Cyprus</g>… I’m in fact writing this post on the plane back from Cyprus. This is our second trip here (we first came in 2016) and our feelings are very strong for this place. So much, we started talking about moving to Cyprus later on in 2019. These are plans now, but who knows.
+
+**Read quite a few books** &#8211; I’ve read around 30 books this year. And three mostly remembered by <g class="gr_ gr\_16 gr-alert gr\_spell gr\_inline\_cards gr\_disable\_anim_appear ContextualSpelling ins-del" id="16" data-gr-id="16">my</g> are [“][1]_[The Phoenix Project][1]_[”][1], _[“Practice of system and network administrator”][2]_ and _[“The way of kings”][3]_. <g class="gr_ gr\_8 gr-alert gr\_gramm gr\_inline\_cards gr\_run\_anim Punctuation only-ins replaceWithoutSep" id="8" data-gr-id="8">First</g> two ones are for IT people &#8211; and I will strongly recommend both of them to <g class="gr_ gr\_7 gr-alert gr\_spell gr\_inline\_cards gr\_run\_anim ContextualSpelling ins-del" id="7" data-gr-id="7">any one</g> who would start working in IT. The last book is from series called _“The storm light archives”_ and is a great epic fantasy. It’s so great, that it became my no.1 of fantasy books, which used to be the Witcher Saga.
+
+## **Things that that didn’t work out**
+
+**Waking up early** &#8211; I didn’t nail that one. Or to describe it better &#8211; I didn’t manage to create a habit of waking up earlier. I’ve learnt a skill to wake up say 5.30 am to run or study &#8211; but couldn’t keep it going for longer time. Certainly there’s something I need to work on more.
+
+**Keeping blog updated** &#8211; I didn’t blog that often. I can blame learning PowerShell and studying for MCSA and wedding preparation, but facts are facts &#8211; blog wasn’t my priority. I’ve started keeping notes of topics which I wanted to blog about, let’s see if that will help.
+
+**Completed MCSA** &#8211; if I think about it now, initially I though that I’d be able to pass all three exams within one year, but oh boy, how wrong I was. I certainly take my time, and do a lot of practice so I keep the actual skill how to do things. I’ve passed two exams so far, and attempted last one in December, was short by 5% &#8211; so I’m very close of passing that one!
+
+That would be it, my 2018 in a very short review, the highlits of it.
+
+I hope that you’ve achieved your goals for this year, set goals for the 2019 and wishing you a Happy New Year!
+
+<p class="has-small-font-size">
+  Main photo by <a href="https://unsplash.com/photos/zNS6oFkwlG4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NordWood Themes</a> on <a href="https://unsplash.com/search/photos/2018?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</p>
+
+ [1]: https://amzn.to/2CIf4gh
+ [2]: https://amzn.to/2AqE76d
+ [3]: https://amzn.to/2QcELsY
+
