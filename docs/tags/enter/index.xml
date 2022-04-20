@@ -1,17 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>enter - Tag - Kamil Procyszyn</title>
-        <link>https://kprocyszyn.github.io/tags/enter/</link>
-        <description>enter - Tag - Kamil Procyszyn</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</lastBuildDate><atom:link href="https://kprocyszyn.github.io/tags/enter/" rel="self" type="application/rss+xml" /><item>
-    <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title>
-    <link>https://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</link>
-    <pubDate>Mon, 24 Aug 2020 10:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://kprocyszyn.github.io/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/wp-content/uploads/2020/08/Remoting.jpg" referrerpolicy="no-referrer">
-            </div>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
-Exercises With Enter-PSSesion, Remote to remote server and&nbsp; restart &#8220;Windows update&#8221; serviceWith Invoke-Command find out the remote computers last boot up/startup timeList all running processes on remote server without using Enter-PsSession or Invoke-CommandIf you have a Domain Controller available, use Invoke-Command to list all computers on that network (you can use * for filter), remember that you need to provide all necessary parameters with your command in the script block so command just runs and doesn&#8217;t prompt for any additional information.]]></description>
-</item></channel>
-</rss>
