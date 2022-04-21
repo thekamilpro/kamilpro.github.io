@@ -2,25 +2,16 @@
 title: Managing Software with Chocolatey - Automate installation and updates of your applications
 author: Kamil
 date: 2021-03-10
-featuredimage: feat.jpg
-categories:
-  - Software
-  - Deployment
-  - Automation
-  - Windows
-tags:
-  - cli
-  - patching
-  - software
-  - installation
-  - windows
-  - sysadmin
-  - automation
+resources:
+  - name: "featured-image"
+    src: "featured-image.jpg"
+categories: ["Software", "Deployment", "Automation", "Windows"]
+tags: [ "cli", "patching", "software", "installation", "windows", "sysadmin", "automation"]
 ---
 
 {{< youtube Tmh8c77tHQ8 >}}
 
-Software management is not trivial task. Preparing for silent deployment is challenging, and even if you manage to install the application, how to keep it up to date? 
+Software management is not trivial task. Preparing for silent deployment is challenging, and even if you manage to install the application, how to keep it up to date?
 
 Chocolatey is package manager for Windows, that can fully automate lifecycle of your software.
 
