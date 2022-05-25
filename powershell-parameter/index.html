@@ -1,0 +1,736 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function - Kamil Procyszyn</title><meta name=Description content="Sysadmin's point of view"><meta property="og:title" content="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><meta property="og:description" content="Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
+Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function."><meta property="og:type" content="article"><meta property="og:url" content="https://kprocyszyn.github.io/powershell-parameter/"><meta property="og:image" content="https://kprocyszyn.github.io/powershell-parameter/featured-image.jpg"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-02-07T00:00:00+00:00"><meta property="article:modified_time" content="2022-05-25T20:53:33+01:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://kprocyszyn.github.io/powershell-parameter/featured-image.jpg"><meta name=twitter:title content="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><meta name=twitter:description content="Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
+Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function."><meta name=application-name content="Kamil Procyszyn"><meta name=apple-mobile-web-app-title content="Kamil Procyszyn"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://kprocyszyn.github.io/powershell-parameter/><link rel=prev href=https://kprocyszyn.github.io/powershell-function/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><meta name=google-site-verification content="NniR9DFiwo_hSUsjXQj7xw3IHmRtl0ICeu4UmstK680"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/kprocyszyn.github.io\/powershell-parameter\/"},"image":[{"@type":"ImageObject","url":"https:\/\/kprocyszyn.github.io\/powershell-parameter\/featured-image.jpg","width":1280,"height":720}],"genre":"posts","keywords":"PowerShell, pwsh, validate, pipeline, parameter","wordcount":1394,"url":"https:\/\/kprocyszyn.github.io\/powershell-parameter\/","datePublished":"2022-02-07T00:00:00+00:00","dateModified":"2022-05-25T20:53:33+01:00","license":"Kamil Procyszyn","publisher":{"@type":"Organization","name":"Kamil Procyszyn","logo":{"@type":"ImageObject","url":"https:\/\/kprocyszyn.github.io\/images\/avatar.png","width":150,"height":150}},"author":{"@type":"Person","name":"Kamil"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Kamil Procyszyn">Kamil Procyszyn<span class=header-title-post><i class="fas fa-terminal"></i></span></a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>Posts </a><a class=menu-item href=/tags/>Tags </a><a class=menu-item href=/categories/>Categories </a><a class=menu-item href=/powershell-for-it-professionals/>Powershell for IT professionals </a><a class=menu-item href=/about/>About </a><a class=menu-item href=https://github.com/kprocyszyn title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw"></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw"></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Kamil Procyszyn">Kamil Procyszyn<span class=header-title-post><i class="fas fa-terminal"></i></span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw"></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw"></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href=/powershell-for-it-professionals/ title>Powershell for IT professionals</a><a class=menu-item href=/about/ title>About</a><a class=menu-item href=https://github.com/kprocyszyn title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw"></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Kamil</a></span>&nbsp;<span class=post-category>included in <a href=/categories/powershell/><i class="far fa-folder fa-fw"></i>Powershell</a>&nbsp;<a href=/categories/video/><i class="far fa-folder fa-fw"></i>Video</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-02-07>2022-02-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1394 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/powershell-parameter/featured-image.jpg data-srcset="/powershell-parameter/featured-image.jpg, /powershell-parameter/featured-image.jpg 1.5x, /powershell-parameter/featured-image.jpg 2x" data-sizes=auto alt=/powershell-parameter/featured-image.jpg title=/powershell-parameter/featured-image.jpg></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div></div><div class=content id=content><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/hJIAK3qjlZQ style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p>Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.</p><p>Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function.</p><p>I will show you all the above with even more, as I always strive to go profoundly in PowerShell explanation!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c># Sample script which asks user for basic information, then manipulates it and</span>
+</span></span><span class=line><span class=cl><span class=c># display some information</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># There&#39;s no way (at least easy) to pass these parameters from prompt, nor validate </span>
+</span></span><span class=line><span class=cl><span class=nv>$Name</span> <span class=p>=</span> <span class=nb>Read-Host</span> <span class=n>-Prompt</span> <span class=s2>&#34;What&#39;s your name?&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Age</span> <span class=p>=</span> <span class=nb>Read-Host</span> <span class=n>-Prompt</span> <span class=s2>&#34;What&#39;s your age?&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>Write-Host</span> <span class=s2>&#34;==================&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>$email</span> <span class=p>=</span> <span class=s1>&#39;{0}@company.com&#39;</span> <span class=o>-f</span> <span class=nv>$Name</span><span class=p>.</span><span class=n>ToLower</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>Write-Host</span> <span class=s2>&#34;Hi </span><span class=p>$(</span><span class=nv>$Name</span><span class=p>.</span><span class=n>ToUpper</span><span class=p>())</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>Write-Host</span> <span class=s2>&#34;your email address is: $email&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$Age</span> <span class=o>-gt</span> <span class=n>17</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nb>Write-Host</span> <span class=s2>&#34;You will be able to access any website&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nb>Write-Host</span> <span class=s2>&#34;We will turn on content blocker approriate to your age&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>```</span><span class=n>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>users</span> <span class=p>=</span> <span class=p>@(</span>
+</span></span><span class=line><span class=cl>        <span class=p>@{</span><span class=n>ID</span> <span class=p>=</span> <span class=n>1</span><span class=p>;</span> <span class=n>FirstName</span> <span class=p>=</span> <span class=s2>&#34;John&#34;</span><span class=p>;</span> <span class=n>Surname</span> <span class=p>=</span> <span class=s2>&#34;Smith&#34;</span><span class=p>;</span> <span class=n>Active</span> <span class=p>=</span> <span class=nv>$true</span><span class=p>;</span> <span class=n>Region</span> <span class=p>=</span> <span class=s2>&#34;EU&#34;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>@{</span><span class=n>ID</span> <span class=p>=</span> <span class=n>2</span><span class=p>;</span> <span class=n>FirstName</span> <span class=p>=</span> <span class=s2>&#34;Elen&#34;</span><span class=p>;</span> <span class=n>Surname</span> <span class=p>=</span> <span class=s2>&#34;Smith&#34;</span><span class=p>;</span> <span class=n>Active</span> <span class=p>=</span> <span class=nv>$true</span><span class=p>;</span> <span class=n>Region</span> <span class=p>=</span> <span class=s2>&#34;NZ&#34;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>@{</span><span class=n>ID</span> <span class=p>=</span> <span class=n>3</span><span class=p>;</span> <span class=n>FirstName</span> <span class=p>=</span> <span class=s2>&#34;Andy&#34;</span><span class=p>;</span> <span class=n>Surname</span> <span class=p>=</span> <span class=s2>&#34;Oliver&#34;</span><span class=p>;</span> <span class=n>Active</span> <span class=p>=</span> <span class=nv>$true</span><span class=p>;</span> <span class=n>Region</span> <span class=p>=</span> <span class=s2>&#34;US&#34;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=p>@{</span><span class=n>ID</span> <span class=p>=</span> <span class=n>4</span><span class=p>;</span> <span class=n>FirstName</span> <span class=p>=</span> <span class=s2>&#34;Richard&#34;</span><span class=p>;</span> <span class=n>Surname</span> <span class=p>=</span> <span class=s2>&#34;Mann&#34;</span><span class=p>;</span> <span class=n>Active</span> <span class=p>=</span> <span class=nv>$false</span><span class=p>;</span> <span class=n>Region</span> <span class=p>=</span> <span class=s2>&#34;EU&#34;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>()]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=c>#[Parameter(Mandatory)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;All&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;ID&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Surname&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>(</span><span class=n>DefaultParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byId&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;All&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byId&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byName&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>(</span><span class=n>DefaultParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>2</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byId&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;All&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byId&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byName&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>(</span><span class=n>DefaultParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>2</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byId&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;All&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byId&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byName&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>(</span><span class=n>DefaultParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>2</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=n>ValidateNotNullOrEmpty</span><span class=p>()]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byId&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>ValidateRange</span><span class=p>(</span><span class=n>1</span><span class=p>,</span><span class=n>4</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>ValidateSet</span><span class=p>(</span><span class=s2>&#34;EU&#34;</span><span class=p>,</span> <span class=s2>&#34;US&#34;</span><span class=p>,</span> <span class=s2>&#34;NZ&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;All&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byId&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byName&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Person</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=k>cmdletbinding</span><span class=p>(</span><span class=n>DefaultParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Alias</span><span class=p>(</span><span class=s2>&#34;SecondName&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Surname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byName&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>2</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=n>ValidateNotNullOrEmpty</span><span class=p>()]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Alias</span><span class=p>(</span><span class=s2>&#34;GivenName&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Firstname</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>Mandatory</span><span class=p>,</span> <span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;byId&#34;</span><span class=p>,</span> <span class=k>Position</span> <span class=p>=</span> <span class=n>1</span><span class=p>,</span> <span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>ValidateRange</span><span class=p>(</span><span class=n>1</span><span class=p>,</span><span class=n>4</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[int]</span><span class=nv>$Id</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ParameterSetName</span> <span class=p>=</span> <span class=s2>&#34;All&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$All</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=no>[switch]</span><span class=nv>$IncludeInactive</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>ValidateSet</span><span class=p>(</span><span class=s2>&#34;EU&#34;</span><span class=p>,</span> <span class=s2>&#34;US&#34;</span><span class=p>,</span> <span class=s2>&#34;NZ&#34;</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=no>[string]</span><span class=nv>$Region</span>
+</span></span><span class=line><span class=cl>    <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nv>$items</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Import-PowerShellDataFile</span> <span class=n>-Path</span> <span class=s2>&#34;$PSScriptRoot\data.psd1&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>users</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(!(</span><span class=nv>$IncludeInactive</span><span class=p>.</span><span class=n>IsPresent</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Active</span> <span class=o>-eq</span> <span class=nv>$true</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Region&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$users</span> <span class=p>=</span> <span class=nv>$users</span> <span class=p>|</span> <span class=nb>Where-Object</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>Region</span> <span class=o>-eq</span> <span class=nv>$Region</span><span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>foreach</span> <span class=p>(</span><span class=nv>$u</span> <span class=k>in</span> <span class=nv>$users</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$items</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=no>[pscustomobject]</span><span class=nv>$u</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;All&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byId&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>({</span><span class=nv>$_</span><span class=p>.</span><span class=n>ID</span> <span class=o>-eq</span> <span class=nv>$Id</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=nv>$PSCmdlet</span><span class=p>.</span><span class=k>ParameterSetName</span> <span class=o>-eq</span> <span class=s2>&#34;byName&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s2>&#34;Firstname&#34;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=o>-and</span> <span class=nv>$_</span><span class=p>.</span><span class=n>FirstName</span> <span class=o>-eq</span> <span class=nv>$Firstname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$items</span><span class=p>.</span><span class=n>Where</span><span class=p>(</span> <span class=p>{</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Surname</span> <span class=o>-eq</span> <span class=nv>$Surname</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-05-25&nbsp;<a class=git-hash href=https://github.com/kprocyszyn/commit/33b7c6cab59a92196dc291ef2b075b8585eef467 target=_blank title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 33b7c6cab59a92196dc291ef2b075b8585eef467: Add more videos">
+<i class="fas fa-hashtag fa-fw"></i>33b7c6c</a></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/powershell-parameter/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://kprocyszyn.github.io/powershell-parameter/ data-title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function" data-via=@kprocyszyn data-hashtags=PowerShell,pwsh,validate,pipeline,parameter><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://kprocyszyn.github.io/powershell-parameter/ data-hashtag=PowerShell><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=https://kprocyszyn.github.io/powershell-parameter/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://kprocyszyn.github.io/powershell-parameter/ data-title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://kprocyszyn.github.io/powershell-parameter/ data-title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><i class="fab fa-hacker-news fa-fw"></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://kprocyszyn.github.io/powershell-parameter/><i class="fab fa-reddit fa-fw"></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://kprocyszyn.github.io/powershell-parameter/ data-title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><i class="fab fa-weibo fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/powershell/>powershell</a>,&nbsp;<a href=/tags/pwsh/>pwsh</a>,&nbsp;<a href=/tags/validate/>validate</a>,&nbsp;<a href=/tags/pipeline/>pipeline</a>,&nbsp;<a href=/tags/parameter/>parameter</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/powershell-function/ class=prev rel=prev title="PowerShell function - converting script into function with parameters"><i class="fas fa-angle-left fa-fw"></i>PowerShell function - converting script into function with parameters</a></div></div><div id=comments><div id=utterances></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>Utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.99.1">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2014 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Procyszyn</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"Comment",lightTheme:"github-light",repo:"kprocyszyn/kprocyszyn.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-64576368-1",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-64576368-1" async></script></body></html>
