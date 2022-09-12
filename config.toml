@@ -1,8 +1,8 @@
 
-baseURL = "https://kprocyszyn.github.io"
+baseURL = "https://kamilpro.github.io"
 defaultContentLanguage = "en"
 theme = "LoveIt"
-title = "Kamil Procyszyn"
+title = "Kamil Pro"
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
@@ -52,14 +52,14 @@ publishDir = "docs"
         url = "/categories/"
         title = ""
         weight = 3
-      #[[languages.en.menu.main]]
-      #  identifier = "documentation"
-      #  pre = ""
-      #  post = ""
-      #  name = "Docs"
-      #  url = "/categories/documentation/"
-      #  title = ""
-      #  weight = 4
+      [[languages.en.menu.main]]
+       identifier = "about-powershell"
+       pre = ""
+       post = ""
+       name = "About PowerShell"
+       url = "https://www.youtube.com/playlist?list=PL-esmhgrps8Zv9bAHesStPRQ1AiUL1wY3"
+       title = ""
+       weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
@@ -81,7 +81,7 @@ publishDir = "docs"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/kprocyszyn"
+        url = "https://github.com/thekamilpro"
         title = "GitHub"
         weight = 6
     [languages.en.params]
@@ -92,7 +92,7 @@ publishDir = "docs"
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "Kamil Procyszyn"
+        title = "Kamil Pro"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -133,7 +133,7 @@ publishDir = "docs"
           # URL of avatar shown in home page
           avatarURL = "/images/avatar.png"
           # title shown in home page (HTML format is supported)
-          title = "Kamil Procyszyn"
+          title = "Kamil Pro"
           # subtitle shown in home page
           subtitle = "Sysadmin's point of view"
           # whether to use typeit animation for subtitle
@@ -149,9 +149,9 @@ publishDir = "docs"
           paginate = 6
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "kprocyszyn"
-        Linkedin = ""
-        Twitter = "@kprocyszyn"
+        GitHub = "thekamilpro"
+        Linkedin = "kamilpro"
+        Twitter = "@thekamilpro"
         Youtubecustom = "kamilpro"
         RSS = true
 
@@ -161,7 +161,7 @@ publishDir = "docs"
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/kprocyszyn"
+  gitRepo = "https://github.com/thekamilpro"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # date format
@@ -180,7 +180,7 @@ publishDir = "docs"
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Kamil Procyszyn"
+      name = "Kamil Pro"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -377,7 +377,7 @@ publishDir = "docs"
       [params.page.comment.utterances]
         enable = true
         # owner/repo
-        repo = "kprocyszyn/kprocyszyn.github.io"
+        repo = "thekamilpro/kamilpro.github.io"
         issueTerm = "pathname"
         label = "Comment"
         lightTheme = "github-light"
@@ -400,7 +400,7 @@ publishDir = "docs"
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = "Kamil Procyszyn"
+        name = "Kamil Pro"
         logoUrl = "/images/avatar.png"
 
   # TypeIt config
@@ -498,7 +498,7 @@ publishDir = "docs"
 
 # Author config
 [author]
-  name = "Kamil Procyszyn"
+  name = "Kamil Pro"
   email = ""
   link = ""
 
