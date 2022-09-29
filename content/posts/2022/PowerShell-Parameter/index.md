@@ -5,7 +5,7 @@ date: 2022-02-07
 resources:
   - name: "featured-image"
     src: "featured-image.jpg"
-categories: ["PowerShell", "Video",]
+categories: ["PowerShell", "Video"]
 tags: [ "PowerShell", "pwsh", "validate", "pipeline", "parameter"]
 ---
 
