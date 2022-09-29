@@ -4,6 +4,7 @@
 hugo_stats.json
 /wp-content/
 /lib/
+/pages/
 
 # Executable may be added to repository
 hugo.exe

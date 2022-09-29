@@ -5,7 +5,7 @@ date: 2022-01-21
 resources:
   - name: "featured-image"
     src: "featured-image.jpg"
-categories: ["PowerShell", "Video",]
+categories: ["PowerShell", "Video"]
 tags: [ "PowerShell", "pwsh", "script", "function", "cmdlet"]
 ---
 
