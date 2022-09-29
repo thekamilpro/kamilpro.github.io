@@ -1,0 +1,363 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>PowerShell Module and Manifest- create and configure your tools - Kamil Pro</title><meta name=Description content="Sysadmin's point of view"><meta property="og:title" content="PowerShell Module and Manifest- create and configure your tools"><meta property="og:description" content="The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
+PowerShell module is the answer - it&rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&rsquo;s details etc."><meta property="og:type" content="article"><meta property="og:url" content="https://kamilpro.github.io/powershell-module-manifest/"><meta property="og:image" content="https://kamilpro.github.io/powershell-module-manifest/featured-image.jpg"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-02-23T00:00:00+00:00"><meta property="article:modified_time" content="2022-09-29T10:46:11+01:00"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://kamilpro.github.io/powershell-module-manifest/featured-image.jpg"><meta name=twitter:title content="PowerShell Module and Manifest- create and configure your tools"><meta name=twitter:description content="The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
+PowerShell module is the answer - it&rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&rsquo;s details etc."><meta name=application-name content="Kamil Pro"><meta name=apple-mobile-web-app-title content="Kamil Pro"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://kamilpro.github.io/powershell-module-manifest/><link rel=prev href=https://kamilpro.github.io/powershell-parameter/><link rel=next href=https://kamilpro.github.io/powershell-module-building/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><meta name=google-site-verification content="NniR9DFiwo_hSUsjXQj7xw3IHmRtl0ICeu4UmstK680"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"PowerShell Module and Manifest- create and configure your tools","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/kamilpro.github.io\/powershell-module-manifest\/"},"image":[{"@type":"ImageObject","url":"https:\/\/kamilpro.github.io\/powershell-module-manifest\/featured-image.jpg","width":1280,"height":720}],"genre":"posts","keywords":"PowerShell, pwsh, Module, Manifest, psd1, psm1","wordcount":1001,"url":"https:\/\/kamilpro.github.io\/powershell-module-manifest\/","datePublished":"2022-02-23T00:00:00+00:00","dateModified":"2022-09-29T10:46:11+01:00","license":"Kamil Procyszyn","publisher":{"@type":"Organization","name":"Kamil Pro","logo":{"@type":"ImageObject","url":"https:\/\/kamilpro.github.io\/images\/avatar.png","width":150,"height":150}},"author":{"@type":"Person","name":"Kamil"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Kamil Pro">Kamil Pro<span class=header-title-post><i class='fas fa-terminal'></i></span></a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>Posts </a><a class=menu-item href=/tags/>Tags </a><a class=menu-item href=/categories/>Categories </a><a class=menu-item href="https://www.youtube.com/playlist?list=PL-esmhgrps8Zv9bAHesStPRQ1AiUL1wY3" rel="noopener noreffer" target=_blank>About PowerShell </a><a class=menu-item href=/powershell-for-it-professionals/>Powershell for IT professionals </a><a class=menu-item href=/about/>About </a><a class=menu-item href=https://github.com/thekamilpro title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Kamil Pro">Kamil Pro<span class=header-title-post><i class='fas fa-terminal'></i></span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/categories/ title>Categories</a><a class=menu-item href="https://www.youtube.com/playlist?list=PL-esmhgrps8Zv9bAHesStPRQ1AiUL1wY3" title rel="noopener noreffer" target=_blank>About PowerShell</a><a class=menu-item href=/powershell-for-it-professionals/ title>Powershell for IT professionals</a><a class=menu-item href=/about/ title>About</a><a class=menu-item href=https://github.com/thekamilpro title=GitHub rel="noopener noreffer" target=_blank><i class='fab fa-github fa-fw'></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">PowerShell Module and Manifest- create and configure your tools</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Kamil</a></span>&nbsp;<span class=post-category>included in <a href=/categories/powershell/><i class="far fa-folder fa-fw" aria-hidden=true></i>Powershell</a>&nbsp;<a href=/categories/video/><i class="far fa-folder fa-fw" aria-hidden=true></i>Video</a>&nbsp;<a href=/categories/module/><i class="far fa-folder fa-fw" aria-hidden=true></i>Module</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-02-23>2022-02-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;1001 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;5 minutes&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/powershell-module-manifest/featured-image.jpg data-srcset="/powershell-module-manifest/featured-image.jpg, /powershell-module-manifest/featured-image.jpg 1.5x, /powershell-module-manifest/featured-image.jpg 2x" data-sizes=auto alt=/powershell-module-manifest/featured-image.jpg title=/powershell-module-manifest/featured-image.jpg></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div></div><div class=content id=content><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src=https://www.youtube-nocookie.com/embed/xPQq0ui8j78 style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><p>The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?</p><p>PowerShell module is the answer - it&rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&rsquo;s details etc.</p><p>In this video I&rsquo;ll present to you how to convert scripts into a module and use manifest to add more information about your module.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#cat.ps1</span>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-CatFact</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>catfact</span><span class=p>.</span><span class=n>ninja</span><span class=p>/</span><span class=n>fact</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-psd1 data-lang=psd1><span class=line><span class=cl><span class=c>#mystuff.psd1</span>
+</span></span><span class=line><span class=cl><span class=c>#</span>
+</span></span><span class=line><span class=cl><span class=c># Module manifest for module &#39;mystuff&#39;</span>
+</span></span><span class=line><span class=cl><span class=c>#</span>
+</span></span><span class=line><span class=cl><span class=c># Generated by: Kamil</span>
+</span></span><span class=line><span class=cl><span class=c>#</span>
+</span></span><span class=line><span class=cl><span class=c># Generated on: 22/02/2022</span>
+</span></span><span class=line><span class=cl><span class=c>#</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>@{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Script module or binary module file associated with this manifest.</span>
+</span></span><span class=line><span class=cl><span class=n>RootModule</span> <span class=p>=</span> <span class=s1>&#39;mystuff.psm1&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Version number of this module.</span>
+</span></span><span class=line><span class=cl><span class=n>ModuleVersion</span> <span class=p>=</span> <span class=s1>&#39;1.3.34&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Supported PSEditions</span>
+</span></span><span class=line><span class=cl><span class=c># CompatiblePSEditions = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># ID used to uniquely identify this module</span>
+</span></span><span class=line><span class=cl><span class=n>GUID</span> <span class=p>=</span> <span class=s1>&#39;583dda2e-b132-4929-8d89-a27f4d5cad7c&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Author of this module</span>
+</span></span><span class=line><span class=cl><span class=n>Author</span> <span class=p>=</span> <span class=s1>&#39;KamilKrzysztof&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Company or vendor of this module</span>
+</span></span><span class=line><span class=cl><span class=n>CompanyName</span> <span class=p>=</span> <span class=s1>&#39;Unknown&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Copyright statement for this module</span>
+</span></span><span class=line><span class=cl><span class=n>Copyright</span> <span class=p>=</span> <span class=s1>&#39;(c) KamilKrzysztof. All rights reserved.&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Description of the functionality provided by this module</span>
+</span></span><span class=line><span class=cl><span class=n>Description</span> <span class=p>=</span> <span class=s1>&#39;This bundles together my important functions&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Minimum version of the PowerShell engine required by this module</span>
+</span></span><span class=line><span class=cl><span class=n>PowerShellVersion</span> <span class=p>=</span> <span class=s1>&#39;5.1&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Name of the PowerShell host required by this module</span>
+</span></span><span class=line><span class=cl><span class=c># PowerShellHostName = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Minimum version of the PowerShell host required by this module</span>
+</span></span><span class=line><span class=cl><span class=c># PowerShellHostVersion = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.</span>
+</span></span><span class=line><span class=cl><span class=c># DotNetFrameworkVersion = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.</span>
+</span></span><span class=line><span class=cl><span class=c># ClrVersion = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Processor architecture (None, X86, Amd64) required by this module</span>
+</span></span><span class=line><span class=cl><span class=c># ProcessorArchitecture = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Modules that must be imported into the global environment prior to importing this module</span>
+</span></span><span class=line><span class=cl><span class=n>RequiredModules</span> <span class=p>=</span> <span class=p>@(@{</span><span class=n>ModuleName</span> <span class=p>=</span> <span class=s2>&#34;Az.Storage&#34;</span><span class=p>;</span> <span class=n>ModuleVersion</span> <span class=p>=</span> <span class=s1>&#39;1.0.0&#39;</span><span class=p>}</span> <span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Assemblies that must be loaded prior to importing this module</span>
+</span></span><span class=line><span class=cl><span class=c># RequiredAssemblies = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Script files (.ps1) that are run in the caller&#39;s environment prior to importing this module.</span>
+</span></span><span class=line><span class=cl><span class=c># ScriptsToProcess = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Type files (.ps1xml) to be loaded when importing this module</span>
+</span></span><span class=line><span class=cl><span class=c># TypesToProcess = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Format files (.ps1xml) to be loaded when importing this module</span>
+</span></span><span class=line><span class=cl><span class=c># FormatsToProcess = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Modules to import as nested modules of the module specified in RootModule/ModuleToProcess</span>
+</span></span><span class=line><span class=cl><span class=c># NestedModules = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.</span>
+</span></span><span class=line><span class=cl><span class=n>FunctionsToExport</span> <span class=p>=</span> <span class=p>@(</span><span class=s2>&#34;Get-CatFact&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.</span>
+</span></span><span class=line><span class=cl><span class=n>CmdletsToExport</span> <span class=p>=</span> <span class=p>@()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Variables to export from this module</span>
+</span></span><span class=line><span class=cl><span class=n>VariablesToExport</span> <span class=p>=</span> <span class=s1>&#39;*&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.</span>
+</span></span><span class=line><span class=cl><span class=n>AliasesToExport</span> <span class=p>=</span> <span class=p>@()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># DSC resources to export from this module</span>
+</span></span><span class=line><span class=cl><span class=c># DscResourcesToExport = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># List of all modules packaged with this module</span>
+</span></span><span class=line><span class=cl><span class=c># ModuleList = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># List of all files packaged with this module</span>
+</span></span><span class=line><span class=cl><span class=c># FileList = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.</span>
+</span></span><span class=line><span class=cl><span class=n>PrivateData</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>PSData</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># Tags applied to this module. These help with module discovery in online galleries.</span>
+</span></span><span class=line><span class=cl>        <span class=n>Tags</span> <span class=p>=</span> <span class=p>@(</span><span class=s2>&#34;PSMODULE&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># A URL to the license for this module.</span>
+</span></span><span class=line><span class=cl>        <span class=c># LicenseUri = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># A URL to the main website for this project.</span>
+</span></span><span class=line><span class=cl>        <span class=c># ProjectUri = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># A URL to an icon representing this module.</span>
+</span></span><span class=line><span class=cl>        <span class=c># IconUri = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># ReleaseNotes of this module</span>
+</span></span><span class=line><span class=cl>        <span class=c># ReleaseNotes = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># Prerelease string of this module</span>
+</span></span><span class=line><span class=cl>        <span class=c># Prerelease = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># Flag to indicate whether the module requires explicit user acceptance for install/update/save</span>
+</span></span><span class=line><span class=cl>        <span class=c># RequireLicenseAcceptance = $false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c># External dependent modules of this module</span>
+</span></span><span class=line><span class=cl>        <span class=c># ExternalModuleDependencies = @()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> <span class=c># End of PSData hashtable</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=c># End of PrivateData hashtable</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># HelpInfo URI of this module</span>
+</span></span><span class=line><span class=cl><span class=c># HelpInfoURI = &#39;&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c># Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.</span>
+</span></span><span class=line><span class=cl><span class=n>DefaultCommandPrefix</span> <span class=p>=</span> <span class=s1>&#39;KP&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-psm1 data-lang=psm1><span class=line><span class=cl><span class=c>#mystuff.psm1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-CatFact</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>catfact</span><span class=p>.</span><span class=n>ninja</span><span class=p>/</span><span class=n>fact</span>
+</span></span><span class=line><span class=cl>    <span class=nb>Get-Quote</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Quote</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$quotes</span> <span class=p>=</span> <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>type</span><span class=p>.</span><span class=n>fit</span><span class=p>/</span><span class=n>api</span><span class=p>/</span><span class=n>quotes</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=n>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=n>Count</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nv>$quotes</span><span class=p>[</span><span class=nv>$random</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Weather</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>wttr</span><span class=p>.</span><span class=k>in</span><span class=p>/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#quote.ps1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Quote</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$quotes</span> <span class=p>=</span> <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>type</span><span class=p>.</span><span class=n>fit</span><span class=p>/</span><span class=n>api</span><span class=p>/</span><span class=n>quotes</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=n>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=n>Count</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nv>$quotes</span><span class=p>[</span><span class=nv>$random</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#weather.ps1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Weather</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>wttr</span><span class=p>.</span><span class=k>in</span><span class=p>/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#wrapper.ps1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>cat</span><span class=p>.</span><span class=n>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>quote</span><span class=p>.</span><span class=n>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>weather</span><span class=p>.</span><span class=n>ps1</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-09-29&nbsp;<a class=git-hash href=https://github.com/thekamilpro/commit/85859bcd6f75e50bf34dda9c386be62418c86738 target=_blank title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 85859bcd6f75e50bf34dda9c386be62418c86738: Add videos from 2022">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>85859bc</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/powershell-module-manifest/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools" data-via=@thekamilpro data-hashtags=PowerShell,pwsh,Module,Manifest,psd1,psm1><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://kamilpro.github.io/powershell-module-manifest/ data-hashtag=PowerShell><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=https://kamilpro.github.io/powershell-module-manifest/><i class="fab fa-linkedin fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://kamilpro.github.io/powershell-module-manifest/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/powershell/>powershell</a>,&nbsp;<a href=/tags/pwsh/>pwsh</a>,&nbsp;<a href=/tags/module/>module</a>,&nbsp;<a href=/tags/manifest/>Manifest</a>,&nbsp;<a href=/tags/psd1/>psd1</a>,&nbsp;<a href=/tags/psm1/>psm1</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/powershell-parameter/ class=prev rel=prev title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</a>
+<a href=/powershell-module-building/ class=next rel=next title="Building PowerShell Module - how to organise your source files and build with ease">Building PowerShell Module - how to organise your source files and build with ease<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.104.1">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"Comment",lightTheme:"github-light",repo:"thekamilpro/kamilpro.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-64576368-1",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-64576368-1" async></script></body></html>
