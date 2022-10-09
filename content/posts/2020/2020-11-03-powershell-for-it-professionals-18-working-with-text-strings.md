@@ -5,10 +5,6 @@ author: Kamil
 date: 2020-11-03T17:33:18+00:00
 url: /powershell-for-it-professionals-18-working-with-text-strings/
 featuredImage: /wp-content/uploads/2020/11/Slide1.jpg
-wp_last_modified_info:
-  - 3rd November 2020 @ 4:20 pm
-wplmi_shortcode:
-  - '[lmt-post-modified-info]'
 categories:
   - IT
   - PowerShell for IT Professionals
@@ -32,11 +28,11 @@ tags:
 ---
 {{<youtube ZZcHBTUhl5w>}}
 
-Although PowerShell treats everything as object &#8211; including text strings &#8211; working with text might be particularly difficult &#8211; at least when first approached.
+Although PowerShell treats everything as object - including text strings - working with text might be particularly difficult - at least when first approached.
 
 In this lesson we are going to have a closer look at what is possible with built in text methods and see how these can help us e.g. by extracting a substring of text.
 
-PowerShell can also be great at parsing log files &#8211; we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.g. error.
+PowerShell can also be great at parsing log files - we will use Select-String to quickly filter out the lines of text with the phrase we are looking for e.g. error.
 
 Finally, we will have a go with regular expressions / regex and see how this can be used to find out a pattern of text, rather than a specific word.
 
@@ -66,9 +62,9 @@ $FullName = "$FirstName $Surname"
 $FullName
 
 # String as array
-$FirstName&#91;0]
-$FirstName&#91;-1]
-$FirstName&#91;0..2]
+$FirstName[0]
+$FirstName[-1]
+$FirstName[0..2]
 
 # String methods
 $FirstName | Get-Member
@@ -107,10 +103,10 @@ Get-Content C:\Windows10Upgrade\upgrader_default.log | Select-String "Error"
 # Practical example - stripping time offset from w32tm
 $time = w32tm /stripchart /computer:time.windows.com /dataonly /samples:1
 $time
-$time&#91;-1]
-$time&#91;-1].Split(',')
-$time&#91;-1].Split(',')&#91;-1]
-$offset = $time&#91;-1].Split(',')&#91;-1]
+$time[-1]
+$time[-1].Split(',')
+$time[-1].Split(',')[-1]
+$offset = $time[-1].Split(',')[-1]
 $offset
 $offset.IndexOf('.')
 $offset = $offset.Substring(0, $offset.IndexOf('.'))
