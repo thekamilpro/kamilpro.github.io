@@ -272,7 +272,7 @@
 </span></span></span><span class=line><span class=cl><span class=cm>.COPYRIGHT Kamil Procyszyn
 </span></span></span><span class=line><span class=cl><span class=cm>.PROJECTURI https://github.com/kprocyszyn/About-PowerShell
 </span></span></span><span class=line><span class=cl><span class=cm>.RELEASENOTES 2021 September
-</span></span></span><span class=line><span class=cl><span class=cm></span><span class=sd>.DESCRIPTION</span><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>.</span><span class=sd>DESCRIPTION</span><span class=cm>
 </span></span></span><span class=line><span class=cl><span class=cm>Link to the video: https://youtu.be/oti2l8EmAT8
 </span></span></span><span class=line><span class=cl><span class=cm>Documentation: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.1#:~:text=In%20PowerShell%2C%20each%20hash%20table%20is%20a%20Hashtable,to%20create%20an%20ordered%20dictionary%20%28System.Collections.Specialized.OrderedDictionary%29%20in%20PowerShell.
 </span></span></span><span class=line><span class=cl><span class=cm>#&gt;</span>
@@ -286,24 +286,24 @@
 </span></span></span><span class=line><span class=cl><span class=cm>#&gt;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#Creating a hashtable</span>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span> <span class=p>=</span> <span class=p>@{}</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#############################</span>
 </span></span><span class=line><span class=cl><span class=c># Adding items to hashtable #</span>
 </span></span><span class=line><span class=cl><span class=c>#############################</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Person&#34;</span><span class=p>,</span> <span class=s2>&#34;John&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Email&#34;</span><span class=p>,</span> <span class=s2>&#34;John@john.com&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Pet&#34;</span><span class=p>,</span> <span class=s2>&#34;Cat&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Surname&#34;</span><span class=p>,</span> <span class=s2>&#34;Smith&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Person&#34;</span><span class=p>,</span> <span class=s2>&#34;John&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Email&#34;</span><span class=p>,</span> <span class=s2>&#34;John@john.com&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Pet&#34;</span><span class=p>,</span> <span class=s2>&#34;Cat&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Surname&#34;</span><span class=p>,</span> <span class=s2>&#34;Smith&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$hash</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Removing Key from hashtable</span>
-</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=n>Remove</span><span class=p>(</span><span class=s2>&#34;Surname&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$hash</span><span class=p>.</span><span class=py>Remove</span><span class=p>(</span><span class=s2>&#34;Surname&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$hash</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Prepopulating hashtable</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>Person</span> <span class=p>=</span> <span class=s2>&#34;Mike&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Email</span> <span class=p>=</span> <span class=s2>&#34;Mike@Mike.com&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Pet</span> <span class=p>=</span> <span class=s2>&#34;Dog&#34;</span>
@@ -311,7 +311,7 @@
 </span></span><span class=line><span class=cl><span class=nv>$details</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Adding key that already exists throws</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Pet&#34;</span><span class=p>,</span> <span class=s2>&#34;Snake&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Pet&#34;</span><span class=p>,</span> <span class=s2>&#34;Snake&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>###################</span>
 </span></span><span class=line><span class=cl><span class=c># Accessing items #</span>
@@ -319,7 +319,7 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Accessing with property name</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>[</span><span class=s1>&#39;Pet&#39;</span><span class=p>]</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Pet</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Pet</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># We can use variable</span>
 </span></span><span class=line><span class=cl><span class=nv>$property</span> <span class=p>=</span> <span class=s2>&#34;Email&#34;</span>
@@ -330,10 +330,10 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Non existent value doesn&#39;t throw</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>[</span><span class=s1>&#39;Surname&#39;</span><span class=p>]</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Surname</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Surname</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Although we can check for true/false </span>
-</span></span><span class=line><span class=cl><span class=no>[bool]</span><span class=nv>$details</span><span class=p>[</span><span class=s1>&#39;Surname&#39;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>[</span><span class=no>bool</span><span class=p>]</span><span class=nv>$details</span><span class=p>[</span><span class=s1>&#39;Surname&#39;</span><span class=p>]</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>###################</span>
 </span></span><span class=line><span class=cl><span class=c># Updating values #</span>
@@ -344,8 +344,8 @@
 </span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>[</span><span class=s1>&#39;Drink&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=s2>&#34;Flat white&#34;</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>pet</span> <span class=p>=</span> <span class=s2>&#34;Dog&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Food</span> <span class=p>=</span> <span class=s2>&#34;Lamb Shish Kebab&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>pet</span> <span class=p>=</span> <span class=s2>&#34;Dog&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Food</span> <span class=p>=</span> <span class=s2>&#34;Lamb Shish Kebab&#34;</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>###########</span>
@@ -358,13 +358,13 @@
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># piping to foreach-object</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Keys</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Keys</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=s2>&#34;{0} is {1}&#34;</span> <span class=o>-f</span> <span class=nv>$_</span><span class=p>,</span> <span class=nv>$details</span><span class=p>[</span><span class=nv>$_</span><span class=p>]</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># GetEnumerator() allows us to work with properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>GetEnumerator</span><span class=p>()</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=s2>&#34;{0} is {1}&#34;</span> <span class=o>-f</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Key</span><span class=p>,</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Value</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>GetEnumerator</span><span class=p>()</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;{0} is {1}&#34;</span> <span class=o>-f</span> <span class=nv>$_</span><span class=p>.</span><span class=n>Key</span><span class=p>,</span> <span class=nv>$_</span><span class=p>.</span><span class=py>Value</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Values can&#39;t be updated while enumarated!</span>
@@ -373,7 +373,7 @@
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Keys must be cloned before updating</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Keys</span><span class=p>.</span><span class=n>Clone</span><span class=p>()</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Keys</span><span class=p>.</span><span class=py>Clone</span><span class=p>()</span> <span class=p>|</span> <span class=nb>ForEach-Object</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$details</span><span class=p>[</span><span class=nv>$_</span><span class=p>]</span> <span class=p>=</span> <span class=s2>&#34;SANITISED&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span>
@@ -385,34 +385,34 @@
 </span></span><span class=line><span class=cl><span class=c># checking if hashtable exists</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;It&#39;s there&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$empty</span> <span class=p>=</span> <span class=p>@{}</span>
+</span></span><span class=line><span class=cl><span class=nv>$empty</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$empty</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;It&#39;s empty, but it&#39;s there!&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Checking if key exists</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=n>Person</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;There&#39;s some info about a person&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Deailing with false</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Empty&#34;</span><span class=p>,</span> <span class=s2>&#34;&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;Null&#34;</span><span class=p>,</span> <span class=nv>$Null</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=s2>&#34;False&#34;</span><span class=p>,</span> <span class=nv>$false</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Empty&#34;</span><span class=p>,</span> <span class=s2>&#34;&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;Null&#34;</span><span class=p>,</span> <span class=vm>$Null</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$details</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=s2>&#34;False&#34;</span><span class=p>,</span> <span class=vm>$false</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$details</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=n>Empty</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;It&#39;s there&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=n>Null</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;It&#39;s there&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=n>False</span><span class=p>)</span> <span class=p>{</span><span class=s2>&#34;It&#39;s there&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Null&#39;</span><span class=p>))</span> <span class=p>{</span><span class=s2>&#34;It&#39;s null!&#34;</span><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$details</span><span class=p>.</span><span class=py>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Null&#39;</span><span class=p>))</span> <span class=p>{</span><span class=s2>&#34;It&#39;s null!&#34;</span><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>######################</span>
 </span></span><span class=line><span class=cl><span class=c># Custom expressions #</span>
 </span></span><span class=line><span class=cl><span class=c>######################</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$employee</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$employee</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span> <span class=p>=</span> <span class=s2>&#34;Beth&#34;</span>
-</span></span><span class=line><span class=cl>    <span class=n>HourlyWage</span> <span class=p>=</span> <span class=n>10</span>
-</span></span><span class=line><span class=cl>    <span class=n>HoursWorked</span> <span class=p>=</span> <span class=n>7</span><span class=p>.</span><span class=n>5</span>
+</span></span><span class=line><span class=cl>    <span class=n>HourlyWage</span> <span class=p>=</span> <span class=mf>10</span>
+</span></span><span class=line><span class=cl>    <span class=n>HoursWorked</span> <span class=p>=</span> <span class=mf>7.5</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl><span class=nv>$employee</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>-Property</span>  <span class=p>*,@{</span><span class=n>N</span> <span class=p>=</span> <span class=s2>&#34;Wage&#34;</span><span class=p>;</span> <span class=n>E</span> <span class=p>=</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=n>HourlyWage</span> <span class=p>*</span> <span class=nv>$_</span><span class=p>.</span><span class=n>HoursWorked</span> <span class=p>}</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nv>$employee</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>-Property</span>  <span class=p>*,</span><span class=vm>@</span><span class=p>{</span><span class=n>N</span> <span class=p>=</span> <span class=s2>&#34;Wage&#34;</span><span class=p>;</span> <span class=n>E</span> <span class=p>=</span> <span class=p>{</span><span class=nv>$_</span><span class=p>.</span><span class=py>HourlyWage</span> <span class=p>*</span> <span class=nv>$_</span><span class=p>.</span><span class=py>HoursWorked</span> <span class=p>}</span> <span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#############</span>
 </span></span><span class=line><span class=cl><span class=c># Splatting #</span>
@@ -420,7 +420,7 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nb>Invoke-RestMethod</span> <span class=n>-Uri</span> <span class=n>catfact</span><span class=p>.</span><span class=n>ninja</span><span class=p>/</span><span class=n>facts</span> <span class=n>-Method</span> <span class=n>Get</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>Data</span> <span class=n>-ExpandProperty</span> <span class=n>Data</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>Uri</span> <span class=p>=</span> <span class=s2>&#34;catfact.ninja/facts&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Method</span> <span class=p>=</span> <span class=s2>&#34;Get&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
@@ -428,9 +428,9 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Adding parameters</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$Verbose</span> <span class=p>=</span> <span class=nv>$true</span>
+</span></span><span class=line><span class=cl><span class=nv>$Verbose</span> <span class=p>=</span> <span class=vm>$true</span>
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=p>(</span><span class=nv>$Verbose</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=nv>$params</span><span class=p>[</span><span class=s1>&#39;Verbose&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=nv>$true</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$params</span><span class=p>[</span><span class=s1>&#39;Verbose&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=vm>$true</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nb>Invoke-RestMethod</span> <span class=nv>@params</span>
 </span></span><span class=line><span class=cl>
@@ -438,21 +438,21 @@
 </span></span><span class=line><span class=cl><span class=c># Nested hashtables #</span>
 </span></span><span class=line><span class=cl><span class=c>#####################</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=n>Development</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Development</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=n>Server</span> <span class=p>=</span> <span class=s2>&#34;Server1&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=n>Admin</span> <span class=p>=</span> <span class=s2>&#34;Rachel Green&#34;</span>
-</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv1&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=n>Password</span> <span class=p>=</span> <span class=s2>&#34;Secret&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=n>Test</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Test</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=n>Server</span> <span class=p>=</span> <span class=s2>&#34;Server2&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=n>Admin</span> <span class=p>=</span> <span class=s2>&#34;Joe Triviani&#34;</span>
-</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv2&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=n>Password</span> <span class=p>=</span> <span class=s2>&#34;Letmein&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
@@ -462,55 +462,55 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Accessing nested properties</span>
 </span></span><span class=line><span class=cl><span class=nv>$Environments</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Keys</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Values</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Keys</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Values</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Test</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Test</span><span class=p>.</span><span class=n>Credentials</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Test</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Test</span><span class=p>.</span><span class=py>Credentials</span>
 </span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>[</span><span class=s1>&#39;Test&#39;</span><span class=p>][</span><span class=s1>&#39;Credentials&#39;</span><span class=p>]</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Updating nested properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Test</span><span class=p>.</span><span class=n>Credentials</span><span class=p>.</span><span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;admin&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Test</span><span class=p>.</span><span class=n>Credentials</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Test</span><span class=p>.</span><span class=py>Credentials</span><span class=p>.</span><span class=py>Username</span> <span class=p>=</span> <span class=s2>&#34;admin&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Test</span><span class=p>.</span><span class=py>Credentials</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Quickly unwrapping all properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=n>-Depth</span> <span class=n>99</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=n>-Depth</span> <span class=mf>99</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Adding nested properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>[</span><span class=s1>&#39;Production&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=p>@{}</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>.</span><span class=n>Server</span> <span class=p>=</span> <span class=s2>&#34;Server3&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>.</span><span class=n>Admin</span> <span class=p>=</span> <span class=s2>&#34;Ross Geller&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>[</span><span class=s1>&#39;Credentials&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=p>@{}</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>.</span><span class=n>Credentials</span><span class=p>.</span><span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv3&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>.</span><span class=n>Credentials</span><span class=p>.</span><span class=n>Password</span> <span class=p>=</span> <span class=s2>&#34;Nosuchplace&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>[</span><span class=s1>&#39;Production&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Production</span><span class=p>.</span><span class=py>Server</span> <span class=p>=</span> <span class=s2>&#34;Server3&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Production</span><span class=p>.</span><span class=py>Admin</span> <span class=p>=</span> <span class=s2>&#34;Ross Geller&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=n>Production</span><span class=p>[</span><span class=s1>&#39;Credentials&#39;</span><span class=p>]</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Production</span><span class=p>.</span><span class=py>Credentials</span><span class=p>.</span><span class=py>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv3&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span><span class=p>.</span><span class=py>Production</span><span class=p>.</span><span class=py>Credentials</span><span class=p>.</span><span class=py>Password</span> <span class=p>=</span> <span class=s2>&#34;Nosuchplace&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#####################</span>
 </span></span><span class=line><span class=cl><span class=c># Working with JSON #</span>
 </span></span><span class=line><span class=cl><span class=c>#####################</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=p>|</span> <span class=nb>Out-File</span> <span class=n>C:</span><span class=p>\</span><span class=n>temp</span><span class=p>\</span><span class=n>envs</span><span class=p>.</span><span class=n>json</span>
-</span></span><span class=line><span class=cl><span class=nb>Get-Content</span> <span class=n>C:</span><span class=p>\</span><span class=n>Temp</span><span class=p>\</span><span class=n>envs</span><span class=p>.</span><span class=n>json</span> <span class=p>|</span> <span class=nb>ConvertFrom-Json</span> <span class=c>#This will create pscustomobject</span>
+</span></span><span class=line><span class=cl><span class=nv>$Environments</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=p>|</span> <span class=nb>Out-File</span> <span class=n>C:</span><span class=p>\</span><span class=n>temp</span><span class=p>\</span><span class=n>envs</span><span class=p>.</span><span class=py>json</span>
+</span></span><span class=line><span class=cl><span class=nb>Get-Content</span> <span class=n>C:</span><span class=p>\</span><span class=n>Temp</span><span class=p>\</span><span class=n>envs</span><span class=p>.</span><span class=py>json</span> <span class=p>|</span> <span class=nb>ConvertFrom-Json</span> <span class=c>#This will create pscustomobject</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>##################</span>
 </span></span><span class=line><span class=cl><span class=c># PSCustomObject #</span>
 </span></span><span class=line><span class=cl><span class=c>##################</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Creating a new object</span>
-</span></span><span class=line><span class=cl><span class=nv>$EnvironmentsObject</span> <span class=p>=</span> <span class=no>[pscustomobject]</span><span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$EnvironmentsObject</span> <span class=p>=</span> <span class=p>[</span><span class=no>pscustomobject</span><span class=p>]</span><span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=n>Development</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Development</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=n>Server</span> <span class=p>=</span> <span class=s2>&#34;Server1&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=n>Admin</span> <span class=p>=</span> <span class=s2>&#34;Rachel Green&#34;</span>
-</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv1&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=n>Password</span> <span class=p>=</span> <span class=s2>&#34;Secret&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=n>Test</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>Test</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=n>Server</span> <span class=p>=</span> <span class=s2>&#34;Server2&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=n>Admin</span> <span class=p>=</span> <span class=s2>&#34;Joe Triviani&#34;</span>
-</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Credentials</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=n>Username</span> <span class=p>=</span> <span class=s2>&#34;Serv2&#34;</span>
 </span></span><span class=line><span class=cl>            <span class=n>Password</span> <span class=p>=</span> <span class=s2>&#34;Letmein&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
@@ -518,8 +518,8 @@
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Casting hashtable to object</span>
-</span></span><span class=line><span class=cl><span class=no>[PSCustomObject]</span><span class=nv>$Environments</span>
+</span></span><span class=line><span class=cl><span class=p>[</span><span class=no>PSCustomObject</span><span class=p>]</span><span class=nv>$Environments</span>
 </span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-05-01&nbsp;<a class=git-hash href=https://github.com/thekamilpro/commit/c6c9ac7ccbcfa13910ead4271a576429139bc33d target=_blank title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) c6c9ac7ccbcfa13910ead4271a576429139bc33d: hashtable post">
 <i class="fas fa-hashtag fa-fw" aria-hidden=true></i>c6c9ac7c</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/powershell-hash-table/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://kamilpro.github.io/powershell-hash-table/ data-title="PowerShell Hash Table - Storing key value pairs" data-via=@thekamilpro data-hashtags=PowerShell,table,key,value,pair,list,script><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://kamilpro.github.io/powershell-hash-table/ data-hashtag=PowerShell><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=https://kamilpro.github.io/powershell-hash-table/><i class="fab fa-linkedin fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://kamilpro.github.io/powershell-hash-table/ data-title="PowerShell Hash Table - Storing key value pairs" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://kamilpro.github.io/powershell-hash-table/ data-title="PowerShell Hash Table - Storing key value pairs"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://kamilpro.github.io/powershell-hash-table/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://kamilpro.github.io/powershell-hash-table/ data-title="PowerShell Hash Table - Storing key value pairs"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/powershell/>powershell</a>,&nbsp;<a href=/tags/table/>table</a>,&nbsp;<a href=/tags/key/>key</a>,&nbsp;<a href=/tags/value/>value</a>,&nbsp;<a href=/tags/pair/>pair</a>,&nbsp;<a href=/tags/list/>list</a>,&nbsp;<a href=/tags/script/>script</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/powershell-array-and-arraylist/ class=prev rel=prev title="PowerShell Array and ArrayList - storing multiple items as a one variable"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>PowerShell Array and ArrayList - storing multiple items as a one variable</a>
-<a href=/powershell-pscustomobject/ class=next rel=next title="PowerShell PSCustomObject - Custom Object, the way it was meant to be">PowerShell PSCustomObject - Custom Object, the way it was meant to be<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.104.3">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+<a href=/powershell-pscustomobject/ class=next rel=next title="PowerShell PSCustomObject - Custom Object, the way it was meant to be">PowerShell PSCustomObject - Custom Object, the way it was meant to be<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
 </a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"Comment",lightTheme:"github-light",repo:"thekamilpro/kamilpro.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-64576368-1",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-64576368-1" async></script></body></html>

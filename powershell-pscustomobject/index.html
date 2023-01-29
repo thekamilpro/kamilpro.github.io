@@ -210,7 +210,7 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span></span><span class=line><span class=cl><span class=cm>.COPYRIGHT Kamil Procyszyn
 </span></span></span><span class=line><span class=cl><span class=cm>.PROJECTURI https://github.com/kprocyszyn/About-PowerShell
 </span></span></span><span class=line><span class=cl><span class=cm>.RELEASENOTES 2021 November
-</span></span></span><span class=line><span class=cl><span class=cm></span><span class=sd>.DESCRIPTION</span><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>.</span><span class=sd>DESCRIPTION</span><span class=cm>
 </span></span></span><span class=line><span class=cl><span class=cm>Link to the video: https://youtu.be/DAVGyCytsqM
 </span></span></span><span class=line><span class=cl><span class=cm>#&gt;</span>
 </span></span><span class=line><span class=cl>
@@ -225,18 +225,18 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span></span><span class=line><span class=cl><span class=cm>#&gt;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Creating custom object:</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>=</span> <span class=no>[PSCustomObject]</span><span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>=</span> <span class=p>[</span><span class=no>PSCustomObject</span><span class=p>]</span><span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span>    <span class=p>=</span> <span class=s2>&#34;Mr Fiber&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Species</span> <span class=p>=</span> <span class=s2>&#34;Domestic cat&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=nb>Type </span>   <span class=p>=</span> <span class=s2>&#34;Tabby cat&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>Name</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>Name</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Saving to a file (JSON):</span>
 </span></span><span class=line><span class=cl><span class=c># We could save CSV, however CSV doesn&#39;t support nested properties, thus why JSON is preferable </span>
-</span></span><span class=line><span class=cl><span class=nv>$Path</span> <span class=p>=</span> <span class=s2>&#34;$env:TEMP\pstojson.json&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=n>-Depth</span> <span class=n>99</span> <span class=p>|</span> <span class=nb>Set-Content</span> <span class=n>-Path</span> <span class=nv>$path</span>
+</span></span><span class=line><span class=cl><span class=nv>$Path</span> <span class=p>=</span> <span class=s2>&#34;</span><span class=nv>$env:TEMP</span><span class=s2>\pstojson.json&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>ConvertTo-Json</span> <span class=n>-Depth</span> <span class=mf>99</span> <span class=p>|</span> <span class=nb>Set-Content</span> <span class=n>-Path</span> <span class=nv>$path</span>
 </span></span><span class=line><span class=cl><span class=nv>$imported</span> <span class=p>=</span> <span class=nb>Get-Content</span> <span class=n>-Path</span> <span class=nv>$Path</span>
 </span></span><span class=line><span class=cl><span class=nv>$imported</span>
 </span></span><span class=line><span class=cl><span class=nv>$imported</span> <span class=p>|</span> <span class=nb>ConvertFrom-Json</span>
@@ -246,7 +246,7 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl><span class=c>##############</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Accessing properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>Species</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>Species</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Dynamically accessing properties</span>
 </span></span><span class=line><span class=cl><span class=nv>$prop</span> <span class=p>=</span> <span class=s1>&#39;Type&#39;</span>
@@ -257,11 +257,11 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=s1>&#39;Favourite Snack&#39;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Removing properties</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>Properties</span><span class=p>.</span><span class=n>Remove</span><span class=p>(</span><span class=s1>&#39;Favourite Snack&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>Properties</span><span class=p>.</span><span class=py>Remove</span><span class=p>(</span><span class=s1>&#39;Favourite Snack&#39;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=s1>&#39;Favourite Snack&#39;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Listing properteis</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>properties</span><span class=p>.</span><span class=n>name</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>properties</span><span class=p>.</span><span class=py>name</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Get-Member</span> <span class=n>-MemberType</span> <span class=n>NoteProperty</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>-ExpandProperty</span> <span class=n>Name</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#############</span>
@@ -269,18 +269,18 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl><span class=c>#############</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Converting hashtable to psobject:</span>
-</span></span><span class=line><span class=cl><span class=nv>$ht</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$ht</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span>    <span class=p>=</span> <span class=s2>&#34;Mr Fiber&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Species</span> <span class=p>=</span> <span class=s2>&#34;Domestic cat&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=nb>Type </span>   <span class=p>=</span> <span class=s2>&#34;Tabby cat&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$ht</span>
-</span></span><span class=line><span class=cl><span class=nv>$htobj</span> <span class=p>=</span> <span class=no>[pscustomobject]</span><span class=nv>$ht</span>
+</span></span><span class=line><span class=cl><span class=nv>$htobj</span> <span class=p>=</span> <span class=p>[</span><span class=no>pscustomobject</span><span class=p>]</span><span class=nv>$ht</span>
 </span></span><span class=line><span class=cl><span class=nv>$htobj</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Converting psobject to hashtable</span>
-</span></span><span class=line><span class=cl><span class=nv>$newHt</span> <span class=p>=</span> <span class=p>@{}</span>
-</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$property</span> <span class=k>in</span> <span class=nv>$htobj</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>Properties</span><span class=p>.</span><span class=n>name</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nv>$newHt</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
+</span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$property</span> <span class=k>in</span> <span class=nv>$htobj</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>Properties</span><span class=p>.</span><span class=n>name</span><span class=p>)</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$newHt</span><span class=p>[</span><span class=nv>$property</span><span class=p>]</span> <span class=p>=</span> <span class=nv>$htobj</span><span class=p>.</span><span class=nv>$property</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$newHt</span>
@@ -294,28 +294,28 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl>    <span class=s2>&#34;Hi, my name is </span><span class=p>$(</span><span class=nv>$this</span><span class=p>.</span><span class=n>name</span><span class=p>)</span><span class=s2> and I like to sleep.&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>MemberType</span> <span class=p>=</span> <span class=s2>&#34;ScriptMethod&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span>       <span class=p>=</span> <span class=s2>&#34;SayHi&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Value</span>      <span class=p>=</span> <span class=nv>$method</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Add-Member</span> <span class=nv>@params</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>SayHi</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>SayHi</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># How about, converting Object to Hashtable, as the actual method?</span>
-</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>MemberType</span> <span class=p>=</span> <span class=s2>&#34;ScriptMethod&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span>       <span class=p>=</span> <span class=s2>&#34;OutHashtable&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Value</span>      <span class=p>=</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>        <span class=nv>$hash</span> <span class=p>=</span> <span class=p>@{}</span>
-</span></span><span class=line><span class=cl>        <span class=nv>$this</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>properties</span><span class=p>.</span><span class=n>name</span><span class=p>.</span><span class=k>foreach</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$hash</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{}</span>
+</span></span><span class=line><span class=cl>        <span class=nv>$this</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>properties</span><span class=p>.</span><span class=py>name</span><span class=p>.</span><span class=k>foreach</span><span class=p>({</span>
 </span></span><span class=line><span class=cl>                <span class=nv>$hash</span><span class=p>[</span><span class=nv>$_</span><span class=p>]</span> <span class=p>=</span> <span class=nv>$this</span><span class=p>.</span><span class=nv>$_</span>
 </span></span><span class=line><span class=cl>            <span class=p>})</span>
 </span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nv>$hash</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Add-Member</span> <span class=nv>@params</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>OutHashtable</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>OutHashtable</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>#########</span>
 </span></span><span class=line><span class=cl><span class=c># Types #</span>
@@ -323,22 +323,22 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Get-Member</span> <span class=c># now it is PSCustomObject, duh</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>TypeNames</span> <span class=c># this looks familiar</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=n>psobject</span><span class=p>.</span><span class=n>TypeNames</span><span class=p>.</span><span class=n>Insert</span><span class=p>(</span><span class=n>0</span><span class=p>,</span> <span class=s2>&#34;Kp.CatsAreAwesome&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>TypeNames</span> <span class=c># this looks familiar</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj</span><span class=p>.</span><span class=py>psobject</span><span class=p>.</span><span class=py>TypeNames</span><span class=p>.</span><span class=py>Insert</span><span class=p>(</span><span class=mf>0</span><span class=p>,</span> <span class=s2>&#34;Kp.CatsAreAwesome&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Get-Member</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Invoke-CAA</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Invoke-CAA</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=k>param</span> <span class=p>(</span> 
 </span></span><span class=line><span class=cl>        <span class=c># We only accept parameter of type Kp.CatsAreAwesome</span>
 </span></span><span class=line><span class=cl>        <span class=p>[</span><span class=n>PSTypeName</span><span class=p>(</span><span class=s1>&#39;Kp.CatsAreAwesome&#39;</span><span class=p>)]</span>
-</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=k>Parameter</span><span class=p>(</span><span class=k>ValueFromPipeline</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>        <span class=p>[</span><span class=nb>Parameter</span><span class=p>(</span><span class=na>ValueFromPipeline</span><span class=p>)]</span>
 </span></span><span class=line><span class=cl>        <span class=nv>$Cat</span> 
 </span></span><span class=line><span class=cl>        <span class=p>)</span>
 </span></span><span class=line><span class=cl>        
 </span></span><span class=line><span class=cl>        <span class=c># If $Cat has been passed, we call method SayHi(), otherwise we just say that cats are awesome (generally)</span>
-</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=n>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Cat&#39;</span><span class=p>))</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nv>$PSBoundParameters</span><span class=p>.</span><span class=py>ContainsKey</span><span class=p>(</span><span class=s1>&#39;Cat&#39;</span><span class=p>))</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=s2>&#34;Here&#39;s an awesome cat:&#34;</span>
-</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$Cat</span><span class=p>.</span><span class=n>SayHi</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=nv>$Cat</span><span class=p>.</span><span class=py>SayHi</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>            <span class=s2>&#34;Cats are awesome!&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
@@ -348,7 +348,7 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl><span class=nb>Invoke-Caa</span> <span class=n>-Cat</span> <span class=s2>&#34;BLA&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># We can also specify type name at creation</span>
-</span></span><span class=line><span class=cl><span class=nv>$obj2</span> <span class=p>=</span> <span class=no>[pscustomobject]</span><span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$obj2</span> <span class=p>=</span> <span class=p>[</span><span class=no>pscustomobject</span><span class=p>]</span><span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>PSTypeName</span> <span class=p>=</span> <span class=s1>&#39;Kp.CatsAreAwesome&#39;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span> <span class=p>=</span> <span class=s1>&#39;Whiskers&#39;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Species</span> <span class=p>=</span> <span class=s2>&#34;Domestic cat&#34;</span>
@@ -359,7 +359,7 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl>    <span class=s2>&#34;Hi, my name is </span><span class=p>$(</span><span class=nv>$this</span><span class=p>.</span><span class=n>name</span><span class=p>)</span><span class=s2> and I like to sleep.&#34;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=nv>$params</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>MemberType</span> <span class=p>=</span> <span class=s2>&#34;ScriptMethod&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Name</span>       <span class=p>=</span> <span class=s2>&#34;SayHi&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=n>Value</span>      <span class=p>=</span> <span class=nv>$method</span>
@@ -368,30 +368,30 @@ In this video I&rsquo;ll take you through the steps of creating PSCustomObject, 
 </span></span><span class=line><span class=cl><span class=nv>$obj2</span> <span class=p>|</span> <span class=nb>Invoke-CAA</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Specify default output</span>
-</span></span><span class=line><span class=cl><span class=nb>Update-TypeData</span> <span class=n>-TypeName</span> <span class=n>kp</span><span class=p>.</span><span class=n>CatsAreAwesome</span> <span class=n>-DefaultDisplayPropertySet</span> <span class=n>Name</span><span class=p>,</span><span class=nb>Type
+</span></span><span class=line><span class=cl><span class=nb>Update-TypeData</span> <span class=n>-TypeName</span> <span class=n>kp</span><span class=p>.</span><span class=py>CatsAreAwesome</span> <span class=n>-DefaultDisplayPropertySet</span> <span class=n>Name</span><span class=p>,</span><span class=nb>Type
 </span></span></span><span class=line><span class=cl><span class=nb></span><span class=nv>$obj</span> <span class=c># list is now limited to only Name and Type properties</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj2</span>
 </span></span><span class=line><span class=cl><span class=nv>$obj</span> <span class=p>|</span> <span class=nb>Format-List</span> <span class=n>-Property</span> <span class=p>*</span> <span class=c>#displays all</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Let&#39;s see arrays and pscustomobjects working together</span>
-</span></span><span class=line><span class=cl><span class=nv>$list</span> <span class=p>=</span> <span class=no>[System.Collections.Generic.List[pscustomobject]]</span><span class=p>::</span><span class=n>new</span><span class=p>()</span>
-</span></span><span class=line><span class=cl><span class=nv>$locations</span> <span class=p>=</span> <span class=p>@(</span><span class=s2>&#34;London&#34;</span><span class=p>,</span> <span class=s2>&#34;Sligo&#34;</span><span class=p>,</span> <span class=s2>&#34;Barcelona&#34;</span><span class=p>,</span> <span class=s2>&#34;Paphos&#34;</span><span class=p>,</span> <span class=s2>&#34;Ubud&#34;</span><span class=p>,</span> <span class=s2>&#34;Valdemosa&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nv>$list</span> <span class=p>=</span> <span class=p>[</span><span class=no>System.Collections.Generic.List[pscustomobject]</span><span class=p>]::</span><span class=n>new</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=nv>$locations</span> <span class=p>=</span> <span class=vm>@</span><span class=p>(</span><span class=s2>&#34;London&#34;</span><span class=p>,</span> <span class=s2>&#34;Sligo&#34;</span><span class=p>,</span> <span class=s2>&#34;Barcelona&#34;</span><span class=p>,</span> <span class=s2>&#34;Paphos&#34;</span><span class=p>,</span> <span class=s2>&#34;Ubud&#34;</span><span class=p>,</span> <span class=s2>&#34;Valdemosa&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nv>$baseUri</span> <span class=p>=</span> <span class=s2>&#34;wttr.in/&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=k>foreach</span> <span class=p>(</span><span class=nv>$location</span> <span class=k>in</span> <span class=nv>$locations</span><span class=p>)</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=s2>&#34;Currently retrieving weather for: $location&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;Currently retrieving weather for: </span><span class=nv>$location</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$Uri</span> <span class=p>=</span> <span class=s2>&#34;{0}{1}?format=j1&#34;</span> <span class=o>-f</span> <span class=nv>$baseUri</span><span class=p>,</span> <span class=nv>$location</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$Uri</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$data</span> <span class=p>=</span> <span class=nb>Invoke-RestMethod</span> <span class=nv>$Uri</span>
-</span></span><span class=line><span class=cl>    <span class=nv>$result</span> <span class=p>=</span> <span class=no>[pscustomobject]</span><span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$result</span> <span class=p>=</span> <span class=p>[</span><span class=no>pscustomobject</span><span class=p>]</span><span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=n>City</span> <span class=p>=</span> <span class=nv>$Location</span>
-</span></span><span class=line><span class=cl>        <span class=n>Temperature</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=n>current_condition</span><span class=p>.</span><span class=n>temp_C</span>
-</span></span><span class=line><span class=cl>        <span class=n>Pressure</span> <span class=p>=</span>  <span class=nv>$data</span><span class=p>.</span><span class=n>current_condition</span><span class=p>.</span><span class=n>pressure</span>
+</span></span><span class=line><span class=cl>        <span class=n>Temperature</span> <span class=p>=</span> <span class=nv>$data</span><span class=p>.</span><span class=py>current_condition</span><span class=p>.</span><span class=py>temp_C</span>
+</span></span><span class=line><span class=cl>        <span class=n>Pressure</span> <span class=p>=</span>  <span class=nv>$data</span><span class=p>.</span><span class=py>current_condition</span><span class=p>.</span><span class=py>pressure</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>    <span class=nv>$list</span><span class=p>.</span><span class=n>Add</span><span class=p>(</span><span class=nv>$result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$list</span><span class=p>.</span><span class=py>Add</span><span class=p>(</span><span class=nv>$result</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=nv>$list</span>
 </span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-05-02&nbsp;<a class=git-hash href=https://github.com/thekamilpro/commit/3a65778521dc86da17a8454467bfa48d053c02f6 target=_blank title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 3a65778521dc86da17a8454467bfa48d053c02f6: add pscustomboject video">
 <i class="fas fa-hashtag fa-fw" aria-hidden=true></i>3a657785</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/powershell-pscustomobject/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://kamilpro.github.io/powershell-pscustomobject/ data-title="PowerShell PSCustomObject - Custom Object, the way it was meant to be" data-via=@thekamilpro data-hashtags=PowerShell,pwsh,object,custom,pscustomobject,data,scripting><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://kamilpro.github.io/powershell-pscustomobject/ data-hashtag=PowerShell><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=https://kamilpro.github.io/powershell-pscustomobject/><i class="fab fa-linkedin fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://kamilpro.github.io/powershell-pscustomobject/ data-title="PowerShell PSCustomObject - Custom Object, the way it was meant to be" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://kamilpro.github.io/powershell-pscustomobject/ data-title="PowerShell PSCustomObject - Custom Object, the way it was meant to be"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://kamilpro.github.io/powershell-pscustomobject/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://kamilpro.github.io/powershell-pscustomobject/ data-title="PowerShell PSCustomObject - Custom Object, the way it was meant to be"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/powershell/>powershell</a>,&nbsp;<a href=/tags/pwsh/>pwsh</a>,&nbsp;<a href=/tags/object/>object</a>,&nbsp;<a href=/tags/custom/>custom</a>,&nbsp;<a href=/tags/pscustomobject/>pscustomobject</a>,&nbsp;<a href=/tags/data/>data</a>,&nbsp;<a href=/tags/scripting/>scripting</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/powershell-hash-table/ class=prev rel=prev title="PowerShell Hash Table - Storing key value pairs"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>PowerShell Hash Table - Storing key value pairs</a>
-<a href=/powershell-function/ class=next rel=next title="PowerShell function - converting script into function with parameters">PowerShell function - converting script into function with parameters<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.104.3">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+<a href=/powershell-function/ class=next rel=next title="PowerShell function - converting script into function with parameters">PowerShell function - converting script into function with parameters<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
 </a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"Comment",lightTheme:"github-light",repo:"thekamilpro/kamilpro.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-64576368-1",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-64576368-1" async></script></body></html>

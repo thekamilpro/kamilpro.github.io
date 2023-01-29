@@ -16,7 +16,7 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#cat.ps1</span>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-CatFact</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-CatFact</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>catfact</span><span class=p>.</span><span class=n>ninja</span><span class=p>/</span><span class=n>fact</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
@@ -160,7 +160,7 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span></span><span class=line><span class=cl><span class=c># Generated on: 22/02/2022</span>
 </span></span><span class=line><span class=cl><span class=c>#</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Script module or binary module file associated with this manifest.</span>
 </span></span><span class=line><span class=cl><span class=n>RootModule</span> <span class=p>=</span> <span class=s1>&#39;mystuff.psm1&#39;</span>
@@ -205,7 +205,7 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span></span><span class=line><span class=cl><span class=c># ProcessorArchitecture = &#39;&#39;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Modules that must be imported into the global environment prior to importing this module</span>
-</span></span><span class=line><span class=cl><span class=n>RequiredModules</span> <span class=p>=</span> <span class=p>@(@{</span><span class=n>ModuleName</span> <span class=p>=</span> <span class=s2>&#34;Az.Storage&#34;</span><span class=p>;</span> <span class=n>ModuleVersion</span> <span class=p>=</span> <span class=s1>&#39;1.0.0&#39;</span><span class=p>}</span> <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>RequiredModules</span> <span class=p>=</span> <span class=vm>@</span><span class=p>(</span><span class=vm>@</span><span class=p>{</span><span class=n>ModuleName</span> <span class=p>=</span> <span class=s2>&#34;Az.Storage&#34;</span><span class=p>;</span> <span class=n>ModuleVersion</span> <span class=p>=</span> <span class=s1>&#39;1.0.0&#39;</span><span class=p>}</span> <span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Assemblies that must be loaded prior to importing this module</span>
 </span></span><span class=line><span class=cl><span class=c># RequiredAssemblies = @()</span>
@@ -223,16 +223,16 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span></span><span class=line><span class=cl><span class=c># NestedModules = @()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.</span>
-</span></span><span class=line><span class=cl><span class=n>FunctionsToExport</span> <span class=p>=</span> <span class=p>@(</span><span class=s2>&#34;Get-CatFact&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=kd>Function</span><span class=nb>sToExport</span> <span class=p>=</span> <span class=vm>@</span><span class=p>(</span><span class=s2>&#34;Get-CatFact&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.</span>
-</span></span><span class=line><span class=cl><span class=n>CmdletsToExport</span> <span class=p>=</span> <span class=p>@()</span>
+</span></span><span class=line><span class=cl><span class=n>CmdletsToExport</span> <span class=p>=</span> <span class=vm>@</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Variables to export from this module</span>
 </span></span><span class=line><span class=cl><span class=n>VariablesToExport</span> <span class=p>=</span> <span class=s1>&#39;*&#39;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.</span>
-</span></span><span class=line><span class=cl><span class=n>AliasesToExport</span> <span class=p>=</span> <span class=p>@()</span>
+</span></span><span class=line><span class=cl><span class=n>AliasesToExport</span> <span class=p>=</span> <span class=vm>@</span><span class=p>()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># DSC resources to export from this module</span>
 </span></span><span class=line><span class=cl><span class=c># DscResourcesToExport = @()</span>
@@ -244,12 +244,12 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span></span><span class=line><span class=cl><span class=c># FileList = @()</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c># Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.</span>
-</span></span><span class=line><span class=cl><span class=n>PrivateData</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl><span class=n>PrivateData</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>    <span class=n>PSData</span> <span class=p>=</span> <span class=p>@{</span>
+</span></span><span class=line><span class=cl>    <span class=n>PSData</span> <span class=p>=</span> <span class=vm>@</span><span class=p>{</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>        <span class=c># Tags applied to this module. These help with module discovery in online galleries.</span>
-</span></span><span class=line><span class=cl>        <span class=n>Tags</span> <span class=p>=</span> <span class=p>@(</span><span class=s2>&#34;PSMODULE&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>Tags</span> <span class=p>=</span> <span class=vm>@</span><span class=p>(</span><span class=s2>&#34;PSMODULE&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>        <span class=c># A URL to the license for this module.</span>
 </span></span><span class=line><span class=cl>        <span class=c># LicenseUri = &#39;&#39;</span>
@@ -303,18 +303,18 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span><span class=lnt>18
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-psm1 data-lang=psm1><span class=line><span class=cl><span class=c>#mystuff.psm1</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-CatFact</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-CatFact</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>catfact</span><span class=p>.</span><span class=n>ninja</span><span class=p>/</span><span class=n>fact</span>
 </span></span><span class=line><span class=cl>    <span class=nb>Get-Quote</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Quote</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-Quote</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$quotes</span> <span class=p>=</span> <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>type</span><span class=p>.</span><span class=n>fit</span><span class=p>/</span><span class=n>api</span><span class=p>/</span><span class=n>quotes</span>
-</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=n>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=n>Count</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=mf>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=py>Count</span>
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nv>$quotes</span><span class=p>[</span><span class=nv>$random</span><span class=p>]</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Weather</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-Weather</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>wttr</span><span class=p>.</span><span class=k>in</span><span class=p>/</span>
 </span></span><span class=line><span class=cl>
@@ -328,9 +328,9 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span><span class=lnt>7
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#quote.ps1</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Quote</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-Quote</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nv>$quotes</span> <span class=p>=</span> <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>type</span><span class=p>.</span><span class=n>fit</span><span class=p>/</span><span class=n>api</span><span class=p>/</span><span class=n>quotes</span>
-</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=n>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=n>Count</span>
+</span></span><span class=line><span class=cl>    <span class=nv>$random</span> <span class=p>=</span> <span class=nb>Get-Random</span> <span class=n>-Minimum</span> <span class=mf>0</span> <span class=n>-Maximum</span> <span class=nv>$quotes</span><span class=p>.</span><span class=py>Count</span>
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nv>$quotes</span><span class=p>[</span><span class=nv>$random</span><span class=p>]</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -342,7 +342,7 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span><span class=lnt>7
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#weather.ps1</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=k>function</span> <span class=nb>Get-Weather</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=kd>function</span><span class=w> </span><span class=nb>Get-Weather</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=nb>Invoke-RestMethod</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>wttr</span><span class=p>.</span><span class=k>in</span><span class=p>/</span>
 </span></span><span class=line><span class=cl>
@@ -354,10 +354,10 @@ PowerShell module is the answer - it&rsquo;s the native way of bundling in multi
 </span><span class=lnt>5
 </span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ps1 data-lang=ps1><span class=line><span class=cl><span class=c>#wrapper.ps1</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>cat</span><span class=p>.</span><span class=n>ps1</span>
-</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>quote</span><span class=p>.</span><span class=n>ps1</span>
-</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>weather</span><span class=p>.</span><span class=n>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>cat</span><span class=p>.</span><span class=py>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>quote</span><span class=p>.</span><span class=py>ps1</span>
+</span></span><span class=line><span class=cl><span class=p>.</span> <span class=p>.\</span><span class=n>weather</span><span class=p>.</span><span class=py>ps1</span>
 </span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-09-29&nbsp;<a class=git-hash href=https://github.com/thekamilpro/commit/85859bcd6f75e50bf34dda9c386be62418c86738 target=_blank title="commit by Kamil Procyszyn(kprocyszyn@gmail.com) 85859bcd6f75e50bf34dda9c386be62418c86738: Add videos from 2022">
 <i class="fas fa-hashtag fa-fw" aria-hidden=true></i>85859bcd</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/powershell-module-manifest/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools" data-via=@thekamilpro data-hashtags=PowerShell,pwsh,Module,Manifest,psd1,psm1><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://kamilpro.github.io/powershell-module-manifest/ data-hashtag=PowerShell><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=https://kamilpro.github.io/powershell-module-manifest/><i class="fab fa-linkedin fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://kamilpro.github.io/powershell-module-manifest/><i class="fab fa-reddit fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://kamilpro.github.io/powershell-module-manifest/ data-title="PowerShell Module and Manifest- create and configure your tools"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/powershell/>powershell</a>,&nbsp;<a href=/tags/pwsh/>pwsh</a>,&nbsp;<a href=/tags/module/>module</a>,&nbsp;<a href=/tags/manifest/>Manifest</a>,&nbsp;<a href=/tags/psd1/>psd1</a>,&nbsp;<a href=/tags/psm1/>psm1</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/powershell-parameter/ class=prev rel=prev title="PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</a>
-<a href=/powershell-module-building/ class=next rel=next title="Building PowerShell Module - how to organise your source files and build with ease">Building PowerShell Module - how to organise your source files and build with ease<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.104.3">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+<a href=/powershell-module-building/ class=next rel=next title="Building PowerShell Module - how to organise your source files and build with ease">Building PowerShell Module - how to organise your source files and build with ease<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=utterances class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2014 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Kamil Pro</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
 </a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"Comment",lightTheme:"github-light",repo:"thekamilpro/kamilpro.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-64576368-1",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=UA-64576368-1" async></script></body></html>
