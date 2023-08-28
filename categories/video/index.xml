@@ -1,18 +1,123 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Video on Kamil Pro</title><link>https://kamilpro.com/categories/video/</link><description>Recent content in Video on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/video/index.xml" rel="self" type="application/rss+xml"/><item><title>Speaking at PsDayUk 2023</title><link>https://kamilpro.com/speaking-at-psdayuk-2023/</link><pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate><guid>https://kamilpro.com/speaking-at-psdayuk-2023/</guid><description>Side note, I was meant to publish this back in March 2023&amp;hellip;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Video on Kamil Pro</title>
+    <link>https://kamilpro.com/categories/video/</link>
+    <description>Recent content in Video on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speaking at PsDayUk 2023</title>
+      <link>https://kamilpro.com/posts/2023/speaking-at-psdayuk-2023/</link>
+      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2023/speaking-at-psdayuk-2023/</guid>
+      <description>Side note, I was meant to publish this back in March 2023&amp;hellip;
 When I attended my first PowerShell meetup back in 2017, I had no idea it would lead me to where I am today.
-Fast forward to 3rd of March 2023, I was privileged to speak and share my knowledge with other #PowerShell enthusiasts at #PsDayUk conference. I presented the PowerShell based web server and web framework, which enables anyone familiar with the language, to create web applications.</description></item><item><title>PowerShell Error Handling - One error at the time please</title><link>https://kamilpro.com/powershell-error-handling/</link><pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-error-handling/</guid><description>Code fails - whether because of reasons out of our control, or because we didn&amp;rsquo;t consider the situation it might fail. Expired credentials, timeout connections, lack of permissions go genuine software bug - each of these are potential problem which might fall our code over. And if we don&amp;rsquo;t handle the error, our script will simply throw and terminate. It&amp;rsquo;s certainly not desired state.
-In this video I&amp;rsquo;ll show you different ways PowerShell can error, how to debug such errors and how to handle them - so that we are in control.</description></item><item><title>Developing a Web Application with PowerShell - Pode, the PowerFul Module</title><link>https://kamilpro.com/powershell-powerful-pode-podeweb/</link><pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-powerful-pode-podeweb/</guid><description>Web Applications are popular, and often require to either knowing some front-end development or using some other products which allow to build some applications. What about PowerShell, can you actually build a web app using only PowerShell language?
+Fast forward to 3rd of March 2023, I was privileged to speak and share my knowledge with other #PowerShell enthusiasts at #PsDayUk conference. I presented the PowerShell based web server and web framework, which enables anyone familiar with the language, to create web applications.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Error Handling - One error at the time please</title>
+      <link>https://kamilpro.com/posts/2023/powershell-error-handling/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2023/powershell-error-handling/</guid>
+      <description>Code fails - whether because of reasons out of our control, or because we didn&amp;rsquo;t consider the situation it might fail. Expired credentials, timeout connections, lack of permissions go genuine software bug - each of these are potential problem which might fall our code over. And if we don&amp;rsquo;t handle the error, our script will simply throw and terminate. It&amp;rsquo;s certainly not desired state.
+In this video I&amp;rsquo;ll show you different ways PowerShell can error, how to debug such errors and how to handle them - so that we are in control.</description>
+    </item>
+    
+    <item>
+      <title>Developing a Web Application with PowerShell - Pode, the PowerFul Module</title>
+      <link>https://kamilpro.com/posts/2022/powershell-powerful-pode-podeweb/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-powerful-pode-podeweb/</guid>
+      <description>Web Applications are popular, and often require to either knowing some front-end development or using some other products which allow to build some applications. What about PowerShell, can you actually build a web app using only PowerShell language?
 Yes, you can write a web app in PowerShell, and I&amp;rsquo;m going to show you how in this video.
-It comes down to two PowerShell modules - Pode and Pode.Web - all you need to do is to run Install-Module Pode,Pode.</description></item><item><title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title><link>https://kamilpro.com/powershell-module-building-azure-devops/</link><pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-module-building-azure-devops/</guid><description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
-In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description></item><item><title>Sysadmin to DevOps - My PowerShell ignited story</title><link>https://kamilpro.com/sysadmin-to-devops/</link><pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/sysadmin-to-devops/</guid><description>My story on how I turned from Sysadmin to DevOps engineer, with PowerShell driving my journey!
+It comes down to two PowerShell modules - Pode and Pode.Web - all you need to do is to run Install-Module Pode,Pode.</description>
+    </item>
+    
+    <item>
+      <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
+      <link>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</guid>
+      <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
+In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
+    </item>
+    
+    <item>
+      <title>Sysadmin to DevOps - My PowerShell ignited story</title>
+      <link>https://kamilpro.com/posts/2022/sysadmin-to-devops/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/sysadmin-to-devops/</guid>
+      <description>My story on how I turned from Sysadmin to DevOps engineer, with PowerShell driving my journey!
 It&amp;rsquo;s crazy to think that 5 years ago I couldn&amp;rsquo;t code, and one tweet simply started a snowball effect on my career.
-I wanted to document this moment in my life as I&amp;rsquo;ve passed Azure DevOps engineer exam and been working as DevOps engineer - something I wouldn&amp;rsquo;t even about thinking without PowerShell and its great community.</description></item><item><title>Building PowerShell Module - how to organise your source files and build with ease</title><link>https://kamilpro.com/powershell-module-building/</link><pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-module-building/</guid><description>Organising all files, scripts and functions required to build a module might give one a headache. PowerShell doesn&amp;rsquo;t come with native way of building the module, which doesn&amp;rsquo;t make our job easier.
+I wanted to document this moment in my life as I&amp;rsquo;ve passed Azure DevOps engineer exam and been working as DevOps engineer - something I wouldn&amp;rsquo;t even about thinking without PowerShell and its great community.</description>
+    </item>
+    
+    <item>
+      <title>Building PowerShell Module - how to organise your source files and build with ease</title>
+      <link>https://kamilpro.com/posts/2022/powershell-module-building/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-module-building/</guid>
+      <description>Organising all files, scripts and functions required to build a module might give one a headache. PowerShell doesn&amp;rsquo;t come with native way of building the module, which doesn&amp;rsquo;t make our job easier.
 Hence, we&amp;rsquo;re going to use ModuleBuilder from PowerShell community so that the way we organise the code is predictable and used widely across other PowerShell projects.
-In this video I&amp;rsquo;ll walk you through the process of preparing, organising and finally building the module.</description></item><item><title>PowerShell Module and Manifest- create and configure your tools</title><link>https://kamilpro.com/powershell-module-manifest/</link><pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-module-manifest/</guid><description>The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
-PowerShell module is the answer - it&amp;rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&amp;rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&amp;rsquo;s details etc.</description></item><item><title>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</title><link>https://kamilpro.com/powershell-parameter/</link><pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-parameter/</guid><description>Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
-Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function.</description></item><item><title>PowerShell function - converting script into function with parameters</title><link>https://kamilpro.com/powershell-function/</link><pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-function/</guid><description>So you&amp;rsquo;ve been writing your scripts for some time and wondering how to make them more PowerShell-like, so that they can be invoked from the console like all the other cmdlets?
+In this video I&amp;rsquo;ll walk you through the process of preparing, organising and finally building the module.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Module and Manifest- create and configure your tools</title>
+      <link>https://kamilpro.com/posts/2022/powershell-module-manifest/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-module-manifest/</guid>
+      <description>The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
+PowerShell module is the answer - it&amp;rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&amp;rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&amp;rsquo;s details etc.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</title>
+      <link>https://kamilpro.com/posts/2022/powershell-parameter/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-parameter/</guid>
+      <description>Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
+Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell function - converting script into function with parameters</title>
+      <link>https://kamilpro.com/posts/2022/powershell-function/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-function/</guid>
+      <description>So you&amp;rsquo;ve been writing your scripts for some time and wondering how to make them more PowerShell-like, so that they can be invoked from the console like all the other cmdlets?
 In this quick video I&amp;rsquo;ll show you how to convert a sample script into function, add parameters and indicated to your user how to use your function with mandatory parameters and types.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 # Sample script which asks user for basic information, then manipulates it and # display some information # There&amp;#39;s no way (at least easy) to pass these parameters from prompt, nor validate $Name = Read-Host -Prompt &amp;#34;What&amp;#39;s your name?</description></item><item><title>PowerShell for IT Professionals</title><link>https://kamilpro.com/powershell-for-it-professionals/</link><pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-for-it-professionals/</guid><description>Hi and welcome in the PowerShell for IT Professional course!
+# Sample script which asks user for basic information, then manipulates it and # display some information # There&amp;#39;s no way (at least easy) to pass these parameters from prompt, nor validate $Name = Read-Host -Prompt &amp;#34;What&amp;#39;s your name?</description>
+    </item>
+    
+    <item>
+      <title>PowerShell for IT Professionals</title>
+      <link>https://kamilpro.com/powershell-for-it-professionals/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/powershell-for-it-professionals/</guid>
+      <description>Hi and welcome in the PowerShell for IT Professional course!
 The course is aimed at IT Professionals/system administrators that never coded before and manage Windows workloads.
 To get started all you need is a Windows machine (I&amp;rsquo;d recommended server edition run as VM), in the course you can see me explaining and using commands, thus I strongly encourage you to follow along with me.
-All the videos and related exercises are available for free and I am for each video to be 20-30 minutes long - thus you can easily find spare time to learn.</description></item></channel></rss>
+All the videos and related exercises are available for free and I am for each video to be 20-30 minutes long - thus you can easily find spare time to learn.</description>
+    </item>
+    
+  </channel>
+</rss>

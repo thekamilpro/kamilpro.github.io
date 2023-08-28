@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>right people on Kamil Pro</title><link>https://kamilpro.com/tags/right-people/</link><description>Recent content in right people on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sun, 04 Oct 2015 18:54:31 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/right-people/index.xml" rel="self" type="application/rss+xml"/><item><title>The right people</title><link>https://kamilpro.com/the-right-people/</link><pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate><guid>https://kamilpro.com/the-right-people/</guid><description>Each of us has some ideal places, songs, people and the way how the morning coffee should be prepared. Sometimes the way how negative situations happen describe the way our day, week, life look like. The way we are.
-Funnily enough, very often those things or people are just happening around us, the way we often don’t even notice it. We often can only notice the result of all those things.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>right people on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/right-people/</link>
+    <description>Recent content in right people on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Oct 2015 18:54:31 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/right-people/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The right people</title>
+      <link>https://kamilpro.com/the-right-people/</link>
+      <pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/the-right-people/</guid>
+      <description>Each of us has some ideal places, songs, people and the way how the morning coffee should be prepared. Sometimes the way how negative situations happen describe the way our day, week, life look like. The way we are.
+Funnily enough, very often those things or people are just happening around us, the way we often don’t even notice it. We often can only notice the result of all those things.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>silence on Kamil Pro</title><link>https://kamilpro.com/tags/silence/</link><description>Recent content in silence on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sat, 23 Jul 2016 19:33:49 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/silence/index.xml" rel="self" type="application/rss+xml"/><item><title>Silence</title><link>https://kamilpro.com/silence/</link><pubDate>Sat, 23 Jul 2016 19:33:49 +0000</pubDate><guid>https://kamilpro.com/silence/</guid><description>The world is loud. It’s shouting though. Being expressive and extrovert is the key to the success this times. It doesn’t matter whether the person is good or positive.
-I think we’ve got used to being bombarded on daily basis, everyone and everything want to share with us. It’s up to us whether we’d like to take any of these screams on board, or just ignore them. And obviously, the question is – how much we can accumulate.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>silence on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/silence/</link>
+    <description>Recent content in silence on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Jul 2016 19:33:49 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/silence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Silence</title>
+      <link>https://kamilpro.com/silence/</link>
+      <pubDate>Sat, 23 Jul 2016 19:33:49 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/silence/</guid>
+      <description>The world is loud. It’s shouting though. Being expressive and extrovert is the key to the success this times. It doesn’t matter whether the person is good or positive.
+I think we’ve got used to being bombarded on daily basis, everyone and everything want to share with us. It’s up to us whether we’d like to take any of these screams on board, or just ignore them. And obviously, the question is – how much we can accumulate.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>installation on Kamil Pro</title><link>https://kamilpro.com/tags/installation/</link><description>Recent content in installation on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Software with Chocolatey - Automate installation and updates of your applications</title><link>https://kamilpro.com/managing-software-with-chocolatey/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://kamilpro.com/managing-software-with-chocolatey/</guid><description>Software management is not trivial task. Preparing for silent deployment is challenging, and even if you manage to install the application, how to keep it up to date?
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>installation on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/installation/</link>
+    <description>Recent content in installation on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Software with Chocolatey - Automate installation and updates of your applications</title>
+      <link>https://kamilpro.com/posts/2021/managing-software-with-chocolatey/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2021/managing-software-with-chocolatey/</guid>
+      <description>Software management is not trivial task. Preparing for silent deployment is challenging, and even if you manage to install the application, how to keep it up to date?
 Chocolatey is package manager for Windows, that can fully automate lifecycle of your software.
-In this video, I&amp;rsquo;ll show you how to install Chocolatey, then how to find software, install it and finally keeping it up to date - all coming with free open-source license.</description></item></channel></rss>
+In this video, I&amp;rsquo;ll show you how to install Chocolatey, then how to find software, install it and finally keeping it up to date - all coming with free open-source license.</description>
+    </item>
+    
+  </channel>
+</rss>

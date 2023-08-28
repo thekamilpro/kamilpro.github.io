@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>nokia on Kamil Pro</title><link>https://kamilpro.com/tags/nokia/</link><description>Recent content in nokia on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Tue, 07 Jun 2016 17:00:23 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/nokia/index.xml" rel="self" type="application/rss+xml"/><item><title>Post-Smartphone era, yet?</title><link>https://kamilpro.com/post-smartphone-era-yet/</link><pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate><guid>https://kamilpro.com/post-smartphone-era-yet/</guid><description>&lt;p>Recently, Apple (and other big brands) recorded a drop of a smartphone sells. First time in over 10 years. Does it mean something is ending? I’d call it a big change. But let me take you step by step.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>nokia on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/nokia/</link>
+    <description>Recent content in nokia on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jun 2016 17:00:23 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/nokia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post-Smartphone era, yet?</title>
+      <link>https://kamilpro.com/post-smartphone-era-yet/</link>
+      <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/post-smartphone-era-yet/</guid>
+      <description>&lt;p&gt;Recently, Apple (and other big brands) recorded a drop of a smartphone sells. First time in over 10 years. Does it mean something is ending? I’d call it a big change. But let me take you step by step.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

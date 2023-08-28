@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wellbeing on Kamil Pro</title>
+    <link>https://kamilpro.com/categories/wellbeing/</link>
+    <description>Recent content in Wellbeing on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/wellbeing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Health</title>
+      <link>https://kamilpro.com/posts/pages/health/</link>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/pages/health/</guid>
+      <description>For several years I&amp;rsquo;ve been working on my health - with goal to stay healthy as long as possible. It all started with working on sleep, which got followed by sport, nutrition etc. where at this point it&amp;rsquo;s became part of my identity.
+The goal here is to keep this post as a baseline to compare myself in the future, how much I drifted or improved over time, and then share to the any other person who wants work on themselves.</description>
+    </item>
+    
+  </channel>
+</rss>

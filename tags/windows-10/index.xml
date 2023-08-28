@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>windows 10 on Kamil Pro</title><link>https://kamilpro.com/tags/windows-10/</link><description>Recent content in windows 10 on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Mon, 03 Apr 2017 22:35:09 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/windows-10/index.xml" rel="self" type="application/rss+xml"/><item><title>How to prepare Windows 10 1607 image</title><link>https://kamilpro.com/prepare-windows-10-1607-image/</link><pubDate>Mon, 03 Apr 2017 22:35:09 +0000</pubDate><guid>https://kamilpro.com/prepare-windows-10-1607-image/</guid><description>&lt;p>Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>windows 10 on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/windows-10/</link>
+    <description>Recent content in windows 10 on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Apr 2017 22:35:09 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/windows-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to prepare Windows 10 1607 image</title>
+      <link>https://kamilpro.com/prepare-windows-10-1607-image/</link>
+      <pubDate>Mon, 03 Apr 2017 22:35:09 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/prepare-windows-10-1607-image/</guid>
+      <description>&lt;p&gt;Sooner or later every company will come to the point when using standard Windows image is just not enough. Manual installation, fetching all updates or installing software etc. etc. takes time, and in IT, we really can use that time for something way more productive.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

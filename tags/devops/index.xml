@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>DevOps on Kamil Pro</title><link>https://kamilpro.com/tags/devops/</link><description>Recent content in DevOps on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title><link>https://kamilpro.com/powershell-module-building-azure-devops/</link><pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-module-building-azure-devops/</guid><description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
-In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description></item><item><title>Sysadmin to DevOps - My PowerShell ignited story</title><link>https://kamilpro.com/sysadmin-to-devops/</link><pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><guid>https://kamilpro.com/sysadmin-to-devops/</guid><description>My story on how I turned from Sysadmin to DevOps engineer, with PowerShell driving my journey!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DevOps on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/devops/</link>
+    <description>Recent content in DevOps on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
+      <link>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</guid>
+      <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
+In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
+    </item>
+    
+    <item>
+      <title>Sysadmin to DevOps - My PowerShell ignited story</title>
+      <link>https://kamilpro.com/posts/2022/sysadmin-to-devops/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/posts/2022/sysadmin-to-devops/</guid>
+      <description>My story on how I turned from Sysadmin to DevOps engineer, with PowerShell driving my journey!
 It&amp;rsquo;s crazy to think that 5 years ago I couldn&amp;rsquo;t code, and one tweet simply started a snowball effect on my career.
-I wanted to document this moment in my life as I&amp;rsquo;ve passed Azure DevOps engineer exam and been working as DevOps engineer - something I wouldn&amp;rsquo;t even about thinking without PowerShell and its great community.</description></item></channel></rss>
+I wanted to document this moment in my life as I&amp;rsquo;ve passed Azure DevOps engineer exam and been working as DevOps engineer - something I wouldn&amp;rsquo;t even about thinking without PowerShell and its great community.</description>
+    </item>
+    
+  </channel>
+</rss>

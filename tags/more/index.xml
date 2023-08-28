@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>more on Kamil Pro</title><link>https://kamilpro.com/tags/more/</link><description>Recent content in more on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sun, 14 Aug 2016 17:59:54 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/more/index.xml" rel="self" type="application/rss+xml"/><item><title>Less is more</title><link>https://kamilpro.com/less-is-more/</link><pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate><guid>https://kamilpro.com/less-is-more/</guid><description>&lt;p>We live in a cram-full world, full of anything we could possibly imagine.&lt;/p>
-&lt;p>Having a choice is a great thing – I can pick stuff which really suits myself. In case I need, say, a teal corner 4 seater bed sofa, it’s just a matter of time and money I am prepared to spend, until I get one.&lt;/p>
-&lt;p>But what happens when I don’t have too many options? When there are 2 things which really suit me, but say, I’ve got space just for 1 sofa?&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>more on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/more/</link>
+    <description>Recent content in more on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Aug 2016 17:59:54 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/more/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Less is more</title>
+      <link>https://kamilpro.com/less-is-more/</link>
+      <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/less-is-more/</guid>
+      <description>&lt;p&gt;We live in a cram-full world, full of anything we could possibly imagine.&lt;/p&gt;
+&lt;p&gt;Having a choice is a great thing – I can pick stuff which really suits myself. In case I need, say, a teal corner 4 seater bed sofa, it’s just a matter of time and money I am prepared to spend, until I get one.&lt;/p&gt;
+&lt;p&gt;But what happens when I don’t have too many options? When there are 2 things which really suit me, but say, I’ve got space just for 1 sofa?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

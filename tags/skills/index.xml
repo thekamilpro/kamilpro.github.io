@@ -1,2 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>skills on Kamil Pro</title><link>https://kamilpro.com/tags/skills/</link><description>Recent content in skills on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Sat, 06 Jun 2015 19:55:25 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/skills/index.xml" rel="self" type="application/rss+xml"/><item><title>Experience, that’s what really matters</title><link>https://kamilpro.com/what-really-matters-experience/</link><pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate><guid>https://kamilpro.com/what-really-matters-experience/</guid><description>How can you cut the cost of hardware from £200 to £30? And how to avoid unnecessary money and time waste? You need somebody who thinks out of the box, is determined and the most important – has tons of experience. Below you can see how I was gaining experience and how it helped me to be where I am right now.
-I always considered myself as the guy who’s got practical knowledge.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>skills on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/skills/</link>
+    <description>Recent content in skills on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Jun 2015 19:55:25 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience, that’s what really matters</title>
+      <link>https://kamilpro.com/what-really-matters-experience/</link>
+      <pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/what-really-matters-experience/</guid>
+      <description>How can you cut the cost of hardware from £200 to £30? And how to avoid unnecessary money and time waste? You need somebody who thinks out of the box, is determined and the most important – has tons of experience. Below you can see how I was gaining experience and how it helped me to be where I am right now. I always considered myself as the guy who’s got practical knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

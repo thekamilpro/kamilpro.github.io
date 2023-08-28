@@ -1,2 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>rdp on Kamil Pro</title><link>https://kamilpro.com/tags/rdp/</link><description>Recent content in rdp on Kamil Pro</description><image><title>Kamil Pro</title><url>https://kamilpro.com/logo.png</url><link>https://kamilpro.com/logo.png</link></image><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Kamil Procyszyn</copyright><lastBuildDate>Mon, 24 Aug 2020 10:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/rdp/index.xml" rel="self" type="application/rss+xml"/><item><title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title><link>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</link><pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate><guid>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</guid><description>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
-Exercises With Enter-PSSesion, Remote to remote server and&amp;nbsp; restart &amp;#8220;Windows update&amp;#8221; service With Invoke-Command find out the remote computers last boot up/startup time List all running processes on remote server without using Enter-PsSession or Invoke-Command If you have a Domain Controller available, use Invoke-Command to list all computers on that network (you can use * for filter), remember that you need to provide all necessary parameters with your command in the script block so command just runs and doesn&amp;#8217;t prompt for any additional information.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rdp on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/rdp/</link>
+    <description>Recent content in rdp on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Aug 2020 10:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/rdp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title>
+      <link>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</link>
+      <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
+      
+      <guid>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
+      <description>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
+Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?</description>
+    </item>
+    
+  </channel>
+</rss>
