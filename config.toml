@@ -1,7 +1,7 @@
 
 baseURL = "https://kamilpro.github.io"
 defaultContentLanguage = "en"
-theme = "LoveIt"
+theme = "PaperMod"
 title = "Kamil Pro"
 enableRobotsTXT = true
 enableGitInfo = true
