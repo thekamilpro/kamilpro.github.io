@@ -14,10 +14,10 @@
     <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
-      <link>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</guid>
       <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
 In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
     </item>

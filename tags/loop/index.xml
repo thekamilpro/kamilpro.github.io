@@ -14,10 +14,10 @@
     <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/loop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell For loop</title>
-      <link>https://kamilpro.com/posts/2021/powershell-for-loop/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-for-loop/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2021/powershell-for-loop/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-for-loop/</guid>
       <description>For loop - do you actually need it, since there&amp;rsquo;s foreach loop? Turns out, yes - there are situations where for loop comes very handy.
 In this video I&amp;rsquo;ll show you the basic syntax of the for loop, going through nested for loops to end up with real case scenario from Azure Application Insights.
 # Link to the video: https://youtu.be/YQnBVn-9SN0 # Documentation: # https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_for?view=powershell-7.1 # Basic syntax: # for (Initial Value/statement; Condition; Repeat) { Run my code } # Initial value: Set this is up before starting the loop # Condition: For loops ends, when condition evaluates to false; or it keep running as lon as condition is true # Repeat: Do this after every loop for ($MyVariable = 0; $MyVariable -lt 10; $MyVariable = $MyVariable + 1) { &amp;#39;$MyVariable is {0}&amp;#39; -f $MyVariable Start-Sleep -Seconds 2 } for ($MyVariable = 0; $MyVariable -lt 99; $MyVariable++) { &amp;#39;$MyVariable is {0}&amp;#39; -f $MyVariable } # We can also decrease it for ($MyVariable = 10; $MyVariable -gt 5; $MyVariable = $MyVariable - 1) { &amp;#39;$MyVariable is {0}&amp;#39; -f $MyVariable } # or specify variable outside if $outside = 7 for (; $outside -lt 15; $outside++) { &amp;#39;$Outside is {0}&amp;#39; -f $outside } #Looping through array $pets = @(&amp;#34;Cat&amp;#34;, &amp;#34;Dog&amp;#34;, &amp;#34;Fish&amp;#34;, &amp;#34;Turtle&amp;#34;) $pets.</description>

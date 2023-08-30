@@ -14,10 +14,10 @@
     <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/validate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</title>
-      <link>https://kamilpro.com/posts/2022/powershell-parameter/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-parameter/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2022/powershell-parameter/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-parameter/</guid>
       <description>Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
 Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function.</description>
     </item>

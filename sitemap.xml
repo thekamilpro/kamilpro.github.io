@@ -65,6 +65,9 @@
     <loc>https://kamilpro.com/categories/video/</loc>
     <lastmod>2023-07-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://kamilpro.com/about-powershell/</loc>
+    <lastmod>2023-01-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kamilpro.com/tags/catch/</loc>
     <lastmod>2023-01-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -77,7 +80,7 @@
     <loc>https://kamilpro.com/tags/finally/</loc>
     <lastmod>2023-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2023/powershell-error-handling/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-error-handling/</loc>
     <lastmod>2023-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/script/</loc>
@@ -107,7 +110,7 @@
     <loc>https://kamilpro.com/tags/application/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-powerful-pode-podeweb/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-powerful-pode-podeweb/</loc>
     <lastmod>2022-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/categories/pode/</loc>
@@ -131,7 +134,7 @@
     <loc>https://kamilpro.com/tags/build/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/devops/</loc>
@@ -170,13 +173,13 @@
     <loc>https://kamilpro.com/tags/video/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-module-building/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-module-building/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/manifest/</loc>
     <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-module-manifest/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-module-manifest/</loc>
     <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/psd1/</loc>
@@ -188,7 +191,7 @@
     <loc>https://kamilpro.com/tags/parameter/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-parameter/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-parameter/</loc>
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/validate/</loc>
@@ -200,7 +203,7 @@
     <loc>https://kamilpro.com/tags/function/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2022/powershell-function/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-function/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/custom/</loc>
@@ -218,7 +221,7 @@
     <loc>https://kamilpro.com/categories/object/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-pscustomobject/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-pscustomobject/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/pscustomobject/</loc>
@@ -245,7 +248,7 @@
     <loc>https://kamilpro.com/tags/pair/</loc>
     <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-hash-table/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-hash-table/</loc>
     <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/table/</loc>
@@ -269,7 +272,7 @@
     <loc>https://kamilpro.com/categories/list/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-array-and-arraylist/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-array-and-arraylist/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/shell/</loc>
@@ -296,7 +299,7 @@
     <loc>https://kamilpro.com/tags/if/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-switch-statement/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-switch-statement/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/switch/</loc>
@@ -317,7 +320,7 @@
     <loc>https://kamilpro.com/categories/loop/</loc>
     <lastmod>2021-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-for-loop/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-for-loop/</loc>
     <lastmod>2021-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/repeat/</loc>
@@ -329,7 +332,7 @@
     <loc>https://kamilpro.com/categories/if/</loc>
     <lastmod>2021-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/posts/2021/powershell-if-statement/</loc>
+    <loc>https://kamilpro.com/about-powershell/powershell-if-statement/</loc>
     <lastmod>2021-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/automation/</loc>
@@ -713,7 +716,7 @@
     <loc>https://kamilpro.com/categories/course/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kamilpro.com/powershell-for-it-professionals/</loc>
+    <loc>https://kamilpro.com/powershell-course/</loc>
     <lastmod>2020-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kamilpro.com/tags/help/</loc>

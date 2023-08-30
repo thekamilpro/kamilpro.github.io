@@ -14,10 +14,10 @@
     <lastBuildDate>Sat, 21 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/finally/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell Error Handling - One error at the time please</title>
-      <link>https://kamilpro.com/posts/2023/powershell-error-handling/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-error-handling/</link>
       <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2023/powershell-error-handling/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-error-handling/</guid>
       <description>Code fails - whether because of reasons out of our control, or because we didn&amp;rsquo;t consider the situation it might fail. Expired credentials, timeout connections, lack of permissions go genuine software bug - each of these are potential problem which might fall our code over. And if we don&amp;rsquo;t handle the error, our script will simply throw and terminate. It&amp;rsquo;s certainly not desired state.
 In this video I&amp;rsquo;ll show you different ways PowerShell can error, how to debug such errors and how to handle them - so that we are in control.</description>
     </item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>pipeline on Kamil Pro</title>
+    <title>Pipeline on Kamil Pro</title>
     <link>https://kamilpro.com/tags/pipeline/</link>
-    <description>Recent content in pipeline on Kamil Pro</description>
+    <description>Recent content in Pipeline on Kamil Pro</description>
     <image>
       <title>Kamil Pro</title>
       <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -14,20 +14,20 @@
     <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/pipeline/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
-      <link>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2022/powershell-module-building-azure-devops/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</guid>
       <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
 In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
     </item>
     
     <item>
       <title>PowerShell Parameter Attributes - validate, group, require params and add pipeline to your function</title>
-      <link>https://kamilpro.com/posts/2022/powershell-parameter/</link>
+      <link>https://kamilpro.com/about-powershell/powershell-parameter/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kamilpro.com/posts/2022/powershell-parameter/</guid>
+      <guid>https://kamilpro.com/about-powershell/powershell-parameter/</guid>
       <description>Having properly configured parameters help your users to understand the use of your function. It also helps fellow developers to appreciate the intended use of the function. In addition, it gives you more control of how the code flows through your script.
 Parameter attributes is what takes parameters to the next level - you can specify that certain parameters are mandatory, group them together so that only certain combination of parameters is meant to work together, we can even add pipeline support so that function can be used as any other built-in function.</description>
     </item>
