@@ -133,11 +133,11 @@ menu:
       weight: 50
     - identifier: aboutpowershell
       name: About PowerShell
-      url: https://www.youtube.com/playlist?list=PL-esmhgrps8Zv9bAHesStPRQ1AiUL1wY3
+      url: /about-powershell/
       weight: 30
     - identifier: powershellcourse
       name: PowerShell Course
-      url: /powershell-for-it-professionals/
+      url: /powershell-course/
       weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
