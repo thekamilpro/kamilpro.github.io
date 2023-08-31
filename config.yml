@@ -76,7 +76,11 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Kamil Pro"
-    Content: Personal Blog
+    Content: "IT Developer, DevOps Engineer, and passionate PowerShell enthusiast. 
+    IT and technology are essentialy my life.
+
+  When I'm not writing code, you'll find me immersed in books, exploring new places, rocking to music, 
+  experimenting in the kitchen, or lifting weights."
 
   socialIcons:
     - name: Linkedin
