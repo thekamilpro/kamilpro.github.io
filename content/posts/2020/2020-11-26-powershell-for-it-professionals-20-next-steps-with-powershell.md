@@ -34,21 +34,19 @@ I&#8217;m going to show what else you can do within PowerShell itself, as well h
 
 I hope you&#8217;ve enjoyed the course so far and it will be helped you in some way &#8211; either solve a problem, got promotion, or simply learnt something new. Let me know!
 
-## Will there be any other courses or videos?
+## About PowerShell - my another series on PowerShell
 
-Possibly, however, I&#8217;ve got nothing planned now. 
+I created a series where I focus on specific topics in PowerShell, deep dives. If you're feeling like learning more, check it out!
 
-Making the course was an experiment for me trying to work with video rather than blogging, and certainly it appealed to me. 
-
-I would really appreciate any feedback you might have, as well as ideas of what you&#8217;d like to learn about.
+You can find a link at the top menu here.
 
 ## How can we stay in touch?
 
 You can find me on Twitter [Kamil Procyszyn (@kprocyszyn) / Twitter][1]
 
-Or YouTube [Kamil Procyszyn &#8211; YouTube][2]
+Or YouTube [Kamil Pro | YouTube][2]
 
-Or LinkedIn [Kamil Procyszyn | LinkedIn][3]
+Or LinkedIn [Kamil Pro | LinkedIn][3]
 
 ## Links
 

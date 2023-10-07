@@ -6,6 +6,8 @@ resources:
   - name: "featured-image"
     src: "featured-image.jpg"
 categories: ["PowerShell", "Video", "Course"]
+aliases:
+  - /powershell-for-it-professionals
 ---
 
 Hi and welcome in the PowerShell for IT Professional course!
