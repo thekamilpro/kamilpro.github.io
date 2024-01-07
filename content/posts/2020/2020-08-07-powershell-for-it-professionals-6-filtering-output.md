@@ -54,7 +54,7 @@ Get-Service | Where-Object -Filter {$_.Status -eq 'running'  }
 -le - Less than or equal
 -ge - Greater than or equal
 -Like 
--Not like
+-Notlike
 
 #There are more many, you can check these help topics:
 Help about_Operators
