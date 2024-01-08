@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collection on Kamil Pro</title>
     <link>https://kamilpro.com/categories/collection/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/collection/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/categories/collection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell Array and ArrayList - storing multiple items as a one variable</title>
       <link>https://kamilpro.com/about-powershell/powershell-array-and-arraylist/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-array-and-arraylist/</guid>
       <description>Array is a basic data structure that allows to store multiple items in one variable. In this short video, I&amp;rsquo;ll show you how to create a basic array, populate it with items, how to add, access and modify items within array.
 In addition, I&amp;rsquo;ll present to you how to use ArrayList - which is much more flexible array, especially for adding more items.
 # Link to the video: https://youtu.be/rvGd8kxXlVc # What is an array and why do I need it?</description>
     </item>
-    
   </channel>
 </rss>

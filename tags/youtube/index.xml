@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>youtube on Kamil Pro</title>
     <link>https://kamilpro.com/tags/youtube/</link>
@@ -11,34 +11,29 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2020 12:49:09 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Aug 2020 12:49:09 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#9] – Setting up Active Directory</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-9-setting-up-active-directory/</link>
       <pubDate>Wed, 19 Aug 2020 12:49:09 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-9-setting-up-active-directory/</guid>
       <description>Exercises On domain controller, find module that allows to manage Active Directory List all the Active Directory users List members of “Enterprise Administrators” Find the feature name for Windows Server Backup and install it with PowerShell Commands ### Server # Check IP configuration # Show steps in Server how to install # Check hostname Hostname # Rename server Rename-Computer ps-svr1 # Restart computer Reboot-computer # Get-WindowsFeature # Install-WindowsFeature Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools Install-ADDSForest -DomainName posh.</description>
     </item>
-    
     <item>
       <title>PowerShell for IT Professionals [#6] – Filtering output</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-6-filtering-output/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-6-filtering-output/</guid>
       <description>Exercises List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W Lesson notes ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&amp;#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.Status -eq &amp;#39;running&amp;#39; } #So let&amp;#39;s break it down #Where-Object allows to filter out the incoming object based on the comparation operator #Most popular operators are: -eq - Equals -ne - Not equals -gt - Greather than -lt - Less then -le - Less than or equal -ge - Greater than or equal -Like -Notlike #There are more many, you can check these help topics: Help about_Operators Help about_Comparison_Operators #$_ is current object; it&amp;#39;s what we&amp;#39;re piping in our case Get-Service # .</description>
     </item>
-    
     <item>
       <title>The right people</title>
       <link>https://kamilpro.com/the-right-people/</link>
       <pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate>
-      
       <guid>https://kamilpro.com/the-right-people/</guid>
       <description>Each of us has some ideal places, songs, people and the way how the morning coffee should be prepared. Sometimes the way how negative situations happen describe the way our day, week, life look like. The way we are.
 Funnily enough, very often those things or people are just happening around us, the way we often don’t even notice it. We often can only notice the result of all those things.</description>
     </item>
-    
   </channel>
 </rss>

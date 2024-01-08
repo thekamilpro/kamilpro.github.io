@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>move on on Kamil Pro</title>
     <link>https://kamilpro.com/tags/move-on/</link>
@@ -11,15 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Jul 2016 19:58:56 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/move-on/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jul 2016 19:58:56 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/move-on/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Process</title>
       <link>https://kamilpro.com/process/</link>
       <pubDate>Thu, 21 Jul 2016 19:58:56 +0000</pubDate>
-      
       <guid>https://kamilpro.com/process/</guid>
       <description>“We are in the process of management change” “The company is in the process of implementing new policies” etc. etc. This is quite a normal term and we don’t pay attention to it, instead we just take this information on board. Whether we like the changes, it’s entirely up to us, despite the fact often we don’t notice any changes in practice. But people are going through “process of a change” as well.</description>
     </item>
-    
   </channel>
 </rss>

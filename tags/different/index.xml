@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>different on Kamil Pro</title>
     <link>https://kamilpro.com/tags/different/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Jul 2016 15:41:10 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/different/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jul 2016 15:41:10 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/different/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do something different</title>
       <link>https://kamilpro.com/do-something-different/</link>
       <pubDate>Sun, 24 Jul 2016 15:41:10 +0000</pubDate>
-      
       <guid>https://kamilpro.com/do-something-different/</guid>
       <description>Sometimes I am so deep in my thoughts that I have no notion of what time of the day is. I know I should be doing something, anything but wasting my time… Life is too short to waste time but all the possibilities somehow don’t even cross my mind.
 Do you get the same feeling where you can literally stare at the wall opposite while the time stands still? It’s a horrible feeling.</description>
     </item>
-    
   </channel>
 </rss>

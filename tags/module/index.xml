@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Module on Kamil Pro</title>
     <link>https://kamilpro.com/tags/module/</link>
@@ -11,58 +11,49 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/module/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</guid>
       <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
 In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
     </item>
-    
     <item>
       <title>Building PowerShell Module - how to organise your source files and build with ease</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-building/</link>
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-building/</guid>
       <description>Organising all files, scripts and functions required to build a module might give one a headache. PowerShell doesn&amp;rsquo;t come with native way of building the module, which doesn&amp;rsquo;t make our job easier.
 Hence, we&amp;rsquo;re going to use ModuleBuilder from PowerShell community so that the way we organise the code is predictable and used widely across other PowerShell projects.
 In this video I&amp;rsquo;ll walk you through the process of preparing, organising and finally building the module.</description>
     </item>
-    
     <item>
       <title>PowerShell Module and Manifest- create and configure your tools</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-manifest/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-manifest/</guid>
       <description>The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
 PowerShell module is the answer - it&amp;rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&amp;rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&amp;rsquo;s details etc.</description>
     </item>
-    
     <item>
       <title>PowerShell for IT Professionals [#20] – Next Steps with PowerShell</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
       <description>Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
 I’m going to show what else you can do within PowerShell itself, as well how to keep up-to-day plus – what other doors writing code has opened for you – I’d love to hear back about this!
 I hope you’ve enjoyed the course so far and it will be helped you in some way – either solve a problem, got promotion, or simply learnt something new.</description>
     </item>
-    
     <item>
       <title>PowerShell for IT Professionals [#8] – Manage everything with PowerShell</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-8-manage-everything-with-powershell/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-8-manage-everything-with-powershell/</guid>
       <description>Exercises Can you uninstall module that was installed with Install-Module? Confirm your answer with Get-Module -ListAvaiable Can you update the installed module? Perhaps, you’d like to install version 1.0.0.0 of SNMP module, how can you force Install-Module to do so? Install-Module error If you encounter the issue with downloading modules, run this commandlet as a temporary workaround (it must be applied every time the shell is restarted):
 Source of solution, and also permanent solution can be found at:</description>
     </item>
-    
   </channel>
 </rss>

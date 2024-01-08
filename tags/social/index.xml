@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>social on Kamil Pro</title>
     <link>https://kamilpro.com/tags/social/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/social/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/social/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1000 Subscribers!</title>
       <link>https://kamilpro.com/posts/2023/1000-subscribers/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/posts/2023/1000-subscribers/</guid>
       <description>I’ve just passed 1000 subscribers on my #YouTube channel - thank you! https://lnkd.in/e6mBpUZA
 Back in 2020 I have started a little experiment and since then it has been slowly growing and growing. I wanted to share my knowledge and experience with like-minded IT professionals. I wanted to create a community where people could come to learn more about #powershell and how to become modern #sysadmin, while being free to ask any questions on the topic!</description>
     </item>
-    
   </channel>
 </rss>

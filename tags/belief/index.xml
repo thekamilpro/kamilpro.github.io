@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>belief on Kamil Pro</title>
     <link>https://kamilpro.com/tags/belief/</link>
@@ -11,18 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Aug 2016 21:57:25 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/belief/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2016 21:57:25 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/belief/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whatever floats your boat…</title>
       <link>https://kamilpro.com/whatever-floats-your-boat/</link>
       <pubDate>Tue, 02 Aug 2016 21:57:25 +0000</pubDate>
-      
       <guid>https://kamilpro.com/whatever-floats-your-boat/</guid>
       <description>How many times I’ve put my all enthusiasm into something, being convinced that it was the right thing.
 Hundreds, maybe thousands of times.
 How many time afterwards I have realised that my belief was completely wrong. Like 100% wrong. Like back to front feeling.
 I think the most difficult is the moment of making a decision. That very moment when it’s time to commit to a long standing decision. The second when it’s time to reveal self and go public.</description>
     </item>
-    
   </channel>
 </rss>

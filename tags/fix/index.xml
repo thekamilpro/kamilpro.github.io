@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fix on Kamil Pro</title>
     <link>https://kamilpro.com/tags/fix/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Jul 2016 22:13:47 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/fix/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jul 2016 22:13:47 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/fix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Self-investment</title>
       <link>https://kamilpro.com/self-investment/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
-      
       <guid>https://kamilpro.com/self-investment/</guid>
       <description>I’m crazy about few things in my life. One of them is self-investment. Something what I do entirely for myself, because I am convinced that it will be beneficial to me, eventually.
 At the beginning of my IT journey, I sacrificed a lot of time. There were whole weekends with computer as well as late nights during a week. I wasn’t aware that this could have been an actual investment, that I was working towards bettering my future.</description>
     </item>
-    
   </channel>
 </rss>

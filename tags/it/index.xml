@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT on Kamil Pro</title>
     <link>https://kamilpro.com/tags/it/</link>
@@ -11,55 +11,46 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2020 10:39:05 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Aug 2020 10:39:05 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#11] – Variables</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-11-variables/</link>
       <pubDate>Sat, 29 Aug 2020 10:39:05 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-11-variables/</guid>
       <description>In this lesson we’re going to learn how what Variables are, why it’s good to use them and how to actually create them. We will then assign various values to variables to and use them solely, and in parameters.
 We will also have a look at foreach loop so that we can e.g. ping multiple computers using single variable with multiple objects in it.
 Exercises Use Get-Command to find all commands that allow you to manage variables.</description>
     </item>
-    
     <item>
       <title>PowerShell for IT Professionals [#10] – Remote management with PowerShell</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-10-remote-management-with-powershell/</guid>
       <description>In this lesson we’re going to learn how to do one-to-one and one-to-many remote management with PowerShell. There’s no need for telnet, ssh or psexec as PowerShell has its own protocol that’s built in right into Windows. We will look at how to create interactive sessions and send commands to multiple servers at once.
 Exercises Notes Enable-Psremoting Enter-PSSesion ps-svr1 Hostname Get-Service GIP # I can even run commands that are not available on my source machine Get-ADDomainController Get-ADUser Exit or Exit-PSSession # Caution about double hoping Invoke-Command Invoke-Command -computerName ps-svr1 -command { get-service} # Invoke command executes commands on the remote comptuers and brings back the results # Can you tell a difference?</description>
     </item>
-    
     <item>
       <title>Self-investment</title>
       <link>https://kamilpro.com/self-investment/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
-      
       <guid>https://kamilpro.com/self-investment/</guid>
       <description>I’m crazy about few things in my life. One of them is self-investment. Something what I do entirely for myself, because I am convinced that it will be beneficial to me, eventually.
 At the beginning of my IT journey, I sacrificed a lot of time. There were whole weekends with computer as well as late nights during a week. I wasn’t aware that this could have been an actual investment, that I was working towards bettering my future.</description>
     </item>
-    
     <item>
       <title>Why certification matters?</title>
       <link>https://kamilpro.com/why-certification-matters/</link>
       <pubDate>Thu, 21 Jan 2016 11:42:35 +0000</pubDate>
-      
       <guid>https://kamilpro.com/why-certification-matters/</guid>
       <description>&lt;p&gt;I gained most of my experience by doing and working things out. Quite often I was reinventing the wheel and discovering already discovered lands. Well, that gave me a lot practice, and no doubts, made me who I am now. But how could I actually proof my skills?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Experience, that’s what really matters</title>
       <link>https://kamilpro.com/what-really-matters-experience/</link>
       <pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate>
-      
       <guid>https://kamilpro.com/what-really-matters-experience/</guid>
       <description>How can you cut the cost of hardware from £200 to £30? And how to avoid unnecessary money and time waste? You need somebody who thinks out of the box, is determined and the most important – has tons of experience. Below you can see how I was gaining experience and how it helped me to be where I am right now. I always considered myself as the guy who’s got practical knowledge.</description>
     </item>
-    
   </channel>
 </rss>

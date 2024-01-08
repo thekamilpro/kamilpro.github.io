@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>select-object on Kamil Pro</title>
     <link>https://kamilpro.com/tags/select-object/</link>
@@ -11,15 +11,14 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2020 12:00:32 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/select-object/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Aug 2020 12:00:32 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/select-object/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#6] – Filtering output</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-6-filtering-output/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-6-filtering-output/</guid>
       <description>Exercises List all services that are stopped List all service that are stopped and they name begins with W Display only the Display Name of services that stopped and their name begins with W Lesson notes ### Filtering # Some commands accept wild cards in the search or have a filter parameter Get-Service -Name w*,b* #But there&amp;#39;s more universal method, based on property names Get-Service | Where-Object -Filter {$_.Status -eq &amp;#39;running&amp;#39; } #So let&amp;#39;s break it down #Where-Object allows to filter out the incoming object based on the comparation operator #Most popular operators are: -eq - Equals -ne - Not equals -gt - Greather than -lt - Less then -le - Less than or equal -ge - Greater than or equal -Like -Notlike #There are more many, you can check these help topics: Help about_Operators Help about_Comparison_Operators #$_ is current object; it&amp;#39;s what we&amp;#39;re piping in our case Get-Service # .</description>
     </item>
-    
   </channel>
 </rss>

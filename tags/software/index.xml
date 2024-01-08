@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on Kamil Pro</title>
     <link>https://kamilpro.com/tags/software/</link>
@@ -11,48 +11,41 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing Software with Chocolatey - Automate installation and updates of your applications</title>
       <link>https://kamilpro.com/posts/2021/managing-software-with-chocolatey/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/posts/2021/managing-software-with-chocolatey/</guid>
       <description>Software management is not trivial task. Preparing for silent deployment is challenging, and even if you manage to install the application, how to keep it up to date?
 Chocolatey is package manager for Windows, that can fully automate lifecycle of your software.
 In this video, I&amp;rsquo;ll show you how to install Chocolatey, then how to find software, install it and finally keeping it up to date - all coming with free open-source license.</description>
     </item>
-    
     <item>
       <title>Deploying software with GPO</title>
       <link>https://kamilpro.com/deploying-software-with-gpo/</link>
       <pubDate>Sun, 15 Mar 2020 14:25:59 +0000</pubDate>
-      
       <guid>https://kamilpro.com/deploying-software-with-gpo/</guid>
       <description>Having software consistently deployed across the fleet of computers is one of the key points that can be automated.
 If I have a choice (and it makes sense), I will always choose GPO over any other solution because it’s embedded into Active Directory thus not requiring installation, learning and maintenance of additional management tool.
 MSI – Software Installation One of the main advantages of MSI installers is that in 99% of cases you can just use the “Software Installation” option in GPO, and GPO will take care of the silent installation.</description>
     </item>
-    
     <item>
       <title>Sysadmin’s tools – what I have installed on my laptop</title>
       <link>https://kamilpro.com/sysadmins-tools-what-i-have-installed-on-my-laptop/</link>
       <pubDate>Sun, 06 Jan 2019 20:40:21 +0000</pubDate>
-      
       <guid>https://kamilpro.com/sysadmins-tools-what-i-have-installed-on-my-laptop/</guid>
       <description>We need tools to make our work. Either it’s notepad and paper, a hammer (for server’s hard reset… just joking) or some sophisticated and bespoke peace of hardware – we as professionals need tools to make our work better, or even possible.
 Since working as IT person, there are many software tools I need to do my day to day tasks, thus here’s the list of pieces of software I’ve been finding useful.</description>
     </item>
-    
     <item>
       <title>I’m really missing time before the Internet.</title>
       <link>https://kamilpro.com/im-really-missing-time-internet/</link>
       <pubDate>Sun, 21 Aug 2016 19:47:22 +0000</pubDate>
-      
       <guid>https://kamilpro.com/im-really-missing-time-internet/</guid>
       <description>Because software was working without the need of downloading tons of patches. Why do we actually need to update software in the first place?
 In the past, the only way to obtain a software was by delivering the physical media to the recipient. There was a cost of media itself and shipment (and probably much more of which I’m not aware of), it couldn’t be cheap. While comparing to the current times, it is just a matter of uploading an update to the server and push to users.</description>
     </item>
-    
   </channel>
 </rss>

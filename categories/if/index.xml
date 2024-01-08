@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>If on Kamil Pro</title>
     <link>https://kamilpro.com/categories/if/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/if/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/categories/if/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell If statement - controlling the flow of your code</title>
       <link>https://kamilpro.com/about-powershell/powershell-if-statement/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-if-statement/</guid>
       <description>In this video we are exploring how to use If statement in various scenarios. If statement allows you to take tide control over the execution of your code, by dictating your script what to do in a given situation.
 # Link to the video: https://youtu.be/j8Ubwv8ApdU # Documentation: # Operators: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators?view=powershell-7.1 # About If: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_if?view=powershell-7.1 # Basic version # if something is true then do this if ($true) { &amp;#34;This is true&amp;#34; } if ($false) { &amp;#34;This is false&amp;#34; } # if something is true then do this, otherwise do that if ($true) { &amp;#34;This is true&amp;#34; } else { &amp;#34;This is false&amp;#34; } if ($false) { &amp;#34;This is true&amp;#34; } else { &amp;#34;This is false&amp;#34; } # let&amp;#39;s do some actual example if ( 5 -gt 3 ) { &amp;#34;This is more!</description>
     </item>
-    
   </channel>
 </rss>

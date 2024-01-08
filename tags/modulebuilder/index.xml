@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ModuleBuilder on Kamil Pro</title>
     <link>https://kamilpro.com/tags/modulebuilder/</link>
@@ -11,27 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/modulebuilder/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/modulebuilder/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building PowerShell module on Azure DevOps pipeline - step by step guide</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-building-azure-devops/</guid>
       <description>The World talks constantly about DevOps, CI/CI pipelines, automation - which great, but where to actually start? Especially when you&amp;rsquo;ve been writing PowerShell which is often used as automation language, but not actually as programming language?
 In this video I&amp;rsquo;ll show you how to create a build pipeline for PowerShell module, from scratch. We will start from creating a project, creating new Git repository, pushing code to repository to finally create a pipeline which takes care of building the module, versioning it and finally publishing.</description>
     </item>
-    
     <item>
       <title>Building PowerShell Module - how to organise your source files and build with ease</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-building/</link>
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-building/</guid>
       <description>Organising all files, scripts and functions required to build a module might give one a headache. PowerShell doesn&amp;rsquo;t come with native way of building the module, which doesn&amp;rsquo;t make our job easier.
 Hence, we&amp;rsquo;re going to use ModuleBuilder from PowerShell community so that the way we organise the code is predictable and used widely across other PowerShell projects.
 In this video I&amp;rsquo;ll walk you through the process of preparing, organising and finally building the module.</description>
     </item>
-    
   </channel>
 </rss>

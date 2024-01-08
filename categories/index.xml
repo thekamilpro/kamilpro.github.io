@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kamil Pro</title>
     <link>https://kamilpro.com/categories/</link>
@@ -11,429 +11,336 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health</title>
       <link>https://kamilpro.com/categories/health/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/health/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Personal</title>
       <link>https://kamilpro.com/categories/personal/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/personal/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Wellbeing</title>
       <link>https://kamilpro.com/categories/wellbeing/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/wellbeing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Conference</title>
       <link>https://kamilpro.com/categories/conference/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/conference/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PowerShell</title>
       <link>https://kamilpro.com/categories/powershell/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/powershell/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Speaking</title>
       <link>https://kamilpro.com/categories/speaking/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/speaking/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Video</title>
       <link>https://kamilpro.com/categories/video/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/video/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Error</title>
       <link>https://kamilpro.com/categories/error/</link>
       <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/error/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Script</title>
       <link>https://kamilpro.com/categories/script/</link>
       <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/script/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>YouTube</title>
       <link>https://kamilpro.com/categories/youtube/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/youtube/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pode</title>
       <link>https://kamilpro.com/categories/pode/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/pode/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>WebApp</title>
       <link>https://kamilpro.com/categories/webapp/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/webapp/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure</title>
       <link>https://kamilpro.com/categories/azure/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/azure/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>DevOps</title>
       <link>https://kamilpro.com/categories/devops/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/devops/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Module</title>
       <link>https://kamilpro.com/categories/module/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/module/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Career</title>
       <link>https://kamilpro.com/categories/career/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/career/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sysadmin</title>
       <link>https://kamilpro.com/categories/sysadmin/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/sysadmin/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>custom</title>
       <link>https://kamilpro.com/categories/custom/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/custom/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>object</title>
       <link>https://kamilpro.com/categories/object/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/object/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hash</title>
       <link>https://kamilpro.com/categories/hash/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/hash/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hashtable</title>
       <link>https://kamilpro.com/categories/hashtable/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/hashtable/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Map</title>
       <link>https://kamilpro.com/categories/map/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/map/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Array</title>
       <link>https://kamilpro.com/categories/array/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/array/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Collection</title>
       <link>https://kamilpro.com/categories/collection/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/collection/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>List</title>
       <link>https://kamilpro.com/categories/list/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/list/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Branching</title>
       <link>https://kamilpro.com/categories/branching/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/branching/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Condition</title>
       <link>https://kamilpro.com/categories/condition/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/condition/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Switch</title>
       <link>https://kamilpro.com/categories/switch/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/switch/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>For</title>
       <link>https://kamilpro.com/categories/for/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/for/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Loop</title>
       <link>https://kamilpro.com/categories/loop/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/loop/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>If</title>
       <link>https://kamilpro.com/categories/if/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/if/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Automation</title>
       <link>https://kamilpro.com/categories/automation/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/automation/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Deployment</title>
       <link>https://kamilpro.com/categories/deployment/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/deployment/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Software</title>
       <link>https://kamilpro.com/categories/software/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/software/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Windows</title>
       <link>https://kamilpro.com/categories/windows/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/windows/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>IT</title>
       <link>https://kamilpro.com/categories/it/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/it/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PowerShell for IT Professionals</title>
       <link>https://kamilpro.com/categories/powershell-for-it-professionals/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/powershell-for-it-professionals/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Course</title>
       <link>https://kamilpro.com/categories/course/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/course/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Server</title>
       <link>https://kamilpro.com/categories/server/</link>
       <pubDate>Sun, 08 Mar 2020 10:52:17 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/server/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Tech</title>
       <link>https://kamilpro.com/categories/tech/</link>
       <pubDate>Tue, 25 Jun 2019 07:50:11 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/tech/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Me &amp;amp; People</title>
       <link>https://kamilpro.com/categories/me-amp-people/</link>
       <pubDate>Tue, 01 Jan 2019 13:42:49 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/me-amp-people/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ESXi</title>
       <link>https://kamilpro.com/categories/esxi/</link>
       <pubDate>Wed, 15 Aug 2018 17:54:47 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/esxi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Uncategorised</title>
       <link>https://kamilpro.com/categories/uncategorised/</link>
       <pubDate>Wed, 15 Aug 2018 17:54:47 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/uncategorised/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Motivation</title>
       <link>https://kamilpro.com/categories/motivation/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/motivation/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sport</title>
       <link>https://kamilpro.com/categories/sport/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/sport/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Productivity</title>
       <link>https://kamilpro.com/categories/productivity/</link>
       <pubDate>Tue, 16 May 2017 12:12:47 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/productivity/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Photography</title>
       <link>https://kamilpro.com/categories/photography/</link>
       <pubDate>Thu, 14 May 2015 20:02:59 +0000</pubDate>
-      
       <guid>https://kamilpro.com/categories/photography/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

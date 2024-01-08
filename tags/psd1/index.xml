@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>psd1 on Kamil Pro</title>
     <link>https://kamilpro.com/tags/psd1/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/psd1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/psd1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell Module and Manifest- create and configure your tools</title>
       <link>https://kamilpro.com/about-powershell/powershell-module-manifest/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/about-powershell/powershell-module-manifest/</guid>
       <description>The more PowerShell code you write results in more and more scripts. Often you have multiple scripts managing one domain or application. What in situation when scripts start to use other scripts to work, creating so called dependency?
 PowerShell module is the answer - it&amp;rsquo;s the native way of bundling in multiple functions together as a single file. And the best comes with Module&amp;rsquo;s Manifest, a file that describes things like version of your module, requirements for it to run, author&amp;rsquo;s details etc.</description>
     </item>
-    
   </channel>
 </rss>

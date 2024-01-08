@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>news on Kamil Pro</title>
     <link>https://kamilpro.com/tags/news/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Jul 2016 21:30:18 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Jul 2016 21:30:18 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spam</title>
       <link>https://kamilpro.com/spam/</link>
       <pubDate>Mon, 18 Jul 2016 21:30:18 +0000</pubDate>
-      
       <guid>https://kamilpro.com/spam/</guid>
       <description>Spam. Spam everywhere. There isn’t a day without it. Without bombarding us with plenty of information. Way too much of information.
 While the original – email spam – is well handled by email providers, the other sources are not.
 On social media – there is plenty of shared stuff which someone (I hope so!) thought was worth of sharing. News is all over the place – starting from daily free newspapers, through radio and TV and ending up on the Internet.</description>
     </item>
-    
   </channel>
 </rss>

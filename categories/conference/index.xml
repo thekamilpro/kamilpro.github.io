@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on Kamil Pro</title>
     <link>https://kamilpro.com/categories/conference/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/categories/conference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Speaking at PsDayUk 2023</title>
       <link>https://kamilpro.com/posts/2023/speaking-at-psdayuk-2023/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/posts/2023/speaking-at-psdayuk-2023/</guid>
       <description>Side note, I was meant to publish this back in March 2023&amp;hellip;
 When I attended my first PowerShell meetup back in 2017, I had no idea it would lead me to where I am today.
 Fast forward to 3rd of March 2023, I was privileged to speak and share my knowledge with other #PowerShell enthusiasts at #PsDayUk conference. I presented the PowerShell based web server and web framework, which enables anyone familiar with the language, to create web applications.</description>
     </item>
-    
   </channel>
 </rss>

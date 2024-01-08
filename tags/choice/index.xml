@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>choice on Kamil Pro</title>
     <link>https://kamilpro.com/tags/choice/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Jul 2016 11:34:34 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/choice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2016 11:34:34 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/choice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Influence</title>
       <link>https://kamilpro.com/influence/</link>
       <pubDate>Mon, 25 Jul 2016 11:34:34 +0000</pubDate>
-      
       <guid>https://kamilpro.com/influence/</guid>
       <description>A friend visited us yesterday. There was a nice cake, coffee, dinner and conversations thoughtout the night.
 Suddenly the ladies started to talk about navigation apps on mobile devices. K. was complaining about high data usage during browsing on the Internet. J. suggested her to try Here maps as it is free and allows to download the maps, therefore data is completely not needed for navigation to work, plus it is really accurate app.</description>
     </item>
-    
   </channel>
 </rss>

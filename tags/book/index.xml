@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>book on Kamil Pro</title>
     <link>https://kamilpro.com/tags/book/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2020 17:46:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 17:46:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#20] – Next Steps with PowerShell</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-20-next-steps-with-powershell/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-20-next-steps-with-powershell/</guid>
       <description>Congratulations! This is 20th and last lesson in the course – and my aim here is to show you various paths you can take your PowerShell journey to.
 I’m going to show what else you can do within PowerShell itself, as well how to keep up-to-day plus – what other doors writing code has opened for you – I’d love to hear back about this!
 I hope you’ve enjoyed the course so far and it will be helped you in some way – either solve a problem, got promotion, or simply learnt something new.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tools on Kamil Pro</title>
     <link>https://kamilpro.com/tags/tools/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Jan 2019 20:40:21 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Jan 2019 20:40:21 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sysadmin’s tools – what I have installed on my laptop</title>
       <link>https://kamilpro.com/sysadmins-tools-what-i-have-installed-on-my-laptop/</link>
       <pubDate>Sun, 06 Jan 2019 20:40:21 +0000</pubDate>
-      
       <guid>https://kamilpro.com/sysadmins-tools-what-i-have-installed-on-my-laptop/</guid>
       <description>We need tools to make our work. Either it’s notepad and paper, a hammer (for server’s hard reset… just joking) or some sophisticated and bespoke peace of hardware – we as professionals need tools to make our work better, or even possible.
 Since working as IT person, there are many software tools I need to do my day to day tasks, thus here’s the list of pieces of software I’ve been finding useful.</description>
     </item>
-    
   </channel>
 </rss>

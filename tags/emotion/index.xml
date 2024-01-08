@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emotion on Kamil Pro</title>
     <link>https://kamilpro.com/tags/emotion/</link>
@@ -11,18 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Jul 2016 21:48:24 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/emotion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2016 21:48:24 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/emotion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A winner!</title>
       <link>https://kamilpro.com/a-winner/</link>
       <pubDate>Tue, 19 Jul 2016 21:48:24 +0000</pubDate>
-      
       <guid>https://kamilpro.com/a-winner/</guid>
       <description>We are all winners, undoubtedly. Whatever we do, whenever we create an action – we must win.
 Well, not really.
 Since the childhood we are taught and pushed to be the best. Get a grade A or B, at least C. Like the D, E or even F don’t exist. We are pushed through countless tests and exams, and being challenged on daily basis.
 And there is always somebody, who in a good faith has to say that “you won” even though we actually did not.</description>
     </item>
-    
   </channel>
 </rss>

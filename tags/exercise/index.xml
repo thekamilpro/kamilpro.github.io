@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>exercise on Kamil Pro</title>
     <link>https://kamilpro.com/tags/exercise/</link>
@@ -11,26 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health</title>
       <link>https://kamilpro.com/posts/pages/health/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kamilpro.com/posts/pages/health/</guid>
       <description>For several years, I&amp;rsquo;ve been working on my health - with goal of staying healthy as long as possible. It all started with working on sleep, which was followed by jogging, nutrition etc. where at this point it has become a part of my identity.
 The goal here is to keep this post as a baseline for comparing myself in the future, how much I drifted or improved over time, and then share to the any other person who wants work on themselves.</description>
     </item>
-    
     <item>
       <title>Need for energy – my short story of running</title>
       <link>https://kamilpro.com/need-energy-short-story-running/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
-      
       <guid>https://kamilpro.com/need-energy-short-story-running/</guid>
       <description>This a quick story how sysadmin started running. I hope it will inspire you to do something with your body, mind and people around you. Yes, because once you’ll start feeling better, others around you will start feeling better as well.
 Just a little over 6 months ago… That was November – rainy, windy and cold November. I was exhausted after months of pushing forward the work load. Our team was going through fundamental changes, and the last months towards November were nerve wracking, and there was no light at the end of the tunnel.</description>
     </item>
-    
   </channel>
 </rss>

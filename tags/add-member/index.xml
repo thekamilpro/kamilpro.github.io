@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>add-member on Kamil Pro</title>
     <link>https://kamilpro.com/tags/add-member/</link>
@@ -11,17 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 19:12:40 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/add-member/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Oct 2020 19:12:40 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/add-member/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#16] – Scripting part 3 – Add-Member and network</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-16-scripting-part-3-add-member-and-network/</guid>
       <description>In this lesson we are taking our script further by adding details about IP configuration and last installed hotfixes.
 But it turns out, the networking information is not that shallow as it seems at the first glance – thus I’ll show you how to retrieve the information from the configuration.
 We will also look on how to reuse our already created object so that we don’t need to duplicate code.</description>
     </item>
-    
   </channel>
 </rss>

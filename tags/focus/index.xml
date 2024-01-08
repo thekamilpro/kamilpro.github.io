@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>focus on Kamil Pro</title>
     <link>https://kamilpro.com/tags/focus/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Aug 2016 21:25:29 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/focus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2016 21:25:29 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/focus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Headphones</title>
       <link>https://kamilpro.com/headphones/</link>
       <pubDate>Mon, 01 Aug 2016 21:25:29 +0000</pubDate>
-      
       <guid>https://kamilpro.com/headphones/</guid>
       <description>At home while writing, photo editing or just for fun. At work when I need to focus and be effective. At the time when I need a boost or completely opposite – when looking for a way to calm down. Headphones accompany me throughout the day.
 There is something about sound that keeps me going. When I need to keep up and focus on something certain, I listen to some energy energetic music.</description>
     </item>
-    
   </channel>
 </rss>

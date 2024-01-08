@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fl on Kamil Pro</title>
     <link>https://kamilpro.com/tags/fl/</link>
@@ -11,16 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2020 12:35:44 +0000</lastBuildDate><atom:link href="https://kamilpro.com/tags/fl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 12:35:44 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/tags/fl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell for IT Professionals [#7] – Formatting output</title>
       <link>https://kamilpro.com/powershell-for-it-professionals-7-formatting-output/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
-      
       <guid>https://kamilpro.com/powershell-for-it-professionals-7-formatting-output/</guid>
       <description>Exercises Send output of any commandlet, e.g. get service to Printer
 Lesson notes # So far, we&amp;#39;ve been using default PowerShell behaviour for formatting output # Although in the last lesson we did filtering data with Where-Object and Select-Object # We didn&amp;#39;t really focus on how data is presented on the screen. Let&amp;#39;s see what can be done here. # Let&amp;#39;s have a look at local Get-LocalGroup Get-LocalGroup | Format-List #Alias is FL #Like with Select-Object, we can specify properties we&amp;#39;re after Get-LocalGroup | fl -Property name,sid #Another example when List might be easier to read then table Get-CimInstance win32_ComputerSystem ## Format Table #ipconfig.</description>
     </item>
-    
   </channel>
 </rss>
