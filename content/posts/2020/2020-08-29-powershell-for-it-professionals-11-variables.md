@@ -119,11 +119,11 @@ $computers = 'ps-svr1','localhost','1.1.1.1','8.8.8.8','kamilpro.com'
 
 $computers
 
-$computers&#91;0]
+$computers[0]
 
-$computers&#91;2]
+$computers[2]
 
-$computers&#91;-1]
+$computers[-1]
 
 # Let's try to ping all of them
 
