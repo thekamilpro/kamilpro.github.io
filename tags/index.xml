@@ -11,31 +11,59 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kamilpro.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>exercise</title>
+      <title>Actions</title>
+      <link>https://kamilpro.com/tags/actions/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/tags/actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://kamilpro.com/tags/github/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://kamilpro.com/tags/powershell/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pwsh</title>
+      <link>https://kamilpro.com/tags/pwsh/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/tags/pwsh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exercise</title>
       <link>https://kamilpro.com/tags/exercise/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/exercise/</guid>
       <description></description>
     </item>
     <item>
-      <title>food</title>
+      <title>Food</title>
       <link>https://kamilpro.com/tags/food/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/food/</guid>
       <description></description>
     </item>
     <item>
-      <title>nutrition</title>
+      <title>Nutrition</title>
       <link>https://kamilpro.com/tags/nutrition/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/nutrition/</guid>
       <description></description>
     </item>
     <item>
-      <title>sleep</title>
+      <title>Sleep</title>
       <link>https://kamilpro.com/tags/sleep/</link>
       <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/sleep/</guid>
@@ -49,24 +77,10 @@
       <description></description>
     </item>
     <item>
-      <title>Pode.Web</title>
+      <title>Pode.web</title>
       <link>https://kamilpro.com/tags/pode.web/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pode.web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PowerShell</title>
-      <link>https://kamilpro.com/tags/powershell/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://kamilpro.com/tags/powershell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>pwsh</title>
-      <link>https://kamilpro.com/tags/pwsh/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://kamilpro.com/tags/pwsh/</guid>
       <description></description>
     </item>
     <item>
@@ -91,7 +105,7 @@
       <description></description>
     </item>
     <item>
-      <title>script</title>
+      <title>Script</title>
       <link>https://kamilpro.com/tags/script/</link>
       <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/script/</guid>
@@ -105,21 +119,21 @@
       <description></description>
     </item>
     <item>
-      <title>achievement</title>
+      <title>Achievement</title>
       <link>https://kamilpro.com/tags/achievement/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/achievement/</guid>
       <description></description>
     </item>
     <item>
-      <title>social</title>
+      <title>Social</title>
       <link>https://kamilpro.com/tags/social/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/social/</guid>
       <description></description>
     </item>
     <item>
-      <title>success</title>
+      <title>Success</title>
       <link>https://kamilpro.com/tags/success/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/success/</guid>
@@ -147,7 +161,7 @@
       <description></description>
     </item>
     <item>
-      <title>azure</title>
+      <title>Azure</title>
       <link>https://kamilpro.com/tags/azure/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/azure/</guid>
@@ -196,14 +210,14 @@
       <description></description>
     </item>
     <item>
-      <title>sysadmin</title>
+      <title>Sysadmin</title>
       <link>https://kamilpro.com/tags/sysadmin/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/sysadmin/</guid>
       <description></description>
     </item>
     <item>
-      <title>video</title>
+      <title>Video</title>
       <link>https://kamilpro.com/tags/video/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/video/</guid>
@@ -217,147 +231,147 @@
       <description></description>
     </item>
     <item>
-      <title>psd1</title>
+      <title>Psd1</title>
       <link>https://kamilpro.com/tags/psd1/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/psd1/</guid>
       <description></description>
     </item>
     <item>
-      <title>psm1</title>
+      <title>Psm1</title>
       <link>https://kamilpro.com/tags/psm1/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/psm1/</guid>
       <description></description>
     </item>
     <item>
-      <title>parameter</title>
+      <title>Parameter</title>
       <link>https://kamilpro.com/tags/parameter/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/parameter/</guid>
       <description></description>
     </item>
     <item>
-      <title>validate</title>
+      <title>Validate</title>
       <link>https://kamilpro.com/tags/validate/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/validate/</guid>
       <description></description>
     </item>
     <item>
-      <title>cmdlet</title>
+      <title>Cmdlet</title>
       <link>https://kamilpro.com/tags/cmdlet/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/cmdlet/</guid>
       <description></description>
     </item>
     <item>
-      <title>function</title>
+      <title>Function</title>
       <link>https://kamilpro.com/tags/function/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/function/</guid>
       <description></description>
     </item>
     <item>
-      <title>custom</title>
+      <title>Custom</title>
       <link>https://kamilpro.com/tags/custom/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/custom/</guid>
       <description></description>
     </item>
     <item>
-      <title>data</title>
+      <title>Data</title>
       <link>https://kamilpro.com/tags/data/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/data/</guid>
       <description></description>
     </item>
     <item>
-      <title>object</title>
+      <title>Object</title>
       <link>https://kamilpro.com/tags/object/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/object/</guid>
       <description></description>
     </item>
     <item>
-      <title>pscustomobject</title>
+      <title>Pscustomobject</title>
       <link>https://kamilpro.com/tags/pscustomobject/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pscustomobject/</guid>
       <description></description>
     </item>
     <item>
-      <title>scripting</title>
+      <title>Scripting</title>
       <link>https://kamilpro.com/tags/scripting/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/scripting/</guid>
       <description></description>
     </item>
     <item>
-      <title>key</title>
+      <title>Key</title>
       <link>https://kamilpro.com/tags/key/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/key/</guid>
       <description></description>
     </item>
     <item>
-      <title>list</title>
+      <title>List</title>
       <link>https://kamilpro.com/tags/list/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/list/</guid>
       <description></description>
     </item>
     <item>
-      <title>pair</title>
+      <title>Pair</title>
       <link>https://kamilpro.com/tags/pair/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pair/</guid>
       <description></description>
     </item>
     <item>
-      <title>table</title>
+      <title>Table</title>
       <link>https://kamilpro.com/tags/table/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/table/</guid>
       <description></description>
     </item>
     <item>
-      <title>value</title>
+      <title>Value</title>
       <link>https://kamilpro.com/tags/value/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/value/</guid>
       <description></description>
     </item>
     <item>
-      <title>array</title>
+      <title>Array</title>
       <link>https://kamilpro.com/tags/array/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/array/</guid>
       <description></description>
     </item>
     <item>
-      <title>collection</title>
+      <title>Collection</title>
       <link>https://kamilpro.com/tags/collection/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/collection/</guid>
       <description></description>
     </item>
     <item>
-      <title>shell</title>
+      <title>Shell</title>
       <link>https://kamilpro.com/tags/shell/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/shell/</guid>
       <description></description>
     </item>
     <item>
-      <title>variable</title>
+      <title>Variable</title>
       <link>https://kamilpro.com/tags/variable/</link>
       <pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/variable/</guid>
       <description></description>
     </item>
     <item>
-      <title>branch</title>
+      <title>Branch</title>
       <link>https://kamilpro.com/tags/branch/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/branch/</guid>
@@ -392,63 +406,63 @@
       <description></description>
     </item>
     <item>
-      <title>do</title>
+      <title>Do</title>
       <link>https://kamilpro.com/tags/do/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/do/</guid>
       <description></description>
     </item>
     <item>
-      <title>loop</title>
+      <title>Loop</title>
       <link>https://kamilpro.com/tags/loop/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/loop/</guid>
       <description></description>
     </item>
     <item>
-      <title>repeat</title>
+      <title>Repeat</title>
       <link>https://kamilpro.com/tags/repeat/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/repeat/</guid>
       <description></description>
     </item>
     <item>
-      <title>statement</title>
+      <title>Statement</title>
       <link>https://kamilpro.com/tags/statement/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/statement/</guid>
       <description></description>
     </item>
     <item>
-      <title>automation</title>
+      <title>Automation</title>
       <link>https://kamilpro.com/tags/automation/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/automation/</guid>
       <description></description>
     </item>
     <item>
-      <title>cli</title>
+      <title>Cli</title>
       <link>https://kamilpro.com/tags/cli/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/cli/</guid>
       <description></description>
     </item>
     <item>
-      <title>installation</title>
+      <title>Installation</title>
       <link>https://kamilpro.com/tags/installation/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/installation/</guid>
       <description></description>
     </item>
     <item>
-      <title>patching</title>
+      <title>Patching</title>
       <link>https://kamilpro.com/tags/patching/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/patching/</guid>
       <description></description>
     </item>
     <item>
-      <title>software</title>
+      <title>Software</title>
       <link>https://kamilpro.com/tags/software/</link>
       <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/software/</guid>
@@ -462,336 +476,336 @@
       <description></description>
     </item>
     <item>
-      <title>book</title>
+      <title>Book</title>
       <link>https://kamilpro.com/tags/book/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/book/</guid>
       <description></description>
     </item>
     <item>
-      <title>books</title>
+      <title>Books</title>
       <link>https://kamilpro.com/tags/books/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/books/</guid>
       <description></description>
     </item>
     <item>
-      <title>course</title>
+      <title>Course</title>
       <link>https://kamilpro.com/tags/course/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/course/</guid>
       <description></description>
     </item>
     <item>
-      <title>discord</title>
+      <title>Discord</title>
       <link>https://kamilpro.com/tags/discord/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/discord/</guid>
       <description></description>
     </item>
     <item>
-      <title>dsc</title>
+      <title>Dsc</title>
       <link>https://kamilpro.com/tags/dsc/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/dsc/</guid>
       <description></description>
     </item>
     <item>
-      <title>next</title>
+      <title>Next</title>
       <link>https://kamilpro.com/tags/next/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/next/</guid>
       <description></description>
     </item>
     <item>
-      <title>training</title>
+      <title>Training</title>
       <link>https://kamilpro.com/tags/training/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/training/</guid>
       <description></description>
     </item>
     <item>
-      <title>twitter</title>
+      <title>Twitter</title>
       <link>https://kamilpro.com/tags/twitter/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/twitter/</guid>
       <description></description>
     </item>
     <item>
-      <title>what to learn next</title>
+      <title>What to Learn Next</title>
       <link>https://kamilpro.com/tags/what-to-learn-next/</link>
       <pubDate>Thu, 26 Nov 2020 17:46:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/what-to-learn-next/</guid>
       <description></description>
     </item>
     <item>
-      <title>api</title>
+      <title>Api</title>
       <link>https://kamilpro.com/tags/api/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/api/</guid>
       <description></description>
     </item>
     <item>
-      <title>download</title>
+      <title>Download</title>
       <link>https://kamilpro.com/tags/download/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/download/</guid>
       <description></description>
     </item>
     <item>
-      <title>internet</title>
+      <title>Internet</title>
       <link>https://kamilpro.com/tags/internet/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/internet/</guid>
       <description></description>
     </item>
     <item>
-      <title>invoke</title>
+      <title>Invoke</title>
       <link>https://kamilpro.com/tags/invoke/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/invoke/</guid>
       <description></description>
     </item>
     <item>
-      <title>json</title>
+      <title>Json</title>
       <link>https://kamilpro.com/tags/json/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/json/</guid>
       <description></description>
     </item>
     <item>
-      <title>method</title>
+      <title>Method</title>
       <link>https://kamilpro.com/tags/method/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/method/</guid>
       <description></description>
     </item>
     <item>
-      <title>password</title>
+      <title>Password</title>
       <link>https://kamilpro.com/tags/password/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/password/</guid>
       <description></description>
     </item>
     <item>
-      <title>pwpush</title>
+      <title>Pwpush</title>
       <link>https://kamilpro.com/tags/pwpush/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pwpush/</guid>
       <description></description>
     </item>
     <item>
-      <title>request</title>
+      <title>Request</title>
       <link>https://kamilpro.com/tags/request/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/request/</guid>
       <description></description>
     </item>
     <item>
-      <title>rest</title>
+      <title>Rest</title>
       <link>https://kamilpro.com/tags/rest/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/rest/</guid>
       <description></description>
     </item>
     <item>
-      <title>scrapping</title>
+      <title>Scrapping</title>
       <link>https://kamilpro.com/tags/scrapping/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/scrapping/</guid>
       <description></description>
     </item>
     <item>
-      <title>website</title>
+      <title>Website</title>
       <link>https://kamilpro.com/tags/website/</link>
       <pubDate>Sun, 15 Nov 2020 20:57:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/website/</guid>
       <description></description>
     </item>
     <item>
-      <title>creation</title>
+      <title>Creation</title>
       <link>https://kamilpro.com/tags/creation/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/creation/</guid>
       <description></description>
     </item>
     <item>
-      <title>grep</title>
+      <title>Grep</title>
       <link>https://kamilpro.com/tags/grep/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/grep/</guid>
       <description></description>
     </item>
     <item>
-      <title>offset</title>
+      <title>Offset</title>
       <link>https://kamilpro.com/tags/offset/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/offset/</guid>
       <description></description>
     </item>
     <item>
-      <title>regex</title>
+      <title>Regex</title>
       <link>https://kamilpro.com/tags/regex/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/regex/</guid>
       <description></description>
     </item>
     <item>
-      <title>select-string</title>
+      <title>Select-String</title>
       <link>https://kamilpro.com/tags/select-string/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/select-string/</guid>
       <description></description>
     </item>
     <item>
-      <title>string</title>
+      <title>String</title>
       <link>https://kamilpro.com/tags/string/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/string/</guid>
       <description></description>
     </item>
     <item>
-      <title>text</title>
+      <title>Text</title>
       <link>https://kamilpro.com/tags/text/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/text/</guid>
       <description></description>
     </item>
     <item>
-      <title>time</title>
+      <title>Time</title>
       <link>https://kamilpro.com/tags/time/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/time/</guid>
       <description></description>
     </item>
     <item>
-      <title>username</title>
+      <title>Username</title>
       <link>https://kamilpro.com/tags/username/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/username/</guid>
       <description></description>
     </item>
     <item>
-      <title>vssadmin</title>
+      <title>Vssadmin</title>
       <link>https://kamilpro.com/tags/vssadmin/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/vssadmin/</guid>
       <description></description>
     </item>
     <item>
-      <title>w32tm</title>
+      <title>W32tm</title>
       <link>https://kamilpro.com/tags/w32tm/</link>
       <pubDate>Tue, 03 Nov 2020 17:33:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/w32tm/</guid>
       <description></description>
     </item>
     <item>
-      <title>command</title>
+      <title>Command</title>
       <link>https://kamilpro.com/tags/command/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/command/</guid>
       <description></description>
     </item>
     <item>
-      <title>first script</title>
+      <title>First Script</title>
       <link>https://kamilpro.com/tags/first-script/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/first-script/</guid>
       <description></description>
     </item>
     <item>
-      <title>formatting</title>
+      <title>Formatting</title>
       <link>https://kamilpro.com/tags/formatting/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/formatting/</guid>
       <description></description>
     </item>
     <item>
-      <title>param</title>
+      <title>Param</title>
       <link>https://kamilpro.com/tags/param/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/param/</guid>
       <description></description>
     </item>
     <item>
-      <title>parameters</title>
+      <title>Parameters</title>
       <link>https://kamilpro.com/tags/parameters/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/parameters/</guid>
       <description></description>
     </item>
     <item>
-      <title>remote</title>
+      <title>Remote</title>
       <link>https://kamilpro.com/tags/remote/</link>
       <pubDate>Mon, 19 Oct 2020 18:32:20 +0000</pubDate>
       <guid>https://kamilpro.com/tags/remote/</guid>
       <description></description>
     </item>
     <item>
-      <title>add-member</title>
+      <title>Add-Member</title>
       <link>https://kamilpro.com/tags/add-member/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/add-member/</guid>
       <description></description>
     </item>
     <item>
-      <title>hotfix</title>
+      <title>Hotfix</title>
       <link>https://kamilpro.com/tags/hotfix/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/hotfix/</guid>
       <description></description>
     </item>
     <item>
-      <title>ip configuration</title>
+      <title>Ip Configuration</title>
       <link>https://kamilpro.com/tags/ip-configuration/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ip-configuration/</guid>
       <description></description>
     </item>
     <item>
-      <title>network</title>
+      <title>Network</title>
       <link>https://kamilpro.com/tags/network/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/network/</guid>
       <description></description>
     </item>
     <item>
-      <title>patch</title>
+      <title>Patch</title>
       <link>https://kamilpro.com/tags/patch/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/patch/</guid>
       <description></description>
     </item>
     <item>
-      <title>psobject</title>
+      <title>Psobject</title>
       <link>https://kamilpro.com/tags/psobject/</link>
       <pubDate>Tue, 13 Oct 2020 19:12:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/psobject/</guid>
       <description></description>
     </item>
     <item>
-      <title>hash table</title>
+      <title>Hash Table</title>
       <link>https://kamilpro.com/tags/hash-table/</link>
       <pubDate>Mon, 05 Oct 2020 17:16:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/hash-table/</guid>
       <description></description>
     </item>
     <item>
-      <title>ps1</title>
+      <title>Ps1</title>
       <link>https://kamilpro.com/tags/ps1/</link>
       <pubDate>Mon, 05 Oct 2020 17:16:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ps1/</guid>
       <description></description>
     </item>
     <item>
-      <title>write-host</title>
+      <title>Write-Host</title>
       <link>https://kamilpro.com/tags/write-host/</link>
       <pubDate>Mon, 05 Oct 2020 17:16:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/write-host/</guid>
       <description></description>
     </item>
     <item>
-      <title>hello world</title>
+      <title>Hello World</title>
       <link>https://kamilpro.com/tags/hello-world/</link>
       <pubDate>Sat, 26 Sep 2020 13:00:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/hello-world/</guid>
@@ -805,84 +819,84 @@
       <description></description>
     </item>
     <item>
-      <title>visual studio</title>
+      <title>Visual Studio</title>
       <link>https://kamilpro.com/tags/visual-studio/</link>
       <pubDate>Sat, 26 Sep 2020 13:00:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/visual-studio/</guid>
       <description></description>
     </item>
     <item>
-      <title>vs code</title>
+      <title>Vs Code</title>
       <link>https://kamilpro.com/tags/vs-code/</link>
       <pubDate>Sat, 26 Sep 2020 13:00:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/vs-code/</guid>
       <description></description>
     </item>
     <item>
-      <title>execution policy</title>
+      <title>Execution Policy</title>
       <link>https://kamilpro.com/tags/execution-policy/</link>
       <pubDate>Sat, 12 Sep 2020 16:09:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/execution-policy/</guid>
       <description></description>
     </item>
     <item>
-      <title>gpo</title>
+      <title>Gpo</title>
       <link>https://kamilpro.com/tags/gpo/</link>
       <pubDate>Sat, 12 Sep 2020 16:09:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/gpo/</guid>
       <description></description>
     </item>
     <item>
-      <title>security</title>
+      <title>Security</title>
       <link>https://kamilpro.com/tags/security/</link>
       <pubDate>Sat, 12 Sep 2020 16:09:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/security/</guid>
       <description></description>
     </item>
     <item>
-      <title>transcript</title>
+      <title>Transcript</title>
       <link>https://kamilpro.com/tags/transcript/</link>
       <pubDate>Sat, 12 Sep 2020 16:09:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/transcript/</guid>
       <description></description>
     </item>
     <item>
-      <title>filter</title>
+      <title>Filter</title>
       <link>https://kamilpro.com/tags/filter/</link>
       <pubDate>Sat, 05 Sep 2020 16:27:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/filter/</guid>
       <description></description>
     </item>
     <item>
-      <title>get-ciminstance</title>
+      <title>Get-Ciminstance</title>
       <link>https://kamilpro.com/tags/get-ciminstance/</link>
       <pubDate>Sat, 05 Sep 2020 16:27:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/get-ciminstance/</guid>
       <description></description>
     </item>
     <item>
-      <title>get-wmiobject</title>
+      <title>Get-Wmiobject</title>
       <link>https://kamilpro.com/tags/get-wmiobject/</link>
       <pubDate>Sat, 05 Sep 2020 16:27:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/get-wmiobject/</guid>
       <description></description>
     </item>
     <item>
-      <title>windows management instrumentation</title>
+      <title>Windows Management Instrumentation</title>
       <link>https://kamilpro.com/tags/windows-management-instrumentation/</link>
       <pubDate>Sat, 05 Sep 2020 16:27:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/windows-management-instrumentation/</guid>
       <description></description>
     </item>
     <item>
-      <title>wmi</title>
+      <title>Wmi</title>
       <link>https://kamilpro.com/tags/wmi/</link>
       <pubDate>Sat, 05 Sep 2020 16:27:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/wmi/</guid>
       <description></description>
     </item>
     <item>
-      <title>foreach</title>
+      <title>Foreach</title>
       <link>https://kamilpro.com/tags/foreach/</link>
       <pubDate>Sat, 29 Aug 2020 10:39:05 +0000</pubDate>
       <guid>https://kamilpro.com/tags/foreach/</guid>
@@ -896,70 +910,70 @@
       <description></description>
     </item>
     <item>
-      <title>enter</title>
+      <title>Enter</title>
       <link>https://kamilpro.com/tags/enter/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/enter/</guid>
       <description></description>
     </item>
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://kamilpro.com/tags/linux/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>psexec</title>
+      <title>Psexec</title>
       <link>https://kamilpro.com/tags/psexec/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/psexec/</guid>
       <description></description>
     </item>
     <item>
-      <title>pssesion</title>
+      <title>Pssesion</title>
       <link>https://kamilpro.com/tags/pssesion/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pssesion/</guid>
       <description></description>
     </item>
     <item>
-      <title>rdp</title>
+      <title>Rdp</title>
       <link>https://kamilpro.com/tags/rdp/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/rdp/</guid>
       <description></description>
     </item>
     <item>
-      <title>remoting</title>
+      <title>Remoting</title>
       <link>https://kamilpro.com/tags/remoting/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/remoting/</guid>
       <description></description>
     </item>
     <item>
-      <title>ssh</title>
+      <title>Ssh</title>
       <link>https://kamilpro.com/tags/ssh/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
-      <title>telnet</title>
+      <title>Telnet</title>
       <link>https://kamilpro.com/tags/telnet/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/telnet/</guid>
       <description></description>
     </item>
     <item>
-      <title>ws-man</title>
+      <title>Ws-Man</title>
       <link>https://kamilpro.com/tags/ws-man/</link>
       <pubDate>Mon, 24 Aug 2020 10:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ws-man/</guid>
       <description></description>
     </item>
     <item>
-      <title>active directory</title>
+      <title>Active Directory</title>
       <link>https://kamilpro.com/tags/active-directory/</link>
       <pubDate>Wed, 19 Aug 2020 12:49:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/active-directory/</guid>
@@ -973,266 +987,266 @@
       <description></description>
     </item>
     <item>
-      <title>dcpromo</title>
+      <title>Dcpromo</title>
       <link>https://kamilpro.com/tags/dcpromo/</link>
       <pubDate>Wed, 19 Aug 2020 12:49:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/dcpromo/</guid>
       <description></description>
     </item>
     <item>
-      <title>install-windowsfeature</title>
+      <title>Install-Windowsfeature</title>
       <link>https://kamilpro.com/tags/install-windowsfeature/</link>
       <pubDate>Wed, 19 Aug 2020 12:49:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/install-windowsfeature/</guid>
       <description></description>
     </item>
     <item>
-      <title>youtube</title>
+      <title>Youtube</title>
       <link>https://kamilpro.com/tags/youtube/</link>
       <pubDate>Wed, 19 Aug 2020 12:49:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/youtube/</guid>
       <description></description>
     </item>
     <item>
-      <title>esxi</title>
+      <title>Esxi</title>
       <link>https://kamilpro.com/tags/esxi/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/esxi/</guid>
       <description></description>
     </item>
     <item>
-      <title>find-module</title>
+      <title>Find-Module</title>
       <link>https://kamilpro.com/tags/find-module/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/find-module/</guid>
       <description></description>
     </item>
     <item>
-      <title>install-module</title>
+      <title>Install-Module</title>
       <link>https://kamilpro.com/tags/install-module/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/install-module/</guid>
       <description></description>
     </item>
     <item>
-      <title>snmp</title>
+      <title>Snmp</title>
       <link>https://kamilpro.com/tags/snmp/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/snmp/</guid>
       <description></description>
     </item>
     <item>
-      <title>vmware</title>
+      <title>Vmware</title>
       <link>https://kamilpro.com/tags/vmware/</link>
       <pubDate>Fri, 14 Aug 2020 16:31:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/vmware/</guid>
       <description></description>
     </item>
     <item>
-      <title>fl</title>
+      <title>Fl</title>
       <link>https://kamilpro.com/tags/fl/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/fl/</guid>
       <description></description>
     </item>
     <item>
-      <title>format</title>
+      <title>Format</title>
       <link>https://kamilpro.com/tags/format/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/format/</guid>
       <description></description>
     </item>
     <item>
-      <title>format-list</title>
+      <title>Format-List</title>
       <link>https://kamilpro.com/tags/format-list/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/format-list/</guid>
       <description></description>
     </item>
     <item>
-      <title>format-table</title>
+      <title>Format-Table</title>
       <link>https://kamilpro.com/tags/format-table/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/format-table/</guid>
       <description></description>
     </item>
     <item>
-      <title>ft</title>
+      <title>Ft</title>
       <link>https://kamilpro.com/tags/ft/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ft/</guid>
       <description></description>
     </item>
     <item>
-      <title>out-gridview</title>
+      <title>Out-Gridview</title>
       <link>https://kamilpro.com/tags/out-gridview/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/out-gridview/</guid>
       <description></description>
     </item>
     <item>
-      <title>output</title>
+      <title>Output</title>
       <link>https://kamilpro.com/tags/output/</link>
       <pubDate>Tue, 11 Aug 2020 12:35:44 +0000</pubDate>
       <guid>https://kamilpro.com/tags/output/</guid>
       <description></description>
     </item>
     <item>
-      <title>select</title>
+      <title>Select</title>
       <link>https://kamilpro.com/tags/select/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
       <guid>https://kamilpro.com/tags/select/</guid>
       <description></description>
     </item>
     <item>
-      <title>select-object</title>
+      <title>Select-Object</title>
       <link>https://kamilpro.com/tags/select-object/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
       <guid>https://kamilpro.com/tags/select-object/</guid>
       <description></description>
     </item>
     <item>
-      <title>where</title>
+      <title>Where</title>
       <link>https://kamilpro.com/tags/where/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
       <guid>https://kamilpro.com/tags/where/</guid>
       <description></description>
     </item>
     <item>
-      <title>where-object</title>
+      <title>Where-Object</title>
       <link>https://kamilpro.com/tags/where-object/</link>
       <pubDate>Fri, 07 Aug 2020 12:00:32 +0000</pubDate>
       <guid>https://kamilpro.com/tags/where-object/</guid>
       <description></description>
     </item>
     <item>
-      <title>providers</title>
+      <title>Providers</title>
       <link>https://kamilpro.com/tags/providers/</link>
       <pubDate>Tue, 04 Aug 2020 10:55:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/providers/</guid>
       <description></description>
     </item>
     <item>
-      <title>ps drive</title>
+      <title>Ps Drive</title>
       <link>https://kamilpro.com/tags/ps-drive/</link>
       <pubDate>Tue, 04 Aug 2020 10:55:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ps-drive/</guid>
       <description></description>
     </item>
     <item>
-      <title>registry</title>
+      <title>Registry</title>
       <link>https://kamilpro.com/tags/registry/</link>
       <pubDate>Tue, 04 Aug 2020 10:55:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/registry/</guid>
       <description></description>
     </item>
     <item>
-      <title>help</title>
+      <title>Help</title>
       <link>https://kamilpro.com/tags/help/</link>
       <pubDate>Thu, 23 Jul 2020 16:32:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/help/</guid>
       <description></description>
     </item>
     <item>
-      <title>deployment</title>
+      <title>Deployment</title>
       <link>https://kamilpro.com/tags/deployment/</link>
       <pubDate>Sun, 15 Mar 2020 14:25:59 +0000</pubDate>
       <guid>https://kamilpro.com/tags/deployment/</guid>
       <description></description>
     </item>
     <item>
-      <title>hyper-v</title>
+      <title>Hyper-V</title>
       <link>https://kamilpro.com/tags/hyper-v/</link>
       <pubDate>Sun, 08 Mar 2020 10:52:17 +0000</pubDate>
       <guid>https://kamilpro.com/tags/hyper-v/</guid>
       <description></description>
     </item>
     <item>
-      <title>server</title>
+      <title>Server</title>
       <link>https://kamilpro.com/tags/server/</link>
       <pubDate>Sun, 08 Mar 2020 10:52:17 +0000</pubDate>
       <guid>https://kamilpro.com/tags/server/</guid>
       <description></description>
     </item>
     <item>
-      <title>sysprep</title>
+      <title>Sysprep</title>
       <link>https://kamilpro.com/tags/sysprep/</link>
       <pubDate>Sun, 08 Mar 2020 10:52:17 +0000</pubDate>
       <guid>https://kamilpro.com/tags/sysprep/</guid>
       <description></description>
     </item>
     <item>
-      <title>template</title>
+      <title>Template</title>
       <link>https://kamilpro.com/tags/template/</link>
       <pubDate>Sun, 08 Mar 2020 10:52:17 +0000</pubDate>
       <guid>https://kamilpro.com/tags/template/</guid>
       <description></description>
     </item>
     <item>
-      <title>backup</title>
+      <title>Backup</title>
       <link>https://kamilpro.com/tags/backup/</link>
       <pubDate>Sun, 01 Dec 2019 18:27:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/backup/</guid>
       <description></description>
     </item>
     <item>
-      <title>feat</title>
+      <title>Feat</title>
       <link>https://kamilpro.com/tags/feat/</link>
       <pubDate>Sun, 01 Dec 2019 18:27:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/feat/</guid>
       <description></description>
     </item>
     <item>
-      <title>vss writer</title>
+      <title>Vss Writer</title>
       <link>https://kamilpro.com/tags/vss-writer/</link>
       <pubDate>Sun, 01 Dec 2019 18:27:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/vss-writer/</guid>
       <description></description>
     </item>
     <item>
-      <title>vsswriter</title>
+      <title>Vsswriter</title>
       <link>https://kamilpro.com/tags/vsswriter/</link>
       <pubDate>Sun, 01 Dec 2019 18:27:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/vsswriter/</guid>
       <description></description>
     </item>
     <item>
-      <title>monitoring</title>
+      <title>Monitoring</title>
       <link>https://kamilpro.com/tags/monitoring/</link>
       <pubDate>Tue, 09 Jul 2019 06:45:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/monitoring/</guid>
       <description></description>
     </item>
     <item>
-      <title>nagios</title>
+      <title>Nagios</title>
       <link>https://kamilpro.com/tags/nagios/</link>
       <pubDate>Tue, 09 Jul 2019 06:45:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/nagios/</guid>
       <description></description>
     </item>
     <item>
-      <title>readings</title>
+      <title>Readings</title>
       <link>https://kamilpro.com/tags/readings/</link>
       <pubDate>Tue, 09 Jul 2019 06:45:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/readings/</guid>
       <description></description>
     </item>
     <item>
-      <title>zabbix</title>
+      <title>Zabbix</title>
       <link>https://kamilpro.com/tags/zabbix/</link>
       <pubDate>Tue, 09 Jul 2019 06:45:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/zabbix/</guid>
       <description></description>
     </item>
     <item>
-      <title>process</title>
+      <title>Process</title>
       <link>https://kamilpro.com/tags/process/</link>
       <pubDate>Tue, 25 Jun 2019 07:50:11 +0000</pubDate>
       <guid>https://kamilpro.com/tags/process/</guid>
       <description></description>
     </item>
     <item>
-      <title>tools</title>
+      <title>Tools</title>
       <link>https://kamilpro.com/tags/tools/</link>
       <pubDate>Sun, 06 Jan 2019 20:40:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/tools/</guid>
@@ -1246,42 +1260,42 @@
       <description></description>
     </item>
     <item>
-      <title>review</title>
+      <title>Review</title>
       <link>https://kamilpro.com/tags/review/</link>
       <pubDate>Tue, 01 Jan 2019 13:42:49 +0000</pubDate>
       <guid>https://kamilpro.com/tags/review/</guid>
       <description></description>
     </item>
     <item>
-      <title>summary</title>
+      <title>Summary</title>
       <link>https://kamilpro.com/tags/summary/</link>
       <pubDate>Tue, 01 Jan 2019 13:42:49 +0000</pubDate>
       <guid>https://kamilpro.com/tags/summary/</guid>
       <description></description>
     </item>
     <item>
-      <title>backup exec</title>
+      <title>Backup Exec</title>
       <link>https://kamilpro.com/tags/backup-exec/</link>
       <pubDate>Sun, 30 Sep 2018 20:33:33 +0000</pubDate>
       <guid>https://kamilpro.com/tags/backup-exec/</guid>
       <description></description>
     </item>
     <item>
-      <title>catalog</title>
+      <title>Catalog</title>
       <link>https://kamilpro.com/tags/catalog/</link>
       <pubDate>Sun, 30 Sep 2018 20:33:33 +0000</pubDate>
       <guid>https://kamilpro.com/tags/catalog/</guid>
       <description></description>
     </item>
     <item>
-      <title>catalogue</title>
+      <title>Catalogue</title>
       <link>https://kamilpro.com/tags/catalogue/</link>
       <pubDate>Sun, 30 Sep 2018 20:33:33 +0000</pubDate>
       <guid>https://kamilpro.com/tags/catalogue/</guid>
       <description></description>
     </item>
     <item>
-      <title>tape</title>
+      <title>Tape</title>
       <link>https://kamilpro.com/tags/tape/</link>
       <pubDate>Sun, 30 Sep 2018 20:33:33 +0000</pubDate>
       <guid>https://kamilpro.com/tags/tape/</guid>
@@ -1295,147 +1309,147 @@
       <description></description>
     </item>
     <item>
-      <title>iscsi</title>
+      <title>Iscsi</title>
       <link>https://kamilpro.com/tags/iscsi/</link>
       <pubDate>Wed, 15 Aug 2018 17:54:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/iscsi/</guid>
       <description></description>
     </item>
     <item>
-      <title>lun</title>
+      <title>Lun</title>
       <link>https://kamilpro.com/tags/lun/</link>
       <pubDate>Wed, 15 Aug 2018 17:54:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/lun/</guid>
       <description></description>
     </item>
     <item>
-      <title>dns</title>
+      <title>Dns</title>
       <link>https://kamilpro.com/tags/dns/</link>
       <pubDate>Sun, 29 Apr 2018 21:40:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/dns/</guid>
       <description></description>
     </item>
     <item>
-      <title>ip</title>
+      <title>Ip</title>
       <link>https://kamilpro.com/tags/ip/</link>
       <pubDate>Sun, 29 Apr 2018 21:40:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/ip/</guid>
       <description></description>
     </item>
     <item>
-      <title>resolve</title>
+      <title>Resolve</title>
       <link>https://kamilpro.com/tags/resolve/</link>
       <pubDate>Sun, 29 Apr 2018 21:40:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/resolve/</guid>
       <description></description>
     </item>
     <item>
-      <title>toolmaking</title>
+      <title>Toolmaking</title>
       <link>https://kamilpro.com/tags/toolmaking/</link>
       <pubDate>Sun, 29 Apr 2018 21:40:00 +0000</pubDate>
       <guid>https://kamilpro.com/tags/toolmaking/</guid>
       <description></description>
     </item>
     <item>
-      <title>cvs</title>
+      <title>Cvs</title>
       <link>https://kamilpro.com/tags/cvs/</link>
       <pubDate>Sat, 21 Oct 2017 14:03:58 +0000</pubDate>
       <guid>https://kamilpro.com/tags/cvs/</guid>
       <description></description>
     </item>
     <item>
-      <title>fullname</title>
+      <title>Fullname</title>
       <link>https://kamilpro.com/tags/fullname/</link>
       <pubDate>Sat, 21 Oct 2017 14:03:58 +0000</pubDate>
       <guid>https://kamilpro.com/tags/fullname/</guid>
       <description></description>
     </item>
     <item>
-      <title>energy</title>
+      <title>Energy</title>
       <link>https://kamilpro.com/tags/energy/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
       <guid>https://kamilpro.com/tags/energy/</guid>
       <description></description>
     </item>
     <item>
-      <title>running</title>
+      <title>Running</title>
       <link>https://kamilpro.com/tags/running/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
       <guid>https://kamilpro.com/tags/running/</guid>
       <description></description>
     </item>
     <item>
-      <title>sport</title>
+      <title>Sport</title>
       <link>https://kamilpro.com/tags/sport/</link>
       <pubDate>Mon, 12 Jun 2017 21:23:57 +0000</pubDate>
       <guid>https://kamilpro.com/tags/sport/</guid>
       <description></description>
     </item>
     <item>
-      <title>driver</title>
+      <title>Driver</title>
       <link>https://kamilpro.com/tags/driver/</link>
       <pubDate>Mon, 29 May 2017 18:53:05 +0000</pubDate>
       <guid>https://kamilpro.com/tags/driver/</guid>
       <description></description>
     </item>
     <item>
-      <title>image</title>
+      <title>Image</title>
       <link>https://kamilpro.com/tags/image/</link>
       <pubDate>Mon, 29 May 2017 18:53:05 +0000</pubDate>
       <guid>https://kamilpro.com/tags/image/</guid>
       <description></description>
     </item>
     <item>
-      <title>batching</title>
+      <title>Batching</title>
       <link>https://kamilpro.com/tags/batching/</link>
       <pubDate>Tue, 16 May 2017 12:12:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/batching/</guid>
       <description></description>
     </item>
     <item>
-      <title>notification</title>
+      <title>Notification</title>
       <link>https://kamilpro.com/tags/notification/</link>
       <pubDate>Tue, 16 May 2017 12:12:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/notification/</guid>
       <description></description>
     </item>
     <item>
-      <title>time saving</title>
+      <title>Time Saving</title>
       <link>https://kamilpro.com/tags/time-saving/</link>
       <pubDate>Tue, 16 May 2017 12:12:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/time-saving/</guid>
       <description></description>
     </item>
     <item>
-      <title>hobby</title>
+      <title>Hobby</title>
       <link>https://kamilpro.com/tags/hobby/</link>
       <pubDate>Tue, 18 Apr 2017 06:30:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/hobby/</guid>
       <description></description>
     </item>
     <item>
-      <title>new</title>
+      <title>New</title>
       <link>https://kamilpro.com/tags/new/</link>
       <pubDate>Tue, 18 Apr 2017 06:30:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/new/</guid>
       <description></description>
     </item>
     <item>
-      <title>start</title>
+      <title>Start</title>
       <link>https://kamilpro.com/tags/start/</link>
       <pubDate>Tue, 18 Apr 2017 06:30:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/start/</guid>
       <description></description>
     </item>
     <item>
-      <title>study</title>
+      <title>Study</title>
       <link>https://kamilpro.com/tags/study/</link>
       <pubDate>Tue, 18 Apr 2017 06:30:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/study/</guid>
       <description></description>
     </item>
     <item>
-      <title>thing</title>
+      <title>Thing</title>
       <link>https://kamilpro.com/tags/thing/</link>
       <pubDate>Tue, 18 Apr 2017 06:30:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/thing/</guid>
@@ -1449,140 +1463,140 @@
       <description></description>
     </item>
     <item>
-      <title>answer</title>
+      <title>Answer</title>
       <link>https://kamilpro.com/tags/answer/</link>
       <pubDate>Mon, 03 Apr 2017 22:35:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/answer/</guid>
       <description></description>
     </item>
     <item>
-      <title>unattend</title>
+      <title>Unattend</title>
       <link>https://kamilpro.com/tags/unattend/</link>
       <pubDate>Mon, 03 Apr 2017 22:35:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/unattend/</guid>
       <description></description>
     </item>
     <item>
-      <title>windows 10</title>
+      <title>Windows 10</title>
       <link>https://kamilpro.com/tags/windows-10/</link>
       <pubDate>Mon, 03 Apr 2017 22:35:09 +0000</pubDate>
       <guid>https://kamilpro.com/tags/windows-10/</guid>
       <description></description>
     </item>
     <item>
-      <title>copy</title>
+      <title>Copy</title>
       <link>https://kamilpro.com/tags/copy/</link>
       <pubDate>Wed, 26 Oct 2016 20:11:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/copy/</guid>
       <description></description>
     </item>
     <item>
-      <title>file</title>
+      <title>File</title>
       <link>https://kamilpro.com/tags/file/</link>
       <pubDate>Wed, 26 Oct 2016 20:11:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/file/</guid>
       <description></description>
     </item>
     <item>
-      <title>peace</title>
+      <title>Peace</title>
       <link>https://kamilpro.com/tags/peace/</link>
       <pubDate>Wed, 26 Oct 2016 20:11:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/peace/</guid>
       <description></description>
     </item>
     <item>
-      <title>blog</title>
+      <title>Blog</title>
       <link>https://kamilpro.com/tags/blog/</link>
       <pubDate>Tue, 30 Aug 2016 07:30:13 +0000</pubDate>
       <guid>https://kamilpro.com/tags/blog/</guid>
       <description></description>
     </item>
     <item>
-      <title>change</title>
+      <title>Change</title>
       <link>https://kamilpro.com/tags/change/</link>
       <pubDate>Tue, 30 Aug 2016 07:30:13 +0000</pubDate>
       <guid>https://kamilpro.com/tags/change/</guid>
       <description></description>
     </item>
     <item>
-      <title>social media</title>
+      <title>Social Media</title>
       <link>https://kamilpro.com/tags/social-media/</link>
       <pubDate>Tue, 30 Aug 2016 07:30:13 +0000</pubDate>
       <guid>https://kamilpro.com/tags/social-media/</guid>
       <description></description>
     </item>
     <item>
-      <title>thoughts</title>
+      <title>Thoughts</title>
       <link>https://kamilpro.com/tags/thoughts/</link>
       <pubDate>Sun, 21 Aug 2016 19:47:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/thoughts/</guid>
       <description></description>
     </item>
     <item>
-      <title>update</title>
+      <title>Update</title>
       <link>https://kamilpro.com/tags/update/</link>
       <pubDate>Sun, 21 Aug 2016 19:47:22 +0000</pubDate>
       <guid>https://kamilpro.com/tags/update/</guid>
       <description></description>
     </item>
     <item>
-      <title>decision</title>
+      <title>Decision</title>
       <link>https://kamilpro.com/tags/decision/</link>
       <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/decision/</guid>
       <description></description>
     </item>
     <item>
-      <title>jobs</title>
+      <title>Jobs</title>
       <link>https://kamilpro.com/tags/jobs/</link>
       <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/jobs/</guid>
       <description></description>
     </item>
     <item>
-      <title>less</title>
+      <title>Less</title>
       <link>https://kamilpro.com/tags/less/</link>
       <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/less/</guid>
       <description></description>
     </item>
     <item>
-      <title>lunch</title>
+      <title>Lunch</title>
       <link>https://kamilpro.com/tags/lunch/</link>
       <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/lunch/</guid>
       <description></description>
     </item>
     <item>
-      <title>more</title>
+      <title>More</title>
       <link>https://kamilpro.com/tags/more/</link>
       <pubDate>Sun, 14 Aug 2016 17:59:54 +0000</pubDate>
       <guid>https://kamilpro.com/tags/more/</guid>
       <description></description>
     </item>
     <item>
-      <title>diamond</title>
+      <title>Diamond</title>
       <link>https://kamilpro.com/tags/diamond/</link>
       <pubDate>Wed, 10 Aug 2016 22:02:19 +0000</pubDate>
       <guid>https://kamilpro.com/tags/diamond/</guid>
       <description></description>
     </item>
     <item>
-      <title>dream</title>
+      <title>Dream</title>
       <link>https://kamilpro.com/tags/dream/</link>
       <pubDate>Wed, 10 Aug 2016 22:02:19 +0000</pubDate>
       <guid>https://kamilpro.com/tags/dream/</guid>
       <description></description>
     </item>
     <item>
-      <title>passion</title>
+      <title>Passion</title>
       <link>https://kamilpro.com/tags/passion/</link>
       <pubDate>Wed, 10 Aug 2016 22:02:19 +0000</pubDate>
       <guid>https://kamilpro.com/tags/passion/</guid>
       <description></description>
     </item>
     <item>
-      <title>romantic</title>
+      <title>Romantic</title>
       <link>https://kamilpro.com/tags/romantic/</link>
       <pubDate>Wed, 10 Aug 2016 22:02:19 +0000</pubDate>
       <guid>https://kamilpro.com/tags/romantic/</guid>
@@ -1603,392 +1617,392 @@
       <description></description>
     </item>
     <item>
-      <title>birthday</title>
+      <title>Birthday</title>
       <link>https://kamilpro.com/tags/birthday/</link>
       <pubDate>Mon, 08 Aug 2016 21:58:56 +0000</pubDate>
       <guid>https://kamilpro.com/tags/birthday/</guid>
       <description></description>
     </item>
     <item>
-      <title>app</title>
+      <title>App</title>
       <link>https://kamilpro.com/tags/app/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/app/</guid>
       <description></description>
     </item>
     <item>
-      <title>apps</title>
+      <title>Apps</title>
       <link>https://kamilpro.com/tags/apps/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/apps/</guid>
       <description></description>
     </item>
     <item>
-      <title>battery</title>
+      <title>Battery</title>
       <link>https://kamilpro.com/tags/battery/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/battery/</guid>
       <description></description>
     </item>
     <item>
-      <title>mobile</title>
+      <title>Mobile</title>
       <link>https://kamilpro.com/tags/mobile/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/mobile/</guid>
       <description></description>
     </item>
     <item>
-      <title>smart</title>
+      <title>Smart</title>
       <link>https://kamilpro.com/tags/smart/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/smart/</guid>
       <description></description>
     </item>
     <item>
-      <title>smartphone</title>
+      <title>Smartphone</title>
       <link>https://kamilpro.com/tags/smartphone/</link>
       <pubDate>Sun, 07 Aug 2016 09:45:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/smartphone/</guid>
       <description></description>
     </item>
     <item>
-      <title>facebook</title>
+      <title>Facebook</title>
       <link>https://kamilpro.com/tags/facebook/</link>
       <pubDate>Sat, 06 Aug 2016 09:32:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/facebook/</guid>
       <description></description>
     </item>
     <item>
-      <title>tasks</title>
+      <title>Tasks</title>
       <link>https://kamilpro.com/tags/tasks/</link>
       <pubDate>Sat, 06 Aug 2016 09:32:21 +0000</pubDate>
       <guid>https://kamilpro.com/tags/tasks/</guid>
       <description></description>
     </item>
     <item>
-      <title>belief</title>
+      <title>Belief</title>
       <link>https://kamilpro.com/tags/belief/</link>
       <pubDate>Tue, 02 Aug 2016 21:57:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/belief/</guid>
       <description></description>
     </item>
     <item>
-      <title>boat</title>
+      <title>Boat</title>
       <link>https://kamilpro.com/tags/boat/</link>
       <pubDate>Tue, 02 Aug 2016 21:57:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/boat/</guid>
       <description></description>
     </item>
     <item>
-      <title>comfort zone</title>
+      <title>Comfort Zone</title>
       <link>https://kamilpro.com/tags/comfort-zone/</link>
       <pubDate>Tue, 02 Aug 2016 21:57:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/comfort-zone/</guid>
       <description></description>
     </item>
     <item>
-      <title>screw it</title>
+      <title>Screw It</title>
       <link>https://kamilpro.com/tags/screw-it/</link>
       <pubDate>Tue, 02 Aug 2016 21:57:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/screw-it/</guid>
       <description></description>
     </item>
     <item>
-      <title>focus</title>
+      <title>Focus</title>
       <link>https://kamilpro.com/tags/focus/</link>
       <pubDate>Mon, 01 Aug 2016 21:25:29 +0000</pubDate>
       <guid>https://kamilpro.com/tags/focus/</guid>
       <description></description>
     </item>
     <item>
-      <title>music</title>
+      <title>Music</title>
       <link>https://kamilpro.com/tags/music/</link>
       <pubDate>Mon, 01 Aug 2016 21:25:29 +0000</pubDate>
       <guid>https://kamilpro.com/tags/music/</guid>
       <description></description>
     </item>
     <item>
-      <title>computer</title>
+      <title>Computer</title>
       <link>https://kamilpro.com/tags/computer/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/computer/</guid>
       <description></description>
     </item>
     <item>
-      <title>development</title>
+      <title>Development</title>
       <link>https://kamilpro.com/tags/development/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/development/</guid>
       <description></description>
     </item>
     <item>
-      <title>fix</title>
+      <title>Fix</title>
       <link>https://kamilpro.com/tags/fix/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/fix/</guid>
       <description></description>
     </item>
     <item>
-      <title>improvement</title>
+      <title>Improvement</title>
       <link>https://kamilpro.com/tags/improvement/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/improvement/</guid>
       <description></description>
     </item>
     <item>
-      <title>whiz-kid</title>
+      <title>Whiz-Kid</title>
       <link>https://kamilpro.com/tags/whiz-kid/</link>
       <pubDate>Sat, 30 Jul 2016 22:13:47 +0000</pubDate>
       <guid>https://kamilpro.com/tags/whiz-kid/</guid>
       <description></description>
     </item>
     <item>
-      <title>coffee</title>
+      <title>Coffee</title>
       <link>https://kamilpro.com/tags/coffee/</link>
       <pubDate>Fri, 29 Jul 2016 22:35:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/coffee/</guid>
       <description></description>
     </item>
     <item>
-      <title>group</title>
+      <title>Group</title>
       <link>https://kamilpro.com/tags/group/</link>
       <pubDate>Fri, 29 Jul 2016 22:35:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/group/</guid>
       <description></description>
     </item>
     <item>
-      <title>morning</title>
+      <title>Morning</title>
       <link>https://kamilpro.com/tags/morning/</link>
       <pubDate>Fri, 29 Jul 2016 22:35:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/morning/</guid>
       <description></description>
     </item>
     <item>
-      <title>rely</title>
+      <title>Rely</title>
       <link>https://kamilpro.com/tags/rely/</link>
       <pubDate>Thu, 28 Jul 2016 19:49:01 +0000</pubDate>
       <guid>https://kamilpro.com/tags/rely/</guid>
       <description></description>
     </item>
     <item>
-      <title>trust</title>
+      <title>Trust</title>
       <link>https://kamilpro.com/tags/trust/</link>
       <pubDate>Thu, 28 Jul 2016 19:49:01 +0000</pubDate>
       <guid>https://kamilpro.com/tags/trust/</guid>
       <description></description>
     </item>
     <item>
-      <title>birth</title>
+      <title>Birth</title>
       <link>https://kamilpro.com/tags/birth/</link>
       <pubDate>Wed, 27 Jul 2016 21:09:27 +0000</pubDate>
       <guid>https://kamilpro.com/tags/birth/</guid>
       <description></description>
     </item>
     <item>
-      <title>subconcious</title>
+      <title>Subconcious</title>
       <link>https://kamilpro.com/tags/subconcious/</link>
       <pubDate>Wed, 27 Jul 2016 21:09:27 +0000</pubDate>
       <guid>https://kamilpro.com/tags/subconcious/</guid>
       <description></description>
     </item>
     <item>
-      <title>knowledge</title>
+      <title>Knowledge</title>
       <link>https://kamilpro.com/tags/knowledge/</link>
       <pubDate>Tue, 26 Jul 2016 22:05:34 +0000</pubDate>
       <guid>https://kamilpro.com/tags/knowledge/</guid>
       <description></description>
     </item>
     <item>
-      <title>share</title>
+      <title>Share</title>
       <link>https://kamilpro.com/tags/share/</link>
       <pubDate>Tue, 26 Jul 2016 22:05:34 +0000</pubDate>
       <guid>https://kamilpro.com/tags/share/</guid>
       <description></description>
     </item>
     <item>
-      <title>choice</title>
+      <title>Choice</title>
       <link>https://kamilpro.com/tags/choice/</link>
       <pubDate>Mon, 25 Jul 2016 11:34:34 +0000</pubDate>
       <guid>https://kamilpro.com/tags/choice/</guid>
       <description></description>
     </item>
     <item>
-      <title>influence</title>
+      <title>Influence</title>
       <link>https://kamilpro.com/tags/influence/</link>
       <pubDate>Mon, 25 Jul 2016 11:34:34 +0000</pubDate>
       <guid>https://kamilpro.com/tags/influence/</guid>
       <description></description>
     </item>
     <item>
-      <title>information</title>
+      <title>Information</title>
       <link>https://kamilpro.com/tags/information/</link>
       <pubDate>Mon, 25 Jul 2016 11:34:34 +0000</pubDate>
       <guid>https://kamilpro.com/tags/information/</guid>
       <description></description>
     </item>
     <item>
-      <title>different</title>
+      <title>Different</title>
       <link>https://kamilpro.com/tags/different/</link>
       <pubDate>Sun, 24 Jul 2016 15:41:10 +0000</pubDate>
       <guid>https://kamilpro.com/tags/different/</guid>
       <description></description>
     </item>
     <item>
-      <title>quiet</title>
+      <title>Quiet</title>
       <link>https://kamilpro.com/tags/quiet/</link>
       <pubDate>Sat, 23 Jul 2016 19:33:49 +0000</pubDate>
       <guid>https://kamilpro.com/tags/quiet/</guid>
       <description></description>
     </item>
     <item>
-      <title>silence</title>
+      <title>Silence</title>
       <link>https://kamilpro.com/tags/silence/</link>
       <pubDate>Sat, 23 Jul 2016 19:33:49 +0000</pubDate>
       <guid>https://kamilpro.com/tags/silence/</guid>
       <description></description>
     </item>
     <item>
-      <title>notes</title>
+      <title>Notes</title>
       <link>https://kamilpro.com/tags/notes/</link>
       <pubDate>Fri, 22 Jul 2016 20:37:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/notes/</guid>
       <description></description>
     </item>
     <item>
-      <title>paper</title>
+      <title>Paper</title>
       <link>https://kamilpro.com/tags/paper/</link>
       <pubDate>Fri, 22 Jul 2016 20:37:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/paper/</guid>
       <description></description>
     </item>
     <item>
-      <title>move on</title>
+      <title>Move On</title>
       <link>https://kamilpro.com/tags/move-on/</link>
       <pubDate>Thu, 21 Jul 2016 19:58:56 +0000</pubDate>
       <guid>https://kamilpro.com/tags/move-on/</guid>
       <description></description>
     </item>
     <item>
-      <title>work</title>
+      <title>Work</title>
       <link>https://kamilpro.com/tags/work/</link>
       <pubDate>Wed, 20 Jul 2016 19:48:05 +0000</pubDate>
       <guid>https://kamilpro.com/tags/work/</guid>
       <description></description>
     </item>
     <item>
-      <title>emotion</title>
+      <title>Emotion</title>
       <link>https://kamilpro.com/tags/emotion/</link>
       <pubDate>Tue, 19 Jul 2016 21:48:24 +0000</pubDate>
       <guid>https://kamilpro.com/tags/emotion/</guid>
       <description></description>
     </item>
     <item>
-      <title>intelligence</title>
+      <title>Intelligence</title>
       <link>https://kamilpro.com/tags/intelligence/</link>
       <pubDate>Tue, 19 Jul 2016 21:48:24 +0000</pubDate>
       <guid>https://kamilpro.com/tags/intelligence/</guid>
       <description></description>
     </item>
     <item>
-      <title>win</title>
+      <title>Win</title>
       <link>https://kamilpro.com/tags/win/</link>
       <pubDate>Tue, 19 Jul 2016 21:48:24 +0000</pubDate>
       <guid>https://kamilpro.com/tags/win/</guid>
       <description></description>
     </item>
     <item>
-      <title>news</title>
+      <title>News</title>
       <link>https://kamilpro.com/tags/news/</link>
       <pubDate>Mon, 18 Jul 2016 21:30:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/news/</guid>
       <description></description>
     </item>
     <item>
-      <title>spam</title>
+      <title>Spam</title>
       <link>https://kamilpro.com/tags/spam/</link>
       <pubDate>Mon, 18 Jul 2016 21:30:18 +0000</pubDate>
       <guid>https://kamilpro.com/tags/spam/</guid>
       <description></description>
     </item>
     <item>
-      <title>iphone</title>
+      <title>Iphone</title>
       <link>https://kamilpro.com/tags/iphone/</link>
       <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
       <guid>https://kamilpro.com/tags/iphone/</guid>
       <description></description>
     </item>
     <item>
-      <title>nokia</title>
+      <title>Nokia</title>
       <link>https://kamilpro.com/tags/nokia/</link>
       <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
       <guid>https://kamilpro.com/tags/nokia/</guid>
       <description></description>
     </item>
     <item>
-      <title>pc</title>
+      <title>Pc</title>
       <link>https://kamilpro.com/tags/pc/</link>
       <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
       <guid>https://kamilpro.com/tags/pc/</guid>
       <description></description>
     </item>
     <item>
-      <title>phone</title>
+      <title>Phone</title>
       <link>https://kamilpro.com/tags/phone/</link>
       <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
       <guid>https://kamilpro.com/tags/phone/</guid>
       <description></description>
     </item>
     <item>
-      <title>smarthone</title>
+      <title>Smarthone</title>
       <link>https://kamilpro.com/tags/smarthone/</link>
       <pubDate>Tue, 07 Jun 2016 17:00:23 +0000</pubDate>
       <guid>https://kamilpro.com/tags/smarthone/</guid>
       <description></description>
     </item>
     <item>
-      <title>attitude</title>
+      <title>Attitude</title>
       <link>https://kamilpro.com/tags/attitude/</link>
       <pubDate>Sun, 31 Jan 2016 12:49:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/attitude/</guid>
       <description></description>
     </item>
     <item>
-      <title>customers</title>
+      <title>Customers</title>
       <link>https://kamilpro.com/tags/customers/</link>
       <pubDate>Sun, 31 Jan 2016 12:49:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/customers/</guid>
       <description></description>
     </item>
     <item>
-      <title>naive</title>
+      <title>Naive</title>
       <link>https://kamilpro.com/tags/naive/</link>
       <pubDate>Sun, 31 Jan 2016 12:49:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/naive/</guid>
       <description></description>
     </item>
     <item>
-      <title>wrong people</title>
+      <title>Wrong People</title>
       <link>https://kamilpro.com/tags/wrong-people/</link>
       <pubDate>Sun, 31 Jan 2016 12:49:40 +0000</pubDate>
       <guid>https://kamilpro.com/tags/wrong-people/</guid>
       <description></description>
     </item>
     <item>
-      <title>certification</title>
+      <title>Certification</title>
       <link>https://kamilpro.com/tags/certification/</link>
       <pubDate>Thu, 21 Jan 2016 11:42:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/certification/</guid>
       <description></description>
     </item>
     <item>
-      <title>education</title>
+      <title>Education</title>
       <link>https://kamilpro.com/tags/education/</link>
       <pubDate>Thu, 21 Jan 2016 11:42:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/education/</guid>
       <description></description>
     </item>
     <item>
-      <title>job</title>
+      <title>Job</title>
       <link>https://kamilpro.com/tags/job/</link>
       <pubDate>Thu, 21 Jan 2016 11:42:35 +0000</pubDate>
       <guid>https://kamilpro.com/tags/job/</guid>
@@ -2002,63 +2016,63 @@
       <description></description>
     </item>
     <item>
-      <title>guitar</title>
+      <title>Guitar</title>
       <link>https://kamilpro.com/tags/guitar/</link>
       <pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/guitar/</guid>
       <description></description>
     </item>
     <item>
-      <title>inspiration</title>
+      <title>Inspiration</title>
       <link>https://kamilpro.com/tags/inspiration/</link>
       <pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/inspiration/</guid>
       <description></description>
     </item>
     <item>
-      <title>right people</title>
+      <title>Right People</title>
       <link>https://kamilpro.com/tags/right-people/</link>
       <pubDate>Sun, 04 Oct 2015 18:54:31 +0000</pubDate>
       <guid>https://kamilpro.com/tags/right-people/</guid>
       <description></description>
     </item>
     <item>
-      <title>mastering</title>
+      <title>Mastering</title>
       <link>https://kamilpro.com/tags/mastering/</link>
       <pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/mastering/</guid>
       <description></description>
     </item>
     <item>
-      <title>professional</title>
+      <title>Professional</title>
       <link>https://kamilpro.com/tags/professional/</link>
       <pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/professional/</guid>
       <description></description>
     </item>
     <item>
-      <title>skills</title>
+      <title>Skills</title>
       <link>https://kamilpro.com/tags/skills/</link>
       <pubDate>Sat, 06 Jun 2015 19:55:25 +0000</pubDate>
       <guid>https://kamilpro.com/tags/skills/</guid>
       <description></description>
     </item>
     <item>
-      <title>camera</title>
+      <title>Camera</title>
       <link>https://kamilpro.com/tags/camera/</link>
       <pubDate>Thu, 14 May 2015 20:02:59 +0000</pubDate>
       <guid>https://kamilpro.com/tags/camera/</guid>
       <description></description>
     </item>
     <item>
-      <title>memories</title>
+      <title>Memories</title>
       <link>https://kamilpro.com/tags/memories/</link>
       <pubDate>Thu, 14 May 2015 20:02:59 +0000</pubDate>
       <guid>https://kamilpro.com/tags/memories/</guid>
       <description></description>
     </item>
     <item>
-      <title>nikon</title>
+      <title>Nikon</title>
       <link>https://kamilpro.com/tags/nikon/</link>
       <pubDate>Thu, 14 May 2015 20:02:59 +0000</pubDate>
       <guid>https://kamilpro.com/tags/nikon/</guid>

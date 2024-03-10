@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Kamil Pro</title>
+    <link>https://kamilpro.com/categories/github/</link>
+    <description>Recent content in GitHub on Kamil Pro</description>
+    <image>
+      <title>Kamil Pro</title>
+      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kamilpro.com/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell And GitHub Actions</title>
+      <link>https://kamilpro.com/posts/2024/powershell-and-github-actions/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/posts/2024/powershell-and-github-actions/</guid>
+      <description>I am happy to announce my latest product - PowerShell and GitHub Actions - in which you will learn how to develop, build, test and release a PowerShell module using GitHub Actions.
+The series is divided into three projects, which build upon each other to create the module.
+In the first project - Build a Module - you will start by developing a module locally. The module will implement GitHub&amp;rsquo;s API so that it will be able to manage GitHub&amp;rsquo;s repository lifecycle - creation, removal, updating and retrieving the repository.</description>
+    </item>
+  </channel>
+</rss>

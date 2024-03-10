@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kamilpro.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://kamilpro.com/categories/github/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/categories/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
+      <link>https://kamilpro.com/categories/powershell/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/categories/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Product</title>
+      <link>https://kamilpro.com/categories/product/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/categories/product/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Health</title>
       <link>https://kamilpro.com/categories/health/</link>
@@ -39,13 +60,6 @@
       <link>https://kamilpro.com/categories/conference/</link>
       <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/categories/conference/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PowerShell</title>
-      <link>https://kamilpro.com/categories/powershell/</link>
-      <pubDate>Sun, 16 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://kamilpro.com/categories/powershell/</guid>
       <description></description>
     </item>
     <item>
@@ -133,14 +147,14 @@
       <description></description>
     </item>
     <item>
-      <title>custom</title>
+      <title>Custom</title>
       <link>https://kamilpro.com/categories/custom/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/categories/custom/</guid>
       <description></description>
     </item>
     <item>
-      <title>object</title>
+      <title>Object</title>
       <link>https://kamilpro.com/categories/object/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://kamilpro.com/categories/object/</guid>
@@ -294,7 +308,7 @@
       <description></description>
     </item>
     <item>
-      <title>Me &amp;amp; People</title>
+      <title>Me &amp;Amp; People</title>
       <link>https://kamilpro.com/categories/me-amp-people/</link>
       <pubDate>Tue, 01 Jan 2019 13:42:49 +0000</pubDate>
       <guid>https://kamilpro.com/categories/me-amp-people/</guid>
