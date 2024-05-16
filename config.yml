@@ -60,18 +60,22 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    enabled: true # needs to be explicitly set
+    title: Kamil Pro
+    subtitle: "IT Developer, DevOps Engineer, and passionate PowerShell enthusiast. 
+    IT and technology are essentialy my life. When I'm not writing code, you'll find me immersed in books, exploring new places, rocking to music, 
+  experimenting in the kitchen, or lifting weights."
+    imageUrl: images/me.jpeg
+    imageWidth: 240
+    imageHeight: 240
+    imageTitle: Kamil Pro
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
+      - name: PowerShell and GitHub Actions
+        url: http://mng.bz/v89q
+      - name: PowerShell Course
+        url: /powershell-course/
 
   # home-info mode
   homeInfoParams:
@@ -135,10 +139,6 @@ menu:
       name: PowerShell and GitHub Actions
       url: http://mng.bz/v89q
       weight: 20
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 50
     - identifier: aboutpowershell
       name: About PowerShell
       url: /about-powershell/
