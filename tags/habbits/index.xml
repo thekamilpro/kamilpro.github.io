@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Health on Kamil Pro</title>
-    <link>https://kamilpro.com/categories/health/</link>
-    <description>Recent content in Health on Kamil Pro</description>
+    <title>Habbits on Kamil Pro</title>
+    <link>https://kamilpro.com/tags/habbits/</link>
+    <description>Recent content in Habbits on Kamil Pro</description>
     <image>
       <title>Kamil Pro</title>
       <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kamilpro.com/categories/health/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kamilpro.com/tags/habbits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stopped Drinking Coffee 3 Months Ago</title>
       <link>https://kamilpro.com/posts/2024/stopped-drinking-coffee-3-months-ago/</link>
@@ -21,14 +21,6 @@
       <description>I Stopped drinking coffee three months ago.
 The worst was the first week, which I can compare to having a hangover, but without the sensitivity to light and feeling dehydrated. For a week, I suffered from headaches, nausea, fatigue, and difficulty concentrating.
 There were times of the day, like 9 in the morning, when I needed my cup of coffee to stop my body from screaming for it and to get that energy boost.</description>
-    </item>
-    <item>
-      <title>Health</title>
-      <link>https://kamilpro.com/posts/pages/health/</link>
-      <pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://kamilpro.com/posts/pages/health/</guid>
-      <description>For several years, I&amp;rsquo;ve been working on my health - with goal of staying healthy as long as possible. It all started with working on sleep, which was followed by jogging, nutrition etc. where at this point it has become a part of my identity.
-The goal here is to keep this post as a baseline for comparing myself in the future, how much I drifted or improved over time, and then share to the any other person who wants work on themselves.</description>
     </item>
   </channel>
 </rss>
