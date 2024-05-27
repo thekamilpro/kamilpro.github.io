@@ -93,6 +93,10 @@ params:
       url: "https://github.com/thekamilpro"
     - name: YouTube
       url: "https://youtube.com/@kamilpro"
+    - name: Instagram
+      url: "https://www.instagram.com/kmlpro/"
+    - name: Threads
+      url: "https://www.threads.net/@kmlpro"
 
   analytics:
     google:
