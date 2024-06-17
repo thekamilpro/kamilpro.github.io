@@ -6,8 +6,8 @@
     <description>Recent content on Kamil Pro</description>
     <image>
       <title>Kamil Pro</title>
-      <url>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://kamilpro.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://kamilpro.com/105</url>
+      <link>https://kamilpro.com/105</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -788,6 +788,15 @@ Funnily enough, very often those things or people are just happening around us, 
       <pubDate>Sun, 26 Apr 2015 06:09:05 +0000</pubDate>
       <guid>https://kamilpro.com/hello-world/</guid>
       <description>Every proper project should have the “Hello world!”, so does mine ;).</description>
+    </item>
+    <item>
+      <title>About Kamil Pro</title>
+      <link>https://kamilpro.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kamilpro.com/about/</guid>
+      <description>Who am I? Hi, my name is Kamil Procyszyn and I&amp;rsquo;ve always been driven by automating things. Automation led me eventually to PowerShell, which then opened a whole plethora of new things for me - Public Cloud, CI/CD Pipelines, Infrastructure as Code and lately Platform Engineering. I keep an eye on po
+I strive to make complex seamless&amp;hellip; or at least simpler.
+Some of my professional achievements Created liveProject for Manning: PowerShell and GitHub Actions Spoken at PS Day UK 2023 Conference Created KpPwpush PowerShell module Some of my certificates AZ-400: Azure DevOps Engineer Expert AZ-104: Azure Administrator MCSA: Windows Server 2012 MCSA: Windows 8 SAFE 6.</description>
     </item>
   </channel>
 </rss>
