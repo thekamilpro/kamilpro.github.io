@@ -22,8 +22,7 @@ params:
   description: "Making the complex seamless"
   keywords: [Blog, PowerShell, Course, Video, Youtube]
   author: Me
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: images/me.jpeg
   DateFormat: "2 January 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -70,8 +69,8 @@ params:
     imageHeight: 240
     imageTitle: Kamil Pro
     buttons:
-      - name: Posts
-        url: posts
+      - name: About
+        url: /about/
       - name: PowerShell and GitHub Actions
         url: http://mng.bz/v89q
       - name: PowerShell Course
@@ -111,10 +110,8 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/thekamilpro/kamilpro.github.io/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  
+    
 
   # for search
   # https://fusejs.io/api/options.html
