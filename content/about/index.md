@@ -1,13 +1,12 @@
 ---
 title: About Kamil Pro
-resources:
-  - name: "featured-image"
-    src: "featured-image.jpg"
+cover: 
+  image: cover.png
 ---
 
 ## Who am I?
 
-Hi, my name is Kamil Procyszyn and I've always been driven by automating things. Automation led me eventually to PowerShell, which then opened a whole plethora of new things for me - Public Cloud, CI/CD Pipelines, Infrastructure as Code and lately Platform Engineering. I keep an eye on po
+Hi, my name is Kamil Procyszyn and I've always been driven by automating things. Automation led me eventually to PowerShell, which then opened a whole plethora of new things for me - Public Cloud, CI/CD Pipelines, Infrastructure as Code and lately Platform Engineering. I keep an eye on possibly disruptive technologies like AI.
 
 I strive to make complex seamless... or at least simpler. 
 
@@ -27,7 +26,7 @@ I strive to make complex seamless... or at least simpler.
 
 ## Privatly
 
-While technology has always been part of my life, there are a number of other elements that make me complete, so let's pick the top three I attend daily.
+While technology has always been part of my life, there are several other elements that make me complete, so let's pick the top three I attend daily.
 
 Books. I go through fiction and non-fiction. If I were to pick my favourite, fiction, that be The Witcher Saga by Andrzej Sapkowski. For non-fiction The Goal by Eliyahu M. Goldratt... ok, I realise it's a story, but the knowledge passed there is so practically and applicable in real I'll add it as non-fiction.
 
